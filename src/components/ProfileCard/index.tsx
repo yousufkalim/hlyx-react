@@ -1,5 +1,5 @@
-import { IonContent } from "@ionic/react";
-import React from "react";
+import { IonButton, IonContent, IonModal } from "@ionic/react";
+import React, { useState } from "react";
 import {
   BagIcon,
   BookMarkIcon,
@@ -8,7 +8,6 @@ import {
   LocationIcon,
   SendIcon,
 } from "../../assets/icons";
-import Sphere from "../../assets/sphere.png";
 import "../../style/components/profileCard.css";
 
 export const floatingIcons = [
@@ -46,7 +45,13 @@ const ProfileCard = ({
   location,
 }: ProfileCardProps) => {
   return (
-    <IonContent fullscreen>
+    <IonContent
+      // style={{
+      //   "--background":
+      //     'url("../../assets/physician_male_01.png") no-repeat top top / cover',
+      // }}
+      fullscreen
+    >
       <img
         style={{
           position: "absolute",
@@ -54,6 +59,8 @@ const ProfileCard = ({
           zIndex: -3,
           width: "100%",
           height: "100%",
+          objectPosition: "top",
+          objectFit: "cover",
         }}
         src={backgroundImage}
         alt="user profile"
@@ -67,6 +74,8 @@ const ProfileCard = ({
             display: "flex",
             flexDirection: "column",
             alignItems: "flex-start",
+            paddingInline: 24,
+            paddingBottom: 64,
           }}
         >
           <img src={companyLogo} alt="company logo" className="company-logo" />
