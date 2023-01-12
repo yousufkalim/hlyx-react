@@ -6,7 +6,7 @@ import {
   IonSlide,
   IonSlides,
 } from "@ionic/react";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import ProfileCard from "../../components/ProfileCard";
 import "../../style/page/professional.css";
 import profileOne from "../../assets/physician_male_01.png";
@@ -21,6 +21,7 @@ import cx from "../../assets/cx_logo.png";
 import RealtyGroup from "../../assets/RealtyGroup.png";
 import HorizonMedia from "../../assets/HorizonMedia.png";
 import HamiltonRestaurant from "../../assets/HamiltonRestaurant.png";
+import MediaCard from "../../components/MediaCard";
 
 const slideOpts = {
   initialSlide: 0,
@@ -73,7 +74,8 @@ export const profileData = [
 ];
 
 const Professional = () => {
-  const [open, setOpen] = useState(false);
+  const modal = useRef<HTMLIonModalElement>(null);
+  const [open, setOpen] = useState(true);
   const [slideNumber, setSlideNumber] = useState(0);
 
   const handleNextSlide = () => {
@@ -127,22 +129,24 @@ const Professional = () => {
       </IonPage>
 
       <IonModal
+        ref={modal}
         className="detail-modal"
-        isOpen={true}
+        isOpen={open}
         onDidDismiss={handleCloseModal}
         breakpoints={[0.14, 0.5, 1]}
         initialBreakpoint={0.14}
         backdropBreakpoint={0.14}
       >
-        <section className="card-footer">
-          <IonButton className="footer-btn">Add Contact</IonButton>
+        {/* <section className="card-footer" style={{display:open ?"none" : "block"}}>
+          <IonButton  className="footer-btn">Add Contact</IonButton>
           <IonButton className="footer-btn">View Info</IonButton>
-        </section>
+        </section> */}
 
-        <section>
+        {/* <section>
           <img src={userData[0].companyLogo} alt={userData[0].name} />
           <h2 style={{ color: "white" }}>{userData[0].name}</h2>
-        </section>
+        </section> */}
+        <MediaCard />
       </IonModal>
     </>
   );
