@@ -1,0 +1,97 @@
+ion-card-header.ios {
+  display: flex;
+  flex-flow: column-reverse;
+}
+
+ion-segment-button {
+  --indicator-color: white;
+  --background: white;
+  border-radius: 0px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.segment-button-checked {
+  --indicator-box-shadow: none;
+  border-bottom: 2px solid blue;
+}
+
+.avatar-icon {
+  position: absolute;
+  left: 40%;
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+  bottom: -13%;
+  width: 90px
+}
+
+ion-card-subtitle {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28.5958px;
+  line-height: 33px;
+  color: #000000;
+  margin-top: 20px;
+  text-transform: inherit;
+}
+
+ion-card-content {
+  padding-bottom: 0px !important;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px !important;
+  line-height: 16px !important;
+  color: #000000;
+}
+
+ion-icon {
+  margin-right: 5px
+}
+
+ion-card {
+  margin: 5px 10px 5px 10px;
+  padding-bottom: 21.58px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.accordion-label {
+  color: #000;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+  padding-left: 20px;
+}
+
+ion-segment {
+  margin-bottom: 25px;
+  padding-left: 0px;
+  background-color: white;
+}
+
+ion-label {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.social-media-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+ion-accordion.accordion-expanded > [slot=header] .ion-accordion-toggle-icon {
+  transform: rotate(90deg);
+}
