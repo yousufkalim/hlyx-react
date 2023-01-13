@@ -86,7 +86,7 @@ const MediaCard = () => {
               First Content
             </div>
           </IonAccordion>
-          <IonAccordion toggleIcon={chevronForward} value="first">
+          <IonAccordion toggleIcon={chevronForward} value="second">
             <IonItem slot="header" color="rose">
               <IonIcon slot='start' icon={call}></IonIcon>
               <IonLabel>+1 (650) 345-6789   Ext 700</IonLabel>
@@ -95,7 +95,7 @@ const MediaCard = () => {
               First Content
             </div>
           </IonAccordion>
-          <IonAccordion toggleIcon={chevronForward} value="first">
+          <IonAccordion toggleIcon={chevronForward} value="third">
             <IonItem slot="header" color="rose">
               <IonIcon slot='start' icon={print}></IonIcon>
               <IonLabel>+1 (650) 345-6789</IonLabel>
