@@ -34,7 +34,6 @@ import "@ionic/react/css/display.css";
 /* Theme variables */
 import "./theme/variables.css";
 import Professional from "./pages/Professional";
-import MediaCard from "./components/MediaCard";
 import Profile from "./pages/Profile";
 
 setupIonicReact();
