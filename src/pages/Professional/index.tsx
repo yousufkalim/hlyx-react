@@ -137,16 +137,15 @@ const Professional = () => {
         initialBreakpoint={0.14}
         backdropBreakpoint={0.14}
       >
-        {/* <section className="card-footer" style={{display:open ?"none" : "block"}}>
+        <section className="card-footer">
           <IonButton  className="footer-btn">Add Contact</IonButton>
           <IonButton className="footer-btn">View Info</IonButton>
-        </section> */}
+        </section>
 
-        {/* <section>
+        <section>
           <img src={userData[0].companyLogo} alt={userData[0].name} />
           <h2 style={{ color: "white" }}>{userData[0].name}</h2>
-        </section> */}
-        <MediaCard />
+        </section>
       </IonModal>
     </>
   );
