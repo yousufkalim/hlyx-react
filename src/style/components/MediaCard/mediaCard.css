@@ -9,16 +9,19 @@ ion-segment-button {
   border-radius: 0px;
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 700;
   font-size: 15px;
   line-height: 18px;
-  color: #000000;
+  --color: #888888;
   text-transform: capitalize;
+  border-bottom: 2px solid #C4C4C4;
+  height: 67px;
 }
 
 .segment-button-checked {
   --indicator-box-shadow: none;
   border-bottom: 2px solid black;
+  color: black;
+  font-weight: 700;
 }
 
 .avatar-icon {
@@ -26,7 +29,7 @@ ion-segment-button {
   left: 40%;
   background: white;
   padding: 10px;
-  border-radius: 50%;
+  border-radius: 37.49%;
   bottom: -13%;
   width: 90px
 }
@@ -61,6 +64,7 @@ ion-card {
   padding-bottom: 21.58px;
   border-radius: 10px 10px 10px 10px;
   box-shadow: none;
+  border-bottom: 1px solid #C4C4C4;
 }
 
 .accordion-label {
@@ -71,6 +75,8 @@ ion-card {
   font-size: 15px;
   line-height: 15px;
   padding-left: 20px;
+  display: inline-block;
+  padding-bottom: 12.88px;
 }
 
 ion-segment {
@@ -80,12 +86,21 @@ ion-segment {
 }
 
 ion-label {
-  font-family: 'Poppins';
+  font-family: "Poppins" !important;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
-  line-height: 14px;
+  font-size: 15px !important;
+  line-height: 25px;
   color: #000000;
+}
+
+.segment-btn-label {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: inherit;
+  font-size: 15px;
+  line-height: 18px;
+  color: inherit;
 }
 
 .social-media-icon {
@@ -121,7 +136,7 @@ ion-accordion.accordion-expanded>[slot=header] .ion-accordion-toggle-icon {
 }
 
 .ion-label {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-weight: 600 !important;
   font-size: 15px !important;
   line-height: 19px !important;

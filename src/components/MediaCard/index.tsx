@@ -35,7 +35,7 @@ const MediaCard = () => {
         </IonCardContent>
       </IonCard>
 
-      <IonCard style={{ padding:20 }}>
+      <IonCard style={{ padding: 20 }}>
         <IonButton expand='block' className='ion-btn'>
           <div style={{ marginRight: 5 }}><LinkBtnIcon /></div>
           Link with Me
@@ -45,16 +45,16 @@ const MediaCard = () => {
       <IonCard style={{ padding: "0px 0px 10px 0px" }}>
         <IonSegment value="1">
           <IonSegmentButton color="primary" value="1">
-            <IonLabel>Contact</IonLabel>
+            <IonLabel className='segment-btn-label'>Contact</IonLabel>
           </IonSegmentButton>
           <IonSegmentButton value="2">
-            <IonLabel>About</IonLabel>
+            <IonLabel className='segment-btn-label'>About</IonLabel>
           </IonSegmentButton>
           <IonSegmentButton value="3">
-            <IonLabel>Service</IonLabel>
+            <IonLabel className='segment-btn-label'>Service</IonLabel>
           </IonSegmentButton>
           <IonSegmentButton value="4">
-            <IonLabel>Portflio</IonLabel>
+            <IonLabel className='segment-btn-label'>Portflio</IonLabel>
           </IonSegmentButton>
         </IonSegment>
 
@@ -121,7 +121,7 @@ const MediaCard = () => {
               <div className='ion-icon'>
                 <CalendarIcon />
               </div>
-              <IonLabel>Calendly Kenji Awurama </IonLabel>
+              <IonLabel>Calendly {">"} Kenji Awurama </IonLabel>
             </IonItem>
             <div className="ion-padding" slot="content">
               First Content
@@ -185,7 +185,7 @@ const MediaCard = () => {
 
       <IonCard style={{ paddingTop: "21.58px" }}>
         <IonLabel className='accordion-label'>Links</IonLabel>
-        <div style={{ display: "flex", marginLeft: 20, marginTop: 10, flexDirection: "row" }}>
+        <div style={{ display: "flex", marginLeft: 20, flexDirection: "row" }}>
           <div className='ion-icon'>
             <MediumIcon />
           </div>
