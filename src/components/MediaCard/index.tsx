@@ -5,11 +5,12 @@ import sphere from "../../assets/sphere.png";
 import { briefcaseOutline, calendarNumber, call, chevronForward, globe, location, locationOutline, logoDiscord, logoLinkedin, logoReddit, logoSlack, logoYoutube, mail, mailOutline, phonePortrait, print } from 'ionicons/icons';
 import '../../style/components/MediaCard/mediaCard.css';
 import linkIcon from "../../assets/icons/link-icon.png";
+import { BreifIcon, CalendarIcon, CallIcon, DriveIcon, FaxIcon, LinkBtnIcon, LinkedinIcon, LocateFillIcon, LocateIcon, MailIcon, MaskIcon, MediumIcon, MobileIcon, ShipFaceIcon, SlackIcon, SoundCloudIcon, WorldIcon, YoutubeIcon } from '../../assets/icons';
 
 const MediaCard = () => {
   return (
     <>
-      <IonCard style={{ borderRadius: "35px 35px 10px 10px", margin: "10px" }}>
+      <IonCard style={{ borderRadius: "35px 35px 10px 10px" }}>
         <div style={{ position: "relative" }}>
           <img alt="Silhouette of mountains" src={profileOne} />
           <img alt="" className='avatar-icon' src={sphere} />
@@ -19,32 +20,29 @@ const MediaCard = () => {
             /
           </IonCardSubtitle>
         </IonCardHeader>
-        <IonCardContent>
-          <IonIcon slot='start' icon={briefcaseOutline}></IonIcon>
-          Executive Director at <b>Sphere Bio Tech</b>
+        <IonCardContent className='ion-content'>
+          <div className='ion-icon'>
+            <BreifIcon />
+          </div>
+          Executive Director at <b>&nbsp; Sphere Bio Tech</b>
         </IonCardContent>
 
-        <IonCardContent>
-          <IonIcon slot='start' icon={locationOutline}></IonIcon>
+        <IonCardContent className='ion-content'>
+          <div className='ion-icon'>
+            <LocateIcon />
+          </div>
           Palo Alto, California
         </IonCardContent>
       </IonCard>
 
-      <IonCard style={{ paddingBottom: 0 }}>
-        <IonButton expand='block' style={{
-          margin: 0,
-          fontFamily: 'Poppins',
-          fontStyle: "normal",
-          fontWeight: 600,
-          fontSize: "16px",
-          lineHeight: "24px"
-        }}>
-          <img src={linkIcon} style={{ marginRight: 5 }} />
+      <IonCard style={{ padding:20 }}>
+        <IonButton expand='block' className='ion-btn'>
+          <div style={{ marginRight: 5 }}><LinkBtnIcon /></div>
           Link with Me
         </IonButton>
       </IonCard>
 
-      <IonCard style={{ margin: 10, padding: "0px 0px 10px 5px" }}>
+      <IonCard style={{ padding: "0px 0px 10px 0px" }}>
         <IonSegment value="1">
           <IonSegmentButton color="primary" value="1">
             <IonLabel>Contact</IonLabel>
@@ -64,7 +62,9 @@ const MediaCard = () => {
         <IonAccordionGroup expand="compact">
           <IonAccordion toggleIcon={chevronForward} value="first">
             <IonItem slot="header" color="rose">
-              <IonIcon slot='start' icon={mail}></IonIcon>
+              <div className='ion-icon'>
+                <MailIcon />
+              </div>
               <IonLabel>kenji.awurama@sperebio.tech</IonLabel>
             </IonItem>
             <div className="ion-padding" slot="content">
@@ -74,12 +74,14 @@ const MediaCard = () => {
         </IonAccordionGroup>
       </IonCard>
 
-      <IonCard style={{ paddingTop: "21.58px", paddingBottom: 10, marginBottom: 10 }}>
+      <IonCard style={{ paddingTop: "21.58px", paddingBottom: 10 }}>
         <IonLabel className='accordion-label'>Phone</IonLabel>
         <IonAccordionGroup expand="compact">
           <IonAccordion toggleIcon={chevronForward} value="first">
-            <IonItem slot="header" color="rose">
-              <IonIcon slot='start' icon={phonePortrait}></IonIcon>
+            <IonItem slot="header" color="rose" className='accordion-header'>
+              <div className='ion-icon'>
+                <MobileIcon />
+              </div>
               <IonLabel>+1 (650) 123-4567</IonLabel>
             </IonItem>
             <div className="ion-padding" slot="content">
@@ -87,8 +89,10 @@ const MediaCard = () => {
             </div>
           </IonAccordion>
           <IonAccordion toggleIcon={chevronForward} value="second">
-            <IonItem slot="header" color="rose">
-              <IonIcon slot='start' icon={call}></IonIcon>
+            <IonItem slot="header" color="rose" className='accordion-header'>
+              <div className='ion-icon'>
+                <CallIcon />
+              </div>
               <IonLabel>+1 (650) 345-6789   Ext 700</IonLabel>
             </IonItem>
             <div className="ion-padding" slot="content">
@@ -96,8 +100,10 @@ const MediaCard = () => {
             </div>
           </IonAccordion>
           <IonAccordion toggleIcon={chevronForward} value="third">
-            <IonItem slot="header" color="rose">
-              <IonIcon slot='start' icon={print}></IonIcon>
+            <IonItem slot="header" color="rose" className='accordion-header'>
+              <div className='ion-icon'>
+                <FaxIcon />
+              </div>
               <IonLabel>+1 (650) 345-6789</IonLabel>
             </IonItem>
             <div className="ion-padding" slot="content">
@@ -112,7 +118,9 @@ const MediaCard = () => {
         <IonAccordionGroup expand="compact">
           <IonAccordion toggleIcon={chevronForward} value="first">
             <IonItem slot="header" color="rose">
-              <IonIcon slot='start' icon={calendarNumber}></IonIcon>
+              <div className='ion-icon'>
+                <CalendarIcon />
+              </div>
               <IonLabel>Calendly Kenji Awurama </IonLabel>
             </IonItem>
             <div className="ion-padding" slot="content">
@@ -126,8 +134,10 @@ const MediaCard = () => {
         <IonLabel className='accordion-label'>Website</IonLabel>
         <IonAccordionGroup expand="compact">
           <IonAccordion toggleIcon={chevronForward} value="first">
-            <IonItem slot="header" color="rose">
-              <IonIcon slot='start' icon={globe}></IonIcon>
+            <IonItem slot="header" color="rose" className='accordion-header'>
+              <div className='ion-icon'>
+                <WorldIcon />
+              </div>
               <IonLabel>www.sperebio.tech</IonLabel>
             </IonItem>
             <div className="ion-padding" slot="content">
@@ -142,7 +152,9 @@ const MediaCard = () => {
         <IonAccordionGroup expand="compact">
           <IonAccordion toggleIcon={chevronForward} value="first">
             <IonItem slot="header" color="rose">
-              <IonIcon slot='start' icon={location}></IonIcon>
+              <div className='ion-icon'>
+                <LocateFillIcon />
+              </div>
               <IonLabel>1886 Globe Trotter Court
                 Palo Alto, CA 95051 </IonLabel>
             </IonItem>
@@ -156,11 +168,17 @@ const MediaCard = () => {
       <IonCard style={{ paddingTop: "21.58px" }}>
         <IonLabel className='accordion-label'>Social Media</IonLabel>
         <div style={{ display: "flex", marginLeft: 20, marginTop: 10, justifyContent: "space-around" }}>
-          <IonIcon className='social-media-icon' slot='start' icon={logoLinkedin}></IonIcon>
-          <IonIcon className='social-media-icon' slot='start' icon={logoYoutube}></IonIcon>
-          <IonIcon className='social-media-icon' slot='start' icon={logoSlack}></IonIcon>
-          <IonIcon className='social-media-icon' slot='start' icon={logoReddit}></IonIcon>
-          <IonIcon className='social-media-icon' slot='start' icon={logoDiscord}></IonIcon>
+          <div className='ion-icon'>
+            <LinkedinIcon />
+          </div><div className='ion-icon social-media-icon'>
+            <YoutubeIcon />
+          </div><div className='ion-icon social-media-icon'>
+            <SlackIcon />
+          </div><div className='ion-icon social-media-icon'>
+            <ShipFaceIcon />
+          </div><div className='ion-icon social-media-icon'>
+            <MaskIcon />
+          </div>
 
         </div>
       </IonCard>
@@ -168,31 +186,37 @@ const MediaCard = () => {
       <IonCard style={{ paddingTop: "21.58px" }}>
         <IonLabel className='accordion-label'>Links</IonLabel>
         <div style={{ display: "flex", marginLeft: 20, marginTop: 10, flexDirection: "row" }}>
-          <IonIcon slot='start' icon={calendarNumber}></IonIcon>
+          <div className='ion-icon'>
+            <MediumIcon />
+          </div>
           <div style={{ display: "flex", flexDirection: "column", paddingLeft: 10 }}>
-            <IonLabel>Cellular Science Chat With Kenji Awurama</IonLabel>
+            <IonLabel className='ion-label'>Sphere Bio Technologies Unveils Breakthrough Science That Regenerates Necrotic Cells </IonLabel>
             <IonLabel style={{ fontWeight: 400, marginTop: 5 }}>Access Article on Medium</IonLabel>
           </div>
         </div>
 
         <div style={{ display: "flex", marginLeft: 20, marginTop: 10, flexDirection: "row" }}>
-          <IonIcon slot='start' icon={calendarNumber}></IonIcon>
+          <div className='ion-icon'>
+            <SoundCloudIcon />
+          </div>
           <div style={{ display: "flex", flexDirection: "column", paddingLeft: 10 }}>
-            <IonLabel>Cellular Science Chat With Kenji Awurama</IonLabel>
-            <IonLabel style={{ fontWeight: 400, marginTop: 5 }}>Access Article on Medium</IonLabel>
+            <IonLabel className='ion-label'>Cellular Science Chat With Kenji Awurama</IonLabel>
+            <IonLabel style={{ fontWeight: 400, marginTop: 5 }}>Access Audio on SoundCloud</IonLabel>
           </div>
         </div>
 
         <div style={{ display: "flex", marginLeft: 20, marginTop: 10, flexDirection: "row" }}>
-          <IonIcon slot='start' icon={calendarNumber}></IonIcon>
+          <div className='ion-icon'>
+            <DriveIcon />
+          </div>
           <div style={{ display: "flex", flexDirection: "column", paddingLeft: 10 }}>
-            <IonLabel>Cellular Science Chat With Kenji Awurama</IonLabel>
-            <IonLabel style={{ fontWeight: 400, marginTop: 5 }}>Access Article on Medium</IonLabel>
+            <IonLabel className='ion-label'>Sphere Bio Customer Spec Sheet</IonLabel>
+            <IonLabel style={{ fontWeight: 400, marginTop: 5 }}>Access File on Google Drive</IonLabel>
           </div>
         </div>
       </IonCard>
 
-      <IonButton fill="outline" expand='block' style={{ marginLeft: 10, marginRight: 10, marginTop: 20 }}>
+      <IonButton className='outline-btn' fill="outline" expand='block'>
         Create Your Free Profile
       </IonButton>
     </>
