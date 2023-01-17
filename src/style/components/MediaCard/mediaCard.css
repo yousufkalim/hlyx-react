@@ -3,6 +3,7 @@
   margin-top: -4px;
   padding-top: 63px;
   padding-inline: 20px;
+  --background: var(--bg-color);
 }
 
 .link_card {
@@ -68,7 +69,7 @@ ion-card-subtitle {
   font-weight: 700;
   font-size: 28.5958px;
   line-height: 33px;
-  color: #000000;
+  color: var(--text-color);
   /* margin-top: 20px; */
   text-transform: inherit;
 }
