@@ -26,17 +26,31 @@ import {
   WorldIcon,
   YoutubeIcon,
 } from "../assets/icons";
+import LinkCard from "./LinkCard";
+
+export const LinksData = [
+  {
+    icon: <MediumIcon />,
+    title:
+      "Sphere Bio Technologies Unveils Breakthrough Science That Regenerates Necrotic Cells",
+    description: "Access Article on Medium",
+  },
+  {
+    icon: <SoundCloudIcon />,
+    title: "Cellular Science Chat With Kenji Awurama",
+    description: "Access Audio on SoundCloud",
+  },
+  {
+    icon: <DriveIcon />,
+    title: "Sphere Bio Customer Spec Sheet",
+    description: "Access File on Google Drive",
+  },
+];
 
 const ContactTab = () => {
   return (
     <>
-      <IonCard
-        style={{
-          marginTop: "-10px",
-          borderRadius: "0 0 10px 10px",
-          paddingTop: 25,
-        }}
-      >
+      <IonCard className="tab_card">
         <IonLabel className="accordion-label">Email</IonLabel>
         <IonAccordionGroup expand="compact">
           <IonAccordion toggleIcon={chevronForward} value="first">
@@ -166,35 +180,9 @@ const ContactTab = () => {
             marginTop: 5,
           }}
         >
-          <div className="blog_links">
-            <MediumIcon />
-            <div className="blog_links_head">
-              <IonLabel className="ion-label">
-                Sphere Bio Technologies Unveils Breakthrough Science That
-                Regenerates Necrotic Cells{" "}
-              </IonLabel>
-              <IonLabel>Access Article on Medium</IonLabel>
-            </div>
-          </div>
-          <div className="blog_links">
-            <SoundCloudIcon />
-            <div className="blog_links_head">
-              <IonLabel className="ion-label">
-                Cellular Science Chat With Kenji Awurama
-              </IonLabel>
-              <IonLabel>Access Audio on SoundCloud</IonLabel>
-            </div>
-          </div>
-
-          <div className="blog_links">
-            <DriveIcon />
-            <div className="blog_links_head">
-              <IonLabel className="ion-label">
-                Sphere Bio Customer Spec Sheet
-              </IonLabel>
-              <IonLabel>Access File on Google Drive</IonLabel>
-            </div>
-          </div>
+          {LinksData.map(({ icon, title, description }, index) => (
+            <LinkCard icon={icon} title={title} description={description} />
+          ))}
         </div>
       </IonCard>
 

@@ -117,9 +117,16 @@ ion-card {
   border-bottom: 1px solid #c4c4c4;
 }
 
-.tab_card {
+.tab_container {
   padding: 0 !important;
   border-radius: 10px 10px 0 0;
+  border-bottom: none;
+}
+
+.tab_card {
+  margin-top: -10px;
+  border-radius: 0 0 10px 10px;
+  padding-top: 25px;
 }
 .accordion-label {
   color: #000;

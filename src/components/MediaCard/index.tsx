@@ -18,6 +18,7 @@ import {
   WaterMake,
 } from "../../assets/icons";
 import ContactTab from "../ContactTab";
+import ServicesTab from "../ServicesTab";
 
 export const ProfileTabs = ["Contact", "About", "Service", "Portfolio"];
 
@@ -32,7 +33,7 @@ const Tabs = [
   },
   {
     tab: 2,
-    content: <IonCard>Services</IonCard>,
+    content: <ServicesTab />,
   },
   {
     tab: 3,
@@ -83,7 +84,7 @@ const MediaCard = () => {
         </IonButton>
       </IonCard>
 
-      <IonCard className="tab_card">
+      <IonCard className="tab_container">
         <IonSegment value={activeTab}>
           {ProfileTabs.map((tab, index) => (
             <IonSegmentButton
@@ -100,7 +101,7 @@ const MediaCard = () => {
         </IonSegment>
       </IonCard>
       <ActiveTabContent activeTab={activeTab} />
-      <div style={{ marginTop: 24, textAlign: "center" }}>
+      <div style={{ marginBlock: 24, textAlign: "center" }}>
         <WaterMake />
       </div>
     </>
