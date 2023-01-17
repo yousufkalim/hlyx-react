@@ -128,7 +128,7 @@ const Professional = () => {
         </IonContent>
       </IonPage>
 
-      <IonModal
+      {/* <IonModal
         ref={modal}
         className="detail-modal"
         isOpen={open}
@@ -146,7 +146,7 @@ const Professional = () => {
           <img src={userData[0].companyLogo} alt={userData[0].name} />
           <h2 style={{ color: "white" }}>{userData[0].name}</h2>
         </section>
-      </IonModal>
+      </IonModal> */}
     </>
   );
 };

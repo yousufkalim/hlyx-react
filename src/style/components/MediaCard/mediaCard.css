@@ -1,3 +1,28 @@
+.cover_photo_card {
+  border-radius: 0 0 10px 10px;
+  margin-top: -4px;
+  padding-top: 63px;
+  padding-inline: 20px;
+}
+
+.link_card {
+  padding: 20px 18px;
+}
+
+.cover_photo_container {
+  position: relative;
+  padding-inline: 11px;
+  z-index: 10;
+}
+
+.cover_photo {
+  width: 100%;
+  height: 283px;
+  border-radius: 30px 30px 0px 0px;
+  object-fit: cover;
+  object-position: top;
+}
+
 ion-card-header.ios {
   display: flex;
   flex-flow: column-reverse;
@@ -7,13 +32,13 @@ ion-segment-button {
   --indicator-color: white;
   --background: white;
   border-radius: 0px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-size: 15px;
   line-height: 18px;
   --color: #888888;
   text-transform: capitalize;
-  border-bottom: 2px solid #C4C4C4;
+  border-bottom: 2px solid #c4c4c4;
   height: 67px;
 }
 
@@ -26,28 +51,31 @@ ion-segment-button {
 
 .avatar-icon {
   position: absolute;
-  left: 40%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
   background: white;
   padding: 10px;
   border-radius: 37.49%;
-  bottom: -13%;
-  width: 90px
+  bottom: -40px;
+  width: 90px;
+  height: 90px;
 }
 
 ion-card-subtitle {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 28.5958px;
   line-height: 33px;
   color: #000000;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   text-transform: inherit;
 }
 
 ion-card-content {
   padding-bottom: 0px !important;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 15px !important;
@@ -55,8 +83,9 @@ ion-card-content {
   color: #000000;
 }
 
-.ion-icon {
-  margin-right: 10px
+.ion_text {
+  display: flex;
+  gap: 10px;
 }
 
 ion-card {
@@ -64,12 +93,12 @@ ion-card {
   padding-bottom: 21.58px;
   border-radius: 10px 10px 10px 10px;
   box-shadow: none;
-  border-bottom: 1px solid #C4C4C4;
+  border-bottom: 1px solid #c4c4c4;
 }
 
 .accordion-label {
   color: #000;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -95,7 +124,7 @@ ion-label {
 }
 
 .segment-btn-label {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: inherit;
   font-size: 15px;
@@ -110,17 +139,19 @@ ion-label {
 }
 
 .ion-accordion-toggle-icon {
-  color: #B6B6B6 !important;
+  color: #b6b6b6 !important;
 }
 
-ion-accordion.accordion-expanded>[slot=header] .ion-accordion-toggle-icon {
+ion-accordion.accordion-expanded > [slot="header"] .ion-accordion-toggle-icon {
   transform: rotate(90deg);
-  color: #B6B6B6;
+  color: #b6b6b6;
 }
 
 .ion-content {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 11px;
+  padding-inline: 0;
 }
 
 .ion-btn {
@@ -131,8 +162,9 @@ ion-accordion.accordion-expanded>[slot=header] .ion-accordion-toggle-icon {
   font-size: 16px;
   line-height: 24px;
   text-transform: capitalize;
-  --border-radius: 10px;
-  --background: #0047FF;
+  --padding-block: 10px;
+  --border-radius: 11px;
+  --background: #0047ff;
 }
 
 .ion-label {
