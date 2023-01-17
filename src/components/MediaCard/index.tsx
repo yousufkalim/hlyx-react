@@ -19,6 +19,7 @@ import {
 } from "../../assets/icons";
 import ContactTab from "../ContactTab";
 import ServicesTab from "../ServicesTab";
+import AboutTab from "../AboutTab";
 
 export const ProfileTabs = ["Contact", "About", "Service", "Portfolio"];
 
@@ -29,7 +30,7 @@ const Tabs = [
   },
   {
     tab: 1,
-    content: <IonCard>Contact</IonCard>,
+    content: <AboutTab />,
   },
   {
     tab: 2,

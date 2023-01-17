@@ -1,0 +1,7 @@
+ion-card {
+  margin: 11px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: none;
+  border-bottom: 1px solid #c4c4c4;
+}
