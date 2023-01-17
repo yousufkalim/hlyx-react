@@ -11,7 +11,12 @@ import {
 import profileOne from "../../assets/media/media-image.png";
 import sphere from "../../assets/sphere.png";
 import "../../style/components/MediaCard/mediaCard.css";
-import { BreifIcon, LinkBtnIcon, LocateIcon } from "../../assets/icons";
+import {
+  BreifIcon,
+  LinkBtnIcon,
+  LocateIcon,
+  WaterMake,
+} from "../../assets/icons";
 import ContactTab from "../ContactTab";
 
 export const ProfileTabs = ["Contact", "About", "Service", "Portfolio"];
@@ -78,8 +83,8 @@ const MediaCard = () => {
         </IonButton>
       </IonCard>
 
-      <IonCard style={{ padding: "0px 0px 10px 0px" }}>
-        <IonSegment value="0">
+      <IonCard className="tab_card">
+        <IonSegment value={activeTab}>
           {ProfileTabs.map((tab, index) => (
             <IonSegmentButton
               color="primary"
@@ -95,6 +100,9 @@ const MediaCard = () => {
         </IonSegment>
       </IonCard>
       <ActiveTabContent activeTab={activeTab} />
+      <div style={{ marginTop: 24, textAlign: "center" }}>
+        <WaterMake />
+      </div>
     </>
   );
 };

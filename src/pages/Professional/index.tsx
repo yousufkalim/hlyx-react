@@ -6,7 +6,7 @@ import {
   IonSlide,
   IonSlides,
 } from "@ionic/react";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ProfileCard from "../../components/ProfileCard";
 import "../../style/page/professional.css";
 import profileOne from "../../assets/physician_male_01.png";
@@ -75,7 +75,7 @@ export const profileData = [
 
 const Professional = () => {
   const modal = useRef<HTMLIonModalElement>(null);
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [slideNumber, setSlideNumber] = useState(0);
 
   const handleNextSlide = () => {
@@ -98,6 +98,15 @@ const Professional = () => {
   const handleCloseModal = () => {
     setOpen(false);
   };
+
+  useEffect(() => {
+    setOpen(true);
+    console.log(open, "in useEffect");
+    return () => {
+      setOpen(false);
+      console.log(open, "in useEffect cleanup ");
+    };
+  }, []);
   return (
     <>
       <IonPage>
@@ -133,12 +142,12 @@ const Professional = () => {
         className="detail-modal"
         isOpen={open}
         onDidDismiss={handleCloseModal}
-        breakpoints={[0.14, 0.5, 1]}
+        breakpoints={[0, 0.14, 0.5, 1]}
         initialBreakpoint={0.14}
         backdropBreakpoint={0.14}
       >
         <section className="card-footer">
-          <IonButton  className="footer-btn">Add Contact</IonButton>
+          <IonButton className="footer-btn">Add Contact</IonButton>
           <IonButton className="footer-btn">View Info</IonButton>
         </section>
 
