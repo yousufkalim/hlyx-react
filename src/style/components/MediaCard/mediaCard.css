@@ -233,3 +233,9 @@ ion-accordion.accordion-expanded > [slot="header"] .ion-accordion-toggle-icon {
 .blog_links svg {
   flex-shrink: 0;
 }
+
+.ion-label-descripttion {
+  font-weight: 400;
+  font-size: 13px !important;
+  line-height: 16px;
+}

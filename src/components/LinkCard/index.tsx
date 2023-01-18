@@ -13,7 +13,7 @@ const LinkCard = ({ icon, title, description }: LinkCardProps) => {
       {icon}
       <div className="blog_links_head">
         <IonLabel className="ion-label">{title}</IonLabel>
-        <IonLabel>{description}</IonLabel>
+        <IonLabel className="ion-label-descripttion">{description}</IonLabel>
       </div>
     </div>
   );

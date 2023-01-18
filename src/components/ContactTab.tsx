@@ -12,6 +12,7 @@ import "../style/components/MediaCard/mediaCard.css";
 import {
   CalendarIcon,
   CallIcon,
+  ChevronIcon,
   DriveIcon,
   FaxIcon,
   LinkedinIcon,
@@ -52,104 +53,96 @@ const ContactTab = () => {
     <>
       <IonCard className="tab_card">
         <IonLabel className="accordion-label">Email</IonLabel>
-        <IonAccordionGroup expand="compact">
-          <IonAccordion toggleIcon={chevronForward} value="first">
-            <IonItem slot="header" color="rose">
-              <MailIcon />
+        <div className="flex align-center justify-contain mx-19">
+          <div className="flex align-center">
+            <MailIcon />
 
-              <IonLabel className="icon_text">
-                kenji.awurama@sperebio.tech
-              </IonLabel>
-            </IonItem>
-            <div className="ion-padding" slot="content">
-              First Content
-            </div>
-          </IonAccordion>
-        </IonAccordionGroup>
+            <IonLabel className="icon_text">
+              kenji.awurama@sperebio.tech
+            </IonLabel>
+          </div>
+
+          <ChevronIcon />
+        </div>
       </IonCard>
       <IonCard style={{ paddingBlock: 20 }}>
         <IonLabel className="accordion-label">Phone</IonLabel>
         <IonAccordionGroup expand="compact">
-          <IonAccordion toggleIcon={chevronForward} value="first">
-            <IonItem slot="header" color="rose" className="accordion-header">
+          <div className="flex align-center justify-contain mx-19 mb-11">
+            <div className="flex align-center">
               <MobileIcon />
+
               <IonLabel className="icon_text">+1 (650) 123-4567</IonLabel>
-            </IonItem>
-            <div className="ion-padding" slot="content">
-              First Content
             </div>
-          </IonAccordion>
-          <IonAccordion toggleIcon={chevronForward} value="second">
-            <IonItem slot="header" color="rose" className="accordion-header">
+
+            <ChevronIcon />
+          </div>
+
+          <div className="flex align-center justify-contain mx-19 mb-11">
+            <div className="flex align-center">
               <CallIcon />
 
               <IonLabel className="icon_text">
                 +1 (650) 345-6789 Ext 700
               </IonLabel>
-            </IonItem>
-            <div className="ion-padding" slot="content">
-              First Content
             </div>
-          </IonAccordion>
-          <IonAccordion toggleIcon={chevronForward} value="third">
-            <IonItem slot="header" color="rose" className="accordion-header">
+
+            <ChevronIcon />
+          </div>
+
+          <div className="flex align-center justify-contain mx-19 mb-11">
+            <div className="flex align-center">
               <FaxIcon />
+
               <IonLabel className="icon_text">+1 (650) 345-6789</IonLabel>
-            </IonItem>
-            <div className="ion-padding" slot="content">
-              First Content
             </div>
-          </IonAccordion>
+
+            <ChevronIcon />
+          </div>
         </IonAccordionGroup>
       </IonCard>
 
       <IonCard style={{ paddingTop: "21.58px" }}>
         <IonLabel className="accordion-label">Calendar</IonLabel>
-        <IonAccordionGroup expand="compact">
-          <IonAccordion toggleIcon={chevronForward} value="first">
-            <IonItem slot="header" color="rose">
-              <CalendarIcon />
-              <IonLabel className="icon_text">
-                Calendly {">"} Kenji Awurama{" "}
-              </IonLabel>
-            </IonItem>
-            <div className="ion-padding" slot="content">
-              First Content
-            </div>
-          </IonAccordion>
-        </IonAccordionGroup>
+        <div className="flex align-center justify-contain mx-19">
+          <div className="flex align-center">
+            <CalendarIcon />
+
+            <IonLabel className="icon_text">
+              Calendly {">"} Kenji Awurama{" "}
+            </IonLabel>
+          </div>
+
+          <ChevronIcon />
+        </div>
       </IonCard>
 
       <IonCard style={{ paddingTop: "21.58px" }}>
         <IonLabel className="accordion-label">Website</IonLabel>
-        <IonAccordionGroup expand="compact">
-          <IonAccordion toggleIcon={chevronForward} value="first">
-            <IonItem slot="header" color="rose" className="accordion-header">
-              <WorldIcon />
-              <IonLabel className="icon_text">www.sperebio.tech</IonLabel>
-            </IonItem>
-            <div className="ion-padding" slot="content">
-              First Content
-            </div>
-          </IonAccordion>
-        </IonAccordionGroup>
+        <div className="flex align-center justify-contain mx-19">
+          <div className="flex align-center">
+            <WorldIcon />
+
+            <IonLabel className="icon_text">www.sperebio.tech</IonLabel>
+          </div>
+
+          <ChevronIcon />
+        </div>
       </IonCard>
 
       <IonCard style={{ paddingTop: "21.58px" }}>
         <IonLabel className="accordion-label">Office</IonLabel>
-        <IonAccordionGroup expand="compact">
-          <IonAccordion toggleIcon={chevronForward} value="first">
-            <IonItem slot="header" color="rose">
-              <LocateFillIcon />
-              <IonLabel className="icon_text">
-                1886 Globe Trotter Court Palo Alto, CA 95051{" "}
-              </IonLabel>
-            </IonItem>
-            <div className="ion-padding" slot="content">
-              First Content
-            </div>
-          </IonAccordion>
-        </IonAccordionGroup>
+        <div className="flex align-center justify-contain mx-19">
+          <div className="flex align-center">
+            <LocateFillIcon />
+
+            <IonLabel className="icon_text">
+              1886 Globe Trotter Court<br/> Palo Alto, CA 95051{" "}
+            </IonLabel>
+          </div>
+
+          <ChevronIcon />
+        </div>
       </IonCard>
 
       <IonCard style={{ paddingTop: "21.58px" }}>
@@ -158,7 +151,6 @@ const ContactTab = () => {
           style={{
             display: "flex",
             marginInline: 20,
-            marginTop: 10,
             justifyContent: "space-between",
           }}
         >
