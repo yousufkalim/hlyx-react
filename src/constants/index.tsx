@@ -20,7 +20,7 @@ export const professionData = [
 ]
 
 export const educationData = [
-  { description: "College at Stanford University" },
+  { description: `College at <b>Stanford University</b>` },
   { description: "Masters Degree in Business Marketing" },
   { description: "Graduated Class of 2000" },
 ]
@@ -75,7 +75,7 @@ export const loremText = "Lorem ipsum dolor sit amet consectetur adipisicing eli
 
 export const brakerData = [
   {
-    description: "People Magazine Scientist of The Year",
+    description: "Hobbies",
     tags: ["Martial Arts", "Stargazing", "Art"],
   },
   {

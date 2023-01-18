@@ -1,5 +1,5 @@
 import { IonCard, IonCardTitle, IonChip, IonIcon } from "@ionic/react";
-import { FunctionComponent, PropsWithChildren, } from "react";
+import { CSSProperties, FunctionComponent, PropsWithChildren, } from "react";
 import "../../style/components/AboutCard/aboutCard.css"
 
 type AboutCardProps = PropsWithChildren & {
@@ -7,19 +7,22 @@ type AboutCardProps = PropsWithChildren & {
   cardTitle: string;
   cardTagTitle?: string;
   isTagTitle: boolean;
+  style?: CSSProperties
 }
 
-const AboutCard: FunctionComponent<AboutCardProps> = ({ cardTitle, icon, cardTagTitle, children, isTagTitle }) => {
+const AboutCard: FunctionComponent<AboutCardProps> = ({ cardTitle, icon, cardTagTitle, children, isTagTitle, style }) => {
   return (
-    <IonCard>
-      <div>
-        <div className="">
-          {icon}
+    <IonCard style={style}>
+      <div className="flex align-center br-btm justify-contain">
+        <div className="flex align-center">
+          <div className="card-icon">
+            {icon}
+          </div>
+          <IonCardTitle className="card-title">{cardTitle}</IonCardTitle>
         </div>
-        <IonCardTitle className="">{cardTitle}</IonCardTitle>
-        {isTagTitle && <IonChip className="" color="primary">{cardTagTitle}</IonChip>}
+        {isTagTitle && <IonChip className="chip-container" color="primary">{cardTagTitle}</IonChip>}
       </div>
-      <div>
+      <div className="content-container">
         {children}
       </div>
     </IonCard>
