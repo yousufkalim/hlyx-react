@@ -28,7 +28,7 @@ import {
 } from "../assets/icons";
 import LinkCard from "./LinkCard";
 
-export const LinksData = [
+const LinksData = [
   {
     icon: <MediumIcon />,
     title:
