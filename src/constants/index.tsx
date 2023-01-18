@@ -20,7 +20,7 @@ export const professionData = [
 ]
 
 export const educationData = [
-  { description: `College at <b>Stanford University</b>` },
+  { description: `College at <span style="font-weight:600">Stanford University</span>` },
   { description: "Masters Degree in Business Marketing" },
   { description: "Graduated Class of 2000" },
 ]
@@ -32,9 +32,9 @@ export const accolatesData = [
 ]
 
 export const acheivementData = [
-  { description: "People Magazine Scientist of The Year" },
-  { description: "Harvard Medical Journal Prestigious Honor Recipient" },
-  { description: "Presidential Honor in Genetic Science" },
+  { description: `People Magazine <span style="font-weight:600">Scientist of The Year</span>` },
+  { description: `Harvard Medical Journal <span style="font-weight:600">Prestigious Honor Recipient</span>` },
+  { description: `<span style="font-weight:600">Presidential Honor</span> in Genetic Science` },
 ]
 
 export const goalsData = [
@@ -52,22 +52,22 @@ export const goalsData = [
   },
   {
     icon: <NumFourIcon />,
-    description: "Be listed on Forbes Magazines ‘40 under 40’ in the next 2 years"
+    description: `Be listed on <span style="font-weight:600">Forbes Magazines<br /> ‘40 under 40’</span> in the next 2 years`
   },
 ]
 
 export const commentsData = [
   {
     icon: <NumOneIcon />,
-    description: "Create a new website to promote my company’s services"
+    description: `Create a <span style="font-weight:600">new website</span> to promote my company’s services`
   },
   {
     icon: <NumTwoIcon />,
-    description: "Raise funding to continue our research and development program"
+    description: `<span style="font-weight:600">Raise funding</span> to continue our research and development program`
   },
   {
     icon: <NumThreeIcon />,
-    description: "Hire or partner with an experienced nano-technology scientist"
+    description: `Hire or partner with an <span style="font-weight:600">experienced nano-technology scientist</span>`
   },
 ]
 

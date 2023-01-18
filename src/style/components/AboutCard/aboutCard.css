@@ -1,7 +1,7 @@
 ion-card {
   margin: 11px;
   /* padding: 14.76px 23.73px 16.04px 20.26px; */
-  padding: 14.76px 0px 26.18px 0px;
+  padding: 14.76px 0px 18px 0px;
   border-radius: 10px;
   box-shadow: none;
   border-bottom: 1px solid #c4c4c4;
@@ -13,6 +13,10 @@ ion-card {
 
 .align-center {
   align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
 }
 
 .card-icon {
@@ -84,7 +88,7 @@ ion-card {
 }
 
 .forward-icon {
-  margin-right: 12.55px
+  margin-right: 10px
 }
 
 .content-three {
@@ -92,7 +96,7 @@ ion-card {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 18px;
   color: black;
 }
 
@@ -103,6 +107,11 @@ ion-card {
   width: 72px;
   justify-content: center;
   margin-right: 23.73px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 12px;
 }
 
 .justify-contain {
@@ -131,7 +140,16 @@ ion-card {
 .custom-chip {
   border: 0.941107px solid #606C82;
   border-radius: 7.52885px;
-  color:#606C82;
+  color: #606C82;
   background-color: white;
   margin-right: 16.94px;
+}
+
+.mx-19 {
+  margin-right: 19px;
+  margin-left: 19px;
+}
+
+.mb-11 {
+  margin-bottom: 11px;
 }

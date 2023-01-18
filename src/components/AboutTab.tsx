@@ -7,17 +7,18 @@ import { AccoladesIcon, AcheievementIcon, AvatarIcon, BreakerIcon, CommentIcon, 
 
 const AboutTab = () => {
   const [readMore, setReadMore] = useState(false);
+    const linkName = readMore ? 'Read Less' : 'Read More'
   const extraContent = <div>
-    <p className="extra-content">
+    <span className="extra-content content-description">
       {loremText}
-    </p>
+    </span>
+    <span className="read-more content-description" onClick={() => { setReadMore(!readMore) }}>{linkName === "Read Less" && "...Read less"}</span>
   </div>
-  const linkName = readMore ? 'Read Less' : 'Read More'
 
   return (
     <>
       <AboutCard style={{ marginTop: -10, borderRadius: "0px 0px 10px 10px" }} icon={<AvatarIcon />} cardTitle="Bio" cardTagTitle="xxx" isTagTitle={false}>
-        <div className="content-description" onClick={() => { setReadMore(!readMore) }}>Biology is my first love. As a Scientist my principal mission in life is the pursuit of life-changing cures. I founded Sphere Bio with the goal of discovering science that...<span className="read-more">{linkName}</span></div>
+        <div className="content-description" onClick={() => { setReadMore(!readMore) }}>Biology is my first love. As a Scientist my principal mission in life is the pursuit of life-changing cures. I founded Sphere Bio with the goal of discovering science that...<span className="read-more">{linkName === "Read More" && linkName}</span></div>
         {readMore && extraContent}
       </AboutCard>
 
@@ -59,8 +60,8 @@ const AboutTab = () => {
       </AboutCard>
 
       <AboutCard icon={<AcheievementIcon />} cardTitle="Achievements" cardTagTitle="xxx" isTagTitle={false}>
-        {acheivementData?.map(({ description }) => (
-          <div className="flex align-center">
+        {acheivementData?.map(({ description }, item) => (
+          <div  className= {`flex ${item !==1 ? "align-center" : "align-start"}`}>
             <div className="forward-icon content-three" style={{ color: "#606C82" }}>
               2022
             </div>
