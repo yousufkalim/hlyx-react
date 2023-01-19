@@ -1,29 +1,9 @@
 .service-card{
  margin-inline: 10px;
 }
-.accordion-card{
-  border-bottom-left-radius: 0%;
-  border-bottom-right-radius: 0%;
-  margin: 0;
-}
-.accordion-label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  padding: 0;
-
-}
-.accordion-label p {
-  color: black;
-  font-family: "Montserrat" !important;
-  font-weight: 500;
-  font-size: 14.5px !important;
-  line-height: 15px;
-
-}
 .cards-list {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  padding: 10px 5px 30px 0;
 }

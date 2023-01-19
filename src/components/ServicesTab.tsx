@@ -56,7 +56,7 @@ const ServiceCard = () => {
         </div>
       </div>
       <div className="content-container">
-        <div className="cards-list">
+        <div className="cards-list" style={{paddingRight: '20px',paddingInline:0} }>
           {LinksData.map(({ icon, title, description }, index) => (
             <LinkCard
               icon={icon}
@@ -72,7 +72,7 @@ const ServiceCard = () => {
 };
 const ServicesTab = () => {
   return (
-    <div>
+    <div >
       <ServiceCard />
       <IonButton
         className="outline-btn"
