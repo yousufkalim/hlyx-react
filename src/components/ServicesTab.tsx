@@ -58,7 +58,7 @@ const ServiceCard = () => {
 
       <div
         className="cards-list"
-        style={{ paddingRight: "20px", marginTop: "13.53px", paddingInline: 0 }}
+        style={{ paddingRight: "32px", marginTop: "13.53px" }}
       >
         {LinksData.map(({ icon, title, description }, index) => (
           <LinkCard
