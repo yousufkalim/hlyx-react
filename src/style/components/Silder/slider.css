@@ -1,0 +1,216 @@
+.flex-col {
+  flex-direction: column;
+}
+
+.gallery-card-container {
+  max-width: 100.79px !important;
+  min-height: 151.51px !important;
+  height: 100%;
+  width: 100%;
+  background: #F1F4F9;
+  border-radius: 12px;
+  margin-bottom: 14.68px;
+}
+
+.slider-card-container {
+  max-width: 131.32px !important;
+  min-height: 197.41px !important;
+  height: 100%;
+  width: 100%;
+  margin-right: 15.68px;
+  background: #F1F4F9;
+  border-radius: 12px;
+}
+
+.slider-title {
+  font-family: 'Montserrat', sans-serif !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px !important;
+  line-height: 15px;
+  color: #000000;
+  padding-bottom: 2.68px;
+}
+
+.gallery-title {
+  font-family: 'Montserrat', sans-serif !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px !important;
+  line-height: 11px;
+  color: #000000;
+}
+
+.gallery-description {
+  font-family: 'Montserrat', sans-serif !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 7.59863px !important;
+  line-height: 9px;
+  color: #989898;
+}
+
+.slider-description {
+  font-family: 'Montserrat', sans-serif !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9.90032px !important;
+  line-height: 12px;
+  color: #989898;
+}
+
+.slider-padding {
+  padding: 15.03px 8.66px 15.03px 7.66px;
+}
+
+.gallery-padding {
+  padding: 11.53px 8.22px 11.74px 6.57px;
+}
+
+.carosal-container {
+  margin-left: 14.52px;
+  margin-top: 15.35px;
+}
+
+.carousel .control-dots {
+  bottom: -10px !important;
+  position: absolute !important;
+  background: transparent !important;
+  border-radius: 8px !important;
+  margin: 0px !important;
+  height: 1px !important;
+  padding: 0px !important;
+  width: 100% !important;
+}
+
+.carousel .control-dots .dot.selected {
+  background: #7989A5 !important;
+  max-width: 100px !important;
+  height: 1px !important;
+  opacity: 1 !important;
+  width: 100% !important;
+}
+
+.carousel .control-dots .dot {
+  max-width: 100px !important;
+  background: #7989A5 !important;
+  height: 1px !important;
+  width: 100px !important;
+  margin: 0px 0px 10px 0px !important;
+  display: inline-block !important;
+  box-shadow: none !important;
+
+  transition: opacity .25s ease-in !important;
+  opacity: 0.5 !important;
+  filter: alpha(opacity=30) !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+}
+
+.carousel.carousel-slider .control-arrow {
+  opacity: 1 !important;
+  color: transparent !important;
+  top: -35px !important;
+}
+
+.carousel .control-prev.control-arrow {
+  right: 42px !important;
+  left: auto !important;
+  height: fit-content !important;
+  width: auto !important;
+  padding: 0px !important;
+}
+
+.carousel .control-next.control-arrow {
+  right: 14px !important;
+  height: fit-content !important;
+  width: auto !important;
+  padding: 0px !important;
+}
+
+.carousel .control-arrow:before,
+.control-arrow:before {
+  margin: 0px !important;
+  border-top: 14px solid transparent !important;
+  border-bottom: 0px solid transparent !important;
+}
+
+.carousel.carousel-slider {
+  overflow: visible !important;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.slider-card-heading {
+  font-family: 'Montserrat', sans-serif !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px !important;
+  line-height: 16px;
+  color: #828EA4;
+  margin: 0px 0px 0px 14.52px;
+}
+
+.slide-image-container {
+  max-width: 131.32px;
+  min-height: 137.72px;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-image-container {
+  max-width: 100.79px;
+  min-height: 105px;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel .control-next.control-arrow:before {
+  border-right: 9px solid transparent !important;
+  border-left: 0px solid transparent !important;
+  background-image: url("../../../assets//icons/forward-icon.png");
+}
+
+.carousel .control-prev.control-arrow:before {
+  border-left: 0px solid transparent !important;
+  border-right: 9px solid transparent !important;
+  background-image: url("../../../assets//icons/previous-icon.png");
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: transparent !important;
+}
+
+.gallery-container {
+  padding: 19.25px 13.84px 12.87px 14.52px;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.load-more-btn {
+  font-family: 'Poppins', sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9.54648px !important;
+  line-height: 10px;
+  text-align: center;
+  --color: #000000 !important;
+  --background: #FFFFFF;
+  --border-radius: 8px;
+  --border-width: 1px;
+  --border-style: solid;
+  width: 81.48px;
+  height: 25.46px;
+}
+
+.justify-center {
+  justify-content: center;
+}
