@@ -1,13 +1,13 @@
-import { IonCard, IonCardTitle} from "@ionic/react";
+import { IonCard, IonCardTitle } from "@ionic/react";
 import "./ServicesTab.css";
 import React from "react";
 import { AdvanceCellIcon, ServiceIcon } from "../assets/icons/index";
-import cellAnatomic from "../assets/cellAnatomic.png"
-import bioTech from "../assets/bioTech.png"
+import cellAnatomic from "../assets/cellAnatomic.png";
+import bioTech from "../assets/bioTech.png";
 import LinkCard from "./LinkCard";
-import scientific from "../assets/scientific.png"
-import cellProg from "../assets/cellprog.png"
-import advanced from "../assets/advanced.png"
+import scientific from "../assets/scientific.png";
+import cellProg from "../assets/cellprog.png";
+import advanced from "../assets/advanced.png";
 import { IonButton } from "@ionic/react";
 
 const LinksData = [
@@ -22,22 +22,22 @@ const LinksData = [
     description: "View Service Details",
   },
   {
-    icon: <img src={bioTech} alt="Cell IMG" height={45} width={45}/>,
+    icon: <img src={bioTech} alt="Cell IMG" height={45} width={45} />,
     title: "Bio-Technology Design & Implementation",
     description: "View Service Details",
   },
   {
-    icon: <img src={scientific} alt="Cell IMG" height={45} width={45}/>,
+    icon: <img src={scientific} alt="Cell IMG" height={45} width={45} />,
     title: "Scientific Program Management",
     description: "View Service Details",
   },
   {
-    icon: <img src={cellProg} alt="Cell IMG" height={45} width={45}/>,
+    icon: <img src={cellProg} alt="Cell IMG" height={45} width={45} />,
     title: "Cell Programming and Rejuvenation",
     description: "View Service Details",
   },
   {
-    icon: <img src={advanced} alt="Cell IMG" height={45} width={45}/>,
+    icon: <img src={advanced} alt="Cell IMG" height={45} width={45} />,
     title: "Advanced Molecular Splicing Interpolization ",
     description: "View Service Details",
   },
@@ -55,24 +55,27 @@ const ServiceCard = () => {
           </IonCardTitle>
         </div>
       </div>
-      <div className="content-container">
-        <div className="cards-list" style={{paddingRight: '20px',paddingInline:0} }>
-          {LinksData.map(({ icon, title, description }, index) => (
-            <LinkCard
-              icon={icon}
-              title={title}
-              key={index}
-              description={description}
-            />
-          ))}
-        </div>
+
+      <div
+        className="cards-list"
+        style={{ paddingRight: "20px", marginTop: "13.53px", paddingInline: 0 }}
+      >
+        {LinksData.map(({ icon, title, description }, index) => (
+          <LinkCard
+            icon={icon}
+            title={title}
+            key={index}
+            description={description}
+          />
+        ))}
       </div>
     </IonCard>
   );
 };
+
 const ServicesTab = () => {
   return (
-    <div >
+    <div>
       <ServiceCard />
       <IonButton
         className="outline-btn"
