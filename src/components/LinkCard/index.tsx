@@ -1,5 +1,6 @@
 import React from "react";
 import { IonLabel } from "@ionic/react";
+import "./LinkCard.css"
 
 export interface LinkCardProps {
   icon: JSX.Element;

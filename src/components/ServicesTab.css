@@ -1,0 +1,39 @@
+.service-card{
+ margin-inline: 10px;
+}
+.tab_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding-inline: 12.75px;
+  padding-bottom: 41.43px;
+  margin: auto;
+}
+.accordion-card{
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  margin: 0;
+}
+.accordion-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 0;
+
+}
+.accordion-label p {
+  color: black;
+  font-family: "Montserrat" !important;
+  font-weight: 500;
+  font-size: 14.5px !important;
+  line-height: 15px;
+
+}
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
