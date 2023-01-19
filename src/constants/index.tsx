@@ -1,4 +1,7 @@
 import { NumFourIcon, NumOneIcon, NumThreeIcon, NumTwoIcon } from "../assets/icons"
+import SliderOneImage from "../assets/media/slide-one-image.png"
+import SliderTwoImage from "../assets/media/slide-two-image.png"
+import SliderThreeImage from "../assets/media/slide-three-image.png"
 
 export const professionData = [
   {
@@ -85,5 +88,65 @@ export const brakerData = [
   {
     description: "Skills",
     tags: ["Painting", "Piano", "Gardening"],
+  },
+]
+
+export const sliderData = [
+  {
+    img: SliderOneImage,
+    imgAlt: "cell-interpolization",
+    title: "Cell Interpolization",
+    publishDate: "Dec. 21, 2022",
+  },
+  {
+    img: SliderTwoImage,
+    imgAlt: "cell-interpolization",
+    title: "Cell Interpolization",
+    publishDate: "Dec. 21, 2022",
+  },
+  {
+    img: SliderThreeImage,
+    imgAlt: "cell-interpolization",
+    title: "Cell Interpolization",
+    publishDate: "Dec. 21, 2022",
+  },
+]
+
+export const galleryData = [
+  {
+    img: SliderOneImage,
+    imgAlt: "cell-interpolization",
+    title: "Cell Interpolization",
+    publishDate: "Dec. 21, 2022",
+  },
+  {
+    img: SliderTwoImage,
+    imgAlt: "cell-interpolization",
+    title: "Cell Interpolization",
+    publishDate: "Dec. 21, 2022",
+  },
+  {
+    img: SliderThreeImage,
+    imgAlt: "cell-interpolization",
+    title: "Cell Interpolization",
+    publishDate: "Dec. 21, 2022",
+  },
+  {
+    img: SliderOneImage,
+    imgAlt: "cell-interpolization",
+    title: "Cell Interpolization",
+    publishDate: "Dec. 21, 2022",
+  },
+  {
+    img: SliderTwoImage,
+    imgAlt: "cell-interpolization",
+    title: "Cell Interpolization",
+    publishDate: "Dec. 21, 2022",
+  },
+  {
+    img: SliderThreeImage,
+    imgAlt: "cell-interpolization",
+    title: "Cell Interpolization",
+    publishDate: "Dec. 21, 2022",
   },
 ]
