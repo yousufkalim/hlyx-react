@@ -1,16 +1,6 @@
 .service-card{
  margin-inline: 10px;
 }
-.tab_card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-  padding-inline: 12.75px;
-  padding-bottom: 41.43px;
-  margin: auto;
-}
 .accordion-card{
   border-bottom-left-radius: 0%;
   border-bottom-right-radius: 0%;
