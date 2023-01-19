@@ -1,0 +1,9 @@
+.service-card{
+ margin-inline: 10px;
+}
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 10px 5px 30px 0;
+}
