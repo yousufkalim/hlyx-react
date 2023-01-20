@@ -3,7 +3,7 @@ http://ionicframework.com/docs/theming/ */
 
 /** Ionic CSS Variables **/
 :root {
-  --bg-color: red;
+  --bg-color: white;
   --text-color: #000;
   /** primary **/
   --ion-color-primary: #186bfe;
@@ -85,7 +85,7 @@ http://ionicframework.com/docs/theming/ */
    */
 
   :root {
-    --bg-color: green;
+    --bg-color: black;
     --text-color: #fff;
   }
 

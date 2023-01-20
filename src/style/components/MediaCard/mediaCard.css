@@ -47,7 +47,8 @@ ion-card-header.ios {
 
 ion-segment-button {
   --indicator-color: white;
-  --background: white;
+  --background: var(--bg-color);
+  color: var(--text-color);
   border-radius: 0px;
   font-family: "Montserrat";
   font-style: normal;
@@ -210,6 +211,7 @@ ion-accordion.accordion-expanded > [slot="header"] .ion-accordion-toggle-icon {
   --border-radius: 10px;
   margin: 11px;
   text-transform: capitalize;
+
 }
 
 .accordion-header {
