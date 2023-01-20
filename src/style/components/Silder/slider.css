@@ -17,7 +17,6 @@
   min-height: 197.41px !important;
   height: 100%;
   width: 100%;
-  margin-right: 15.68px;
   background: #F1F4F9;
   border-radius: 12px;
 }
@@ -67,76 +66,9 @@
   padding: 11.53px 8.22px 11.74px 6.57px;
 }
 
-.carosal-container {
+.swiper-container {
   margin-left: 14.52px;
   margin-top: 15.35px;
-}
-
-.carousel .control-dots {
-  bottom: -10px !important;
-  position: absolute !important;
-  background: transparent !important;
-  border-radius: 8px !important;
-  margin: 0px !important;
-  height: 1px !important;
-  padding: 0px !important;
-  width: 100% !important;
-}
-
-.carousel .control-dots .dot.selected {
-  background: #7989A5 !important;
-  max-width: 100px !important;
-  height: 1px !important;
-  opacity: 1 !important;
-  width: 100% !important;
-}
-
-.carousel .control-dots .dot {
-  max-width: 100px !important;
-  background: #7989A5 !important;
-  height: 1px !important;
-  width: 100px !important;
-  margin: 0px 0px 10px 0px !important;
-  display: inline-block !important;
-  box-shadow: none !important;
-
-  transition: opacity .25s ease-in !important;
-  opacity: 0.5 !important;
-  filter: alpha(opacity=30) !important;
-  border-radius: 50% !important;
-  cursor: pointer !important;
-}
-
-.carousel.carousel-slider .control-arrow {
-  opacity: 1 !important;
-  color: transparent !important;
-  top: -35px !important;
-}
-
-.carousel .control-prev.control-arrow {
-  right: 42px !important;
-  left: auto !important;
-  height: fit-content !important;
-  width: auto !important;
-  padding: 0px !important;
-}
-
-.carousel .control-next.control-arrow {
-  right: 14px !important;
-  height: fit-content !important;
-  width: auto !important;
-  padding: 0px !important;
-}
-
-.carousel .control-arrow:before,
-.control-arrow:before {
-  margin: 0px !important;
-  border-top: 14px solid transparent !important;
-  border-bottom: 0px solid transparent !important;
-}
-
-.carousel.carousel-slider {
-  overflow: visible !important;
 }
 
 .align-left {
@@ -154,7 +86,7 @@
 }
 
 .slide-image-container {
-  max-width: 131.32px;
+  max-width: 131.32px !important;
   min-height: 137.72px;
   width: 100%;
   height: 100%;
@@ -165,22 +97,6 @@
   min-height: 105px;
   width: 100%;
   height: 100%;
-}
-
-.carousel .control-next.control-arrow:before {
-  border-right: 9px solid transparent !important;
-  border-left: 0px solid transparent !important;
-  background-image: url("../../../assets//icons/forward-icon.png");
-}
-
-.carousel .control-prev.control-arrow:before {
-  border-left: 0px solid transparent !important;
-  border-right: 9px solid transparent !important;
-  background-image: url("../../../assets//icons/previous-icon.png");
-}
-
-.carousel.carousel-slider .control-arrow:hover {
-  background: transparent !important;
 }
 
 .gallery-container {
@@ -213,4 +129,78 @@
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.prev-img-icon {
+  --background: transparent;
+  --box-shadow: none;
+  --padding: 0px;
+}
+
+.next-img-icon {
+  --background: transparent;
+  --box-shadow: none;
+  --padding: 0px;
+}
+
+.opacity-light {
+  opacity: 0.5;
+}
+
+
+.opacity-dark {
+  opacity: 1;
+}
+
+.swiper-container>div>.swiper-scrollbar {
+  position: relative !important;
+  height: 1px !important;
+  margin-top: 15.91px !important;
+}
+
+.portfolio_container {
+  margin: -10.5px 11px 11px 11px !important;
+  padding: 0 !important;
+  border-radius: 0;
+  border-bottom: none;
+}
+
+.portfolio-tab-segment-button {
+  max-width: 93.95px;
+  opacity: 0.8;
+  padding: 7.55px 23.87px 7.46px 22.08px;
+  border-bottom: none;
+  font-weight: 500;
+  font-size: 13px !important;
+  font-family: 'Montserrat', sans-serif !important;
+  line-height: 12px;
+}
+
+.portfolio-tab-segment-button-container {
+  --indicatorbox-shadow: none;
+  min-height: 27.02px;
+  --color: #888888;
+  --background: 888888;
+  padding: 0px 0;
+  border-bottom: none;
+}
+
+.portfolio-btn-tab-container>.segment-button-checked {
+  background: #F1F4F9;
+  --indicator-color: transparent;
+  border-radius: 7.93643px;
+  border-bottom: none;
+  --indicator-box-shadow: none;
+  font-weight: 700;
+}
+
+.portfolio-btn-tab-container {
+  /* margin: -11px 11px 0px 11px; */
+  padding: 15.04px 25.83px;
+  justify-content: space-between;
+  display: flex;
 }
