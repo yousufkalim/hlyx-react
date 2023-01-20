@@ -50,7 +50,7 @@ ion-card {
 }
 
 .read-more {
-  color: black;
+  color: var(--text-color);
   font-weight: 500;
 }
 
