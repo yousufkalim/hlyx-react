@@ -48,7 +48,7 @@ ion-card-header.ios {
 ion-segment-button {
   --indicator-color: white;
   --background: var(--bg-color);
-  color: var(--text-color);
+  /* color: var(--text-color); */
   border-radius: 0px;
   font-family: "Montserrat";
   font-style: normal;
@@ -60,7 +60,6 @@ ion-segment-button {
   padding-block: 27px 21px;
   margin: 0;
 }
-
 ion-segment-button::before {
   all: unset;
 }

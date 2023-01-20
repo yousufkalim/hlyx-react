@@ -8,15 +8,14 @@ const PortfolioTab = () => {
     <>
       <IonCard className="tab_container">
         <IonSegment style={{ margin: "-11px 11px 0px 11px" }} value="Photos">
-          <IonSegmentButton value="Photos">
-            <IonLabel>Photos</IonLabel>
+          <IonSegmentButton  value="Photos">
+            <IonLabel color="black">Photos</IonLabel>
           </IonSegmentButton>
           <IonSegmentButton value="Video">
-            <IonLabel>Video</IonLabel>
+            <IonLabel color="black">Video</IonLabel>
           </IonSegmentButton>
-
           <IonSegmentButton value="Audio">
-            <IonLabel>Audio</IonLabel>
+            <IonLabel color="black">Audio</IonLabel>
           </IonSegmentButton>
         </IonSegment>
       </IonCard>
