@@ -24,6 +24,22 @@
   object-position: top;
 }
 
+.ion-icon {
+  margin-right: 14px;
+}
+
+.icon_text {
+  margin-left: 14px;
+}
+
+ion-label {
+  margin: 0;
+}
+
+ion-icon {
+  margin-right: 0;
+}
+
 ion-card-header.ios {
   display: flex;
   flex-flow: column-reverse;
@@ -40,7 +56,12 @@ ion-segment-button {
   --color: #888888;
   text-transform: capitalize;
   border-bottom: 2px solid #c4c4c4;
-  height: 67px;
+  padding-block: 27px 21px;
+  margin: 0;
+}
+
+ion-segment-button::before {
+  all: unset;
 }
 
 .segment-button-checked {
@@ -91,12 +112,23 @@ ion-card-content {
 
 ion-card {
   margin: 11px;
-  padding-bottom: 21.58px;
-  border-radius: 10px 10px 10px 10px;
+  padding-bottom: 20px;
+  border-radius: 10px;
   box-shadow: none;
   border-bottom: 1px solid #c4c4c4;
 }
 
+.tab_container {
+  padding: 0 !important;
+  border-radius: 10px 10px 0 0;
+  border-bottom: none;
+}
+
+.tab_card {
+  margin-top: -10px;
+  border-radius: 0 0 10px 10px;
+  padding-top: 25px;
+}
 .accordion-label {
   color: #000;
   font-family: "Montserrat";
@@ -110,9 +142,9 @@ ion-card {
 }
 
 ion-segment {
-  margin-bottom: 25px;
   padding-left: 0px;
   background-color: white;
+  border-radius: 0px;
 }
 
 ion-label {
@@ -136,7 +168,6 @@ ion-label {
 .social-media-icon {
   width: 50px;
   height: 50px;
-  margin-right: 10px;
 }
 
 .ion-accordion-toggle-icon {
@@ -183,4 +214,30 @@ ion-accordion.accordion-expanded > [slot="header"] .ion-accordion-toggle-icon {
 
 .accordion-header {
   --border-width: 0 0 0 0 !important;
+}
+
+.blog_links {
+  display: flex;
+  padding-inline: 20px;
+  flex-direction: row;
+}
+
+.blog_links_head {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+}
+
+.blog_links_head ion-label {
+  font-weight: 400;
+}
+
+.blog_links svg {
+  flex-shrink: 0;
+}
+
+.ion-label-descripttion {
+  font-weight: 400;
+  font-size: 13px !important;
+  line-height: 16px;
 }

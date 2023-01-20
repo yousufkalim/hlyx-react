@@ -11,8 +11,16 @@ import {
 import profileOne from "../../assets/media/media-image.png";
 import sphere from "../../assets/sphere.png";
 import "../../style/components/MediaCard/mediaCard.css";
-import { BreifIcon, LinkBtnIcon, LocateIcon } from "../../assets/icons";
+import {
+  BreifIcon,
+  LinkBtnIcon,
+  LocateIcon,
+  WaterMake,
+} from "../../assets/icons";
 import ContactTab from "../ContactTab";
+import ServicesTab from "../ServicesTab";
+import AboutTab from "../AboutTab";
+import PortfolioTab from "../PortfolioTab";
 
 export const ProfileTabs = ["Contact", "About", "Service", "Portfolio"];
 
@@ -23,15 +31,15 @@ const Tabs = [
   },
   {
     tab: 1,
-    content: <IonCard>Contact</IonCard>,
+    content: <AboutTab />,
   },
   {
     tab: 2,
-    content: <IonCard>Services</IonCard>,
+    content: <ServicesTab />,
   },
   {
     tab: 3,
-    content: <IonCard>Portfolio</IonCard>,
+    content: <PortfolioTab />,
   },
 ];
 
@@ -78,8 +86,8 @@ const MediaCard = () => {
         </IonButton>
       </IonCard>
 
-      <IonCard style={{ padding: "0px 0px 10px 0px" }}>
-        <IonSegment value="0">
+      <IonCard className="tab_container">
+        <IonSegment value={activeTab}>
           {ProfileTabs.map((tab, index) => (
             <IonSegmentButton
               color="primary"
@@ -95,6 +103,9 @@ const MediaCard = () => {
         </IonSegment>
       </IonCard>
       <ActiveTabContent activeTab={activeTab} />
+      <div style={{ marginBlock: 24, textAlign: "center" }}>
+        <WaterMake />
+      </div>
     </>
   );
 };
