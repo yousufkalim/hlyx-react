@@ -7,6 +7,8 @@ import {
   setupIonicReact,
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
+import Professional from "./pages/Professional";
+import Profile from "./pages/Profile";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -26,8 +28,6 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
-import Professional from "./pages/Professional";
-import Profile from "./pages/Profile";
 
 setupIonicReact();
 

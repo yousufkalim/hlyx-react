@@ -3,6 +3,7 @@
   margin-top: -4px;
   padding-top: 63px;
   padding-inline: 20px;
+  --background: var(--bg-color);
 }
 
 .link_card {
@@ -46,7 +47,8 @@ ion-card-header.ios {
 
 ion-segment-button {
   --indicator-color: white;
-  --background: white;
+  --background: var(--bg-color);
+  color: var(--text-color);
   border-radius: 0px;
   font-family: "Montserrat";
   font-style: normal;
@@ -89,7 +91,7 @@ ion-card-subtitle {
   font-weight: 700;
   font-size: 28.5958px;
   line-height: 33px;
-  color: #000000;
+  color: var(--text-color);
   /* margin-top: 20px; */
   text-transform: inherit;
 }
@@ -129,7 +131,7 @@ ion-card {
   padding-top: 25px;
 }
 .accordion-label {
-  color: #000;
+  color: var(--text-color);
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -152,7 +154,7 @@ ion-label {
   font-weight: 500;
   font-size: 15px !important;
   line-height: 25px;
-  color: #000000;
+  color: var(--text-color);
 }
 
 .segment-btn-label {
@@ -209,6 +211,7 @@ ion-accordion.accordion-expanded > [slot="header"] .ion-accordion-toggle-icon {
   --border-radius: 10px;
   margin: 11px;
   text-transform: capitalize;
+
 }
 
 .accordion-header {
