@@ -1335,3 +1335,19 @@ export const ChevronIcon = () => {
     </svg>
   )
 }
+
+export const PrevImageIcon = () => {
+  return (
+    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6.10107 1.85352L1.3869 7.37745L6.10107 12.8535" stroke="#7989A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  )
+}
+
+export const NextImageIcon = () => {
+  return (
+    <svg width="7" height="14" viewBox="0 0 7 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1.27979 1.85352L5.99396 7.37745L1.27979 12.8535" stroke="#7989A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  )
+}

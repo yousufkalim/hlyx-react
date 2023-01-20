@@ -110,6 +110,24 @@ export const sliderData = [
     title: "Cell Interpolization",
     publishDate: "Dec. 21, 2022",
   },
+  {
+    img: SliderOneImage,
+    imgAlt: "cell-interpolization",
+    title: "Cell Interpolization",
+    publishDate: "Dec. 21, 2022",
+  },
+  {
+    img: SliderTwoImage,
+    imgAlt: "cell-interpolization",
+    title: "Cell Interpolization",
+    publishDate: "Dec. 21, 2022",
+  },
+  {
+    img: SliderThreeImage,
+    imgAlt: "cell-interpolization",
+    title: "Cell Interpolization",
+    publishDate: "Dec. 21, 2022",
+  },
 ]
 
 export const galleryData = [
