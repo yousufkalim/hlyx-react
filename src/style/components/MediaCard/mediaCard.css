@@ -52,7 +52,7 @@ ion-card-header.ios {
 }
 
 ion-segment-button {
-  --indicator-color: black;
+  --indicator-color: white;
   --background: var(--bg-color);
   color: var(--text-tab-color);
   border-radius: 0px;
@@ -72,7 +72,7 @@ ion-segment-button::before {
 
 .segment-button-checked {
   --indicator-box-shadow: none;
-  border-bottom: 0px solid black;
+  border-bottom: 2px solid black;
   color: black;
   font-weight: 700;
 }
