@@ -31,7 +31,7 @@ const PortfolioCard = () => {
             <IonButton disabled={activeIndex === 4 ? true : false} className={`next-img-icon ${activeIndex === 4 ? "opacity-light" : "opacity-dark"}`} onClick={() => swiperRef.current?.slideNext()}><NextImageIcon /></IonButton>
           </div>
         </div>
-        <div className="swiper-container">
+        <div className="swiper-image-container">
           <Swiper
             onRealIndexChange={(element) => setActiveIndex(element.activeIndex)}
             onBeforeInit={(swiper) => {
