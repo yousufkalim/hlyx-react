@@ -136,7 +136,7 @@ const ContactTab = () => {
           <div className="flex align-center">
             <LocateFillIcon />
 
-            <IonLabel className="icon_text">
+            <IonLabel className="icon_text office_icon_text">
               1886 Globe Trotter Court<br/> Palo Alto, CA 95051{" "}
             </IonLabel>
           </div>
@@ -170,6 +170,7 @@ const ContactTab = () => {
             flexDirection: "column",
             gap: 15,
             marginTop: 5,
+            marginBottom: 10
           }}
         >
           {LinksData.map(({ icon, title, description }, index) => (
@@ -182,7 +183,7 @@ const ContactTab = () => {
         className="outline-btn"
         fill="outline"
         expand="block"
-        style={{ marginBlock: 20, fontWeight: 600 }}
+        style={{ marginBlock: 20, fontWeight: 600, fontSize:15, lineHeight: "17px", fontFamily: "Poppins" }}
       >
         Create Your Free Profile
       </IonButton>

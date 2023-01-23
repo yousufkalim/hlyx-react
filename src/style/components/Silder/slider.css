@@ -47,6 +47,7 @@
   font-size: 7.59863px !important;
   line-height: 9px;
   color: #989898;
+  margin-top: 2.53px;
 }
 
 .slider-description {
@@ -66,7 +67,7 @@
   padding: 11.53px 8.22px 11.74px 6.57px;
 }
 
-.swiper-container {
+.swiper-image-container {
   margin-left: 14.52px;
   margin-top: 15.35px;
 }
@@ -118,6 +119,8 @@
   font-size: 9.54648px !important;
   line-height: 10px;
   text-align: center;
+  text-transform: capitalize;
+  --box-shadow: none;
   --color: #000000 !important;
   --background: #FFFFFF;
   --border-radius: 8px;
@@ -156,7 +159,7 @@
   opacity: 1;
 }
 
-.swiper-container>div>.swiper-scrollbar {
+.swiper-image-container>div>.swiper-scrollbar {
   position: relative !important;
   height: 1px !important;
   margin-top: 15.91px !important;
@@ -166,7 +169,6 @@
   margin: -10.5px 11px 11px 11px !important;
   padding: 0 !important;
   border-radius: 0;
-  border-bottom: none;
 }
 
 .portfolio-tab-segment-button {
@@ -174,7 +176,7 @@
   opacity: 0.8;
   padding: 7.55px 23.87px 7.46px 22.08px;
   border-bottom: none;
-  font-weight: 500;
+  font-weight: inherit;
   font-size: 13px !important;
   font-family: 'Montserrat', sans-serif !important;
   line-height: 12px;
@@ -183,7 +185,7 @@
 .portfolio-tab-segment-button-container {
   --indicatorbox-shadow: none;
   min-height: 27.02px;
-  --color: #888888;
+  color: var(--text-gray-color);
   --background: 888888;
   padding: 0px 0;
   border-bottom: none;
@@ -193,9 +195,10 @@
   background: #F1F4F9;
   --indicator-color: transparent;
   border-radius: 7.93643px;
+  color: var(--text-color);
   border-bottom: none;
   --indicator-box-shadow: none;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .portfolio-btn-tab-container {

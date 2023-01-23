@@ -5,6 +5,9 @@ http://ionicframework.com/docs/theming/ */
 :root {
   --bg-color: white;
   --text-color: #000;
+  --text-gray-color: #C4C4C4;
+  --text-white-color: #FFFFFF;
+  --text-tab-color: #888888;
   /** primary **/
   --ion-color-primary: #186bfe;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -86,7 +89,10 @@ http://ionicframework.com/docs/theming/ */
 
   :root {
     --bg-color: black;
+    --text-gray-color: #fff;
     --text-color: #fff;
+    --text-white-color: black;
+    --text-tab-color: #fff;
   }
 
   body {
