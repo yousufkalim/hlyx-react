@@ -1594,19 +1594,62 @@ export const Advanced = () => {
   );
 };
 
-
 export const PrevImageIcon = () => {
   return (
-    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6.10107 1.85352L1.3869 7.37745L6.10107 12.8535" stroke="#7989A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <svg
+      width="8"
+      height="14"
+      viewBox="0 0 8 14"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6.10107 1.85352L1.3869 7.37745L6.10107 12.8535"
+        stroke="#7989A5"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
     </svg>
-  )
-}
+  );
+};
 
 export const NextImageIcon = () => {
   return (
-    <svg width="7" height="14" viewBox="0 0 7 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M1.27979 1.85352L5.99396 7.37745L1.27979 12.8535" stroke="#7989A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <svg
+      width="7"
+      height="14"
+      viewBox="0 0 7 14"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1.27979 1.85352L5.99396 7.37745L1.27979 12.8535"
+        stroke="#7989A5"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
     </svg>
-  )
-}
+  );
+};
+export const SwipeBar = () => {
+  return (
+    <svg
+      width="51"
+      height="4"
+      viewBox="0 0 51 4"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="0.842346"
+        y="0.757324"
+        width="49.867"
+        height="2.99202"
+        rx="1.49601"
+        fill="#B0B2B6"
+      />
+    </svg>
+  );
+};

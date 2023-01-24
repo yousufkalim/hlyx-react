@@ -42,7 +42,7 @@ const App: React.FC = () => (
         <IonReactRouter>
           <IonTabs>
             <IonRouterOutlet>
-              <Route exact path="/home">
+              <Route exact path="/">
                 <Professional />
               </Route>
               <Route exact path="/profile">
