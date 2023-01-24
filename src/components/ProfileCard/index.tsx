@@ -1,4 +1,4 @@
-import { IonButton, IonContent, IonModal } from "@ionic/react";
+import { IonButton, IonContent, IonModal, IonCard } from "@ionic/react";
 import React, { useState } from "react";
 import {
   BagIcon,
@@ -7,6 +7,7 @@ import {
   HeartIcon,
   LocationIcon,
   SendIcon,
+  SwipeBar
 } from "../../assets/icons";
 import "../../style/components/profileCard.css";
 
@@ -93,6 +94,33 @@ const ProfileCard = ({
           </section>
         </section>
       </article>
+      <section className="link-Button">
+      <SwipeBar/>
+        <IonCard
+          className="linkButton-Card"
+          style={{
+            background: "none",
+            border: "none",
+            outline: "none",
+          }}
+        >
+          <IonButton
+            expand="block"
+            style={{
+              fontFamily: "Montserrat",
+              fontStyle: "normal",
+              fontWeight: 600,
+              fontSize: "18px",
+              lineHeight: "18px",
+              transform: "rotate(-360deg)",
+            }}
+            color="light"
+            routerLink="/profile"
+          >
+            Link with Me
+          </IonButton>
+        </IonCard>
+      </section>
     </IonContent>
   );
 };
