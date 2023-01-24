@@ -1,6 +1,7 @@
 import { Route } from "react-router-dom";
 import {
   IonApp,
+  IonContent,
   IonRouterOutlet,
   IonTabBar,
   IonTabs,
@@ -28,25 +29,40 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
+import "./global.css";
+import { isMobile } from "react-device-detect";
 
 setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
-    <Professional />
-    <IonReactRouter>
-      <IonTabs>
-        <IonRouterOutlet>
-          <Route exact path="/home">
-            <Professional />
-          </Route>
-          <Route exact path="/profile">
-            <Profile />
-          </Route>
-        </IonRouterOutlet>
-        <IonTabBar />
-      </IonTabs>
-    </IonReactRouter>
+    {isMobile ? (
+      <>
+        <Professional />
+        <IonReactRouter>
+          <IonTabs>
+            <IonRouterOutlet>
+              <Route exact path="/home">
+                <Professional />
+              </Route>
+              <Route exact path="/profile">
+                <Profile />
+              </Route>
+            </IonRouterOutlet>
+            <IonTabBar />
+          </IonTabs>
+        </IonReactRouter>
+      </>
+    ) : (
+      <IonContent>
+        <div className="browser-alert-container">
+          <h1 className="browser-alert-heading">
+            <strong>Note: </strong>
+            Only mobile browsers are capable of accessing this application.
+          </h1>
+        </div>
+      </IonContent>
+    )}
   </IonApp>
 );
 
