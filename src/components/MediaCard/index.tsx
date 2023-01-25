@@ -44,6 +44,7 @@ const Tabs = [
 ];
 
 const ActiveTabContent = ({ activeTab }: { activeTab: string }) => {
+  console.log(`active tab : ${activeTab} `);
   return <>{Tabs.find((x) => x.tab === +activeTab)?.content}</>;
 };
 

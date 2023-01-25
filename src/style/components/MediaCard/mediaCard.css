@@ -115,7 +115,14 @@ ion-card-content {
   display: flex;
   gap: 10px;
 }
-
+.ion_text p{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 16px;
+color: #000000;
+}
 ion-card {
   margin: 11px;
   padding-bottom: 20px;

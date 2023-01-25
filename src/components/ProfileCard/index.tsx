@@ -2,33 +2,33 @@ import { IonButton, IonContent, IonModal, IonCard } from "@ionic/react";
 import React, { useState } from "react";
 import {
   BagIcon,
-  BookMarkIcon,
-  ChatIcon,
-  HeartIcon,
+  // BookMarkIcon,
+  // ChatIcon,
+  // HeartIcon,
   LocationIcon,
-  SendIcon,
+  // SendIcon,
   SwipeBar
 } from "../../assets/icons";
 import "../../style/components/profileCard.css";
 
-export const floatingIcons = [
-  <HeartIcon />,
-  <BookMarkIcon />,
-  <ChatIcon />,
-  <SendIcon />,
-];
-
-export const FloatingButtonGroup = ({ icons }: { icons: JSX.Element[] }) => {
-  return (
-    <section className="floatingButton-container">
-      {icons.map((icon, index) => (
-        <div className="floating-btn" key={index}>
-          {icon}
-        </div>
-      ))}
-    </section>
-  );
-};
+// export const floatingIcons = [
+//   <HeartIcon />,
+//   <BookMarkIcon />,
+//   <ChatIcon />,
+//   <SendIcon />,
+// ];
+// Floating Component Removed
+// export const FloatingButtonGroup = ({ icons }: { icons: JSX.Element[] }) => {
+//   return (
+//     <section className="floatingButton-container">
+//       {icons.map((icon, index) => (
+//         <div className="floating-btn" key={index}>
+//           {icon}
+//         </div>
+//       ))}
+//     </section>
+//   );
+// };
 
 export interface ProfileCardProps {
   backgroundImage: string;
@@ -68,9 +68,10 @@ const ProfileCard = ({
       />
       <section className="linear-bg"></section>
 
-      <FloatingButtonGroup icons={floatingIcons} />
+      {/* <FloatingButtonGroup icons={floatingIcons} /> Floating icons remove  */}
       <article className="cardContainer">
         <section
+        className="logoName"
           style={{
             display: "flex",
             flexDirection: "column",
