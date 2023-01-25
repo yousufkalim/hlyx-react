@@ -14,16 +14,15 @@ import {
 } from "../constants";
 import {
   AccoladesIcon,
-  AcheievementIcon,
   AvatarIcon,
   BreakerIcon,
   CommentIcon,
-  EducationIcon,
   ForwardIcon,
   GoalsIcon,
   ProfessionIcon,
 } from "../assets/icons";
-
+import Education from "../assets/educationLogo.png"
+import Achievement from "../assets/achievement.png"
 const AboutTab = () => {
   const [readMore, setReadMore] = useState(false);
   const linkName = readMore ? "Read Less" : "Read More";
@@ -83,7 +82,7 @@ const AboutTab = () => {
       </AboutCard>
 
       <AboutCard
-        icon={<EducationIcon />}
+        icon = {<img src={Education} alt="Education Logo"/>} 
         cardTitle="Education"
         cardTagTitle="xxx"
         isTagTitle={false}
@@ -121,7 +120,7 @@ const AboutTab = () => {
       </AboutCard>
 
       <AboutCard
-        icon={<AcheievementIcon />}
+        icon={<img src={Achievement} alt="Achievemt Logo"/>} 
         cardTitle="Achievements"
         cardTagTitle="xxx"
         isTagTitle={false}
