@@ -88,7 +88,7 @@ const MediaCard = () => {
       </IonCard>
 
       <IonCard className="tab_container">
-        <IonSegment value={activeTab}>
+        <IonSegment value={activeTab} swipeGesture={false} scrollable> 
           {ProfileTabs.map((tab, index) => (
             <IonSegmentButton
               color="primary"
