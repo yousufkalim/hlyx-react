@@ -110,7 +110,7 @@ const Professional = () => {
   return (
     <>
       <IonPage>
-        <IonContent>
+        <IonContent class="overflow-hidden">
           <IonSlides
             pager={false}
             options={slideOpts}

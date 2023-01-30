@@ -9,7 +9,7 @@ const Profile = () => {
   return (
     <>
       <IonPage>
-        <IonContent>
+        <IonContent className="overflow-auto">
           <MediaCard />
         </IonContent>
       </IonPage>

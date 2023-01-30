@@ -20,25 +20,30 @@ import {
   ForwardIcon,
   GoalsIcon,
   ProfessionIcon,
+  EducationIcon
 } from "../assets/icons";
-import Education from "../assets/educationLogo.png"
-import Achievement from "../assets/achievement.png"
+import Education from "../assets/educationLogo.png";
+import Achievement from "../assets/achievement.png";
+import ReadMoreText from "./ReadMoreText";
+
+
 const AboutTab = () => {
-  const [readMore, setReadMore] = useState(false);
-  const linkName = readMore ? "Read Less" : "Read More";
-  const extraContent = (
-    <div>
-      <span className="extra-content content-description">{loremText}</span>
-      <span
-        className="read-more content-description"
-        onClick={() => {
-          setReadMore(!readMore);
-        }}
-      >
-        {linkName === "Read Less" && "...Read less"}
-      </span>
-    </div>
-  );
+  // const [readMore, setReadMore] = useState(false);
+  // const linkName = readMore ? "Read Less" : "Read More";
+  // const extraContent = (
+  //   <div style={{display:"inline"}}>
+  //     <span className="extra-content content-description">{loremText}</span>
+  //     <span
+  //       className="read-more content-description"
+  //       onClick={() => {
+  //         setReadMore(!readMore);
+  //       }}
+  //     >
+  //       {linkName === "Read Less" && "...Read less"}
+  //     </span>
+  //   </div>
+  // );
+
 
   return (
     <>
@@ -49,7 +54,9 @@ const AboutTab = () => {
         cardTagTitle="xxx"
         isTagTitle={false}
       >
-        <div
+        <ReadMoreText text={loremText} limit={171} />
+        {/* <div
+          style={{display: "inline"}}
           className="content-description"
           onClick={() => {
             setReadMore(!readMore);
@@ -57,12 +64,12 @@ const AboutTab = () => {
         >
           Biology is my first love. As a Scientist my principal mission in life
           is the pursuit of life-changing cures. I founded Sphere Bio with the
-          goal of discovering science that...
-          <span className="read-more">
+          goal of discovering science that {" "}
+          <span className="read-more" >
             {linkName === "Read More" && linkName}
-          </span>
-        </div>
-        {readMore && extraContent}
+          </span> 
+        </div> */}
+        {/* {readMore && extraContent} */}
       </AboutCard>
 
       <AboutCard
@@ -82,7 +89,7 @@ const AboutTab = () => {
       </AboutCard>
 
       <AboutCard
-        icon = {<img src={Education} alt="Education Logo"/>} 
+        icon={<img src={Education} alt="Education Logo" />}
         cardTitle="Education"
         cardTagTitle="xxx"
         isTagTitle={false}
@@ -120,7 +127,7 @@ const AboutTab = () => {
       </AboutCard>
 
       <AboutCard
-        icon={<img src={Achievement} alt="Achievemt Logo"/>} 
+        icon={<img src={Achievement} alt="Achievemt Logo" />}
         cardTitle="Achievements"
         cardTagTitle="xxx"
         isTagTitle={false}

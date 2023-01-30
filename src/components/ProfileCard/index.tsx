@@ -47,10 +47,7 @@ const ProfileCard = ({
 }: ProfileCardProps) => {
   return (
     <IonContent
-      // style={{
-      //   "--background":
-      //     'url("../../assets/physician_male_01.png") no-repeat top top / cover',
-      // }}
+    class="overflow-hidden"
       fullscreen
     >
       <img

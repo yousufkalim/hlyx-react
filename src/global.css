@@ -11,3 +11,23 @@
   color: var(--text-color);
   max-width: 100%;
 }
+
+.overflow-hidden {
+  --overflow: hidden;
+}
+.overflow-auto {
+  --overflow: auto;
+}
+
+.anchor-clear {
+  text-decoration: none;
+  color: inherit;
+}
+.font-Style {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #787878;
+}

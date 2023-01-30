@@ -6,14 +6,15 @@ export interface LinkCardProps {
   icon: JSX.Element;
   title: string;
   description?: string;
+  hyperaddress?: string;
 }
 
-const LinkCard = ({ icon, title, description }: LinkCardProps) => {
+const LinkCard = ({ icon, title,hyperaddress, description }: LinkCardProps) => {
   return (
     <div className="blog_links">
       {icon}
       <div className="blog_links_head">
-        <IonLabel className="ion-label">{title}</IonLabel>
+        <a href={hyperaddress} style={{ textDecoration: "none", color: "inherit" }} target={"_blank"}><IonLabel className="ion-label">{title}</IonLabel></a>
         <IonLabel className="ion-label-descripttion">{description}</IonLabel>
       </div>
     </div>
