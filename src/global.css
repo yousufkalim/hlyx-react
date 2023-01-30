@@ -31,3 +31,7 @@
   line-height: 18px;
   color: #787878;
 }
+.font-Style span{
+  font-weight: bold;
+  color: black;
+}
