@@ -31,6 +31,7 @@ import LinkCard from "./LinkCard";
 
 const LinksData = [
   {
+    hyperadd: "https://medium.com/",
     icon: <MediumIcon />,
     title:
       "Sphere Bio Technologies Unveils Breakthrough Science That Regenerates Necrotic Cells",
@@ -38,10 +39,12 @@ const LinksData = [
   },
   {
     icon: <SoundCloudIcon />,
+    hyperadd: "https://soundcloud.com/",
     title: "Cellular Science Chat With Kenji Awurama",
     description: "Access Audio on SoundCloud",
   },
   {
+    hyperadd: "https://www.google.com/drive/",
     icon: <DriveIcon />,
     title: "Sphere Bio Customer Spec Sheet",
     description: "Access File on Google Drive",
@@ -58,7 +61,13 @@ const ContactTab = () => {
             <MailIcon />
 
             <IonLabel className="icon_text">
-              kenji.awurama@sperebio.tech
+              <a
+                href="mailto:kenji.awurama@sperebio.tech"
+                className="anchor-clear"
+                target={"_blank"}
+              >
+                kenji.awurama@sperebio.tech
+              </a>
             </IonLabel>
           </div>
 
@@ -71,8 +80,13 @@ const ContactTab = () => {
           <div className="flex align-center justify-contain mx-19 mb-11">
             <div className="flex align-center">
               <MobileIcon />
-
-              <IonLabel className="icon_text">+1 (650) 123-4567</IonLabel>
+              <a
+                href="tel:+16501234567"
+                className="anchor-clear"
+                target={"_blank"}
+              >
+                <IonLabel className="icon_text">+1 (650) 123-4567</IonLabel>
+              </a>
             </div>
 
             <ChevronIcon />
@@ -81,22 +95,30 @@ const ContactTab = () => {
           <div className="flex align-center justify-contain mx-19 mb-11">
             <div className="flex align-center">
               <CallIcon />
-
-              <IonLabel className="icon_text">
-                +1 (650) 345-6789 Ext 700
-              </IonLabel>
+              <a
+                href="tel:+16503456789"
+                className="anchor-clear"
+                target={"_blank"}
+              >
+                <IonLabel className="icon_text">
+                  +1 (650) 345-6789 Ext 700
+                </IonLabel>
+              </a>
             </div>
-
             <ChevronIcon />
           </div>
 
           <div className="flex align-center justify-contain mx-19 mb-11">
             <div className="flex align-center">
               <FaxIcon />
-
-              <IonLabel className="icon_text">+1 (650) 345-6789</IonLabel>
+              <a
+                href="tel:+16503456789"
+                className="anchor-clear"
+                target={"_blank"}
+              >
+                <IonLabel className="icon_text">+1 (650) 345-6789</IonLabel>
+              </a>
             </div>
-
             <ChevronIcon />
           </div>
         </IonAccordionGroup>
@@ -107,12 +129,16 @@ const ContactTab = () => {
         <div className="flex align-center justify-contain mx-19">
           <div className="flex align-center">
             <CalendarIcon />
-
-            <IonLabel className="icon_text">
-              Calendly {">"} Kenji Awurama{" "}
-            </IonLabel>
+            <a
+              href="https://calendly.com/wajeehaslam/30min"
+              className="anchor-clear"
+              target={"_blank"}
+            >
+              <IonLabel className="icon_text">
+                Calendly {">"} Kenji Awurama{" "}
+              </IonLabel>
+            </a>
           </div>
-
           <ChevronIcon />
         </div>
       </IonCard>
@@ -122,8 +148,13 @@ const ContactTab = () => {
         <div className="flex align-center justify-contain mx-19">
           <div className="flex align-center">
             <WorldIcon />
-
-            <IonLabel className="icon_text">www.sperebio.tech</IonLabel>
+            <a
+              className="anchor-clear"
+              href="https://www.aurorabiomed.com/"
+              target={"_blank"}
+            >
+              <IonLabel className="icon_text">www.sperebio.tech</IonLabel>
+            </a>
           </div>
 
           <ChevronIcon />
@@ -132,17 +163,19 @@ const ContactTab = () => {
 
       <IonCard style={{ paddingTop: "21.58px" }}>
         <IonLabel className="accordion-label">Office</IonLabel>
-        <div className="flex align-center justify-contain mx-19">
-          <div className="flex align-center">
-            <LocateFillIcon />
+        <a href={`http://maps.google.com/?q=lahore`} className="anchor-clear" target={"_blank"}>
+          <div className="flex align-center justify-contain mx-19">
+            <div className="flex align-center">
+              <LocateFillIcon />
+              <IonLabel className="icon_text office_icon_text" style={{maxWidth: 200}}>
+                1886 Globe Trotter Court
+                 Palo Alto, CA 95051{" "}
+              </IonLabel>
+            </div>
 
-            <IonLabel className="icon_text office_icon_text">
-              1886 Globe Trotter Court<br/> Palo Alto, CA 95051{" "}
-            </IonLabel>
+            <ChevronIcon />
           </div>
-
-          <ChevronIcon />
-        </div>
+        </a>
       </IonCard>
 
       <IonCard style={{ paddingTop: "21.58px" }}>
@@ -154,11 +187,41 @@ const ContactTab = () => {
             justifyContent: "space-between",
           }}
         >
-          <LinkedinIcon />
-          <YoutubeIcon />
-          <SlackIcon />
-          <ShipFaceIcon />
-          <MaskIcon />
+          <a
+            href="https://www.linkedin.com/"
+            className="anchor-clear"
+            target={"_blank"}
+          >
+            <LinkedinIcon />
+          </a>
+          <a
+            className="anchor-clear"
+            href="https://www.youtube.com/"
+            target={"_blank"}
+          >
+            <YoutubeIcon />
+          </a>
+          <a
+            className="anchor-clear"
+            href="https://slack.com/"
+            target={"_blank"}
+          >
+            <SlackIcon />
+          </a>
+          <a
+            className="anchor-clear"
+            href="https://www.reddit.com/"
+            target={"_blank"}
+          >
+            <ShipFaceIcon />
+          </a>
+          <a
+            className="anchor-clear"
+            href="https://discord.com/"
+            target={"_blank"}
+          >
+            <MaskIcon />
+          </a>
         </div>
       </IonCard>
 
@@ -170,11 +233,16 @@ const ContactTab = () => {
             flexDirection: "column",
             gap: 15,
             marginTop: 5,
-            marginBottom: 10
+            marginBottom: 10,
           }}
         >
-          {LinksData.map(({ icon, title, description }, index) => (
-            <LinkCard icon={icon} title={title} description={description} />
+          {LinksData.map(({ icon, title, hyperadd, description }, index) => (
+            <LinkCard
+              icon={icon}
+              title={title}
+              hyperaddress={hyperadd}
+              description={description}
+            />
           ))}
         </div>
       </IonCard>
@@ -183,7 +251,13 @@ const ContactTab = () => {
         className="outline-btn"
         fill="outline"
         expand="block"
-        style={{ marginBlock: 20, fontWeight: 600, fontSize:15, lineHeight: "17px", fontFamily: "Poppins" }}
+        style={{
+          marginBlock: 20,
+          fontWeight: 600,
+          fontSize: 15,
+          lineHeight: "17px",
+          fontFamily: "Poppins",
+        }}
       >
         Create Your Free Profile
       </IonButton>
