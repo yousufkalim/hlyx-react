@@ -21,8 +21,10 @@
 
 .anchor-clear {
   text-decoration: none;
-  color: inherit;
+  color: var(--text-color);
+  font-weight: 500 !important;
 }
+/* About Tab Bio */
 .font-Style {
   font-family: "Poppins";
   font-style: normal;
@@ -33,5 +35,5 @@
 }
 .font-Style span{
   font-weight: bold;
-  color: black;
+  color: var(--text-color)
 }
