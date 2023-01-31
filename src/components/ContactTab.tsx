@@ -14,6 +14,7 @@ import {
   CallIcon,
   ChevronIcon,
   DriveIcon,
+  Facebook,
   FaxIcon,
   LinkedinIcon,
   LocateFillIcon,
@@ -24,6 +25,7 @@ import {
   ShipFaceIcon,
   SlackIcon,
   SoundCloudIcon,
+  Twitter,
   WorldIcon,
   YoutubeIcon,
 } from "../assets/icons";
@@ -64,7 +66,6 @@ const ContactTab = () => {
               <a
                 href="mailto:kenji.awurama@sperebio.tech"
                 className="anchor-clear"
-                target={"_blank"}
               >
                 kenji.awurama@sperebio.tech
               </a>
@@ -83,7 +84,6 @@ const ContactTab = () => {
               <a
                 href="tel:+16501234567"
                 className="anchor-clear"
-                target={"_blank"}
               >
                 <IonLabel className="icon_text">+1 (650) 123-4567</IonLabel>
               </a>
@@ -98,7 +98,6 @@ const ContactTab = () => {
               <a
                 href="tel:+16503456789"
                 className="anchor-clear"
-                target={"_blank"}
               >
                 <IonLabel className="icon_text">
                   +1 (650) 345-6789 Ext 700
@@ -114,7 +113,6 @@ const ContactTab = () => {
               <a
                 href="tel:+16503456789"
                 className="anchor-clear"
-                target={"_blank"}
               >
                 <IonLabel className="icon_text">+1 (650) 345-6789</IonLabel>
               </a>
@@ -178,13 +176,16 @@ const ContactTab = () => {
         </a>
       </IonCard>
 
-      <IonCard style={{ paddingTop: "21.58px" }}>
+      <IonCard style={{ paddingTop: "21.58px"}}>
         <IonLabel className="accordion-label">Social Media</IonLabel>
         <div
           style={{
             display: "flex",
-            marginInline: 20,
-            justifyContent: "space-between",
+            paddingInline: 20,
+            gap:"15px",
+            justifyContent: "flex-start",
+            flexWrap:"wrap",
+            lineHeight:0
           }}
         >
           <a
@@ -221,6 +222,20 @@ const ContactTab = () => {
             target={"_blank"}
           >
             <MaskIcon />
+          </a>
+          <a
+            className="anchor-clear"
+            href="https://twitter.com/"
+            target={"_blank"}
+          >
+          <Twitter/>
+          </a>
+          <a
+            className="anchor-clear"
+            href="https://www.facebook.com/"
+            target={"_blank"}
+          >
+          <Facebook/>
           </a>
         </div>
       </IonCard>

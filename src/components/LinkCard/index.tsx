@@ -14,7 +14,7 @@ const LinkCard = ({ icon, title,hyperaddress, description }: LinkCardProps) => {
     <div className="blog_links">
       {icon}
       <div className="blog_links_head">
-        <a href={hyperaddress} style={{ textDecoration: "none", color: "inherit" }} target={"_blank"}><IonLabel className="ion-label">{title}</IonLabel></a>
+        <a href={hyperaddress} className="anchor-clear" target={"_blank"}><IonLabel className="ion-label">{title}</IonLabel></a>
         <IonLabel className="ion-label-descripttion">{description}</IonLabel>
       </div>
     </div>

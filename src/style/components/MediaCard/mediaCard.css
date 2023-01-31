@@ -32,6 +32,8 @@
 .icon_text {
   margin-left: 14px;
   line-height: 14px;
+  font-weight: 500;
+  /* font-weight: 600; */
 }
 
 .office_icon_text {
@@ -164,7 +166,7 @@ ion-segment {
 ion-label {
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 500 !important;
   font-size: 15px !important;
   line-height: 25px;
   color: inherit;

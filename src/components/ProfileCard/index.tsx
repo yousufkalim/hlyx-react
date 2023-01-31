@@ -36,10 +36,12 @@ export interface ProfileCardProps {
   name: string;
   position: string;
   location: string;
+  companyName?: string|undefined ;
 }
 
 const ProfileCard = ({
   backgroundImage,
+  companyName,
   companyLogo,
   name,
   position,
@@ -81,7 +83,7 @@ const ProfileCard = ({
           <section className="detail-container">
             <section className="detail">
               <BagIcon />
-              <p className="position-text">{position}</p>
+              <p className="position-text">{position} <span style={{fontWeight: "bold" }}>{companyName}</span></p>
             </section>
             <section className="detail">
               <LocationIcon />
