@@ -33,42 +33,48 @@ export const profileData = [
     backgroundImage: profileOne,
     companyLogo: sphere,
     name: "Dr. Kenji Awurama",
-    position: "Dr. Kenji Awurama",
+    position: "Executive Director at ",
+    companyName:"Sphere Bio Tech",
     location: "Palo Alto, California",
   },
   {
     backgroundImage: profileTwo,
     companyLogo: scendia,
     name: "Susan Martinez",
-    position: "Chief Financial Officer at Scendia Bio",
+    companyName:"Scendia Bio",
+    position: "Chief Financial Officer",
     location: "Irvine, California",
   },
   {
     backgroundImage: AmberNguyen,
+    companyName:"Fashion CX",
     companyLogo: cx,
     name: "Amber Nguyen",
-    position: "CEO & Chief Stylist at Fashion CX",
+    position: "CEO & Chief Stylist",
     location: "New York, New York",
   },
   {
     backgroundImage: TerranceBryant,
     companyLogo: RealtyGroup,
+    companyName:"Bryant Realty Group",
     name: "Terrance Bryant",
-    position: "Founder at Bryant Realty Group",
+    position: "Founder",
     location: "San Jose, New Mexico",
   },
   {
     backgroundImage: LeenaAcoladae,
     companyLogo: HorizonMedia,
+    companyName:"New Horizon Media",
     name: "Leena Acoladae",
-    position: "CEO at New Horizon Media",
+    position: "CEO",
     location: "San Jose, New Mexico",
   },
   {
     backgroundImage: TerrancetBryant,
     companyLogo: HamiltonRestaurant,
+    companyName:"Hamilton Restaurant",
     name: "Terrance Bryant",
-    position: "Executive Chef at Hamilton Restaurant",
+    position: "Executive Chef",
     location: "San Mateo, California",
   },
 ];
@@ -119,11 +125,12 @@ const Professional = () => {
           >
             {profileData.map(
               (
-                { backgroundImage, companyLogo, name, position, location },
+                { backgroundImage, companyLogo, name, position,companyName, location },
                 index
               ) => (
                 <IonSlide key={index} id={`index-{index}`}>
                   <ProfileCard
+                    companyName={companyName}
                     backgroundImage={backgroundImage}
                     name={name}
                     position={position}

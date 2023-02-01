@@ -83,7 +83,7 @@ const MediaCard = () => {
           <div style={{ marginRight: 5 }}>
             <LinkBtnIcon />
           </div>
-          Link with Me
+          Add Contact
         </IonButton>
       </IonCard>
 
