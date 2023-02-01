@@ -27,6 +27,7 @@ ion-card {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
+  /* font-weight: 600; */
   font-size: 14.5px;
   line-height: 15px;
 }
@@ -57,7 +58,7 @@ ion-card {
 .title-one {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 13px;
   line-height: 25px;
   color: #606C82;

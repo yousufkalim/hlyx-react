@@ -20,10 +20,9 @@ import {
   ForwardIcon,
   GoalsIcon,
   ProfessionIcon,
-  EducationIcon
+  EducationIcon,
+  AcheievementIcon
 } from "../assets/icons";
-import Education from "../assets/educationLogo.png";
-import Achievement from "../assets/achievement.png";
 import ReadMoreText from "./ReadMoreText";
 
 
@@ -88,7 +87,7 @@ const AboutTab = () => {
       </AboutCard>
 
       <AboutCard
-        icon={<img src={Education} alt="Education Logo" />}
+        icon={<EducationIcon />}
         cardTitle="Education"
         cardTagTitle="xxx"
         isTagTitle={false}
@@ -126,7 +125,7 @@ const AboutTab = () => {
       </AboutCard>
 
       <AboutCard
-        icon={<img src={Achievement} alt="Achievemt Logo" />}
+        icon={<AcheievementIcon />}
         cardTitle="Achievements"
         cardTagTitle="xxx"
         isTagTitle={false}
