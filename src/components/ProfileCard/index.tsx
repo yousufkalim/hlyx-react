@@ -7,7 +7,7 @@ import {
   // HeartIcon,
   LocationIcon,
   // SendIcon,
-  SwipeBar
+  SwipeBar,
 } from "../../assets/icons";
 import "../../style/components/profileCard.css";
 
@@ -45,11 +45,9 @@ const ProfileCard = ({
   position,
   location,
 }: ProfileCardProps) => {
+  const [btn, setbtn] = useState(false);
   return (
-    <IonContent
-    class="overflow-hidden"
-      fullscreen
-    >
+    <IonContent class="overflow-hidden" fullscreen>
       <img
         style={{
           position: "absolute",
@@ -68,7 +66,7 @@ const ProfileCard = ({
       {/* <FloatingButtonGroup icons={floatingIcons} /> Floating icons remove  */}
       <article className="cardContainer">
         <section
-        className="logoName"
+          className="logoName"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -92,31 +90,58 @@ const ProfileCard = ({
           </section>
         </section>
       </article>
-      <section className="link-Button">
-      <SwipeBar/>
-        <IonCard
-          className="linkButton-Card"
-          style={{
-            background: "none",
-            border: "none",
-            outline: "none",
+
+      <section className="link-Button-section">
+        <div
+          onClick={() => {
+            setbtn(!btn);
           }}
         >
-          <IonButton
-            expand="block"
-            style={{
-              fontFamily: "Montserrat",
-              fontStyle: "normal",
-              fontWeight: 600,
-              fontSize: "18px",
-              lineHeight: "18px",
-              transform: "rotate(-360deg)",
-            }}
-            color="light"
-            routerLink="/profile"
-          >
-            Link with Me
-          </IonButton>
+          <SwipeBar />
+        </div>
+        <IonCard className="button-section">
+          {btn ? (
+            <IonButton
+              expand="block"
+              style={{
+                fontFamily: "Montserrat",
+                fontStyle: "normal",
+                fontWeight: 600,
+                fontSize: "18px",
+                lineHeight: "18px",
+                width: "327.38px",
+                height: "45px",
+                transform: "rotate(-360deg)",
+              }}
+              color="primary"
+              shape="round"
+              size="large"
+              routerLink="/profile"
+            >
+              Link with Me
+            </IonButton>
+          ) : (
+            <section className="buttons">
+              <IonButton
+                color="primary"
+                shape="round"
+                size="large"
+                className="inner-btn"
+              >
+                {" "}
+                Add Link
+              </IonButton>
+              <IonButton
+                color="light"
+                shape="round"
+                fill="outline"
+                size="large"
+                className="inner-btn"
+              >
+                Message
+              </IonButton>
+            </section>
+          )}
         </IonCard>
       </section>
     </IonContent>
