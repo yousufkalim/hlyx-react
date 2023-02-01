@@ -23,7 +23,7 @@ const PortfolioCard = () => {
 
   return (
     <>
-      <IonCard style={{ marginTop: -10, borderRadius: "0px 0px 10px 10px" }}>
+      <IonCard>
         <div className="flex align-center justify-between">
           <IonLabel className="slider-card-heading">Featured Photos</IonLabel>
           <div className="flex justify-end">

@@ -48,7 +48,6 @@ const AboutTab = () => {
   return (
     <>
       <AboutCard
-        style={{ marginTop: -10, borderRadius: "0px 0px 10px 10px" }}
         icon={<AvatarIcon />}
         cardTitle="Bio"
         cardTagTitle="xxx"

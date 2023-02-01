@@ -1,5 +1,4 @@
 .cover_photo_card {
-  border-radius: 0 0 10px 10px;
   margin-top: -4px;
   padding-top: 63px;
   padding-inline: 20px;
@@ -12,15 +11,12 @@
 
 .cover_photo_container {
   position: relative;
-  padding-inline: 11px;
   z-index: 10;
-  margin-top: 12.25px;
 }
 
 .cover_photo {
   width: 100%;
   height: 283px;
-  border-radius: 30px 30px 0px 0px;
   object-fit: cover;
   object-position: top;
 }
@@ -52,18 +48,21 @@ ion-card-header.ios {
 }
 
 ion-segment-button {
-  --indicator-color: white;
-  --background: var(--bg-color);
+  --indicator-color: #E8EBF1;
+  --background: #E8EBF1;
   color: var(--text-tab-color);
   border-radius: 0px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 18px;
   text-transform: capitalize;
-  border-bottom: 2px solid #c4c4c4;
-  padding-block: 27px 21px;
-  margin: 0;
+  border-top: 2px solid #c4c4c4;
+  margin: 0px;
+  --padding-top: 10px;
+  --padding-end: 0px;
+  --padding-bottom: 10px;
+  --padding-start: 0px;
 }
 
 ion-segment-button::before {
@@ -71,8 +70,10 @@ ion-segment-button::before {
 }
 
 .segment-button-checked {
+  --indicator-color: #E8EBF1;
   --indicator-box-shadow: none;
-  border-bottom: 2px solid black;
+  border-top: 5px solid #0047FF;
+  background: #E8EBF1;
   color: black;
   font-weight: 700;
 }
@@ -115,31 +116,31 @@ ion-card-content {
   display: flex;
   gap: 10px;
 }
-.ion_text p{
+
+.ion_text p {
   font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 16px;
-color: #000000;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  color: #000000;
 }
+
 ion-card {
-  margin: 11px;
+  margin: 0px;
   padding-bottom: 20px;
-  border-radius: 10px;
+  border-radius: 0px;
   box-shadow: none;
   border-bottom: 1px solid #c4c4c4;
 }
 
 .tab_container {
   padding: 0 !important;
-  border-radius: 10px 10px 0 0;
   border-bottom: none;
 }
 
 .tab_card {
-  margin-top: -10px;
-  border-radius: 0 0 10px 10px;
+  margin-top: 0px;
   padding-top: 25px;
 }
 
@@ -209,7 +210,7 @@ ion-accordion.accordion-expanded>[slot="header"] .ion-accordion-toggle-icon {
   line-height: 24px;
   text-transform: capitalize;
   --padding-block: 10px;
-  --border-radius: 11px;
+  --border-radius: 30px;
   --background: #0047ff;
 }
 
@@ -221,8 +222,8 @@ ion-accordion.accordion-expanded>[slot="header"] .ion-accordion-toggle-icon {
 }
 
 .outline-btn {
-  --border-radius: 10px;
-  margin: 11px;
+  --border-radius: 30px;
+  margin: 10px;
   text-transform: capitalize;
 
 }
@@ -255,4 +256,24 @@ ion-accordion.accordion-expanded>[slot="header"] .ion-accordion-toggle-icon {
   font-weight: 400;
   font-size: 13px !important;
   line-height: 16px;
+}
+
+.profile-header-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 22px;
+  align-items: center;
+}
+
+.back-btn {
+  --background: transparent !important;
+  --background-activated: transparent !important;
+  --background-hover: transparent !important;
+  --background-focused: transparent !important;
+  --box-shadow: none;
+  margin: 0px;
+}
+
+.back-btn::part(native) {
+  padding: 0px;
 }

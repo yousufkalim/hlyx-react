@@ -166,39 +166,41 @@
 }
 
 .portfolio_container {
-  margin: -10.5px 11px 11px 11px !important;
+  margin: 0px !important;
   padding: 0 !important;
   border-radius: 0;
 }
 
 .portfolio-tab-segment-button {
-  max-width: 93.95px;
-  opacity: 0.8;
-  padding: 7.55px 23.87px 7.46px 22.08px;
   border-bottom: none;
+  font-family: Montserrat,sans-serif!important;
+  font-size: 13px!important;
   font-weight: inherit;
-  font-size: 13px !important;
-  font-family: 'Montserrat', sans-serif !important;
   line-height: 12px;
+  max-width: 93.95px;
+  opacity: .8;
+  padding: 0px;
 }
 
 .portfolio-tab-segment-button-container {
   --indicatorbox-shadow: none;
-  min-height: 27.02px;
-  color: var(--text-gray-color);
   --background: 888888;
-  padding: 0px 0;
   border-bottom: none;
+  color: var(--text-gray-color);
+  min-height: 27.02px;
+  padding: 0;
+  border-top: none;
 }
 
 .portfolio-btn-tab-container>.segment-button-checked {
-  background: #F1F4F9;
   --indicator-color: transparent;
-  border-radius: 7.93643px;
-  color: var(--text-color);
-  border-bottom: none;
-  --indicator-box-shadow: none;
-  font-weight: 600;
+    --indicator-box-shadow: none;
+    background: #f1f4f9;
+    border-bottom: none;
+    border-radius: 7.93643px;
+    color: var(--text-color);
+    font-weight: 600;
+    border-top: none;
 }
 
 .portfolio-btn-tab-container {

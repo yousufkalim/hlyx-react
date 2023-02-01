@@ -2,25 +2,23 @@ import { useState } from "react";
 import {
   IonButton,
   IonCard,
-  IonCardContent,
-  IonCardSubtitle,
   IonLabel,
   IonSegmentButton,
   IonSegment,
 } from "@ionic/react";
-import profileOne from "../../assets/media/media-image.png";
-import sphere from "../../assets/sphere.png";
 import "../../style/components/MediaCard/mediaCard.css";
 import {
-  BreifIcon,
-  LinkBtnIcon,
-  LocateIcon,
+  AvatarHeaderIcon,
+  BackBtnIcon,
+  HlyxHeaderLogo,
   WaterMake,
 } from "../../assets/icons";
 import ContactTab from "../ContactTab";
 import ServicesTab from "../ServicesTab";
 import AboutTab from "../AboutTab";
 import PortfolioTab from "../PortfolioTab";
+import HeroSession from "./heroSession";
+import InfoButton from "../InfoButton";
 
 export const ProfileTabs = ["Contact", "About", "Service", "Portfolio"];
 
@@ -52,40 +50,17 @@ const MediaCard = () => {
   const [activeTab, setActiveTab] = useState("0");
   return (
     <>
-      <div className="cover_photo_container">
-        <img
-          alt="Silhouette of mountains"
-          src={profileOne}
-          className="cover_photo"
-        />
-        <img alt="company logo" className="avatar-icon" src={sphere} />
-      </div>
-      <IonCard className="cover_photo_card ion_Card">
-        <IonCardSubtitle>Dr. Kenji Awurama</IonCardSubtitle>
-
-        <IonCardContent className="ion-content">
-          <div className="ion_text">
-            <BreifIcon />
-            <p>
-              Executive Director at <b>Sphere Bio Tech</b>
-            </p>
-          </div>
-
-          <div className="ion_text">
-            <LocateIcon />
-            <p>Palo Alto, California</p>
-          </div>
-        </IonCardContent>
-      </IonCard>
-
-      <IonCard className="link_card">
-        <IonButton expand="block" className="ion-btn">
-          <div style={{ marginRight: 5 }}>
-            <LinkBtnIcon />
-          </div>
-          Link with Me
+      <div className="profile-header-container">
+        <IonButton
+          expand="full"
+          className="back-btn"
+          routerLink="/"
+        >
+          <BackBtnIcon color="black" />
         </IonButton>
-      </IonCard>
+        <HlyxHeaderLogo color="black" />
+        <AvatarHeaderIcon />
+      </div>
 
       <IonCard className="tab_container">
         <IonSegment value={activeTab} swipeGesture={false} scrollable>
@@ -103,10 +78,12 @@ const MediaCard = () => {
           ))}
         </IonSegment>
       </IonCard>
+      <HeroSession />
       <ActiveTabContent activeTab={activeTab} />
-      <div style={{ marginBlock: 24, textAlign: "center" }}>
+      {/* <div style={{ marginBlock: 24, textAlign: "center" }}>
         <WaterMake />
-      </div>
+      </div> */}
+        <InfoButton />
     </>
   );
 };

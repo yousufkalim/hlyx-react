@@ -44,7 +44,7 @@ const LinksData = [
 ];
 const ServiceCard = () => {
   return (
-    <IonCard style={{ marginTop: -10, borderRadius: "0px 0px 10px 10px" }}>
+    <IonCard>
       <div className="flex align-center br-btm justify-contain">
         <div className="flex align-center">
           <div className="card-icon">
