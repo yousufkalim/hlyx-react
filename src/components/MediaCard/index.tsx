@@ -50,40 +50,44 @@ const MediaCard = () => {
   const [activeTab, setActiveTab] = useState("0");
   return (
     <>
-      <div className="profile-header-container">
-        <IonButton
-          expand="full"
-          className="back-btn"
-          routerLink="/"
-        >
-          <BackBtnIcon color="black" />
-        </IonButton>
-        <HlyxHeaderLogo color="black" />
-        <AvatarHeaderIcon />
-      </div>
-
-      <IonCard className="tab_container">
-        <IonSegment value={activeTab} swipeGesture={false} scrollable>
-          {ProfileTabs.map((tab, index) => (
-            <IonSegmentButton
-              color="primary"
-              onClick={() => {
-                setActiveTab(`${index}`);
-              }}
-              value={index.toString()}
-              key={index}
+      <div style={{position:"relative"}}>
+        <div className="sticky-header">
+          <div className="profile-header-container">
+            <IonButton
+              expand="full"
+              className="back-btn"
+              routerLink="/"
             >
-              <IonLabel className="segment-btn-label">{tab}</IonLabel>
-            </IonSegmentButton>
-          ))}
-        </IonSegment>
-      </IonCard>
-      <HeroSession />
-      <ActiveTabContent activeTab={activeTab} />
-      {/* <div style={{ marginBlock: 24, textAlign: "center" }}>
+              <BackBtnIcon color="black" />
+            </IonButton>
+            <HlyxHeaderLogo color="black" />
+            <AvatarHeaderIcon />
+          </div>
+
+          <IonCard className="tab_container">
+            <IonSegment value={activeTab} swipeGesture={false} scrollable>
+              {ProfileTabs.map((tab, index) => (
+                <IonSegmentButton
+                  color="primary"
+                  onClick={() => {
+                    setActiveTab(`${index}`);
+                  }}
+                  value={index.toString()}
+                  key={index}
+                >
+                  <IonLabel className="segment-btn-label">{tab}</IonLabel>
+                </IonSegmentButton>
+              ))}
+            </IonSegment>
+          </IonCard>
+        </div>
+        <HeroSession />
+        <ActiveTabContent activeTab={activeTab} />
+        {/* <div style={{ marginBlock: 24, textAlign: "center" }}>
         <WaterMake />
       </div> */}
         <InfoButton />
+      </div>
     </>
   );
 };

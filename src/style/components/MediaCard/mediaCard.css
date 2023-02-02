@@ -279,3 +279,11 @@ ion-accordion.accordion-expanded>[slot="header"] .ion-accordion-toggle-icon {
 .back-btn::part(native) {
   padding: 0px;
 }
+
+.sticky-header {
+  position: sticky;
+  z-index: 11;
+  -webkit-backdrop-filter: saturate(200%) blur(20px);
+  backdrop-filter: saturate(200%) blur(10px);
+  top: 0;
+}
