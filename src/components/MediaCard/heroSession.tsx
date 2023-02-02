@@ -29,21 +29,21 @@ const HeroSession = () => {
 
         <IonCardContent className="ion-content">
           <div className="ion_text">
-            <BreifIcon />
+            <BreifIcon color="var(--text-color)" />
             <p>
               Executive Director at <b>Sphere Bio Tech</b>
             </p>
           </div>
 
           <div className="ion_text">
-            <LocateIcon />
+            <LocateIcon color="var(--text-color)" />
             <p>Palo Alto, California</p>
           </div>
         </IonCardContent>
       </IonCard>
 
       <IonCard className="link_card">
-        <IonButton expand="block" className="ion-btn">
+        <IonButton color="primary" expand="block" className="ion-btn">
           <div style={{ marginRight: 5 }}>
             <LinkBtnIcon />
           </div>

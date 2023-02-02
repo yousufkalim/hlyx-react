@@ -56,9 +56,9 @@ const MediaCard = () => {
           className="back-btn"
           routerLink="/"
         >
-          <BackBtnIcon color="black" />
+          <BackBtnIcon color={"var(--text-color)"} />
         </IonButton>
-        <HlyxHeaderLogo color="black" />
+        <HlyxHeaderLogo color={"var(--text-color)"} />
         <AvatarHeaderIcon />
       </div>
 
@@ -73,7 +73,7 @@ const MediaCard = () => {
               value={index.toString()}
               key={index}
             >
-              <IonLabel className="segment-btn-label">{tab}</IonLabel>
+              <IonLabel className="segment-btn-label" >{tab}</IonLabel>
             </IonSegmentButton>
           ))}
         </IonSegment>

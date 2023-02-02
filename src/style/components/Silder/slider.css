@@ -180,6 +180,7 @@
   max-width: 93.95px;
   opacity: .8;
   padding: 0px;
+  color: var(--text-color);
 }
 
 .portfolio-tab-segment-button-container {
@@ -195,7 +196,7 @@
 .portfolio-btn-tab-container>.segment-button-checked {
   --indicator-color: transparent;
     --indicator-box-shadow: none;
-    background: #f1f4f9;
+    background: var(--button-color);
     border-bottom: none;
     border-radius: 7.93643px;
     color: var(--text-color);
@@ -208,4 +209,5 @@
   padding: 15.04px 25.83px;
   justify-content: space-between;
   display: flex;
+  background-color: var(--bg-color);
 }
