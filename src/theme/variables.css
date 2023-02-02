@@ -4,6 +4,7 @@ http://ionicframework.com/docs/theming/ */
 /** Ionic CSS Variables **/
 :root {
   --bg-color: white;
+  --header-bg-color: transparent;
   --text-color: #000;
   --text-gray-color: #C4C4C4;
   --text-white-color: #FFFFFF;
@@ -96,6 +97,7 @@ http://ionicframework.com/docs/theming/ */
 
   :root {
     --bg-color: #252731;
+  --header-bg-color: #0a0a0d82;
     --text-gray-color: #fff;
     --text-color: #fff;
     --text-white-color: #252731;
