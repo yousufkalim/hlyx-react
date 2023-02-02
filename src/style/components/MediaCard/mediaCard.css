@@ -51,7 +51,7 @@ ion-card-header.ios {
 
 ion-segment-button {
   --indicator-color: #E8EBF1;
-  --background: #E8EBF1;
+  --background: var(--bg-color);
   color: var(--text-tab-color);
   border-radius: 0px;
   font-family: "Montserrat", sans-serif;
@@ -72,11 +72,11 @@ ion-segment-button::before {
 }
 
 .segment-button-checked {
-  --indicator-color: #E8EBF1;
+  --indicator-color: none;
   --indicator-box-shadow: none;
   border-top: 5px solid #0047FF;
-  background: #E8EBF1;
-  color: black;
+  background: var(--bg-color);
+  color: var(--text-color);
   font-weight: 700;
 }
 
@@ -115,6 +115,7 @@ ion-card-content {
 }
 
 .ion_text {
+  color: var(--text-color);
   display: flex;
   gap: 10px;
 }
@@ -125,7 +126,7 @@ ion-card-content {
   font-weight: 400;
   font-size: 15px;
   line-height: 16px;
-  color: #000000;
+  color: var(--text-color);
 }
 
 ion-card {
@@ -261,9 +262,10 @@ ion-accordion.accordion-expanded>[slot="header"] .ion-accordion-toggle-icon {
 }
 
 .profile-header-container {
+  background-color: var(--header-bg-color);
   display: flex;
   justify-content: space-between;
-  margin: 22px;
+  padding: 22px;
   align-items: center;
 }
 

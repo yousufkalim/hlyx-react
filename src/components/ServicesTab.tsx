@@ -48,7 +48,7 @@ const ServiceCard = () => {
       <div className="flex align-center br-btm justify-contain">
         <div className="flex align-center">
           <div className="card-icon">
-            <ServiceIcon />
+            <ServiceIcon color={"var(--icon-back)"} white={"var(--text-color)"} />
           </div>
           <IonCardTitle className="card-title">
             Services Offered by <strong>Sphere Bio Tech</strong>
@@ -77,14 +77,22 @@ const ServicesTab = () => {
   return (
     <div>
       <ServiceCard />
+      <div style={{paddingBlock:20,backgroundColor: "var(--bg-color)"}}>
       <IonButton
         className="outline-btn"
         fill="outline"
         expand="block"
-        style={{ marginBlock: 20, fontWeight: 600 }}
+        shape="round"
+        style={{
+          fontWeight: 600,
+          fontSize: 15,
+          lineHeight: "17px",
+          fontFamily: "Poppins",
+        }}
       >
         Create Your Free Profile
       </IonButton>
+      </div>
     </div>
   );
 };

@@ -47,6 +47,7 @@ const ProfileCard = ({
   position,
   location,
 }: ProfileCardProps) => {
+  const [btn, setbtn] = useState(true);
   return (
     <IonContent
     class="overflow-hidden"
@@ -94,32 +95,56 @@ const ProfileCard = ({
           </section>
         </section>
       </article>
-      <section className="link-Button">
-      <SwipeBar/>
-        <IonCard
-          className="linkButton-Card"
-          style={{
-            background: "none",
-            border: "none",
-            outline: "none",
+      <section className="link-Button-section">
+        <div
+          onClick={() => {
+            setbtn(!btn);
           }}
         >
-          <IonButton
-            expand="block"
-            style={{
-              fontFamily: "Montserrat",
-              fontStyle: "normal",
-              fontWeight: 600,
-              fontSize: "18px",
-              lineHeight: "18px",
-              transform: "rotate(-360deg)",
-              textAlign: "center"
-            }}
-            color="light"
-            routerLink="/profile"
-          >
-            Connect with Me
-          </IonButton>
+          <SwipeBar />
+        </div>
+        <IonCard className="button-section">
+          {btn ? (
+            <IonButton
+              expand="block"
+              style={{
+                fontFamily: "Montserrat",
+                fontStyle: "normal",
+                fontWeight: 600,
+                fontSize: "18px",
+                lineHeight: "18px",
+                width: "327.38px",
+                height: "45px",
+                transform: "rotate(-360deg)",
+              }}
+              
+              shape="round"
+              size="large"
+              routerLink="/profile"
+            >
+              Link with Me
+            </IonButton>
+          ) : (
+            <section className="buttons">
+              <IonButton
+                color="primary"
+                shape="round"
+                size="large"
+                className="inner-btn"
+              >
+                Add Link
+              </IonButton>
+              <IonButton
+                color="light"
+                shape="round"
+                fill="outline"
+                size="large"
+                className="inner-btn"
+              >
+                Message
+              </IonButton>
+            </section>
+          )}
         </IonCard>
       </section>
     </IonContent>

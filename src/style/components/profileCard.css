@@ -119,15 +119,43 @@ h1 {
   --padding: 13px 18px;
   --border-radius: 11px;
 }
-.link-Button {
-  height: 114.33px;
+.link-Button-section {
   min-width: -webkit-fill-available;
   position: absolute;
-  bottom: 2px;
-  background: rgb(60, 77, 95, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.19);
-  border-radius: 30px 30px 0 0;
+  bottom: 13px;
+  height: 87.57px;
+  /* background: rgb(60, 77, 95, 0.5);
+  border: "1px solid" rgba(255, 255, 255, 0.19);
+  border-radius: 30px 30px 0 0; */
 }
+/* Add/Message Buttons Start */
+.link-Button-section .button-section {
+  margin: 0 !important;
+  background: rgb(37, 39, 49, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.19);
+  height: 78.58px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-Button-section .button-section .buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+.link-Button-section .button-section .buttons .inner-btn {
+  width: 158.86px;
+  height: 45px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 17px;
+}
+/* Add/Message Button End */
 .link-Button .linkButton-Card {
   padding: 0 10px 20px 10px !important;
 }

@@ -9,6 +9,7 @@ ion-card {
 
 .flex {
   display: flex;
+  /* background-color: var(--bg-color); */
 }
 
 .align-center {
@@ -141,8 +142,8 @@ ion-card {
 .custom-chip {
   border: 0.941107px solid #606C82;
   border-radius: 7.52885px;
-  color: #606C82;
-  background-color: white;
+  color: var(--item-color);
+  background-color: var(--bg-color);
   margin: 0px 16.94px 5px 0px;
 }
 

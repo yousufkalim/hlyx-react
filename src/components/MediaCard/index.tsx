@@ -50,7 +50,7 @@ const MediaCard = () => {
   const [activeTab, setActiveTab] = useState("0");
   return (
     <>
-      <div style={{position:"relative"}}>
+      <div style={{ position: "relative" }}>
         <div className="sticky-header">
           <div className="profile-header-container">
             <IonButton
@@ -58,9 +58,9 @@ const MediaCard = () => {
               className="back-btn"
               routerLink="/"
             >
-              <BackBtnIcon color="black" />
+              <BackBtnIcon color={"var(--text-color)"} />
             </IonButton>
-            <HlyxHeaderLogo color="black" />
+            <HlyxHeaderLogo color={"var(--text-color)"} />
             <AvatarHeaderIcon />
           </div>
 
@@ -75,7 +75,7 @@ const MediaCard = () => {
                   value={index.toString()}
                   key={index}
                 >
-                  <IonLabel className="segment-btn-label">{tab}</IonLabel>
+                  <IonLabel className="segment-btn-label" >{tab}</IonLabel>
                 </IonSegmentButton>
               ))}
             </IonSegment>
