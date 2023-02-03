@@ -8,10 +8,8 @@ import {
 } from "@ionic/react";
 import "../../style/components/MediaCard/mediaCard.css";
 import {
-  AvatarHeaderIcon,
   BackBtnIcon,
   HlyxHeaderLogo,
-  WaterMake,
 } from "../../assets/icons";
 import ContactTab from "../ContactTab";
 import ServicesTab from "../ServicesTab";
@@ -19,6 +17,7 @@ import AboutTab from "../AboutTab";
 import PortfolioTab from "../PortfolioTab";
 import HeroSession from "./heroSession";
 import InfoButton from "../InfoButton";
+import avatarHeader from "../../assets/icons/avatar-header-icon.svg";
 
 export const ProfileTabs = ["Contact", "About", "Service", "Portfolio"];
 
@@ -61,7 +60,7 @@ const MediaCard = () => {
               <BackBtnIcon color={"var(--text-color)"} />
             </IonButton>
             <HlyxHeaderLogo color={"var(--text-color)"} />
-            <AvatarHeaderIcon />
+            <img src={avatarHeader} alt="avatar-header-icon" />
           </div>
 
           <IonCard className="tab_container">

@@ -25,15 +25,15 @@
   font-weight: 500 !important;
 }
 /* About Tab Bio */
-.font-Style {
+.font-style {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
-  color: #787878;
+  color: var(--about-card-text);
 }
-.font-Style span{
+.font-style span{
   font-weight: bold;
   color: var(--text-color)
 }

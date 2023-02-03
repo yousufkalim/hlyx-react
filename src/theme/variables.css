@@ -3,19 +3,23 @@ http://ionicframework.com/docs/theming/ */
 
 /** Ionic CSS Variables **/
 :root {
+  --about-card-text: #787878;
   --bg-color: white;
   --header-bg-color: transparent;
   --text-color: #000;
-  --text-gray-color: #C4C4C4;
-  --text-white-color: #FFFFFF;
+  --text-gray-color: #c4c4c4;
+  --text-white-color: #ffffff;
   --text-tab-color: #888888;
-  --icon-back: #E8EBF1;
-  --social-back: #E8EBF1;
+  --icon-back: #e8ebf1;
+  --social-back: #e8ebf1;
   --create-button: #186bfe;
-  --item-color: #606C82;
+  --segment-btn-checked: #0047ff;
+  --item-color: #606c82;
   --button-color: #f1f4f9;
+  --portfolio-heading: #828ea4;
+  --scrollbar-color: rgba(0, 0, 0, 0.5);
+  --segment-border-top: #c4c4c4;
 
-  
   /** primary **/
   --ion-color-primary: #186bfe;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -96,20 +100,25 @@ http://ionicframework.com/docs/theming/ */
    */
 
   :root {
+    --about-card-text: white;
+    --scrollbar-color: #fff;
     --bg-color: #252731;
-  --header-bg-color: #0a0a0d82;
+    --header-bg-color: #0a0a0d82;
     --text-gray-color: #fff;
     --text-color: #fff;
     --text-white-color: #252731;
     --text-tab-color: #fff;
+    --segment-btn-checked: #5b16ee;
     --button-color: #5b16ee;
     --tab-height: 67.15px;
     --border-none: none;
     --margin-block: 13px;
     --icon-back: none;
-    --social-back: #393A45;
+    --social-back: #393a45;
     --create-button: white;
     --item-color: #fff;
+    --portfolio-heading: #fff;
+    --segment-border-top: #40414D;
   }
 
   body {

@@ -7,6 +7,7 @@
 
 .link_card {
   padding: 20px 18px;
+  background-color: var(--bg-color);
 }
 
 .cover_photo_container {
@@ -50,7 +51,7 @@ ion-card-header.ios {
 }
 
 ion-segment-button {
-  --indicator-color: #E8EBF1;
+  --indicator-color: #e8ebf1;
   --background: var(--bg-color);
   color: var(--text-tab-color);
   border-radius: 0px;
@@ -59,7 +60,7 @@ ion-segment-button {
   font-size: 13px;
   line-height: 18px;
   text-transform: capitalize;
-  border-top: 2px solid #c4c4c4;
+  border-top: 2px solid var(--segment-border-top);
   margin: 0px;
   --padding-top: 10px;
   --padding-end: 0px;
@@ -74,18 +75,19 @@ ion-segment-button::before {
 .segment-button-checked {
   --indicator-color: none;
   --indicator-box-shadow: none;
-  border-top: 5px solid #0047FF;
+  border-top: 5px solid var(--segment-btn-checked);
   background: var(--bg-color);
   color: var(--text-color);
   font-weight: 700;
 }
 
 .avatar-icon {
+  background-color: var(--bg-color);
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background: white;
+  /* background: white; */
   padding: 10px;
   border-radius: 37.49%;
   bottom: -40px;
@@ -121,7 +123,7 @@ ion-card-content {
 }
 
 .ion_text p {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -161,7 +163,7 @@ ion-card {
 
 ion-segment {
   padding-left: 0px;
-  background-color: white;
+  background-color: var(--bg-color);
   border-radius: 0px;
 }
 
@@ -192,7 +194,7 @@ ion-label {
   color: #b6b6b6 !important;
 }
 
-ion-accordion.accordion-expanded>[slot="header"] .ion-accordion-toggle-icon {
+ion-accordion.accordion-expanded > [slot="header"] .ion-accordion-toggle-icon {
   transform: rotate(90deg);
   color: #b6b6b6;
 }
@@ -225,10 +227,15 @@ ion-accordion.accordion-expanded>[slot="header"] .ion-accordion-toggle-icon {
 }
 
 .outline-btn {
+  color: var(--create-button);
+  --border-color: var(--create-button);
+  font-weight: 600;
+  font-size: 15;
+  line-height: 17px;
+  font-family: "Poppins";
   --border-radius: 30px;
   margin: 10px;
   text-transform: capitalize;
-
 }
 
 .accordion-header {

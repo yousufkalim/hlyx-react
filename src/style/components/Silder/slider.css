@@ -82,7 +82,7 @@
   font-weight: 700;
   font-size: 13px !important;
   line-height: 16px;
-  color: #828EA4;
+  color: var(--portfolio-heading);
   margin: 0px 0px 0px 14.52px;
 }
 
@@ -161,6 +161,7 @@
 
 .swiper-image-container>div>.swiper-scrollbar {
   position: relative !important;
+  background-color: var(--scrollbar-color);
   height: 1px !important;
   margin-top: 15.91px !important;
 }
