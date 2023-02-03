@@ -134,6 +134,8 @@ h1 {
   background: rgb(37, 39, 49, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.19);
   height: 78.58px;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   display: flex;
@@ -166,4 +168,15 @@ h1 {
   font-size: 38px;
   line-height: 44px;
   color: #ffffff;
+}
+.profile-footer-button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  width: 327.38px;
+  height: 45px;
+  transform: "rotate(-360deg)";
+  --border-radius: 30px;
 }

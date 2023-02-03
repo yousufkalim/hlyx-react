@@ -107,18 +107,7 @@ const ProfileCard = ({
           {btn ? (
             <IonButton
               expand="block"
-              style={{
-                fontFamily: "Montserrat",
-                fontStyle: "normal",
-                fontWeight: 600,
-                fontSize: "18px",
-                lineHeight: "18px",
-                width: "327.38px",
-                height: "45px",
-                transform: "rotate(-360deg)",
-              }}
-              
-              shape="round"
+              className="profile-footer-button"
               size="large"
               routerLink="/profile"
             >

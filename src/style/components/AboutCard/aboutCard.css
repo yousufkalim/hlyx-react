@@ -62,7 +62,7 @@ ion-card {
   font-weight: 500;
   font-size: 13px;
   line-height: 25px;
-  color: #606C82;
+  color: var(--item-color);
 }
 
 .content-one {

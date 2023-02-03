@@ -7,7 +7,7 @@ interface ReadMoreTextProps {
 const ReadMoreText = ({ text, limit = 200 }: ReadMoreTextProps) => {
   const [showText, setShowText] = useState(false);
   return (
-    <p className="font-Style">
+    <p className="font-style">
       {showText ? text : `${text.substring(0, limit)}...`}{" "}
       <span onClick={() => setShowText(!showText)}>
         {showText ? "Read Less" : "Read More"}

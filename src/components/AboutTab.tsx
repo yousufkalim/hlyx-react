@@ -47,7 +47,7 @@ const AboutTab = () => {
   return (
     <>
       <AboutCard
-        icon={<AvatarIcon color={"var(--social-back)"}  white={"var(--text-color)"}/>}
+        icon={<AvatarIcon color={"var(--icon-back)"}  white={"var(--text-color)"}/>}
         cardTitle="Bio"
         cardTagTitle="xxx"
         isTagTitle={false}
@@ -71,7 +71,7 @@ const AboutTab = () => {
       </AboutCard>
 
       <AboutCard
-        icon={<ProfessionIcon color={"var(--social-back)"}  white={"var(--text-color)"}/>}
+        icon={<ProfessionIcon color={"var(--icon-back)"}  white={"var(--text-color)"}/>}
         cardTitle="Profession"
         cardTagTitle="xxx"
         isTagTitle={false}
@@ -87,7 +87,7 @@ const AboutTab = () => {
       </AboutCard>
 
       <AboutCard
-        icon={<EducationIcon color={"var(--social-back)"}  white={"var(--text-color)"} />}
+        icon={<EducationIcon color={"var(--icon-back)"}  white={"var(--text-color)"} />}
         cardTitle="Education"
         cardTagTitle="xxx"
         isTagTitle={false}
@@ -106,7 +106,7 @@ const AboutTab = () => {
       </AboutCard>
 
       <AboutCard
-        icon={<AccoladesIcon color={"var(--social-back)"}  white={"var(--text-color)"}/>}
+        icon={<AccoladesIcon color={"var(--icon-back)"}  white={"var(--text-color)"}/>}
         cardTitle="Accolades"
         cardTagTitle="xxx"
         isTagTitle={false}
@@ -125,7 +125,7 @@ const AboutTab = () => {
       </AboutCard>
 
       <AboutCard
-        icon={<AcheievementIcon color={"var(--social-back)"}  white={"var(--text-color)"} />}
+        icon={<AcheievementIcon color={"var(--icon-back)"}  white={"var(--text-color)"} />}
         cardTitle="Achievements"
         cardTagTitle="xxx"
         isTagTitle={false}
@@ -136,7 +136,7 @@ const AboutTab = () => {
           >
             <div
               className="forward-icon content-three"
-              style={{ color: "#606C82" }}
+              style={{ color: "var(--item-color)" }}
             >
               2022
             </div>
@@ -149,7 +149,7 @@ const AboutTab = () => {
       </AboutCard>
 
       <AboutCard
-        icon={<GoalsIcon color={"var(--social-back)"}  white={"var(--text-color)"}/>}
+        icon={<GoalsIcon color={"var(--icon-back)"}  white={"var(--text-color)"}/>}
         cardTitle="Secular Goals"
         cardTagTitle="2023"
         isTagTitle={true}
@@ -169,7 +169,7 @@ const AboutTab = () => {
       </AboutCard>
 
       <AboutCard
-        icon={<CommentIcon color={"var(--social-back)"}  white={"var(--text-color)"}/>}
+        icon={<CommentIcon color={"var(--icon-back)"}  white={"var(--text-color)"}/>}
         cardTitle="Needs & Asks"
         cardTagTitle="2023"
         isTagTitle={true}
@@ -197,7 +197,7 @@ const AboutTab = () => {
       </AboutCard>
 
       <AboutCard
-        icon={<BreakerIcon color={"var(--social-back)"}  white={"var(--text-color)"}/>}
+        icon={<BreakerIcon color={"var(--icon-back)"}  white={"var(--text-color)"}/>}
         cardTitle="Icebreakers"
         cardTagTitle="xxx"
         isTagTitle={false}
@@ -225,13 +225,6 @@ const AboutTab = () => {
         className="outline-btn"
         fill="outline"
         expand="block"
-        shape="round"
-        style={{
-          fontWeight: 600,
-          fontSize: 15,
-          lineHeight: "17px",
-          fontFamily: "Poppins",
-        }}
       >
         Create Your Free Profile
       </IonButton>
