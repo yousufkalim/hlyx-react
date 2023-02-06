@@ -82,17 +82,18 @@ ion-segment-button::before {
 }
 
 .avatar-icon {
+  border: 5px solid var(--bg-color);
   background-color: var(--bg-color);
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   /* background: white; */
-  padding: 10px;
+  /* padding: 10px; */
   border-radius: 37.49%;
   bottom: -40px;
-  width: 90px;
-  height: 90px;
+  width: 90.47px;
+  height: 90.47px;
 }
 
 ion-card-subtitle {
@@ -269,7 +270,7 @@ ion-accordion.accordion-expanded > [slot="header"] .ion-accordion-toggle-icon {
 }
 
 .profile-header-container {
-  background-color: var(--header-bg-color);
+  background-color: var(--bg-color);
   display: flex;
   justify-content: space-between;
   padding: 22px;
@@ -295,4 +296,22 @@ ion-accordion.accordion-expanded > [slot="header"] .ion-accordion-toggle-icon {
   -webkit-backdrop-filter: saturate(200%) blur(20px);
   backdrop-filter: saturate(200%) blur(10px);
   top: 0;
+}
+
+/* Info Button */
+.info-button{
+  position: fixed;
+    height: 68px;
+    width: 68px;
+    right: 10px;
+    bottom: 53px;
+    box-shadow: 1px 1px 20px 1px rgba(91, 22, 238, 0.34);
+    border-radius: 100%;
+}
+.info-button > ion-fab-button {
+  height: 68px;
+  width: 68px;
+}
+.info-button ion-fab-list {
+  right: 6px;
 }
