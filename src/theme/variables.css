@@ -19,6 +19,7 @@ http://ionicframework.com/docs/theming/ */
   --portfolio-heading: #828ea4;
   --scrollbar-color: rgba(0, 0, 0, 0.5);
   --segment-border-top: #c4c4c4;
+  --border-color: #E2E6EB;
 
   /** primary **/
   --ion-color-primary: #186bfe;
@@ -102,7 +103,7 @@ http://ionicframework.com/docs/theming/ */
   :root {
     --about-card-text: white;
     --scrollbar-color: #fff;
-    --bg-color: #252731;
+    --bg-color: #1B1C21;
     --header-bg-color: #0a0a0d82;
     --text-gray-color: #fff;
     --text-color: #fff;
@@ -119,6 +120,7 @@ http://ionicframework.com/docs/theming/ */
     --item-color: #fff;
     --portfolio-heading: #fff;
     --segment-border-top: #40414D;
+    --border-color: #40414D;
   }
 
   body {

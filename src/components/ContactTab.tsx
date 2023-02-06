@@ -179,11 +179,10 @@ const ContactTab = () => {
         <IonLabel className="accordion-label">Social Media</IonLabel>
         <div
           style={{
-            display: "flex",
+            display: "grid",
             paddingInline: 20,
             gap:"15px",
-            justifyContent: "flex-start",
-            flexWrap:"wrap",
+            gridTemplateColumns: "repeat(5, 58px)",
             lineHeight:0
           }}
         >

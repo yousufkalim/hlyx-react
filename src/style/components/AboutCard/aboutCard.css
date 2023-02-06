@@ -34,7 +34,7 @@ ion-card {
 }
 
 .br-btm {
-  border-bottom: 1px solid #c4c4c4;
+  border-bottom: 1px solid var(--border-color);
   padding-bottom: 10.95px;
 }
 
@@ -77,7 +77,7 @@ ion-card {
 .hr-line {
   margin: 15.78px 0px 10.78px 0px;
   height: 2px;
-  background-color: rgba(226, 230, 235, 0.59);
+  background-color: var(--border-color);
 }
 
 .content-two {

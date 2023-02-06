@@ -3,3 +3,8 @@ ion-content {
   height: 100%;
   --background: #E8EBF1 !important;
 }
+
+.profile-container ion-card{
+  --background: var(--bg-color);
+  border-bottom: 1px solid var(--border-color);
+}

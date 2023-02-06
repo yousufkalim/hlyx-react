@@ -1,15 +1,16 @@
 import { IonFab, IonFabButton, IonFabList, IonIcon } from "@ionic/react";
 import { colorPalette, document, globe, linkOutline } from "ionicons/icons";
 // import { LinkInfoButton } from "../../assets/icons";
+import { LinkIcon } from '../../assets/icons/index';
 
 const InfoButton = () => {
   return (
     <>
-      <IonFab slot="fixed" vertical="bottom" horizontal="end">
-        <IonFabButton>
-          <IonIcon icon={linkOutline}></IonIcon>
+      <IonFab className="info-button">
+        <IonFabButton >
+           <LinkIcon color="#fff"/>
         </IonFabButton>
-        <IonFabList side="top">
+        <IonFabList side="top" >
           <IonFabButton>
             <IonIcon icon={document}></IonIcon>
           </IonFabButton>
