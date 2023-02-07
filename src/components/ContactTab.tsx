@@ -62,7 +62,7 @@ const ContactCard = ({
   children: React.ReactNode;
 }) => {
   return (
-    <IonCard className="px-19 py-30">
+    <IonCard className="contact-card-container">
       <IonLabel className="content-card-heading">{title}</IonLabel>
       {children}
     </IonCard>
@@ -92,7 +92,7 @@ const ContactTab = () => {
       </ContactCard>
 
       <ContactCard title="Phone">
-        <IonAccordionGroup expand="compact">
+        <IonAccordionGroup expand="compact" className="phone-card-container">
           <div className="flex align-center justify-contain mb-11">
             <div className="flex align-center">
               <MobileIcon
@@ -124,7 +124,7 @@ const ContactTab = () => {
 
           <div className="flex align-center justify-contain mx-19 mb-11">
             <div className="flex align-center">
-              <FaxIcon color={"var(--icon-back)"} />
+              <FaxIcon white={"var(--text-color)"} />
               <a href="tel:+16503456789" className="anchor-clear">
                 <IonLabel className="icon_text">+1 (650) 345-6789</IonLabel>
               </a>
@@ -133,9 +133,7 @@ const ContactTab = () => {
           </div>
         </IonAccordionGroup>
       </ContactCard>
-
-      <IonCard className="px-19">
-        <IonLabel className="card-heading">Calendar</IonLabel>
+      <ContactCard title="Calendar">
         <div className="flex align-center justify-contain mx-19">
           <div className="flex align-center">
             <CalendarIcon
@@ -154,10 +152,8 @@ const ContactTab = () => {
           </div>
           <ChevronIcon />
         </div>
-      </IonCard>
-
-      <IonCard className="px-19">
-        <IonLabel className="card-heading">Website</IonLabel>
+      </ContactCard>
+      <ContactCard title="Website">
         <div className="flex align-center justify-contain mx-19">
           <div className="flex align-center">
             <WorldIcon color={"var(--icon-back)"} white={"var(--text-color)"} />
@@ -172,10 +168,8 @@ const ContactTab = () => {
 
           <ChevronIcon />
         </div>
-      </IonCard>
-
-      <IonCard className="px-19">
-        <IonLabel className="card-heading">Office</IonLabel>
+      </ContactCard>
+      <ContactCard title="Office">
         <a
           href={`http://maps.google.com/?q=lahore`}
           className="anchor-clear"
@@ -198,17 +192,15 @@ const ContactTab = () => {
             <ChevronIcon />
           </div>
         </a>
-      </IonCard>
-
-      <IonCard className="px-19">
-        <IonLabel className="card-heading">Social Media</IonLabel>
+      </ContactCard>
+      <ContactCard title="Social Media">
         <div
           style={{
             display: "grid",
-            paddingInline: 20,
-            gap: "15px",
-            gridTemplateColumns: "repeat(5, 58px)",
+            gap: "12.39px",
+            gridTemplateColumns: "repeat(7, 58px)",
             lineHeight: 0,
+            overflow: "scroll"
           }}
         >
           <a
@@ -261,10 +253,8 @@ const ContactTab = () => {
             <Facebook color={"var(--social-back)"} />
           </a>
         </div>
-      </IonCard>
-
-      <IonCard className="px-19">
-        <IonLabel className="card-heading">Links</IonLabel>
+      </ContactCard>
+      <ContactCard title="Links">
         <div
           style={{
             display: "flex",
@@ -283,7 +273,7 @@ const ContactTab = () => {
             />
           ))}
         </div>
-      </IonCard>
+      </ContactCard>
       <div style={{ paddingBlock: 20, backgroundColor: "var(--bg-color)" }}>
         <IonButton
           className="outline-btn"

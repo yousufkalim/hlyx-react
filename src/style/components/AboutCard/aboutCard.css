@@ -146,14 +146,18 @@ ion-card {
   background-color: var(--bg-color);
   margin: 0px 16.94px 5px 0px;
 }
-
-.px-19 {
-  padding-inline: 19px;
-}
-
-.py-30 {
+.contact-card-container {
   padding-block: 30px;
-}
+    display: flex;
+    flex-direction: column;
+  padding-inline: 19px;
+  gap: 30.71px;
+  }
+  .phone-card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
 
 .mb-11 {
   margin-bottom: 11px;
