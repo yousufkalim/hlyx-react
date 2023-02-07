@@ -7,10 +7,7 @@ import {
   IonSegment,
 } from "@ionic/react";
 import "../../style/components/MediaCard/mediaCard.css";
-import {
-  BackBtnIcon,
-  HlyxHeaderLogo,
-} from "../../assets/icons";
+import { BackBtnIcon, HlyxHeaderLogo } from "../../assets/icons";
 import ContactTab from "../ContactTab";
 import ServicesTab from "../ServicesTab";
 import AboutTab from "../AboutTab";
@@ -50,7 +47,7 @@ const MediaCard = () => {
   return (
     <>
       <div style={{ position: "relative" }}>
-        <div className="sticky-header">
+        {/* <div className="sticky-header">
           <div className="profile-header-container">
             <IonButton
               expand="full"
@@ -74,18 +71,18 @@ const MediaCard = () => {
                   value={index.toString()}
                   key={index}
                 >
-                  <IonLabel className="segment-btn-label" >{tab}</IonLabel>
+                  <IonLabel className="segment-btn-label">{tab}</IonLabel>
                 </IonSegmentButton>
               ))}
             </IonSegment>
           </IonCard>
-        </div>
-        <HeroSession />
-        <ActiveTabContent activeTab={activeTab} />
+        </div> */}
+        {/* <HeroSession /> */}
+        {/* <ActiveTabContent activeTab={activeTab} /> */}
         {/* <div style={{ marginBlock: 24, textAlign: "center" }}>
         <WaterMake />
       </div> */}
-        <InfoButton />
+        {/* <InfoButton /> */}
       </div>
     </>
   );

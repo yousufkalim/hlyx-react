@@ -30,24 +30,25 @@ import {
   YoutubeIcon,
 } from "../assets/icons";
 import LinkCard from "./LinkCard";
+import HeroSession from "./MediaCard/heroSession";
 
 const LinksData = [
   {
     hyperadd: "https://medium.com/",
-    icon: <MediumIcon color={"var(--social-back)"}/>,
+    icon: <MediumIcon color={"var(--social-back)"} />,
     title:
       "Sphere Bio Technologies Unveils Breakthrough Science That Regenerates Necrotic Cells",
     description: "Access Article on Medium",
   },
   {
-    icon: <SoundCloudIcon color={"var(--social-back)"}/>,
+    icon: <SoundCloudIcon color={"var(--social-back)"} />,
     hyperadd: "https://soundcloud.com/",
     title: "Cellular Science Chat With Kenji Awurama",
     description: "Access Audio on SoundCloud",
   },
   {
     hyperadd: "https://www.google.com/drive/",
-    icon: <DriveIcon color={"var(--social-back)"}/>,
+    icon: <DriveIcon color={"var(--social-back)"} />,
     title: "Sphere Bio Customer Spec Sheet",
     description: "Access File on Google Drive",
   },
@@ -56,11 +57,12 @@ const LinksData = [
 const ContactTab = () => {
   return (
     <>
+      <HeroSession />
       <IonCard className="tab_card">
         <IonLabel className="accordion-label">Email</IonLabel>
         <div className="flex align-center justify-contain mx-19">
           <div className="flex align-center">
-            <MailIcon color={"var(--icon-back)"} white={"var(--text-color)"}/>
+            <MailIcon color={"var(--icon-back)"} white={"var(--text-color)"} />
             <IonLabel className="icon_text">
               <a
                 href="mailto:kenji.awurama@sperebio.tech"
@@ -79,11 +81,11 @@ const ContactTab = () => {
         <IonAccordionGroup expand="compact">
           <div className="flex align-center justify-contain mx-19 mb-11">
             <div className="flex align-center">
-              <MobileIcon color={"var(--icon-back)"}white={"var(--text-color)"}/>
-              <a
-                href="tel:+16501234567"
-                className="anchor-clear"
-              >
+              <MobileIcon
+                color={"var(--icon-back)"}
+                white={"var(--text-color)"}
+              />
+              <a href="tel:+16501234567" className="anchor-clear">
                 <IonLabel className="icon_text">+1 (650) 123-4567</IonLabel>
               </a>
             </div>
@@ -93,11 +95,11 @@ const ContactTab = () => {
 
           <div className="flex align-center justify-contain mx-19 mb-11">
             <div className="flex align-center">
-              <CallIcon color={"var(--icon-back)"} white={"var(--text-color)"}/>
-              <a
-                href="tel:+16503456789"
-                className="anchor-clear"
-              >
+              <CallIcon
+                color={"var(--icon-back)"}
+                white={"var(--text-color)"}
+              />
+              <a href="tel:+16503456789" className="anchor-clear">
                 <IonLabel className="icon_text">
                   +1 (650) 345-6789 Ext 700
                 </IonLabel>
@@ -108,11 +110,8 @@ const ContactTab = () => {
 
           <div className="flex align-center justify-contain mx-19 mb-11">
             <div className="flex align-center">
-              <FaxIcon color={"var(--icon-back)"}/>
-              <a
-                href="tel:+16503456789"
-                className="anchor-clear"
-              >
+              <FaxIcon color={"var(--icon-back)"} />
+              <a href="tel:+16503456789" className="anchor-clear">
                 <IonLabel className="icon_text">+1 (650) 345-6789</IonLabel>
               </a>
             </div>
@@ -125,7 +124,10 @@ const ContactTab = () => {
         <IonLabel className="accordion-label">Calendar</IonLabel>
         <div className="flex align-center justify-contain mx-19">
           <div className="flex align-center">
-            <CalendarIcon color={"var(--icon-back)"}  white={"var(--text-color)"}/>
+            <CalendarIcon
+              color={"var(--icon-back)"}
+              white={"var(--text-color)"}
+            />
             <a
               href="https://calendly.com/wajeehaslam/30min"
               className="anchor-clear"
@@ -160,13 +162,22 @@ const ContactTab = () => {
 
       <IonCard style={{ paddingTop: "21.58px" }}>
         <IonLabel className="accordion-label">Office</IonLabel>
-        <a href={`http://maps.google.com/?q=lahore`} className="anchor-clear" target={"_blank"}>
+        <a
+          href={`http://maps.google.com/?q=lahore`}
+          className="anchor-clear"
+          target={"_blank"}
+        >
           <div className="flex align-center justify-contain mx-19">
             <div className="flex align-center">
-              <LocateFillIcon color={"var(--icon-back)"} white={"var(--text-color)"} />
-              <IonLabel className="icon_text office_icon_text" style={{maxWidth: 200}}>
-                1886 Globe Trotter Court
-                 Palo Alto, CA 95051{" "}
+              <LocateFillIcon
+                color={"var(--icon-back)"}
+                white={"var(--text-color)"}
+              />
+              <IonLabel
+                className="icon_text office_icon_text"
+                style={{ maxWidth: 200 }}
+              >
+                1886 Globe Trotter Court Palo Alto, CA 95051{" "}
               </IonLabel>
             </div>
 
@@ -175,15 +186,15 @@ const ContactTab = () => {
         </a>
       </IonCard>
 
-      <IonCard style={{ paddingTop: "21.58px"}}>
+      <IonCard style={{ paddingTop: "21.58px" }}>
         <IonLabel className="accordion-label">Social Media</IonLabel>
         <div
           style={{
             display: "grid",
             paddingInline: 20,
-            gap:"15px",
+            gap: "15px",
             gridTemplateColumns: "repeat(5, 58px)",
-            lineHeight:0
+            lineHeight: 0,
           }}
         >
           <a
@@ -191,28 +202,28 @@ const ContactTab = () => {
             className="anchor-clear"
             target={"_blank"}
           >
-            <LinkedinIcon color={"var(--social-back)"}/>
+            <LinkedinIcon color={"var(--social-back)"} />
           </a>
           <a
             className="anchor-clear"
             href="https://www.youtube.com/"
             target={"_blank"}
           >
-            <YoutubeIcon color={"var(--social-back)"}/>
+            <YoutubeIcon color={"var(--social-back)"} />
           </a>
           <a
             className="anchor-clear"
             href="https://slack.com/"
             target={"_blank"}
           >
-            <SlackIcon color={"var(--social-back)"}/>
+            <SlackIcon color={"var(--social-back)"} />
           </a>
           <a
             className="anchor-clear"
             href="https://www.reddit.com/"
             target={"_blank"}
           >
-            <ShipFaceIcon color={"var(--social-back)"}/>
+            <ShipFaceIcon color={"var(--social-back)"} />
           </a>
           <a
             className="anchor-clear"
@@ -226,14 +237,14 @@ const ContactTab = () => {
             href="https://twitter.com/"
             target={"_blank"}
           >
-          <Twitter color={"var(--social-back)"}/>
+            <Twitter color={"var(--social-back)"} />
           </a>
           <a
             className="anchor-clear"
             href="https://www.facebook.com/"
             target={"_blank"}
           >
-          <Facebook color={"var(--social-back)"}/>
+            <Facebook color={"var(--social-back)"} />
           </a>
         </div>
       </IonCard>
@@ -259,21 +270,21 @@ const ContactTab = () => {
           ))}
         </div>
       </IonCard>
-      <div style={{paddingBlock:20,backgroundColor: "var(--bg-color)"}}>
-      <IonButton
-        className="outline-btn"
-        fill="outline"
-        expand="block"
-        shape="round"
-        style={{
-          fontWeight: 600,
-          fontSize: 15,
-          lineHeight: "17px",
-          fontFamily: "Poppins",
-        }}
-      >
-        Create Your Free Profile
-      </IonButton>
+      <div style={{ paddingBlock: 20, backgroundColor: "var(--bg-color)" }}>
+        <IonButton
+          className="outline-btn"
+          fill="outline"
+          expand="block"
+          shape="round"
+          style={{
+            fontWeight: 600,
+            fontSize: 15,
+            lineHeight: "17px",
+            fontFamily: "Poppins",
+          }}
+        >
+          Create Your Free Profile
+        </IonButton>
       </div>
     </>
   );

@@ -1,0 +1,42 @@
+.tab_container {
+  padding: 0 !important;
+  border-bottom: none !important;
+}
+
+.tab_card {
+  margin-top: 0px;
+  padding-top: 25px;
+}
+
+.segment-btn-label {
+  font-family: "Poppins", sans-serif;
+  padding: 6.6px 11.5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--text-tab-color);
+}
+
+.tab_container ion-segment-button {
+  text-transform: capitalize;
+  border-top: 2px solid var(--segment-border-top);
+  margin: 0px;
+  border-radius: 0px;
+  --padding-top: 16px;
+  --padding-bottom: 16px;
+}
+
+.segment-button-checked {
+  --indicator-color: none;
+  --indicator-box-shadow: none;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.segment-button-checked ion-label {
+  background-color: var(--ion-color-primary);
+  color: white;
+  font-weight: 600;
+  border-radius: 100px;
+}
