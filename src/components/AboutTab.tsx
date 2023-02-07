@@ -1,7 +1,7 @@
 import { useState } from "react";
 import AboutCard from "./AboutCard/AboutCard";
 import "../style/components/MediaCard/mediaCard.css";
-import { IonButton, IonChip } from "@ionic/react";
+import { IonButton, IonCard, IonChip, IonLabel } from "@ionic/react";
 import {
   accolatesData,
   acheivementData,
@@ -21,57 +21,25 @@ import {
   GoalsIcon,
   ProfessionIcon,
   EducationIcon,
-  AcheievementIcon
+  AcheievementIcon,
 } from "../assets/icons";
 import ReadMoreText from "./ReadMoreText";
 
-
 const AboutTab = () => {
-  // const [readMore, setReadMore] = useState(false);
-  // const linkName = readMore ? "Read Less" : "Read More";
-  // const extraContent = (
-  //   <div style={{display:"inline"}}>
-  //     <span className="extra-content content-description">{loremText}</span>
-  //     <span
-  //       className="read-more content-description"
-  //       onClick={() => {
-  //         setReadMore(!readMore);
-  //       }}
-  //     >
-  //       {linkName === "Read Less" && "...Read less"}
-  //     </span>
-  //   </div>
-  // );
-
-
   return (
     <>
-      <AboutCard
-        icon={<AvatarIcon color={"var(--icon-back)"}  white={"var(--text-color)"}/>}
-        cardTitle="Bio"
-        cardTagTitle="xxx"
-        isTagTitle={false}
-      >
+      <IonCard className="tab_card">
+        <IonLabel className="accordion-label">Bio</IonLabel>
         <ReadMoreText text={loremText} limit={171} />
-        {/* <div
-          style={{display: "inline"}}
-          className="content-description"
-          onClick={() => {
-            setReadMore(!readMore);
-          }}
-        >
-          Biology is my first love. As a Scientist my principal mission in life
-          is the pursuit of life-changing cures. I founded Sphere Bio with the
-          goal of discovering science that {" "}
-          <span className="read-more" >
-            {linkName === "Read More" && linkName}
-          </span> 
-        </div> */}
-        {/* {readMore && extraContent} */}
-      </AboutCard>
+      </IonCard>
 
       <AboutCard
-        icon={<ProfessionIcon color={"var(--icon-back)"}  white={"var(--text-color)"}/>}
+        icon={
+          <ProfessionIcon
+            color={"var(--icon-back)"}
+            white={"var(--text-color)"}
+          />
+        }
         cardTitle="Profession"
         cardTagTitle="xxx"
         isTagTitle={false}
@@ -87,7 +55,12 @@ const AboutTab = () => {
       </AboutCard>
 
       <AboutCard
-        icon={<EducationIcon color={"var(--icon-back)"}  white={"var(--text-color)"} />}
+        icon={
+          <EducationIcon
+            color={"var(--icon-back)"}
+            white={"var(--text-color)"}
+          />
+        }
         cardTitle="Education"
         cardTagTitle="xxx"
         isTagTitle={false}
@@ -106,7 +79,12 @@ const AboutTab = () => {
       </AboutCard>
 
       <AboutCard
-        icon={<AccoladesIcon color={"var(--icon-back)"}  white={"var(--text-color)"}/>}
+        icon={
+          <AccoladesIcon
+            color={"var(--icon-back)"}
+            white={"var(--text-color)"}
+          />
+        }
         cardTitle="Accolades"
         cardTagTitle="xxx"
         isTagTitle={false}
@@ -125,7 +103,12 @@ const AboutTab = () => {
       </AboutCard>
 
       <AboutCard
-        icon={<AcheievementIcon color={"var(--icon-back)"}  white={"var(--text-color)"} />}
+        icon={
+          <AcheievementIcon
+            color={"var(--icon-back)"}
+            white={"var(--text-color)"}
+          />
+        }
         cardTitle="Achievements"
         cardTagTitle="xxx"
         isTagTitle={false}
@@ -149,7 +132,9 @@ const AboutTab = () => {
       </AboutCard>
 
       <AboutCard
-        icon={<GoalsIcon color={"var(--icon-back)"}  white={"var(--text-color)"}/>}
+        icon={
+          <GoalsIcon color={"var(--icon-back)"} white={"var(--text-color)"} />
+        }
         cardTitle="Secular Goals"
         cardTagTitle="2023"
         isTagTitle={true}
@@ -169,7 +154,9 @@ const AboutTab = () => {
       </AboutCard>
 
       <AboutCard
-        icon={<CommentIcon color={"var(--icon-back)"}  white={"var(--text-color)"}/>}
+        icon={
+          <CommentIcon color={"var(--icon-back)"} white={"var(--text-color)"} />
+        }
         cardTitle="Needs & Asks"
         cardTagTitle="2023"
         isTagTitle={true}
@@ -197,7 +184,9 @@ const AboutTab = () => {
       </AboutCard>
 
       <AboutCard
-        icon={<BreakerIcon color={"var(--icon-back)"}  white={"var(--text-color)"}/>}
+        icon={
+          <BreakerIcon color={"var(--icon-back)"} white={"var(--text-color)"} />
+        }
         cardTitle="Icebreakers"
         cardTagTitle="xxx"
         isTagTitle={false}
@@ -220,14 +209,10 @@ const AboutTab = () => {
           Science is an oyster, serve it up tastefully.
         </div>
       </AboutCard>
-      <div style={{paddingBlock:20,backgroundColor: "var(--bg-color)"}}>
-      <IonButton
-        className="outline-btn"
-        fill="outline"
-        expand="block"
-      >
-        Create Your Free Profile
-      </IonButton>
+      <div style={{ paddingBlock: 20, backgroundColor: "var(--bg-color)" }}>
+        <IonButton className="outline-btn" fill="outline" expand="block">
+          Create Your Free Profile
+        </IonButton>
       </div>
     </>
   );

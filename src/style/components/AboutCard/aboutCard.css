@@ -25,7 +25,7 @@ ion-card {
 }
 
 .card-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
   /* font-weight: 600; */
@@ -43,7 +43,7 @@ ion-card {
 }
 
 .content-description {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -57,7 +57,7 @@ ion-card {
 }
 
 .title-one {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -66,7 +66,7 @@ ion-card {
 }
 
 .content-one {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -81,7 +81,7 @@ ion-card {
 }
 
 .content-two {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -90,11 +90,11 @@ ion-card {
 }
 
 .forward-icon {
-  margin-right: 10px
+  margin-right: 10px;
 }
 
 .content-three {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -103,13 +103,13 @@ ion-card {
 }
 
 .chip-container {
-  background: #5087EC;
+  background: #5087ec;
   border-radius: 15px;
   color: var(--text-white-color);
   width: 72px;
   justify-content: center;
   margin-right: 23.73px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -121,7 +121,7 @@ ion-card {
 }
 
 .content-four {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -131,7 +131,7 @@ ion-card {
 }
 
 .content-five {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -140,16 +140,19 @@ ion-card {
 }
 
 .custom-chip {
-  border: 0.941107px solid #606C82;
+  border: 0.941107px solid #606c82;
   border-radius: 7.52885px;
   color: var(--item-color);
   background-color: var(--bg-color);
   margin: 0px 16.94px 5px 0px;
 }
 
-.mx-19 {
-  margin-right: 19px;
-  margin-left: 19px;
+.px-19 {
+  padding-inline: 19px;
+}
+
+.py-30 {
+  padding-block: 30px;
 }
 
 .mb-11 {

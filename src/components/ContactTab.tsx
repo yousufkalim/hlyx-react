@@ -54,13 +54,27 @@ const LinksData = [
   },
 ];
 
+const ContactCard = ({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) => {
+  return (
+    <IonCard className="px-19 py-30">
+      <IonLabel className="content-card-heading">{title}</IonLabel>
+      {children}
+    </IonCard>
+  );
+};
+
 const ContactTab = () => {
   return (
     <>
       <HeroSession />
-      <IonCard className="tab_card">
-        <IonLabel className="accordion-label">Email</IonLabel>
-        <div className="flex align-center justify-contain mx-19">
+      <ContactCard title="Email">
+        <div className="flex align-center justify-contain">
           <div className="flex align-center">
             <MailIcon color={"var(--icon-back)"} white={"var(--text-color)"} />
             <IonLabel className="icon_text">
@@ -75,11 +89,11 @@ const ContactTab = () => {
 
           <ChevronIcon />
         </div>
-      </IonCard>
-      <IonCard style={{ paddingBlock: 20 }}>
-        <IonLabel className="accordion-label">Phone</IonLabel>
+      </ContactCard>
+
+      <ContactCard title="Phone">
         <IonAccordionGroup expand="compact">
-          <div className="flex align-center justify-contain mx-19 mb-11">
+          <div className="flex align-center justify-contain mb-11">
             <div className="flex align-center">
               <MobileIcon
                 color={"var(--icon-back)"}
@@ -118,10 +132,10 @@ const ContactTab = () => {
             <ChevronIcon />
           </div>
         </IonAccordionGroup>
-      </IonCard>
+      </ContactCard>
 
-      <IonCard style={{ paddingTop: "21.58px" }}>
-        <IonLabel className="accordion-label">Calendar</IonLabel>
+      <IonCard className="px-19">
+        <IonLabel className="card-heading">Calendar</IonLabel>
         <div className="flex align-center justify-contain mx-19">
           <div className="flex align-center">
             <CalendarIcon
@@ -142,8 +156,8 @@ const ContactTab = () => {
         </div>
       </IonCard>
 
-      <IonCard style={{ paddingTop: "21.58px" }}>
-        <IonLabel className="accordion-label">Website</IonLabel>
+      <IonCard className="px-19">
+        <IonLabel className="card-heading">Website</IonLabel>
         <div className="flex align-center justify-contain mx-19">
           <div className="flex align-center">
             <WorldIcon color={"var(--icon-back)"} white={"var(--text-color)"} />
@@ -160,8 +174,8 @@ const ContactTab = () => {
         </div>
       </IonCard>
 
-      <IonCard style={{ paddingTop: "21.58px" }}>
-        <IonLabel className="accordion-label">Office</IonLabel>
+      <IonCard className="px-19">
+        <IonLabel className="card-heading">Office</IonLabel>
         <a
           href={`http://maps.google.com/?q=lahore`}
           className="anchor-clear"
@@ -186,8 +200,8 @@ const ContactTab = () => {
         </a>
       </IonCard>
 
-      <IonCard style={{ paddingTop: "21.58px" }}>
-        <IonLabel className="accordion-label">Social Media</IonLabel>
+      <IonCard className="px-19">
+        <IonLabel className="card-heading">Social Media</IonLabel>
         <div
           style={{
             display: "grid",
@@ -249,8 +263,8 @@ const ContactTab = () => {
         </div>
       </IonCard>
 
-      <IonCard style={{ paddingTop: "21.58px" }}>
-        <IonLabel className="accordion-label">Links</IonLabel>
+      <IonCard className="px-19">
+        <IonLabel className="card-heading">Links</IonLabel>
         <div
           style={{
             display: "flex",

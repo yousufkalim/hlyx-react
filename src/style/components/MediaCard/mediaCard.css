@@ -131,16 +131,20 @@ ion-card {
   border-bottom: 1px solid #c4c4c4;
 }
 
-.accordion-label {
+.content-card-heading {
   color: var(--text-color);
-  font-family: "Montserrat", sans-serif !important;
-  font-style: normal;
-  font-weight: 600 !important;
-  font-size: 15px;
-  line-height: 15px;
-  padding-left: 20px;
-  display: inline-block;
-  padding-bottom: 12.88px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 15.27px;
+}
+
+.card-heading {
+  color: var(--text-color);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 14px;
 }
 
 ion-segment {
@@ -149,14 +153,14 @@ ion-segment {
   border-radius: 0px;
 }
 
-ion-label {
+/* ion-label {
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: 500 !important;
   font-size: 15px !important;
   line-height: 25px;
   color: inherit;
-}
+} */
 
 .social-media-icon {
   width: 50px;
