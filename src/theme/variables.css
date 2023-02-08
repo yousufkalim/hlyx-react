@@ -10,6 +10,8 @@ http://ionicframework.com/docs/theming/ */
   --text-gray-color: #c4c4c4;
   --text-white-color: #ffffff;
   --text-tab-color: #4b546b;
+  --text-gary-color: #a0a1a2;
+  --profession-gary-color: #606c82;
   --icon-back: #e8ebf1;
   --social-back: #e8ebf1;
   --create-button: #186bfe;
@@ -109,6 +111,7 @@ http://ionicframework.com/docs/theming/ */
     --text-color: #fff;
     --text-white-color: #252731;
     --text-tab-color: #a0a1a2;
+    --text-gary-color: #a0a1a2;
     --segment-btn-checked: #5b16ee;
     --button-color: #0047fe;
     --tab-height: 67.15px;
@@ -121,6 +124,7 @@ http://ionicframework.com/docs/theming/ */
     --portfolio-heading: #fff;
     --segment-border-top: #40414d;
     --border-color: #40414d;
+    --profession-gary-color: #9498aa;
   }
 
   body {

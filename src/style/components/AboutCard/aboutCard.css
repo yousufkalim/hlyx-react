@@ -56,24 +56,6 @@ ion-card {
   font-weight: 500;
 }
 
-.title-one {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 25px;
-  color: var(--item-color);
-}
-
-.content-one {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 25px;
-  color: var(--text-color);
-}
-
 .hr-line {
   margin: 15.78px 0px 10.78px 0px;
   height: 2px;
@@ -146,19 +128,59 @@ ion-card {
   background-color: var(--bg-color);
   margin: 0px 16.94px 5px 0px;
 }
-.contact-card-container {
-  padding-block: 30px;
-    display: flex;
-    flex-direction: column;
-  padding-inline: 19px;
-  gap: 30.71px;
-  }
-  .phone-card-container{
-    display: flex;
-    flex-direction: column;
-    gap: 26px;
-  }
 
 .mb-11 {
   margin-bottom: 11px;
+}
+
+.profession-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.profession-line {
+  height: 4px;
+  width: 42px;
+}
+
+.profession-item {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+p {
+  line-height: 25px;
+  margin: 0;
+}
+
+.profession-title {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--profession-gary-color);
+  margin-top: 10px;
+}
+
+.profession-description {
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--text-color);
+}
+
+.line-blue {
+  background-color: #66a0f7;
+}
+
+.line-green {
+  background-color: #87cc66;
+}
+
+.line-purple {
+  background-color: #ac85ff;
+}
+
+.line-orange {
+  background-color: #ff8368;
 }

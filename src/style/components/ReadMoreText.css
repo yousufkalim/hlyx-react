@@ -1,0 +1,13 @@
+p {
+  margin: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--about-card-text);
+}
+p span {
+  font-weight: bold;
+  color: var(--text-gary-color);
+}

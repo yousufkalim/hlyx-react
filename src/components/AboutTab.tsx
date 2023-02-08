@@ -1,6 +1,6 @@
 import { useState } from "react";
-import AboutCard from "./AboutCard/AboutCard";
-import "../style/components/MediaCard/mediaCard.css";
+// import AboutCard from "./AboutCard/AboutCard";
+import "../style/components/AboutCard/aboutCard.css";
 import { IonButton, IonCard, IonChip, IonLabel } from "@ionic/react";
 import {
   accolatesData,
@@ -24,37 +24,47 @@ import {
   AcheievementIcon,
 } from "../assets/icons";
 import ReadMoreText from "./ReadMoreText";
+import BusinessGoals from "./Profile/BusinessGoals";
+
+const AboutCard = ({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) => {
+  return (
+    <IonCard className="card-container">
+      <IonLabel className="card-heading-lg">{title}</IonLabel>
+      {children}
+    </IonCard>
+  );
+};
 
 const AboutTab = () => {
   return (
     <>
-      <IonCard className="tab_card">
-        <IonLabel className="accordion-label">Bio</IonLabel>
+      <AboutCard title="Bio">
         <ReadMoreText text={loremText} limit={171} />
-      </IonCard>
-
-      <AboutCard
-        icon={
-          <ProfessionIcon
-            color={"var(--icon-back)"}
-            white={"var(--text-color)"}
-          />
-        }
-        cardTitle="Profession"
-        cardTagTitle="xxx"
-        isTagTitle={false}
-      >
-        {professionData?.map(({ description, title }, index) => (
-          <>
-            <div className="title-one">{title}</div>
-            <div className="content-one">{description}</div>
-
-            {index !== 3 && <div className="hr-line" />}
-          </>
-        ))}
       </AboutCard>
 
-      <AboutCard
+      <AboutCard title="Profession">
+        <div className="profession-list">
+          {professionData?.map(({ description, title, lineColor }, index) => (
+            <div className="profession-item">
+              <div className={`profession-line line-${lineColor}`} />
+              <p className="profession-title">{title}</p>
+              <p className="profession-description">{description}</p>
+            </div>
+          ))}
+        </div>
+      </AboutCard>
+
+      <AboutCard title="Business Goals">
+        <BusinessGoals />
+      </AboutCard>
+
+      {/* <AboutCard
         icon={
           <EducationIcon
             color={"var(--icon-back)"}
@@ -208,7 +218,7 @@ const AboutTab = () => {
         <div className="content-five">
           Science is an oyster, serve it up tastefully.
         </div>
-      </AboutCard>
+      </AboutCard> */}
       <div style={{ paddingBlock: 20, backgroundColor: "var(--bg-color)" }}>
         <IonButton className="outline-btn" fill="outline" expand="block">
           Create Your Free Profile

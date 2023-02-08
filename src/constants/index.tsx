@@ -10,18 +10,22 @@ import SliderThreeImage from "../assets/media/slide-three-image.png";
 
 export const professionData = [
   {
+    lineColor: "blue",
     title: "Company",
     description: "Sphere Bio Technologies, Inc.",
   },
   {
-    title: "Professional Title",
+    lineColor: "green",
+    title: "Title / Role",
     description: "Executive Director",
   },
   {
+    lineColor: "purple",
     title: "Occupation / Profession",
     description: "Molecular Scientist, PHD",
   },
   {
+    lineColor: "orange",
     title: "Industry",
     description: "Life Sciences, Bio-Engineering",
   },

@@ -8,7 +8,7 @@ import {
 } from "@ionic/react";
 
 import { chevronForward } from "ionicons/icons";
-import "../style/components/MediaCard/mediaCard.css";
+import "../style/components/ContactTab.css";
 import {
   CalendarIcon,
   CallIcon,
@@ -62,7 +62,7 @@ const ContactCard = ({
   children: React.ReactNode;
 }) => {
   return (
-    <IonCard className="contact-card-container">
+    <IonCard className="card-container">
       <IonLabel className="content-card-heading">{title}</IonLabel>
       {children}
     </IonCard>
@@ -108,7 +108,7 @@ const ContactTab = () => {
           </div>
 
           <div className="flex align-center justify-contain mx-19 mb-11">
-            <div className="flex align-center">
+            <div className="flex align-center ">
               <CallIcon
                 color={"var(--icon-back)"}
                 white={"var(--text-color)"}
@@ -200,7 +200,7 @@ const ContactTab = () => {
             gap: "12.39px",
             gridTemplateColumns: "repeat(7, 58px)",
             lineHeight: 0,
-            overflow: "scroll"
+            overflow: "scroll",
           }}
         >
           <a
