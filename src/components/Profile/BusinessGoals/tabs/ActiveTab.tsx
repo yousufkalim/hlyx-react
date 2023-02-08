@@ -1,7 +1,12 @@
 import React from "react";
+import ActiveCard from "../../../ActiveCard";
 
 const ActiveTab = () => {
-  return <div>ActiveTab</div>;
+  return (
+    <div>
+      <ActiveCard />
+    </div>
+  );
 };
 
 export default ActiveTab;
