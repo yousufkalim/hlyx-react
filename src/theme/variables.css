@@ -22,6 +22,7 @@ http://ionicframework.com/docs/theming/ */
   --scrollbar-color: rgba(0, 0, 0, 0.5);
   --segment-border-top: #c4c4c4;
   --border-color: #e2e6eb;
+  --card-button-color: #0047fe;
 
   /** primary **/
   --ion-color-primary: #0047ff;
@@ -125,6 +126,7 @@ http://ionicframework.com/docs/theming/ */
     --segment-border-top: #40414d;
     --border-color: #40414d;
     --profession-gary-color: #9498aa;
+    --card-button-color: #71757b;
   }
 
   body {

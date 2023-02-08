@@ -426,11 +426,16 @@ export const CalendarIcon = ({
     />
   </svg>
 );
-export const BlueDotIcon = () => (
-  <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="5" cy="5.16113" r="5" fill="#236BFE"/>
+export const BlueDotIcon = ({ color = "#236BFE" }: { color?: string }) => (
+  <svg
+    width="10"
+    height="11"
+    viewBox="0 0 10 11"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle cx="5" cy="5.16113" r="5" fill={color} />
   </svg>
-  
 );
 
 export const WorldIcon = ({
@@ -498,7 +503,7 @@ export const LocateFillIcon = ({
     viewBox="0 0 17 20"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    style={{marginBottom: "auto"}}
+    style={{ marginBottom: "auto" }}
   >
     <path
       d="M1.1519 6.52957C2.89366 -1.12708 14.2372 -1.11824 15.9701 6.53842C16.9868 11.0298 14.193 14.8316 11.7439 17.1835C10.4254 18.5143 8.69222 19.634 6.90625 17.9188C4.46603 15.567 0.135139 11.021 1.1519 6.52957Z"

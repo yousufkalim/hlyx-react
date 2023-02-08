@@ -29,17 +29,36 @@ import ReadMoreText from "../../../ReadMoreText";
 import BusinessGoals from "./BusinessGoals";
 import UserDetailCard from "../../UserDetailCard/UserDetailCard";
 import Accolades from "./Accolades/Accolades";
+import Achievements from "./Achievements/Achievements";
 
 const AboutCard = ({
   title,
   children,
+  btn,
 }: {
   title: string;
+  btn?: string;
   children: React.ReactNode;
 }) => {
   return (
     <IonCard className="card-container">
-      <IonLabel className="card-heading-lg">{title}</IonLabel>
+      <div className="about-card-title">
+        <IonLabel className="card-heading-lg">{title}</IonLabel>
+        {btn ? (
+          <>
+            <IonButton
+              fill="outline"
+              shape="round"
+              color="var(--card-button-color)"
+              className="about-card-title-button"
+            >
+              {btn}
+            </IonButton>
+          </>
+        ) : (
+          <></>
+        )}
+      </div>
       {children}
     </IonCard>
   );
@@ -52,7 +71,6 @@ const AboutTab = () => {
       <AboutCard title="Bio">
         <ReadMoreText text={loremText} limit={171} />
       </AboutCard>
-
       <AboutCard title="Profession">
         <div className="profession-list">
           {professionData?.map(({ description, title, lineColor }, index) => (
@@ -64,16 +82,21 @@ const AboutTab = () => {
           ))}
         </div>
       </AboutCard>
-      {/* <AboutCard title="Accolades">
-        <Accolades/>
-      </AboutCard> */}
-      <AboutCard title="Accolades">
+      <AboutCard title="Accolades" btn="View All">
         <Accolades />
       </AboutCard>
-
+      <AboutCard title="Achievements" btn="View All">
+        <Achievements />
+      </AboutCard>
       <AboutCard title="Business Goals">
         <BusinessGoals />
       </AboutCard>
+
+      <div style={{ paddingBlock: 20, backgroundColor: "var(--bg-color)" }}>
+        <IonButton className="outline-btn" fill="outline" expand="block">
+          Create Your Free Profile
+        </IonButton>
+      </div>
 
       {/* <AboutCard
         icon={
@@ -230,11 +253,6 @@ const AboutTab = () => {
           Science is an oyster, serve it up tastefully.
         </div>
       </AboutCard> */}
-      <div style={{ paddingBlock: 20, backgroundColor: "var(--bg-color)" }}>
-        <IonButton className="outline-btn" fill="outline" expand="block">
-          Create Your Free Profile
-        </IonButton>
-      </div>
     </>
   );
 };

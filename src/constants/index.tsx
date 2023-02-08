@@ -40,29 +40,57 @@ export const educationData = [
 ];
 
 export const accolatesData = [
-  { description: "Board Chair at",
-  institute: " Boston Medical",
-    date: "November 1,2022"
-},
-  { description: "Deans List 4 Years in a row at",
-    institute: " Stanford University",
-    date: "August 2017 - May 2022"
+  {
+    description: "Board Chair at",
+    institute: " Boston Medical",
+    date: "November 1,2022",
   },
-  { description: "Summa Cum Laude, Honors Club from",
+  {
+    description: "Deans List 4 Years in a row at",
+    institute: " Stanford University",
+    date: "August 2017 - May 2022",
+  },
+  {
+    description: "Summa Cum Laude, Honors Club from",
     date: "August 2017 - May 2022 ",
-    institute: " Stanford University"
-},
+    institute: " Stanford University",
+  },
 ];
 
 export const acheivementData = [
   {
-    description: `People Magazine <span style="font-weight:600">Scientist of The Year</span>`,
+    year: "2023",
+    description: (
+      <>
+        People Magazine{" "}
+        <span style={{ fontWeight: 600, color: "var(--text-color)" }}>
+          {" "}
+          Scientist of The Year
+        </span>
+      </>
+    ),
   },
   {
-    description: `Harvard Medical Journal <span style="font-weight:600">Prestigious Honor Recipient</span>`,
+    year: "2022",
+    description: (
+      <>
+        Harvard Medical Journal{" "}
+        <span style={{ fontWeight: 600, color: "var(--text-color)" }}>
+          Prestigious Honor Recipient
+        </span>{" "}
+      </>
+    ),
   },
   {
-    description: `<span style="font-weight:600">Presidential Honor</span> in Genetic Science`,
+    year: "2021",
+    description: (
+      <>
+        <span style={{ fontWeight: 600, color: "var(--text-color)" }}>
+          Presidential Honorin
+        </span>{" "}
+        Genetic Science
+      </>
+    ),
   },
 ];
 
