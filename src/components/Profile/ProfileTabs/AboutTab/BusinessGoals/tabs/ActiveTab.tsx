@@ -3,7 +3,8 @@ import ActiveCard from "../../../../../ActiveCard";
 
 const ActiveTab = () => {
   return (
-    <div>
+    <div style={{ display: "flex", gap: 10, overflow: "auto" }}>
+      <ActiveCard />
       <ActiveCard />
     </div>
   );
