@@ -40,9 +40,18 @@ export const educationData = [
 ];
 
 export const accolatesData = [
-  { description: "Boston Medical Board Chair" },
-  { description: "PHD in Bio-Engineering, Highest Marks" },
-  { description: "Summa Cum Laude, Honors Club" },
+  { description: "Board Chair at",
+  institute: " Boston Medical",
+    date: "November 1,2022"
+},
+  { description: "Deans List 4 Years in a row at",
+    institute: " Stanford University",
+    date: "August 2017 - May 2022"
+  },
+  { description: "Summa Cum Laude, Honors Club from",
+    date: "August 2017 - May 2022 ",
+    institute: " Stanford University"
+},
 ];
 
 export const acheivementData = [

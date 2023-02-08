@@ -13,6 +13,7 @@ import {
   professionData,
 } from "../../../../constants";
 import {
+  CalendarIcon,
   AccoladesIcon,
   AvatarIcon,
   BreakerIcon,
@@ -22,10 +23,12 @@ import {
   ProfessionIcon,
   EducationIcon,
   AcheievementIcon,
+  BlueDotIcon,
 } from "../../../../assets/icons";
 import ReadMoreText from "../../../ReadMoreText";
 import BusinessGoals from "./BusinessGoals";
 import UserDetailCard from "../../UserDetailCard/UserDetailCard";
+import Accolades from "./Accolades/Accolades";
 
 const AboutCard = ({
   title,
@@ -60,6 +63,12 @@ const AboutTab = () => {
             </div>
           ))}
         </div>
+      </AboutCard>
+      {/* <AboutCard title="Accolades">
+        <Accolades/>
+      </AboutCard> */}
+      <AboutCard title="Accolades">
+        <Accolades />
       </AboutCard>
 
       <AboutCard title="Business Goals">

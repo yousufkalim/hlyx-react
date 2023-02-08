@@ -426,6 +426,12 @@ export const CalendarIcon = ({
     />
   </svg>
 );
+export const BlueDotIcon = () => (
+  <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="5" cy="5.16113" r="5" fill="#236BFE"/>
+  </svg>
+  
+);
 
 export const WorldIcon = ({
   color,
