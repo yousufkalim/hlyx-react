@@ -1,6 +1,6 @@
 import { IonContent, IonPage } from "@ionic/react";
 import { useState } from "react";
-import AboutTab from "../../components/AboutTab";
+import AboutTab from "../../components/Profile/ProfileTabs/AboutTab";
 import ContactTab from "../../components/ContactTab";
 import InfoButton from "../../components/InfoButton";
 import MediaCard from "../../components/MediaCard";

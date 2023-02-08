@@ -1,5 +1,5 @@
 import React from "react";
-import ActiveCard from "../../../ActiveCard";
+import ActiveCard from "../../../../../ActiveCard";
 
 const ActiveTab = () => {
   return (

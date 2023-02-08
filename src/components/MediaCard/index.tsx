@@ -10,7 +10,6 @@ import "../../style/components/MediaCard/mediaCard.css";
 import { BackBtnIcon, HlyxHeaderLogo } from "../../assets/icons";
 import ContactTab from "../ContactTab";
 import ServicesTab from "../ServicesTab";
-import AboutTab from "../AboutTab";
 import PortfolioTab from "../PortfolioTab";
 import HeroSession from "./heroSession";
 import InfoButton from "../InfoButton";
@@ -18,29 +17,29 @@ import avatarHeader from "../../assets/icons/avatar-header-icon.svg";
 
 export const ProfileTabs = ["Contact", "About", "Service", "Portfolio"];
 
-const Tabs = [
-  {
-    tab: 0,
-    content: <ContactTab />,
-  },
-  {
-    tab: 1,
-    content: <AboutTab />,
-  },
-  {
-    tab: 2,
-    content: <ServicesTab />,
-  },
-  {
-    tab: 3,
-    content: <PortfolioTab />,
-  },
-];
+// const Tabs = [
+//   {
+//     tab: 0,
+//     content: <ContactTab />,
+//   },
+//   {
+//     tab: 1,
+//     content: <AboutTab />,
+//   },
+//   {
+//     tab: 2,
+//     content: <ServicesTab />,
+//   },
+//   {
+//     tab: 3,
+//     content: <PortfolioTab />,
+//   },
+// ];
 
-const ActiveTabContent = ({ activeTab }: { activeTab: string }) => {
-  console.log(`active tab : ${activeTab} `);
-  return <>{Tabs.find((x) => x.tab === +activeTab)?.content}</>;
-};
+// const ActiveTabContent = ({ activeTab }: { activeTab: string }) => {
+//   console.log(`active tab : ${activeTab} `);
+//   return <>{Tabs.find((x) => x.tab === +activeTab)?.content}</>;
+// };
 
 const MediaCard = () => {
   const [activeTab, setActiveTab] = useState("0");

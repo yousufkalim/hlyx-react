@@ -1,6 +1,6 @@
 import { useState } from "react";
 // import AboutCard from "./AboutCard/AboutCard";
-import "../style/components/AboutCard/aboutCard.css";
+import "../../../../style/components/AboutCard/aboutCard.css";
 import { IonButton, IonCard, IonChip, IonLabel } from "@ionic/react";
 import {
   accolatesData,
@@ -11,7 +11,7 @@ import {
   goalsData,
   loremText,
   professionData,
-} from "../constants";
+} from "../../../../constants";
 import {
   AccoladesIcon,
   AvatarIcon,
@@ -22,10 +22,10 @@ import {
   ProfessionIcon,
   EducationIcon,
   AcheievementIcon,
-} from "../assets/icons";
-import ReadMoreText from "./ReadMoreText";
-import BusinessGoals from "./Profile/BusinessGoals";
-import UserDetailCard from "./Profile/UserDetailCard/UserDetailCard";
+} from "../../../../assets/icons";
+import ReadMoreText from "../../../ReadMoreText";
+import BusinessGoals from "./BusinessGoals";
+import UserDetailCard from "../../UserDetailCard/UserDetailCard";
 
 const AboutCard = ({
   title,
