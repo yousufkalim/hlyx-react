@@ -25,6 +25,7 @@ import {
 } from "../assets/icons";
 import ReadMoreText from "./ReadMoreText";
 import BusinessGoals from "./Profile/BusinessGoals";
+import UserDetailCard from "./Profile/UserDetailCard/UserDetailCard";
 
 const AboutCard = ({
   title,
@@ -44,6 +45,7 @@ const AboutCard = ({
 const AboutTab = () => {
   return (
     <>
+      <UserDetailCard />
       <AboutCard title="Bio">
         <ReadMoreText text={loremText} limit={171} />
       </AboutCard>

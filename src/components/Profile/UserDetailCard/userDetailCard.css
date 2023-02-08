@@ -1,0 +1,43 @@
+.user-detail-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 16.16px 19.05px;
+}
+.user-image {
+  height: 97.25px;
+  width: 97.25px;
+  border-radius: 60px;
+  object-fit: cover;
+  object-position: top;
+}
+.user-detail{
+    padding: 0 !important;
+    flex-direction: column;
+    display: flex;
+    gap: 9px;
+}
+.user-detail h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19.5563px;
+  line-height: 23px;
+  color: var(--text-color);
+}
+.user-info {
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 12px;
+  color: var(--text-color);
+}

@@ -90,7 +90,6 @@ const ContactTab = () => {
           <ChevronIcon />
         </div>
       </ContactCard>
-
       <ContactCard title="Phone">
         <IonAccordionGroup expand="compact" className="phone-card-container">
           <div className="flex align-center justify-contain mb-11">
@@ -201,6 +200,7 @@ const ContactTab = () => {
             gridTemplateColumns: "repeat(7, 58px)",
             lineHeight: 0,
             overflow: "scroll",
+            maxWidth:"95%"
           }}
         >
           <a
