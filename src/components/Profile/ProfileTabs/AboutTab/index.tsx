@@ -1,30 +1,6 @@
-import { useState } from "react";
-// import AboutCard from "./AboutCard/AboutCard";
 import "../../../../style/components/AboutCard/aboutCard.css";
 import { IonButton, IonCard, IonChip, IonLabel } from "@ionic/react";
-import {
-  accolatesData,
-  acheivementData,
-  brakerData,
-  commentsData,
-  educationData,
-  goalsData,
-  loremText,
-  professionData,
-} from "../../../../constants";
-import {
-  CalendarIcon,
-  AccoladesIcon,
-  AvatarIcon,
-  BreakerIcon,
-  CommentIcon,
-  ForwardIcon,
-  GoalsIcon,
-  ProfessionIcon,
-  EducationIcon,
-  AcheievementIcon,
-  BlueDotIcon,
-} from "../../../../assets/icons";
+import { loremText, professionData } from "../../../../constants";
 import ReadMoreText from "../../../ReadMoreText";
 import BusinessGoals from "./BusinessGoals";
 import UserDetailCard from "../../UserDetailCard/UserDetailCard";
@@ -32,21 +8,22 @@ import Accolades from "./Accolades/Accolades";
 import Achievements from "./Achievements/Achievements";
 import EducationCard from "./EducationCard";
 import Icebreakers from "./Icebreakers/Icebreakers";
+import BusinessNeeds from "./BusinessNeeds/BusinessNeeds";
 
 const AboutCard = ({
   title,
   children,
-  btn,
+  button,
 }: {
   title: string;
-  btn?: string;
+  button?: string;
   children: React.ReactNode;
 }) => {
   return (
     <IonCard className="card-container">
       <div className="about-card-title">
         <IonLabel className="card-heading-lg">{title}</IonLabel>
-        {btn ? (
+        {button ? (
           <>
             <IonButton
               fill="outline"
@@ -54,7 +31,7 @@ const AboutCard = ({
               color="var(--card-button-color)"
               className="about-card-title-button"
             >
-              {btn}
+              {button}
             </IonButton>
           </>
         ) : (
@@ -87,14 +64,17 @@ const AboutTab = () => {
       <AboutCard title="Education">
         <EducationCard />
       </AboutCard>
-      <AboutCard title="Accolades" btn="View All">
+      <AboutCard title="Accolades" button="View All">
         <Accolades />
       </AboutCard>
-      <AboutCard title="Achievements" btn="View All">
+      <AboutCard title="Achievements" button="View All">
         <Achievements />
       </AboutCard>
       <AboutCard title="Business Goals">
         <BusinessGoals />
+      </AboutCard>
+      <AboutCard title="Business Needs" button="View All">
+        <BusinessNeeds />
       </AboutCard>
       <AboutCard title="Icebreakers">
         <Icebreakers />
@@ -106,105 +86,7 @@ const AboutTab = () => {
         </IonButton>
       </div>
 
-      {/* <AboutCard
-        icon={
-          <EducationIcon
-            color={"var(--icon-back)"}
-            white={"var(--text-color)"}
-          />
-        }
-        cardTitle="Education"
-        cardTagTitle="xxx"
-        isTagTitle={false}
-      >
-        {educationData?.map(({ description }) => (
-          <div className="flex align-center">
-            <div className="forward-icon">
-              <ForwardIcon />
-            </div>
-            <div
-              className="content-two"
-              dangerouslySetInnerHTML={{ __html: description }}
-            />
-          </div>
-        ))}
-      </AboutCard>
-
-      <AboutCard
-        icon={
-          <AccoladesIcon
-            color={"var(--icon-back)"}
-            white={"var(--text-color)"}
-          />
-        }
-        cardTitle="Accolades"
-        cardTagTitle="xxx"
-        isTagTitle={false}
-      >
-        {accolatesData?.map(({ description }) => (
-          <div className="flex align-center">
-            <div className="forward-icon">
-              <ForwardIcon />
-            </div>
-            <div
-              className="content-two"
-              dangerouslySetInnerHTML={{ __html: description }}
-            />
-          </div>
-        ))}
-      </AboutCard>
-
-      <AboutCard
-        icon={
-          <AcheievementIcon
-            color={"var(--icon-back)"}
-            white={"var(--text-color)"}
-          />
-        }
-        cardTitle="Achievements"
-        cardTagTitle="xxx"
-        isTagTitle={false}
-      >
-        {acheivementData?.map(({ description }, item) => (
-          <div
-            className={`flex ${item !== 1 ? "align-center" : "align-start"}`}
-          >
-            <div
-              className="forward-icon content-three"
-              style={{ color: "var(--item-color)" }}
-            >
-              2022
-            </div>
-            <div
-              className="content-three"
-              dangerouslySetInnerHTML={{ __html: description }}
-            />
-          </div>
-        ))}
-      </AboutCard>
-
-      <AboutCard
-        icon={
-          <GoalsIcon color={"var(--icon-back)"} white={"var(--text-color)"} />
-        }
-        cardTitle="Secular Goals"
-        cardTagTitle="2023"
-        isTagTitle={true}
-      >
-        {goalsData?.map(({ description, icon }, index) => (
-          <>
-            <div className="flex align-center">
-              <div className="forward-icon content-three">{icon}</div>
-              <div
-                className="content-three"
-                dangerouslySetInnerHTML={{ __html: description }}
-              />
-            </div>
-            {index !== 3 && <div className="hr-line" />}
-          </>
-        ))}
-      </AboutCard>
-
+      {/* 
       <AboutCard
         icon={
           <CommentIcon color={"var(--icon-back)"} white={"var(--text-color)"} />
@@ -235,32 +117,7 @@ const AboutTab = () => {
         ))}
       </AboutCard>
 
-      <AboutCard
-        icon={
-          <BreakerIcon color={"var(--icon-back)"} white={"var(--text-color)"} />
-        }
-        cardTitle="Icebreakers"
-        cardTagTitle="xxx"
-        isTagTitle={false}
-      >
-        {brakerData?.map(({ description, tags }) => (
-          <>
-            <div className="content-four">{description}</div>
-            {tags?.map((item) => (
-              <>
-                <IonChip className="custom-chip" color="dark">
-                  {item}
-                </IonChip>
-              </>
-            ))}
-            <div className="hr-line" />
-          </>
-        ))}
-        <div className="content-four">Motto</div>
-        <div className="content-five">
-          Science is an oyster, serve it up tastefully.
-        </div>
-      </AboutCard> */}
+     */}
     </>
   );
 };

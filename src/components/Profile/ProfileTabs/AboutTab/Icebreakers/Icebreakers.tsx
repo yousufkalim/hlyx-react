@@ -7,7 +7,7 @@ const Icebreakers = () => {
   return (
     <>
       {brakerData?.map(({ description, tags }) => (
-        <>
+        <div className="section">
           <div className="Icebreakers-Sub-heading">{description}</div>
           <div>
             {tags?.map((item) => (
@@ -18,7 +18,7 @@ const Icebreakers = () => {
               </>
             ))}
           </div>
-        </>
+        </div>
       ))}
       <div className="Icebreakers-Sub-heading">Motto</div>
       <div className="content-five">

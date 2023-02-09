@@ -1,0 +1,95 @@
+.bussiness-container {
+}
+
+.bussiness-section {
+  display: flex;
+  flex-direction: row;
+  gap: 17.78px;
+  position: relative;
+}
+
+.bussiness-section:not(:last-child) {
+  padding-bottom: 28px;
+}
+
+.bussiness-section:first-child .blue-Dot {
+  background-color: #1e6eff;
+  outline: none;
+}
+
+.bussiness-section::before {
+  content: "";
+  border-left: 1px dashed #3b3c42;
+  position: absolute;
+  height: calc(100% - 18px);
+  top: 18px;
+  left: 9px;
+}
+
+.blue-Dot {
+  display: flex;
+  height: 18px;
+  width: 18px;
+  outline: 1px solid #3b3c42;
+
+  border-radius: 100%;
+  flex-shrink: 0;
+}
+
+.Bussiness-card {
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+  gap: 15px;
+}
+
+.Business-card-main {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.Business-card-main p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  align-items: center;
+  color: #878787;
+}
+
+.Business-card-main h6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #9798a3;
+}
+
+.status-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.status-row p {
+  padding: 8px 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 8px;
+  color: #ffffff;
+  background: #27a53b;
+  border: none;
+  border-radius: 10px;
+}
+
+.status-row .card-icons {
+  display: flex;
+  gap: 28px;
+}

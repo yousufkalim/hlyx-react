@@ -115,18 +115,27 @@ export const goalsData = [
   },
 ];
 
-export const commentsData = [
+export const needsData = [
   {
-    icon: <NumOneIcon />,
-    description: `Create a <span style="font-weight:600">new website</span> to promote my company’s services`,
+    date: "January 28, 2022",
+    heading: "New Company Website",
+    status: "Active",
+    description:
+      "Looking for someone that can create a new company website for us",
   },
   {
-    icon: <NumTwoIcon />,
-    description: `<span style="font-weight:600">Raise funding</span> to continue our research and development program`,
+    date: "December 11, 2022",
+    heading: "Find Business Partner",
+    status: "Active",
+    description:
+      "Looking for business partner that has experience building bio-tech companies",
   },
   {
-    icon: <NumThreeIcon />,
-    description: `Hire or partner with an <span style="font-weight:600">experienced nano-technology scientist</span>`,
+    date: "November 8, 2022",
+    heading: "Seeking Experienced Scientist",
+    status: "Filled",
+    description:
+      "Looking for someone that can create a new company website for us",
   },
 ];
 
