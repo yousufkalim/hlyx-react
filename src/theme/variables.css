@@ -9,7 +9,9 @@ http://ionicframework.com/docs/theming/ */
   --text-color: #000;
   --text-gray-color: #c4c4c4;
   --text-white-color: #ffffff;
-  --text-tab-color: #888888;
+  --text-tab-color: #4b546b;
+  --text-gary-color: #a0a1a2;
+  --profession-gary-color: #606c82;
   --icon-back: #e8ebf1;
   --social-back: #e8ebf1;
   --create-button: #186bfe;
@@ -19,10 +21,11 @@ http://ionicframework.com/docs/theming/ */
   --portfolio-heading: #828ea4;
   --scrollbar-color: rgba(0, 0, 0, 0.5);
   --segment-border-top: #c4c4c4;
-  --border-color: #E2E6EB;
+  --border-color: #e2e6eb;
+  --card-button-color: #0047fe;
 
   /** primary **/
-  --ion-color-primary: #186bfe;
+  --ion-color-primary: #0047ff;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
@@ -103,14 +106,15 @@ http://ionicframework.com/docs/theming/ */
   :root {
     --about-card-text: white;
     --scrollbar-color: #fff;
-    --bg-color: #1B1C21;
+    --bg-color: #1b1c21;
     --header-bg-color: #0a0a0d82;
     --text-gray-color: #fff;
     --text-color: #fff;
     --text-white-color: #252731;
-    --text-tab-color: #fff;
+    --text-tab-color: #a0a1a2;
+    --text-gary-color: #a0a1a2;
     --segment-btn-checked: #5b16ee;
-    --button-color: #5b16ee;
+    --button-color: #0047fe;
     --tab-height: 67.15px;
     --border-none: none;
     --margin-block: 13px;
@@ -119,8 +123,10 @@ http://ionicframework.com/docs/theming/ */
     --create-button: white;
     --item-color: #fff;
     --portfolio-heading: #fff;
-    --segment-border-top: #40414D;
-    --border-color: #40414D;
+    --segment-border-top: #40414d;
+    --border-color: #40414d;
+    --profession-gary-color: #9498aa;
+    --card-button-color: #71757b;
   }
 
   body {

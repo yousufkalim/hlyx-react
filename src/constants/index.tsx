@@ -10,18 +10,22 @@ import SliderThreeImage from "../assets/media/slide-three-image.png";
 
 export const professionData = [
   {
+    lineColor: "blue",
     title: "Company",
     description: "Sphere Bio Technologies, Inc.",
   },
   {
-    title: "Professional Title",
+    lineColor: "green",
+    title: "Title / Role",
     description: "Executive Director",
   },
   {
+    lineColor: "purple",
     title: "Occupation / Profession",
     description: "Molecular Scientist, PHD",
   },
   {
+    lineColor: "orange",
     title: "Industry",
     description: "Life Sciences, Bio-Engineering",
   },
@@ -36,20 +40,57 @@ export const educationData = [
 ];
 
 export const accolatesData = [
-  { description: "Boston Medical Board Chair" },
-  { description: "PHD in Bio-Engineering, Highest Marks" },
-  { description: "Summa Cum Laude, Honors Club" },
+  {
+    description: "Board Chair at",
+    institute: " Boston Medical",
+    date: "November 1,2022",
+  },
+  {
+    description: "Deans List 4 Years in a row at",
+    institute: " Stanford University",
+    date: "August 2017 - May 2022",
+  },
+  {
+    description: "Summa Cum Laude, Honors Club from",
+    date: "August 2017 - May 2022 ",
+    institute: " Stanford University",
+  },
 ];
 
 export const acheivementData = [
   {
-    description: `People Magazine <span style="font-weight:600">Scientist of The Year</span>`,
+    year: "2023",
+    description: (
+      <>
+        People Magazine{" "}
+        <span style={{ fontWeight: 600, color: "var(--text-color)" }}>
+          {" "}
+          Scientist of The Year
+        </span>
+      </>
+    ),
   },
   {
-    description: `Harvard Medical Journal <span style="font-weight:600">Prestigious Honor Recipient</span>`,
+    year: "2022",
+    description: (
+      <>
+        Harvard Medical Journal{" "}
+        <span style={{ fontWeight: 600, color: "var(--text-color)" }}>
+          Prestigious Honor Recipient
+        </span>{" "}
+      </>
+    ),
   },
   {
-    description: `<span style="font-weight:600">Presidential Honor</span> in Genetic Science`,
+    year: "2021",
+    description: (
+      <>
+        <span style={{ fontWeight: 600, color: "var(--text-color)" }}>
+          Presidential Honorin
+        </span>{" "}
+        Genetic Science
+      </>
+    ),
   },
 ];
 
@@ -74,18 +115,27 @@ export const goalsData = [
   },
 ];
 
-export const commentsData = [
+export const needsData = [
   {
-    icon: <NumOneIcon />,
-    description: `Create a <span style="font-weight:600">new website</span> to promote my company’s services`,
+    date: "January 28, 2022",
+    heading: "New Company Website",
+    status: "Active",
+    description:
+      "Looking for someone that can create a new company website for us",
   },
   {
-    icon: <NumTwoIcon />,
-    description: `<span style="font-weight:600">Raise funding</span> to continue our research and development program`,
+    date: "December 11, 2022",
+    heading: "Find Business Partner",
+    status: "Active",
+    description:
+      "Looking for business partner that has experience building bio-tech companies",
   },
   {
-    icon: <NumThreeIcon />,
-    description: `Hire or partner with an <span style="font-weight:600">experienced nano-technology scientist</span>`,
+    date: "November 8, 2022",
+    heading: "Seeking Experienced Scientist",
+    status: "Filled",
+    description:
+      "Looking for someone that can create a new company website for us",
   },
 ];
 

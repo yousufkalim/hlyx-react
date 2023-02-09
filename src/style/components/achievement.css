@@ -1,0 +1,32 @@
+.achievement-card {
+  display: flex;
+  gap: 15.26px;
+}
+
+.achievement-card svg {
+  flex-shrink: 0;
+}
+
+.achievement-description {
+  display: flex;
+  flex-direction: column;
+  gap: 11.54px;
+}
+
+.achievement-description .year {
+  color: #437ff2;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 8px;
+}
+
+.achievement-description .text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  /* color: var(--text-color); */
+}

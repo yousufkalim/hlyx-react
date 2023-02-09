@@ -7,7 +7,7 @@ import {
   // HeartIcon,
   LocationIcon,
   // SendIcon,
-  SwipeBar
+  SwipeBar,
 } from "../../assets/icons";
 import "../../style/components/profileCard.css";
 
@@ -36,7 +36,7 @@ export interface ProfileCardProps {
   name: string;
   position: string;
   location: string;
-  companyName?: string|undefined ;
+  companyName?: string | undefined;
 }
 
 const ProfileCard = ({
@@ -49,10 +49,7 @@ const ProfileCard = ({
 }: ProfileCardProps) => {
   const [btn, setbtn] = useState(true);
   return (
-    <IonContent
-    class="overflow-hidden"
-      fullscreen
-    >
+    <IonContent class="overflow-hidden" fullscreen>
       <img
         style={{
           position: "absolute",
@@ -71,7 +68,7 @@ const ProfileCard = ({
       {/* <FloatingButtonGroup icons={floatingIcons} /> Floating icons remove  */}
       <article className="cardContainer">
         <section
-        className="logoName"
+          className="logoName"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -86,7 +83,10 @@ const ProfileCard = ({
           <section className="detail-container">
             <section className="detail">
               <BagIcon />
-              <p className="position-text">{position} <span style={{fontWeight: "bold" }}>{companyName}</span></p>
+              <p className="position-text">
+                {position}{" "}
+                <span style={{ fontWeight: "bold" }}>{companyName}</span>
+              </p>
             </section>
             <section className="detail">
               <LocationIcon />
@@ -96,13 +96,14 @@ const ProfileCard = ({
         </section>
       </article>
       <section className="link-Button-section">
-        <div
+        <button
+          style={{ all: "unset" }}
           onClick={() => {
             setbtn(!btn);
           }}
         >
           <SwipeBar />
-        </div>
+        </button>
         <IonCard className="button-section">
           {btn ? (
             <IonButton

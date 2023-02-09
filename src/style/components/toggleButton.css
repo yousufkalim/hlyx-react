@@ -1,0 +1,21 @@
+.toggle-container {
+  justify-content: start;
+  max-width: 280px;
+  margin-left: -11px;
+}
+
+.toggle-button {
+  --padding-end: 0;
+  --padding-start: 0;
+  min-width: auto;
+}
+
+.toggle-button .label {
+  padding: 6.6px 11.5px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.segment-button-checked .label {
+  background: #485565;
+}

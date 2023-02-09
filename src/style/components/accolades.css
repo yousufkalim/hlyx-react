@@ -1,0 +1,48 @@
+.accolades-card {
+  display: flex;
+  gap: 15.26px;
+  align-items: baseline;
+}
+
+.accolades-card svg {
+  flex-shrink: 0;
+}
+
+.accolades-card-detail {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accolade-description {
+  display: flex;
+  flex-direction: column;
+  gap: 12.11px;
+}
+
+.accolade-description p {
+  max-width: 232px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  color: var(--text-color);
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  gap: 6.86px;
+}
+
+.date p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 133.5%;
+  letter-spacing: 0.02em;
+  color: #868fa0;
+}

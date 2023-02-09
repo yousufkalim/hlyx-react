@@ -5,6 +5,39 @@
   --background: var(--bg-color);
 }
 
+.card-container {
+  padding-block: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 26px 19px;
+  gap: 30.71px;
+}
+
+.card-container .card-heading-lg {
+  font-family: "Montserrat", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 15px;
+  color: var(--text-color);
+}
+
+.flex {
+  display: flex;
+  /* background-color: var(--bg-color); */
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.justify-contain {
+  justify-content: space-between;
+}
+
 .link_card {
   padding: 20px 18px;
   background-color: var(--bg-color);
@@ -50,11 +83,11 @@ ion-card-header.ios {
   flex-flow: column-reverse;
 }
 
-ion-segment-button {
+/* ion-segment-button {
   --indicator-color: #e8ebf1;
   --background: var(--bg-color);
   color: var(--text-tab-color);
-  border-radius: 0px;
+  
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-size: 13px;
@@ -66,19 +99,10 @@ ion-segment-button {
   --padding-end: 0px;
   --padding-bottom: 10px;
   --padding-start: 0px;
-}
+} */
 
 ion-segment-button::before {
   all: unset;
-}
-
-.segment-button-checked {
-  --indicator-color: none;
-  --indicator-box-shadow: none;
-  border-top: 5px solid var(--segment-btn-checked);
-  background: var(--bg-color);
-  color: var(--text-color);
-  font-weight: 700;
 }
 
 .avatar-icon {
@@ -140,26 +164,20 @@ ion-card {
   border-bottom: 1px solid #c4c4c4;
 }
 
-.tab_container {
-  padding: 0 !important;
-  border-bottom: none;
-}
-
-.tab_card {
-  margin-top: 0px;
-  padding-top: 25px;
-}
-
-.accordion-label {
+.content-card-heading {
   color: var(--text-color);
-  font-family: "Montserrat", sans-serif !important;
-  font-style: normal;
-  font-weight: 600 !important;
-  font-size: 15px;
-  line-height: 15px;
-  padding-left: 20px;
-  display: inline-block;
-  padding-bottom: 12.88px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 15.27px;
+}
+
+.card-heading {
+  color: var(--text-color);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 14px;
 }
 
 ion-segment {
@@ -168,23 +186,14 @@ ion-segment {
   border-radius: 0px;
 }
 
-ion-label {
+/* ion-label {
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: 500 !important;
   font-size: 15px !important;
   line-height: 25px;
   color: inherit;
-}
-
-.segment-btn-label {
-  font-family: "Montserrat", sans-serif !important;
-  font-style: normal;
-  font-weight: inherit !important;
-  font-size: 15px;
-  line-height: 18px;
-  color: inherit;
-}
+} */
 
 .social-media-icon {
   width: 50px;
@@ -245,7 +254,6 @@ ion-accordion.accordion-expanded > [slot="header"] .ion-accordion-toggle-icon {
 
 .blog_links {
   display: flex;
-  padding-inline: 20px;
   flex-direction: row;
 }
 
@@ -299,14 +307,14 @@ ion-accordion.accordion-expanded > [slot="header"] .ion-accordion-toggle-icon {
 }
 
 /* Info Button */
-.info-button{
+.info-button {
   position: fixed;
-    height: 68px;
-    width: 68px;
-    right: 10px;
-    bottom: 53px;
-    box-shadow: 1px 1px 20px 1px rgba(91, 22, 238, 0.34);
-    border-radius: 100%;
+  height: 68px;
+  width: 68px;
+  right: 10px;
+  bottom: 53px;
+  box-shadow: 1px 1px 20px 1px rgba(91, 22, 238, 0.34);
+  border-radius: 100%;
 }
 .info-button > ion-fab-button {
   height: 68px;

@@ -1,0 +1,85 @@
+.education_card_container {
+  background-color: #24262b;
+  border-radius: 18px;
+  max-width: 282px;
+  min-width: 282px;
+  padding-block: 22px 26px;
+  padding-inline: 14px;
+  display: flex;
+  gap: 12px;
+}
+
+.color_line {
+  width: 4px;
+  height: 43px;
+  background-color: #fedd71;
+  border-radius: 100px;
+}
+
+.education_info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.education_details_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  border-bottom: 2px solid #505767;
+}
+
+.education_details_container img {
+  width: 46px;
+  height: 46px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+h6,
+p {
+  margin: 0 !important;
+}
+
+.education_details,
+.education_info_text {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins";
+  gap: 2px;
+}
+
+.education_details h6 {
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.045em;
+  color: white;
+}
+
+.education_details p {
+  font-weight: 500;
+  font-size: 12px;
+  color: #898b92;
+}
+
+.education_info_text {
+  margin-top: 14px;
+}
+
+.education_info_text h6 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.025em;
+  color: #fafbff;
+}
+
+.education_info_text p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.025em;
+  color: #7d8597;
+}
