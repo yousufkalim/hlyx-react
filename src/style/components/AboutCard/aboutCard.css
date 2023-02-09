@@ -102,33 +102,6 @@ ion-card {
   justify-content: space-between;
 }
 
-.content-four {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 25px;
-  color: var(--text-color);
-  margin-bottom: 15.31px;
-}
-
-.content-five {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #888888;
-}
-
-.custom-chip {
-  border: 0.941107px solid #606c82;
-  border-radius: 7.52885px;
-  color: var(--item-color);
-  background-color: var(--bg-color);
-  margin: 0px 16.94px 5px 0px;
-}
-
 .mb-11 {
   margin-bottom: 11px;
 }

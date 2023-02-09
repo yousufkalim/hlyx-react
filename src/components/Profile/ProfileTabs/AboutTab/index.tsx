@@ -31,6 +31,7 @@ import UserDetailCard from "../../UserDetailCard/UserDetailCard";
 import Accolades from "./Accolades/Accolades";
 import Achievements from "./Achievements/Achievements";
 import EducationCard from "./EducationCard";
+import Icebreakers from "./Icebreakers/Icebreakers";
 
 const AboutCard = ({
   title,
@@ -94,6 +95,9 @@ const AboutTab = () => {
       </AboutCard>
       <AboutCard title="Business Goals">
         <BusinessGoals />
+      </AboutCard>
+      <AboutCard title="Icebreakers">
+        <Icebreakers />
       </AboutCard>
 
       <div style={{ paddingBlock: 20, backgroundColor: "var(--bg-color)" }}>

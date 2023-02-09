@@ -1,0 +1,32 @@
+.Icebreakers-Sub-heading {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  color: var(--text-color);
+  /* margin-bottom: 15.31px; */
+}
+
+.custom-chip {
+  margin: 0px 16.94px 0px 0px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 10px;
+  text-align: right;
+  color: #989898;
+  border: 0.941107px solid #989898;
+  border-radius: 14px;
+  background-color: var(--bg-color);
+}
+
+.content-five {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #888888;
+}
