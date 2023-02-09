@@ -30,6 +30,7 @@ import BusinessGoals from "./BusinessGoals";
 import UserDetailCard from "../../UserDetailCard/UserDetailCard";
 import Accolades from "./Accolades/Accolades";
 import Achievements from "./Achievements/Achievements";
+import EducationCard from "./EducationCard";
 
 const AboutCard = ({
   title,
@@ -81,6 +82,9 @@ const AboutTab = () => {
             </div>
           ))}
         </div>
+      </AboutCard>
+      <AboutCard title="Education">
+        <EducationCard />
       </AboutCard>
       <AboutCard title="Accolades" btn="View All">
         <Accolades />

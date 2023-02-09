@@ -54,7 +54,7 @@
 }
 
 .active_card_footer {
-  margin-top: 19px;
+  margin-top: 26px;
   display: flex;
   justify-content: space-between;
 }
@@ -62,11 +62,12 @@
 .time_container {
   display: flex;
   align-items: center;
+  gap: 6px;
 }
 
 .time_text {
   font-size: 12px;
-  line-height: 8px;
+  line-height: 9px;
   font-family: "Poppins";
   color: #868fa0;
   margin-left: 6px;
