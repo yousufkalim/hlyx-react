@@ -1,12 +1,5 @@
-import {
-  IonButton,
-  IonContent,
-  IonModal,
-  IonPage,
-  IonSlide,
-  IonSlides,
-} from "@ionic/react";
-import React, { useEffect, useRef, useState } from "react";
+import { IonContent, IonPage, IonSlide, IonSlides } from "@ionic/react";
+import React, { useState } from "react";
 import ProfileCard from "../../components/ProfileCard";
 import "../../style/page/professional.css";
 import profileOne from "../../assets/physician_male_01.png";
@@ -21,7 +14,6 @@ import cx from "../../assets/cx_logo.png";
 import RealtyGroup from "../../assets/RealtyGroup.png";
 import HorizonMedia from "../../assets/HorizonMedia.png";
 import HamiltonRestaurant from "../../assets/HamiltonRestaurant.png";
-import MediaCard from "../../components/MediaCard";
 
 const slideOpts = {
   initialSlide: 0,
@@ -34,20 +26,20 @@ export const profileData = [
     companyLogo: sphere,
     name: "Dr. Kenji Awurama",
     position: "Executive Director at ",
-    companyName:"Sphere Bio Tech",
+    companyName: "Sphere Bio Tech",
     location: "Palo Alto, California",
   },
   {
     backgroundImage: profileTwo,
     companyLogo: scendia,
     name: "Susan Martinez",
-    companyName:"Scendia Bio",
+    companyName: "Scendia Bio",
     position: "Chief Financial Officer",
     location: "Irvine, California",
   },
   {
     backgroundImage: AmberNguyen,
-    companyName:"Fashion CX",
+    companyName: "Fashion CX",
     companyLogo: cx,
     name: "Amber Nguyen",
     position: "CEO & Chief Stylist",
@@ -56,7 +48,7 @@ export const profileData = [
   {
     backgroundImage: TerranceBryant,
     companyLogo: RealtyGroup,
-    companyName:"Bryant Realty Group",
+    companyName: "Bryant Realty Group",
     name: "Terrance Bryant",
     position: "Founder",
     location: "San Jose, New Mexico",
@@ -64,7 +56,7 @@ export const profileData = [
   {
     backgroundImage: LeenaAcoladae,
     companyLogo: HorizonMedia,
-    companyName:"New Horizon Media",
+    companyName: "New Horizon Media",
     name: "Leena Acoladae",
     position: "CEO",
     location: "San Jose, New Mexico",
@@ -72,7 +64,7 @@ export const profileData = [
   {
     backgroundImage: TerrancetBryant,
     companyLogo: HamiltonRestaurant,
-    companyName:"Hamilton Restaurant",
+    companyName: "Hamilton Restaurant",
     name: "Terrance Bryant",
     position: "Executive Chef",
     location: "San Mateo, California",
@@ -80,8 +72,6 @@ export const profileData = [
 ];
 
 const Professional = () => {
-  const modal = useRef<HTMLIonModalElement>(null);
-  const [open, setOpen] = useState(false);
   const [slideNumber, setSlideNumber] = useState(0);
 
   const handleNextSlide = () => {
@@ -92,27 +82,9 @@ const Professional = () => {
     setSlideNumber((prevSlideNumber) => prevSlideNumber - 1);
   };
 
-  console.log(slideNumber);
-
   const userData = profileData.filter((_, index) => index === slideNumber);
   console.log(userData);
 
-  const handleOpen = () => {
-    setOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setOpen(false);
-  };
-
-  useEffect(() => {
-    setOpen(true);
-    console.log(open, "in useEffect");
-    return () => {
-      setOpen(false);
-      console.log(open, "in useEffect cleanup ");
-    };
-  }, []);
   return (
     <>
       <IonPage>
@@ -125,7 +97,14 @@ const Professional = () => {
           >
             {profileData.map(
               (
-                { backgroundImage, companyLogo, name, position,companyName, location },
+                {
+                  backgroundImage,
+                  companyLogo,
+                  name,
+                  position,
+                  companyName,
+                  location,
+                },
                 index
               ) => (
                 <IonSlide key={index} id={`index-{index}`}>
@@ -143,26 +122,6 @@ const Professional = () => {
           </IonSlides>
         </IonContent>
       </IonPage>
-
-      {/* <IonModal
-        ref={modal}
-        className="detail-modal"
-        isOpen={open}
-        onDidDismiss={handleCloseModal}
-        breakpoints={[0, 0.14, 0.5, 1]}
-        initialBreakpoint={0.14}
-        backdropBreakpoint={0.14}
-      >
-        <section className="card-footer">
-          <IonButton className="footer-btn">Add Contact</IonButton>
-          <IonButton className="footer-btn">View Info</IonButton>
-        </section>
-
-        <section>
-          <img src={userData[0].companyLogo} alt={userData[0].name} />
-          <h2 style={{ color: "white" }}>{userData[0].name}</h2>
-        </section>
-      </IonModal> */}
     </>
   );
 };

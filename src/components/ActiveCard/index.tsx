@@ -1,4 +1,3 @@
-import { grid } from "ionicons/icons";
 import React from "react";
 import {
   ClockIcon,
@@ -20,7 +19,6 @@ const ActiveCard = () => {
             <h6>Raise Capital</h6>
             <p>Raise $200M in funding for R&D</p>
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-              {/* <div style={{ width: 143 }}> */}
               <ProgressBar />
               <p className="progress">70%</p>
             </div>

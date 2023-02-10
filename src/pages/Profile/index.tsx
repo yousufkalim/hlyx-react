@@ -3,7 +3,6 @@ import { useState } from "react";
 import AboutTab from "../../components/Profile/ProfileTabs/AboutTab";
 import ContactTab from "../../components/ContactTab";
 import InfoButton from "../../components/InfoButton";
-import MediaCard from "../../components/MediaCard";
 import PortfolioTab from "../../components/PortfolioTab";
 import Header from "../../components/Profile/Header";
 import ServicesTab from "../../components/ServicesTab";
@@ -18,11 +17,6 @@ const ProfileTabsContent = [
   <ServicesTab />,
   <PortfolioTab />,
 ];
-
-const ActiveTabPanal = ({ activeTab }: { activeTab: string }) => {
-  console.log(`active tab : ${activeTab} `);
-  return <>{ProfileTabsContent[+activeTab]}</>;
-};
 
 const Profile = () => {
   const [activeTab, setActiveTab] = useState("0");
@@ -40,9 +34,7 @@ const Profile = () => {
             />
           </div>
 
-          <ActiveTabPanal activeTab={activeTab} />
-
-          <MediaCard />
+          {ProfileTabsContent[+activeTab]}
         </IonContent>
       </IonPage>
       <InfoButton />
