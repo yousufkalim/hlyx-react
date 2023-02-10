@@ -1,0 +1,101 @@
+.achieved-section {
+  display: flex;
+  gap: 22px;
+  padding-bottom: 30px;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.progress {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16.62px;
+}
+
+.achieved-whole-card {
+  width: 100%;
+  margin-right: 10px;
+  padding-bottom: 30px;
+}
+
+.achieved-section:not(:last-child) .achieved-whole-card {
+  border-bottom: 1px solid #40414d;
+}
+
+.achieved-card {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.achieved-card h6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: rgba(222, 222, 222, 0.86);
+}
+
+.achieved-card p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 14px;
+  align-items: center;
+  color: #858791;
+}
+
+.achieve_card_footer {
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date_container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.date_text {
+  font-size: 12px;
+  line-height: 9px;
+  font-family: "Poppins";
+  color: #868fa0;
+  margin-left: 6px;
+}
+
+.icon_list {
+  display: flex;
+  gap: 20px;
+}
+
+.link_badge,
+.message_badge {
+  position: relative;
+}
+
+.link_badge::before,
+.message_badge::before {
+  content: attr(data-count);
+  position: absolute;
+  top: -12px;
+  right: -16px;
+  width: 18px;
+  height: 18px;
+  background: rgba(70, 73, 81, 0.62);
+  display: grid;
+  place-items: center;
+  color: white;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 500;
+}

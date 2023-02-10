@@ -142,6 +142,24 @@ export const needsData = [
 export const loremText =
   "Biology is my first love. As a Scientist my principal mission in life is the pursuit of life-changing cures. I founded Sphere Bio with the goal of discovering science that Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.";
 
+export const achieveData = [
+  {
+    achieveGoal: "Create DNA Nano Map",
+    description: "Create DNA nano-map sequencing",
+    date: "Nov. 1, 2022",
+  },
+  {
+    achieveGoal: "Compete AMT Certification",
+    description: "Get AMT Certification by end of year",
+    date: "Oct. 8, 2022",
+  },
+  {
+    achieveGoal: "Acquire New Business Office",
+    description: "Close on new office location for 2022",
+    date: "Sep. 1, 2022",
+  },
+];
+
 export const brakerData = [
   {
     description: "Hobbies",

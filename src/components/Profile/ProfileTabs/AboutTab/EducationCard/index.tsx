@@ -6,7 +6,6 @@ const EducationCard = () => {
   return (
     <div className="education_card_container">
       <div className="color_line" />
-
       <div className="education_info">
         <div className="education_details_container">
           <div className="education_details">

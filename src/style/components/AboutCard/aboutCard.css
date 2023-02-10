@@ -56,12 +56,6 @@ ion-card {
   font-weight: 500;
 }
 
-.hr-line {
-  margin: 15.78px 0px 10.78px 0px;
-  height: 2px;
-  background-color: var(--border-color);
-}
-
 .content-two {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -115,6 +109,7 @@ ion-card {
 .profession-line {
   height: 4px;
   width: 42px;
+  border-radius: 100px;
 }
 
 .profession-item {
