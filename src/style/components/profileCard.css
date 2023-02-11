@@ -140,10 +140,11 @@ h1 {
   padding: 0 10px 20px 10px !important;
 }
 .logoName h1 {
+  min-width: 327px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 38px;
+  font-size: 35px;
   line-height: 44px;
   color: #ffffff;
 }

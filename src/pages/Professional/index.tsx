@@ -2,13 +2,13 @@ import { IonContent, IonPage, IonSlide, IonSlides } from "@ionic/react";
 import React, { useState } from "react";
 import ProfileCard from "../../components/ProfileCard";
 import "../../style/page/professional.css";
-import profileOne from "../../assets/physician_male_01.png";
+import profileOne from "../../assets/JamesR.png";
 import profileTwo from "../../assets/physician_girl_01.png";
 import AmberNguyen from "../../assets/AmberNguyen.png";
 import TerranceBryant from "../../assets/TerranceBryant.png";
 import TerrancetBryant from "../../assets/TerrancetBryant.png";
 import LeenaAcoladae from "../../assets/LeenaAcoladae.png";
-import sphere from "../../assets/sphere.png";
+import hylx from "../../assets/Hylx.png";
 import scendia from "../../assets/scendia.png";
 import cx from "../../assets/cx_logo.png";
 import RealtyGroup from "../../assets/RealtyGroup.png";
@@ -23,11 +23,11 @@ const slideOpts = {
 export const profileData = [
   {
     backgroundImage: profileOne,
-    companyLogo: sphere,
-    name: "Dr. Kenji Awurama",
-    position: "Executive Director at ",
-    companyName: "Sphere Bio Tech",
-    location: "Palo Alto, California",
+    companyLogo: hylx,
+    name: "James R. Beckley",
+    position: "CEO at  ",
+    companyName: "HLYX Inc.",
+    location: "San Diego, California",
   },
   {
     backgroundImage: profileTwo,

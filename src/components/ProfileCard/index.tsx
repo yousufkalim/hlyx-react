@@ -57,7 +57,7 @@ const ProfileCard = ({
           zIndex: -3,
           width: "100%",
           height: "100%",
-          objectPosition: "top",
+          objectPosition: "74% 0%",
           objectFit: "cover",
         }}
         src={backgroundImage}
@@ -74,7 +74,7 @@ const ProfileCard = ({
             flexDirection: "column",
             alignItems: "flex-start",
             paddingInline: 24,
-            paddingBottom: 64,
+            paddingBottom: 49,
           }}
         >
           <img src={companyLogo} alt="company logo" className="company-logo" />
