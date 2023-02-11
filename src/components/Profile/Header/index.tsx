@@ -1,7 +1,7 @@
 import { IonButton } from "@ionic/react";
 import React from "react";
 import { BackBtnIcon, HlyxHeaderLogo } from "../../../assets/icons";
-import ProfileImage from "../../../assets/icons/avatar-header-icon.svg";
+import ProfileImage from "../../../assets/icons/Avatar_Header.svg";
 
 const Header = () => {
   return (

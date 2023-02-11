@@ -21,7 +21,7 @@ const AssistTab = () => {
         <div className="assist_avatar">
           {[...Array(5).keys()].map((index) => (
             <div className="ionAvatar_container">
-              <IonAvatar className="ionAvatar">
+              <IonAvatar className="ion_avatar">
                 <img
                   alt="Silhouette of a person's head"
                   src="https://ionicframework.com/docs/img/demos/avatar.svg"

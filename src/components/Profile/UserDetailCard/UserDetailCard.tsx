@@ -7,7 +7,7 @@ import {
 import React from "react";
 import profileOne from "../../../assets/media/media-image.png";
 import { BreifIcon, LocateIcon } from "../../../assets/icons/index";
-import "../../../style/components/userDetailCard.css"
+import "../../../style/components/userDetailCard.css";
 
 const UserDetailCard = () => {
   return (
