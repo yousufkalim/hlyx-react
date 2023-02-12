@@ -142,6 +142,9 @@ export const needsData = [
 export const loremText =
   "Biology is my first love. As a Scientist my principal mission in life is the pursuit of life-changing cures. I founded Sphere Bio with the goal of discovering science that Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.";
 
+export const JamesText =
+  "I build digital products and ventures that help entrepreneurs and brands succeed. Through data-driven insights and custom software, my team and I specialize in crafting solutions that help companies solve real challenges and achieve game-changing results.";
+
 export const achieveData = [
   {
     achieveGoal: "Create DNA Nano Map",

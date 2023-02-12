@@ -31,6 +31,7 @@ import "@ionic/react/css/display.css";
 import "./theme/variables.css";
 import "./global.css";
 import { isMobile } from "react-device-detect";
+import DrProfile from "./pages/DrProfile";
 
 setupIonicReact();
 
@@ -45,8 +46,11 @@ const App: React.FC = () => (
               <Route exact path="/">
                 <Professional />
               </Route>
-              <Route exact path="/profile">
+              <Route exact path="/link/jamesrbeckley">
                 <Profile />
+              </Route>
+              <Route exact path="/demo/doctor">
+                <DrProfile />
               </Route>
             </IonRouterOutlet>
             <IonTabBar />

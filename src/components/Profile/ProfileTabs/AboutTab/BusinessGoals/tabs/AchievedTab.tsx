@@ -1,5 +1,5 @@
 import React from "react";
-import { CalendarIcon, Checkbox } from "../../../../../../assets/icons";
+import { AccoladesCalender, Checkbox } from "../../../../../../assets/icons";
 import {
   LinksIcon,
   MessageIcon,
@@ -20,13 +20,13 @@ const AchievedTab = () => {
               <h6>{achieveGoal}</h6>
               <p>{description}</p>
               <div className="progress-container">
-                <ProgressBar />
+                <ProgressBar color={"green"} />
                 <p className="progress">70%</p>
               </div>
             </div>
             <div className="achieve_card_footer">
               <div className="date_container">
-                <CalendarIcon
+                <AccoladesCalender
                   color={"var(--icon-back)"}
                   white={"var(--text-color)"}
                 />
@@ -35,13 +35,13 @@ const AchievedTab = () => {
 
               <div className="icon_list">
                 <div className="link_badge" data-count="5">
-                  <LinksIcon />
+                  <LinksIcon color={"#CFD4DF"} />
                 </div>
                 <div className="message_badge" data-count="3">
-                  <MessageIcon />
+                  <MessageIcon color={"#CFD4DF"} />
                 </div>
 
-                <ShareIcon />
+                <ShareIcon color={"#CFD4DF"} />
               </div>
             </div>
           </div>

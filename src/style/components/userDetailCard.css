@@ -1,9 +1,9 @@
 .user-detail-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    padding: 16.16px 19.05px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 15px;
+  padding: 16.16px 19.05px;
 }
 .user-image {
   height: 97.25px;
@@ -12,11 +12,11 @@
   object-fit: cover;
   object-position: top;
 }
-.user-detail{
-    padding: 0 !important;
-    flex-direction: column;
-    display: flex;
-    gap: 9px;
+.user-detail {
+  padding: 0 !important;
+  flex-direction: column;
+  display: flex;
+  gap: 9px;
 }
 .user-detail h1 {
   font-family: "Montserrat";

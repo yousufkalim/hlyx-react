@@ -82,7 +82,7 @@ const ContactTab = () => {
                 href="mailto:kenji.awurama@sperebio.tech"
                 className="anchor-clear"
               >
-                kenji.awurama@sperebio.tech
+                james.beckley@hlyx.io
               </a>
             </IonLabel>
           </div>
@@ -113,9 +113,7 @@ const ContactTab = () => {
                 white={"var(--text-color)"}
               />
               <a href="tel:+16503456789" className="anchor-clear">
-                <IonLabel className="icon_text">
-                  +1 (650) 345-6789 Ext 700
-                </IonLabel>
+                <IonLabel className="icon_text">+1 (408) 420-9617</IonLabel>
               </a>
             </div>
             <ChevronIcon />
@@ -125,7 +123,9 @@ const ContactTab = () => {
             <div className="flex align-center">
               <FaxIcon white={"var(--text-color)"} />
               <a href="tel:+16503456789" className="anchor-clear">
-                <IonLabel className="icon_text">+1 (650) 345-6789</IonLabel>
+                <IonLabel className="icon_text">
+                  +1 (888) 796-7496 Ext 700
+                </IonLabel>
               </a>
             </div>
             <ChevronIcon />
@@ -145,7 +145,7 @@ const ContactTab = () => {
               target={"_blank"}
             >
               <IonLabel className="icon_text">
-                Calendly {">"} Kenji Awurama{" "}
+                Calendly {">"} James R. Beckley{" "}
               </IonLabel>
             </a>
           </div>
@@ -161,7 +161,7 @@ const ContactTab = () => {
               href="https://www.aurorabiomed.com/"
               target={"_blank"}
             >
-              <IonLabel className="icon_text">www.sperebio.tech</IonLabel>
+              <IonLabel className="icon_text">www.oriyn.com</IonLabel>
             </a>
           </div>
 
@@ -184,7 +184,7 @@ const ContactTab = () => {
                 className="icon_text office_icon_text"
                 style={{ maxWidth: 200 }}
               >
-                1886 Globe Trotter Court Palo Alto, CA 95051{" "}
+                251 N City Dr Suite 128F, San Marcos, CA 92078{" "}
               </IonLabel>
             </div>
 
@@ -200,11 +200,11 @@ const ContactTab = () => {
             gridTemplateColumns: "repeat(7, 58px)",
             lineHeight: 0,
             overflow: "scroll",
-            maxWidth:"95%"
+            maxWidth: "95%",
           }}
         >
           <a
-            href="https://www.linkedin.com/"
+            href="https://linkedin.com/in/jamesrbeckley"
             className="anchor-clear"
             target={"_blank"}
           >
@@ -219,7 +219,7 @@ const ContactTab = () => {
           </a>
           <a
             className="anchor-clear"
-            href="https://slack.com/"
+            href="https://oriyn-workspace.slack.com/archives/D0417NGS8G5"
             target={"_blank"}
           >
             <SlackIcon color={"var(--social-back)"} />
@@ -240,7 +240,7 @@ const ContactTab = () => {
           </a>
           <a
             className="anchor-clear"
-            href="https://twitter.com/"
+            href="https://twitter.com/jamesrbeckley"
             target={"_blank"}
           >
             <Twitter color={"var(--social-back)"} />
