@@ -37,6 +37,7 @@ export interface ProfileCardProps {
   position: string;
   location: string;
   companyName?: string | undefined;
+  link: string;
 }
 
 const ProfileCard = ({
@@ -46,6 +47,7 @@ const ProfileCard = ({
   name,
   position,
   location,
+  link,
 }: ProfileCardProps) => {
   const [btn, setbtn] = useState(true);
   return (
@@ -110,7 +112,7 @@ const ProfileCard = ({
               expand="block"
               className="profile-footer-button"
               size="large"
-              routerLink="/profile"
+              routerLink={link}
             >
               Link with Me
             </IonButton>

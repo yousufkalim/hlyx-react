@@ -4,8 +4,8 @@ import {
   IonCardContent,
   IonCardSubtitle,
 } from "@ionic/react";
-import profileOne from "../../assets/JamesR.png";
-import sphere from "../../assets/sphere.png";
+import profileOne from "../../assets/media/JamesCover.png";
+import sphere from "../../assets/Oriyn.png";
 import "../../style/components/MediaCard/mediaCard.css";
 import { BreifIcon, LinkBtnIcon, LocateIcon } from "../../assets/icons";
 
