@@ -1,55 +1,39 @@
-import {
-  IonButton,
-  IonCard,
-  IonLabel,
-  IonAccordionGroup,
-  IonAccordion,
-  IonItem,
-} from "@ionic/react";
-
-import { chevronForward } from "ionicons/icons";
+import { IonButton, IonCard, IonLabel, IonAccordionGroup } from "@ionic/react";
 import "../style/components/ContactTab.css";
 import {
   CalendarIcon,
   CallIcon,
   ChevronIcon,
   DriveIcon,
-  Facebook,
   FaxIcon,
-  LinkedinIcon,
   LocateFillIcon,
   MailIcon,
-  MaskIcon,
-  MediumIcon,
   MobileIcon,
-  ShipFaceIcon,
-  SlackIcon,
   SoundCloudIcon,
-  Twitter,
   WorldIcon,
-  YoutubeIcon,
+  MediumIcon,
 } from "../assets/icons";
 import LinkCard from "./LinkCard";
 import HeroSession from "./MediaCard/heroSession";
+import { SocialData } from "../constants/index";
 
-const LinksData = [
+const JamesLinksData = [
   {
     hyperadd: "https://medium.com/",
     icon: <MediumIcon color={"var(--social-back)"} />,
-    title:
-      "Sphere Bio Technologies Unveils Breakthrough Science That Regenerates Necrotic Cells",
+    title: "How Automation Technology Can Increase Efficiency And Revenue",
     description: "Access Article on Medium",
   },
   {
     icon: <SoundCloudIcon color={"var(--social-back)"} />,
     hyperadd: "https://soundcloud.com/",
-    title: "Cellular Science Chat With Kenji Awurama",
+    title: "The Future of Business Technology And How Oriyn Is Making Waves",
     description: "Access Audio on SoundCloud",
   },
   {
     hyperadd: "https://www.google.com/drive/",
     icon: <DriveIcon color={"var(--social-back)"} />,
-    title: "Sphere Bio Customer Spec Sheet",
+    title: "Oriyn Business Solutions Deck 2023",
     description: "Access File on Google Drive",
   },
 ];
@@ -195,63 +179,19 @@ const ContactTab = () => {
       <ContactCard title="Social Media">
         <div
           style={{
-            display: "grid",
+            display: "flex",
             gap: "12.39px",
-            gridTemplateColumns: "repeat(7, 58px)",
-            lineHeight: 0,
             overflow: "scroll",
             maxWidth: "95%",
           }}
         >
-          <a
-            href="https://linkedin.com/in/jamesrbeckley"
-            className="anchor-clear"
-            target={"_blank"}
-          >
-            <LinkedinIcon color={"var(--social-back)"} />
-          </a>
-          <a
-            className="anchor-clear"
-            href="https://www.youtube.com/"
-            target={"_blank"}
-          >
-            <YoutubeIcon color={"var(--social-back)"} />
-          </a>
-          <a
-            className="anchor-clear"
-            href="https://oriyn-workspace.slack.com/archives/D0417NGS8G5"
-            target={"_blank"}
-          >
-            <SlackIcon color={"var(--social-back)"} />
-          </a>
-          <a
-            className="anchor-clear"
-            href="https://www.reddit.com/"
-            target={"_blank"}
-          >
-            <ShipFaceIcon color={"var(--social-back)"} />
-          </a>
-          <a
-            className="anchor-clear"
-            href="https://discord.com/"
-            target={"_blank"}
-          >
-            <MaskIcon color={"var(--social-back)"} />
-          </a>
-          <a
-            className="anchor-clear"
-            href="https://twitter.com/jamesrbeckley"
-            target={"_blank"}
-          >
-            <Twitter color={"var(--social-back)"} />
-          </a>
-          <a
-            className="anchor-clear"
-            href="https://www.facebook.com/"
-            target={"_blank"}
-          >
-            <Facebook color={"var(--social-back)"} />
-          </a>
+          {SocialData?.map(({ icon, link, label }) => (
+            <div className="icon-card">
+              <a href={link} className="anchor-clear" target={"_blank"}></a>
+              {icon}
+              <IonLabel className="iconlabel">{label}</IonLabel>
+            </div>
+          ))}
         </div>
       </ContactCard>
       <ContactCard title="Links">
@@ -264,14 +204,16 @@ const ContactTab = () => {
             marginBottom: 10,
           }}
         >
-          {LinksData.map(({ icon, title, hyperadd, description }, index) => (
-            <LinkCard
-              icon={icon}
-              title={title}
-              hyperaddress={hyperadd}
-              description={description}
-            />
-          ))}
+          {JamesLinksData.map(
+            ({ icon, title, hyperadd, description }, index) => (
+              <LinkCard
+                icon={icon}
+                title={title}
+                hyperaddress={hyperadd}
+                description={description}
+              />
+            )
+          )}
         </div>
       </ContactCard>
       <div style={{ paddingBlock: 20, backgroundColor: "var(--bg-color)" }}>

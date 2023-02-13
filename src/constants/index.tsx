@@ -7,6 +7,18 @@ import {
 import SliderOneImage from "../assets/media/slide-one-image.png";
 import SliderTwoImage from "../assets/media/slide-two-image.png";
 import SliderThreeImage from "../assets/media/slide-three-image.png";
+import {
+  BehanceIcon,
+  Facebook,
+  InstagramIcon,
+  MaskIcon,
+  MediumSocialIcon,
+  ShipFaceIcon,
+  SkypeIcon,
+  SlackIcon,
+  Twitter,
+  YoutubeIcon,
+} from "../assets/icons/SocialIcons";
 
 export const professionData = [
   {
@@ -28,6 +40,29 @@ export const professionData = [
     lineColor: "orange",
     title: "Industry",
     description: "Life Sciences, Bio-Engineering",
+  },
+];
+
+export const JamesprofessionData = [
+  {
+    lineColor: "blue",
+    title: "Company",
+    description: "Oriyn LLC",
+  },
+  {
+    lineColor: "green",
+    title: "Title / Role",
+    description: "Chief Executive Officer",
+  },
+  {
+    lineColor: "purple",
+    title: "Occupation / Profession",
+    description: "Entrepreneur / Founder",
+  },
+  {
+    lineColor: "orange",
+    title: "Industry",
+    description: "Information Technology",
   },
 ];
 
@@ -253,5 +288,58 @@ export const galleryData = [
     imgAlt: "cell-interpolization",
     title: "Cell Interpolization",
     publishDate: "Dec. 21, 2022",
+  },
+];
+
+export const SocialData = [
+  {
+    link: "https://www.youtube.com/",
+    icon: <YoutubeIcon color={"var(--social-back)"} />,
+    label: "YouTube",
+  },
+  {
+    link: "https://www.youtube.com/",
+    icon: <SlackIcon color={"var(--social-back)"} />,
+    label: "Slack",
+  },
+  {
+    link: "https://www.youtube.com/",
+    icon: <ShipFaceIcon color={"var(--social-back)"} />,
+    label: "Reddit",
+  },
+  {
+    link: "https://www.youtube.com/",
+    icon: <MaskIcon color={"var(--social-back)"} />,
+    label: "Discord",
+  },
+  {
+    link: "https://www.youtube.com/",
+    icon: <Twitter color={"var(--social-back)"} />,
+    label: "Twitter",
+  },
+  {
+    link: "https://www.youtube.com/",
+    icon: <Facebook color={"var(--social-back)"} />,
+    label: "Facebook",
+  },
+  {
+    link: "https://www.youtube.com/",
+    icon: <BehanceIcon color={"var(--social-back)"} />,
+    label: "Behance",
+  },
+  {
+    link: "https://www.youtube.com/",
+    icon: <SkypeIcon color={"var(--social-back)"} />,
+    label: "Skype",
+  },
+  {
+    link: "https://www.youtube.com/",
+    icon: <InstagramIcon color={"var(--social-back)"} />,
+    label: "Instagram",
+  },
+  {
+    link: "https://www.youtube.com/",
+    icon: <MediumSocialIcon color={"var(--social-back)"} />,
+    label: "Medium",
   },
 ];

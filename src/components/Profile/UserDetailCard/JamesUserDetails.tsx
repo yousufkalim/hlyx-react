@@ -24,13 +24,13 @@ const JamesUserDetailCard = () => {
         <IonCardContent className="user-detail">
           <h1>James R. Beckley</h1>
           <div className="user-info">
-            <BreifIcon color="var(--text-color)" />
+            <BreifIcon height={12} width={10} color="var(--text-color)" />
             <p>
               CEO at <b>HLYX Inc.</b>
             </p>
           </div>
           <div className="user-info">
-            <LocateIcon color="var(--text-color)" />
+            <LocateIcon height={12} width={10} color="var(--text-color)" />
             <p>San DIego, California</p>
           </div>
         </IonCardContent>
