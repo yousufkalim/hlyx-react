@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../style/components/ProgressBar.css";
 
-const ProgressBar = ({ color = "purple" }: { color?: "green" | "purple" }) => {
+const ProgressBar = ({
+  color = "purple",
+  value = 0,
+}: {
+  color?: "green" | "purple";
+  value: number;
+}) => {
   return (
-    <progress id="project" max="100" value="70" className={`progress-${color}`}>
-      <div>70%</div>
-    </progress>
+    <div className="progress_container">
+      <progress
+        id="project"
+        max="100"
+        value={value}
+        className={`progress-${color}`}
+        style={{
+          right: `calc(100% - ${value}%)`,
+        }}
+      >
+        <div>70%</div>
+      </progress>
+    </div>
   );
 };
 

@@ -19,7 +19,7 @@ const ActiveCard = ({ color = "purple" }: { color?: "green" | "purple" }) => {
             <h6>Raise Capital</h6>
             <p>Raise $200M in funding for R&D</p>
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-              <ProgressBar color={color} />
+              <ProgressBar color={color} value={70} />
               <p className="progress">70%</p>
             </div>
           </div>

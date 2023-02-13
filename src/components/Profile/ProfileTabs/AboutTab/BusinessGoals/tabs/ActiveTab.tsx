@@ -5,7 +5,7 @@ const ActiveTab = () => {
   return (
     <div style={{ display: "flex", gap: 10, overflow: "auto" }}>
       <ActiveCard />
-      <ActiveCard color={"green"} />
+      <ActiveCard />
     </div>
   );
 };
