@@ -1,4 +1,5 @@
 import {
+  AdvanceCellIcon,
   NumFourIcon,
   NumOneIcon,
   NumThreeIcon,
@@ -19,6 +20,12 @@ import {
   Twitter,
   YoutubeIcon,
 } from "../assets/icons/SocialIcons";
+import cellAnatomic from "../assets/cellAnatomic.png";
+import bioTech from "../assets/bioTech.png";
+import LinkCard from "../components/LinkCard/index";
+import scientific from "../assets/scientific.png";
+import cellProg from "../assets/cellprog.png";
+import advanced from "../assets/advanced.png";
 
 export const professionData = [
   {
@@ -341,5 +348,38 @@ export const SocialData = [
     link: "https://www.youtube.com/",
     icon: <MediumSocialIcon color={"var(--social-back)"} />,
     label: "Medium",
+  },
+];
+
+const LinksData = [
+  {
+    icon: <AdvanceCellIcon />,
+    title: "Advanced Cell Research & Analysis",
+    description: "View Service Details",
+  },
+  {
+    icon: <img src={cellAnatomic} alt="Cell IMG" height={45} width={45} />,
+    title: "Cell Anatomic Molecular Splicing",
+    description: "View Service Details",
+  },
+  {
+    icon: <img src={bioTech} alt="Cell IMG" height={45} width={45} />,
+    title: "Bio-Technology Design & Implementation",
+    description: "View Service Details",
+  },
+  {
+    icon: <img src={scientific} alt="Cell IMG" height={45} width={45} />,
+    title: "Scientific Program Management",
+    description: "View Service Details",
+  },
+  {
+    icon: <img src={cellProg} alt="Cell IMG" height={45} width={45} />,
+    title: "Cell Programming and Rejuvenation",
+    description: "View Service Details",
+  },
+  {
+    icon: <img src={advanced} alt="Cell IMG" height={45} width={45} />,
+    title: "Advanced Molecular Splicing Interpolization ",
+    description: "View Service Details",
   },
 ];

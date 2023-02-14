@@ -23,13 +23,13 @@ const UserDetailCard = () => {
         <IonCardContent className="user-detail">
           <h1>Dr. Kenji Awurama</h1>
           <div className="user-info">
-            <BreifIcon color="var(--text-color)" />
+            <BreifIcon height={10} width={12} color="var(--text-color)" />
             <p>
               Executive Director at <b>Sphere Bio Tech</b>
             </p>
           </div>
           <div className="user-info">
-            <LocateIcon color="var(--text-color)" />
+            <LocateIcon height={10} width={12} color="var(--text-color)" />
             <p>Palo Alto, California</p>
           </div>
         </IonCardContent>

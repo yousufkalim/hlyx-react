@@ -28,7 +28,7 @@ const AboutCard = ({
             fill="outline"
             shape="round"
             color="var(--card-button-color)"
-            className="about-card-title-button"
+            className="view-all-button"
           >
             {button}
           </IonButton>

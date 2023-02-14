@@ -1,0 +1,35 @@
+.services_card_links {
+  display: flex;
+  /* max-width: 327px; */
+  max-height: 90px;
+  padding: 15px;
+  background: #2a2c31;
+  border-radius: 18px;
+  align-items: center;
+}
+
+.service_links_head {
+  display: flex;
+  flex-direction: column;
+  padding-left: 17.71px;
+  gap: 9px;
+}
+.service_links svg {
+  flex-shrink: 0;
+}
+
+.service-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.service-title-descripttion {
+  font-weight: 400;
+  font-size: 13px !important;
+  line-height: 16px;
+}

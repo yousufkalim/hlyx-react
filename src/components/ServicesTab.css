@@ -1,9 +1,68 @@
-.service-card{
- margin-inline: 10px;
+.service-card {
+  margin-inline: 10px;
 }
 .cards-list {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  padding: 10px 5px 24px 0;
+  gap: 15px;
+  padding-block: 38px 41px;
+}
+
+.featured-services-cards {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  overflow: scroll;
+}
+
+.service-card-container {
+  padding-block: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 26px 20px;
+  gap: 35px;
+}
+
+.service-card-container .card-heading-lg {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 15px;
+  color: var(--text-color);
+}
+
+.service-card-container .service-card-title {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 44px; */
+  align-items: center;
+}
+
+/* .service-card-container .service-card-title-button {
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --padding-top: 12px;
+  --padding-bottom: 12px;
+  --color: #71757b;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 9px;
+  --border-color: #71757b;
+  --border-width: 1px;
+  --border-style: solid;
+} */
+
+/* Feature Services */
+
+.feature-services-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  --color: #9899a0;
 }

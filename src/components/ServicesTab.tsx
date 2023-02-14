@@ -1,7 +1,11 @@
-import { IonCard, IonCardTitle } from "@ionic/react";
+import { IonCard, IonCardTitle, IonLabel } from "@ionic/react";
 import "./ServicesTab.css";
 import React from "react";
-import { AdvanceCellIcon, ServiceIcon } from "../assets/icons/index";
+import {
+  AdvanceCellIcon,
+  ChevronIcon,
+  ServiceIcon,
+} from "../assets/icons/index";
 import cellAnatomic from "../assets/cellAnatomic.png";
 import bioTech from "../assets/bioTech.png";
 import LinkCard from "./LinkCard";
@@ -9,6 +13,9 @@ import scientific from "../assets/scientific.png";
 import cellProg from "../assets/cellprog.png";
 import advanced from "../assets/advanced.png";
 import { IonButton } from "@ionic/react";
+import JamesUserDetailCard from "./Profile/UserDetailCard/JamesUserDetails";
+import FeaturedServices from "./FeaturedServices";
+import ServicesCardsLink from "./ServicesCardsLink";
 
 const LinksData = [
   {
@@ -31,69 +38,78 @@ const LinksData = [
     title: "Scientific Program Management",
     description: "View Service Details",
   },
-  {
-    icon: <img src={cellProg} alt="Cell IMG" height={45} width={45} />,
-    title: "Cell Programming and Rejuvenation",
-    description: "View Service Details",
-  },
-  {
-    icon: <img src={advanced} alt="Cell IMG" height={45} width={45} />,
-    title: "Advanced Molecular Splicing Interpolization ",
-    description: "View Service Details",
-  },
 ];
-const ServiceCard = () => {
-  return (
-    <IonCard>
-      <div className="flex align-center br-btm justify-contain">
-        <div className="flex align-center">
-          <div className="card-icon">
-            <ServiceIcon color={"var(--icon-back)"} white={"var(--text-color)"} />
-          </div>
-          <IonCardTitle className="card-title">
-            Services Offered by <strong>Sphere Bio Tech</strong>
-          </IonCardTitle>
-        </div>
-      </div>
 
-      <div
-        className="cards-list"
-        style={{ paddingRight: "32px", marginTop: "13.53px" }}
-      >
-        {LinksData.map(({ icon, title, description }, index) => (
-          <LinkCard
-            icon={icon}
-            title={title}
-            key={index}
-            description={description}
-          />
-        ))}
+export const ServiceCard = ({
+  title,
+  children,
+  button,
+}: {
+  title: string;
+  children: React.ReactNode;
+  button?: string;
+}) => {
+  return (
+    <IonCard className="service-card-container">
+      <div className="service-card-title">
+        <IonLabel className="card-heading-lg">{title}</IonLabel>
+        {button && (
+          <IonButton
+            fill="outline"
+            shape="round"
+            // color="var(--card-button-color)"
+            className="view-all-button"
+          >
+            {button}
+          </IonButton>
+        )}
       </div>
+      {children}
     </IonCard>
   );
 };
 
 const ServicesTab = () => {
   return (
-    <div>
-      <ServiceCard />
-      <div style={{paddingBlock:20,backgroundColor: "var(--bg-color)"}}>
-      <IonButton
-        className="outline-btn"
-        fill="outline"
-        expand="block"
-        shape="round"
-        style={{
-          fontWeight: 600,
-          fontSize: 15,
-          lineHeight: "17px",
-          fontFamily: "Poppins",
-        }}
-      >
-        Create Your Free Profile
-      </IonButton>
+    <>
+      <JamesUserDetailCard />
+      <ServiceCard title="Business Services" button="View All">
+        <h6 className="feature-services-title">Featured Services</h6>
+        <div className="featured-services-cards">
+          <FeaturedServices />
+          <FeaturedServices />
+        </div>
+        <div>
+          <h6 className="feature-services-title">Main Services</h6>
+          <div className="cards-list">
+            {LinksData.map(({ icon, title, description }, index) => (
+              <ServicesCardsLink
+                icon={icon}
+                title={title}
+                key={index}
+                description={description}
+              />
+            ))}
+          </div>
+        </div>
+      </ServiceCard>
+      <div style={{ paddingBlock: 20, backgroundColor: "var(--bg-color)" }}>
+        <IonButton
+          className="outline-btn"
+          fill="outline"
+          expand="block"
+          shape="round"
+          style={{
+            fontWeight: 600,
+            fontSize: 15,
+            lineHeight: "17px",
+            fontFamily: "Poppins",
+          }}
+        >
+          Create Your Free Profile
+        </IonButton>
       </div>
-    </div>
+    </>
   );
 };
 
