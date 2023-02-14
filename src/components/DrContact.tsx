@@ -14,24 +14,18 @@ import {
   CallIcon,
   ChevronIcon,
   DriveIcon,
-  Facebook,
   FaxIcon,
-  LinkedinIcon,
   LocateFillIcon,
   MailIcon,
-  MaskIcon,
-  MediumIcon,
   MobileIcon,
-  ShipFaceIcon,
-  SlackIcon,
   SoundCloudIcon,
-  Twitter,
   WorldIcon,
-  YoutubeIcon,
+  MediumIcon,
 } from "../assets/icons";
 import LinkCard from "./LinkCard";
 import HeroSession from "./MediaCard/heroSession";
 import DrHeroSession from "./MediaCard/DrHerosession";
+import { SocialData } from "../constants/index";
 
 const LinksData = [
   {
@@ -196,63 +190,19 @@ const DrContact = () => {
       <ContactCard title="Social Media">
         <div
           style={{
-            display: "grid",
+            display: "flex",
             gap: "12.39px",
-            gridTemplateColumns: "repeat(7, 58px)",
-            lineHeight: 0,
             overflow: "scroll",
             maxWidth: "95%",
           }}
         >
-          <a
-            href="https://www.linkedin.com/"
-            className="anchor-clear"
-            target={"_blank"}
-          >
-            <LinkedinIcon color={"var(--social-back)"} />
-          </a>
-          <a
-            className="anchor-clear"
-            href="https://www.youtube.com/"
-            target={"_blank"}
-          >
-            <YoutubeIcon color={"var(--social-back)"} />
-          </a>
-          <a
-            className="anchor-clear"
-            href="https://slack.com/"
-            target={"_blank"}
-          >
-            <SlackIcon color={"var(--social-back)"} />
-          </a>
-          <a
-            className="anchor-clear"
-            href="https://www.reddit.com/"
-            target={"_blank"}
-          >
-            <ShipFaceIcon color={"var(--social-back)"} />
-          </a>
-          <a
-            className="anchor-clear"
-            href="https://discord.com/"
-            target={"_blank"}
-          >
-            <MaskIcon color={"var(--social-back)"} />
-          </a>
-          <a
-            className="anchor-clear"
-            href="https://twitter.com/"
-            target={"_blank"}
-          >
-            <Twitter color={"var(--social-back)"} />
-          </a>
-          <a
-            className="anchor-clear"
-            href="https://www.facebook.com/"
-            target={"_blank"}
-          >
-            <Facebook color={"var(--social-back)"} />
-          </a>
+          {SocialData?.map(({ icon, link, label }) => (
+            <div className="icon-card">
+              <a href={link} className="anchor-clear" target={"_blank"}></a>
+              {icon}
+              <IonLabel className="iconlabel">{label}</IonLabel>
+            </div>
+          ))}
         </div>
       </ContactCard>
       <ContactCard title="Links">

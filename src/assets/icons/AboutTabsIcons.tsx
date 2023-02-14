@@ -1,4 +1,4 @@
-export const LinksIcon = ({ color = "#CFD4DF" }: { color?: string }) => (
+export const LinksIcon = ({ color = "#FFFFFF" }: { color?: string }) => (
   <svg
     width="19"
     height="18"
@@ -17,7 +17,7 @@ export const LinksIcon = ({ color = "#CFD4DF" }: { color?: string }) => (
   </svg>
 );
 
-export const MessageIcon = ({ color = "#CFD4DF" }: { color?: string }) => (
+export const MessageIcon = ({ color = "#FFFFFF" }: { color?: string }) => (
   <svg
     width="20"
     height="19"
@@ -36,7 +36,7 @@ export const MessageIcon = ({ color = "#CFD4DF" }: { color?: string }) => (
   </svg>
 );
 
-export const ShareIcon = ({ color = "#CFD4DF" }: { color?: string }) => (
+export const ShareIcon = ({ color = "#FFFFFF" }: { color?: string }) => (
   <svg
     width="17"
     height="19"

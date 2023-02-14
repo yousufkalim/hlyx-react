@@ -1,0 +1,71 @@
+.featured_card_container {
+  min-width: 282px;
+  background-color: #24262b;
+  border-radius: 18px;
+  padding-block: 17px;
+  padding-inline: 14px;
+  display: flex;
+  gap: 9px;
+}
+
+.color_line {
+  flex-shrink: 0;
+  width: 4px;
+  height: 49px;
+  background-color: #fedd71;
+  border-radius: 100px;
+}
+
+.featured_details_container {
+  max-width: 231px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.featured_details {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.featured_details h6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 8px;
+  letter-spacing: 0.045em;
+  color: #ffffff;
+}
+
+.featured_details p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+  color: #8f97a6;
+}
+
+.card_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card_footer .footer_button {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13.2209px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.featured_icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}

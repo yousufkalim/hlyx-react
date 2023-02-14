@@ -240,6 +240,22 @@ ion-accordion.accordion-expanded > [slot="header"] .ion-accordion-toggle-icon {
   flex-shrink: 0;
 }
 
+.view-all-button {
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --padding-top: 12px;
+  --padding-bottom: 12px;
+  --color: #71757b;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 9px;
+  --border-color: #71757b;
+  --border-width: 1px;
+  --border-style: solid;
+}
+
 .ion-label-descripttion {
   font-weight: 400;
   font-size: 13px !important;

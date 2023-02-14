@@ -1,6 +1,10 @@
 import "../../../../style/components/AboutCard/aboutCard.css";
 import { IonButton, IonCard, IonLabel } from "@ionic/react";
-import { JamesText, professionData } from "../../../../constants";
+import {
+  JamesprofessionData,
+  JamesText,
+  professionData,
+} from "../../../../constants";
 import ReadMoreText from "../../../ReadMoreText";
 import BusinessGoals from "./BusinessGoals";
 import UserDetailCard from "../../UserDetailCard/UserDetailCard";
@@ -29,7 +33,7 @@ const AboutCard = ({
             fill="outline"
             shape="round"
             color="var(--card-button-color)"
-            className="about-card-title-button"
+            className="view-all-button"
           >
             {button}
           </IonButton>
@@ -49,13 +53,15 @@ const JamesAboutTab = () => {
       </AboutCard>
       <AboutCard title="Profession">
         <div className="profession-list">
-          {professionData?.map(({ description, title, lineColor }, index) => (
-            <div className="profession-item" key={index}>
-              <div className={`profession-line line-${lineColor}`} />
-              <p className="profession-title">{title}</p>
-              <p className="profession-description">{description}</p>
-            </div>
-          ))}
+          {JamesprofessionData?.map(
+            ({ description, title, lineColor }, index) => (
+              <div className="profession-item" key={index}>
+                <div className={`profession-line line-${lineColor}`} />
+                <p className="profession-title">{title}</p>
+                <p className="profession-description">{description}</p>
+              </div>
+            )
+          )}
         </div>
       </AboutCard>
       <AboutCard title="Education">

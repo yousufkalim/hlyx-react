@@ -1,4 +1,5 @@
 import {
+  AdvanceCellIcon,
   NumFourIcon,
   NumOneIcon,
   NumThreeIcon,
@@ -7,6 +8,24 @@ import {
 import SliderOneImage from "../assets/media/slide-one-image.png";
 import SliderTwoImage from "../assets/media/slide-two-image.png";
 import SliderThreeImage from "../assets/media/slide-three-image.png";
+import {
+  BehanceIcon,
+  Facebook,
+  InstagramIcon,
+  MaskIcon,
+  MediumSocialIcon,
+  ShipFaceIcon,
+  SkypeIcon,
+  SlackIcon,
+  Twitter,
+  YoutubeIcon,
+} from "../assets/icons/SocialIcons";
+import cellAnatomic from "../assets/cellAnatomic.png";
+import bioTech from "../assets/bioTech.png";
+import LinkCard from "../components/LinkCard/index";
+import scientific from "../assets/scientific.png";
+import cellProg from "../assets/cellprog.png";
+import advanced from "../assets/advanced.png";
 
 export const professionData = [
   {
@@ -28,6 +47,29 @@ export const professionData = [
     lineColor: "orange",
     title: "Industry",
     description: "Life Sciences, Bio-Engineering",
+  },
+];
+
+export const JamesprofessionData = [
+  {
+    lineColor: "blue",
+    title: "Company",
+    description: "Oriyn LLC",
+  },
+  {
+    lineColor: "green",
+    title: "Title / Role",
+    description: "Chief Executive Officer",
+  },
+  {
+    lineColor: "purple",
+    title: "Occupation / Profession",
+    description: "Entrepreneur / Founder",
+  },
+  {
+    lineColor: "orange",
+    title: "Industry",
+    description: "Information Technology",
   },
 ];
 
@@ -253,5 +295,91 @@ export const galleryData = [
     imgAlt: "cell-interpolization",
     title: "Cell Interpolization",
     publishDate: "Dec. 21, 2022",
+  },
+];
+
+export const SocialData = [
+  {
+    link: "https://www.youtube.com/",
+    icon: <YoutubeIcon color={"var(--social-back)"} />,
+    label: "YouTube",
+  },
+  {
+    link: "https://www.youtube.com/",
+    icon: <SlackIcon color={"var(--social-back)"} />,
+    label: "Slack",
+  },
+  {
+    link: "https://www.youtube.com/",
+    icon: <ShipFaceIcon color={"var(--social-back)"} />,
+    label: "Reddit",
+  },
+  {
+    link: "https://www.youtube.com/",
+    icon: <MaskIcon color={"var(--social-back)"} />,
+    label: "Discord",
+  },
+  {
+    link: "https://www.youtube.com/",
+    icon: <Twitter color={"var(--social-back)"} />,
+    label: "Twitter",
+  },
+  {
+    link: "https://www.youtube.com/",
+    icon: <Facebook color={"var(--social-back)"} />,
+    label: "Facebook",
+  },
+  {
+    link: "https://www.youtube.com/",
+    icon: <BehanceIcon color={"var(--social-back)"} />,
+    label: "Behance",
+  },
+  {
+    link: "https://www.youtube.com/",
+    icon: <SkypeIcon color={"var(--social-back)"} />,
+    label: "Skype",
+  },
+  {
+    link: "https://www.youtube.com/",
+    icon: <InstagramIcon color={"var(--social-back)"} />,
+    label: "Instagram",
+  },
+  {
+    link: "https://www.youtube.com/",
+    icon: <MediumSocialIcon color={"var(--social-back)"} />,
+    label: "Medium",
+  },
+];
+
+const LinksData = [
+  {
+    icon: <AdvanceCellIcon />,
+    title: "Advanced Cell Research & Analysis",
+    description: "View Service Details",
+  },
+  {
+    icon: <img src={cellAnatomic} alt="Cell IMG" height={45} width={45} />,
+    title: "Cell Anatomic Molecular Splicing",
+    description: "View Service Details",
+  },
+  {
+    icon: <img src={bioTech} alt="Cell IMG" height={45} width={45} />,
+    title: "Bio-Technology Design & Implementation",
+    description: "View Service Details",
+  },
+  {
+    icon: <img src={scientific} alt="Cell IMG" height={45} width={45} />,
+    title: "Scientific Program Management",
+    description: "View Service Details",
+  },
+  {
+    icon: <img src={cellProg} alt="Cell IMG" height={45} width={45} />,
+    title: "Cell Programming and Rejuvenation",
+    description: "View Service Details",
+  },
+  {
+    icon: <img src={advanced} alt="Cell IMG" height={45} width={45} />,
+    title: "Advanced Molecular Splicing Interpolization ",
+    description: "View Service Details",
   },
 ];

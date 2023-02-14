@@ -20,8 +20,8 @@ const AchievedTab = () => {
               <h6>{achieveGoal}</h6>
               <p>{description}</p>
               <div className="progress-container">
-                <ProgressBar color={"green"} />
-                <p className="progress">70%</p>
+                <ProgressBar color={"green"} value={100} />
+                <p className="progress">100%</p>
               </div>
             </div>
             <div className="achieve_card_footer">

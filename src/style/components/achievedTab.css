@@ -66,9 +66,12 @@
 }
 
 .date_text {
-  font-size: 12px;
-  line-height: 9px;
   font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
   color: #868fa0;
   margin-left: 6px;
 }
