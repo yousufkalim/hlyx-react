@@ -12,7 +12,9 @@
   width: 100%;
   display: flex;
   gap: 16px;
-  overflow: scroll;
+  margin-bottom: -30px;
+  padding-bottom: 30px;
+  overflow-x: auto;
 }
 
 .service-card-container {

@@ -8,6 +8,7 @@
   --padding-end: 0;
   --padding-start: 0;
   min-width: auto;
+  --ripple-color: transparent;
 }
 
 .toggle-button .label {
@@ -18,4 +19,12 @@
 
 .segment-button-checked .label {
   background: #485565;
+}
+
+.active-card-list {
+  display: flex;
+  gap: 10px;
+  margin-bottom: -30px;
+  padding-bottom: 30px;
+  overflow-x: auto;
 }
