@@ -14,9 +14,6 @@
   gap: 16px;
   margin-bottom: -30px;
   padding-bottom: 30px;
-}
-
-.featured-services-cards:hover {
   overflow-x: auto;
 }
 

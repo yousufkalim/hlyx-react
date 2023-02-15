@@ -61,7 +61,8 @@
   font-size: 13.2209px;
   line-height: 18px;
   text-align: center;
-  color: #ffffff;
+  --color: #ffffff;
+  text-transform: capitalize;
 }
 
 .featured_icons {

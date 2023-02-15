@@ -8,6 +8,7 @@
   --padding-end: 0;
   --padding-start: 0;
   min-width: auto;
+  --ripple-color: transparent;
 }
 
 .toggle-button .label {
@@ -25,8 +26,5 @@
   gap: 10px;
   margin-bottom: -30px;
   padding-bottom: 30px;
-}
-
-.active-card-list:hover {
   overflow-x: auto;
 }

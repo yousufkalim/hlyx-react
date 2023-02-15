@@ -64,8 +64,6 @@
   padding-top: 29px;
   padding-bottom: 30px;
   margin-bottom: -30px;
-}
-.assist_avatar:hover {
   overflow-x: auto;
 }
 
@@ -113,10 +111,10 @@
   gap: 13px;
   margin-bottom: -30px;
   padding-bottom: 43px;
+  overflow-x: auto;
 }
 
 .assist-list:hover {
-  overflow-x: auto;
 }
 
 .assist-item {
@@ -149,11 +147,9 @@
   width: 245px;
   padding-top: 33px;
   padding-bottom: 31px;
-}
-
-.children:hover {
   overflow-x: auto;
 }
+
 .assist-list-card-container {
   display: flex;
   align-items: center;
