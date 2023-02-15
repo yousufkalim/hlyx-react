@@ -171,3 +171,14 @@ p {
   border-radius: 17px; */
   color: var(--card-button-color);
 }
+
+.education-card-list {
+  display: flex;
+  gap: 10px;
+  margin-bottom: -30px;
+  padding-bottom: 30px;
+}
+
+.education-card-list:hover {
+  overflow-x: auto;
+}

@@ -177,14 +177,7 @@ const ContactTab = () => {
         </a>
       </ContactCard>
       <ContactCard title="Social Media">
-        <div
-          style={{
-            display: "flex",
-            gap: "12.39px",
-            overflow: "scroll",
-            maxWidth: "95%",
-          }}
-        >
+        <div className="Social-icons-list">
           {SocialData?.map(({ icon, link, label }) => (
             <div className="icon-card">
               <a href={link} className="anchor-clear" target={"_blank"}></a>

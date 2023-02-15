@@ -65,7 +65,10 @@ const JamesAboutTab = () => {
         </div>
       </AboutCard>
       <AboutCard title="Education">
-        <EducationCard />
+        <div className="education-card-list">
+          <EducationCard />
+          <EducationCard />
+        </div>
       </AboutCard>
       <AboutCard title="Accolades" button="View All">
         <Accolades />

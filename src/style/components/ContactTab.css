@@ -20,3 +20,15 @@
   line-height: 16px;
   color: #838489;
 }
+
+.Social-icons-list {
+  display: flex;
+  gap: 12.39px;
+  max-width: 95%;
+  margin-bottom: -30px;
+  padding-bottom: 30px;
+}
+
+.Social-icons-list:hover {
+  overflow-x: auto;
+}
