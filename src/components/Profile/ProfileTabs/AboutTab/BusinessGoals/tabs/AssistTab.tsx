@@ -157,11 +157,8 @@ const AssistTab = () => {
               <MessageIcon />
             </div>
             <ShareIcon />
-            <IonButton className="Assist-Button" shape="round">
-              <IonIcon slot="start">
-                <Plus />
-              </IonIcon>
-              Assist
+            <IonButton className="Assist-Button" shape="round" size="default">
+              {<Plus />}Assist
             </IonButton>
           </div>
         </AssistCardSections>
