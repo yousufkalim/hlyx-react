@@ -61,7 +61,8 @@ export interface UserContactInterface {
     link: string;
     type: string;
   }[];
-  BlogLink?: {
+  blogLink?: {
+    link: string;
     type: string;
     title: string;
     description: string;
@@ -83,10 +84,10 @@ export interface UserAboutInterface {
     program: string;
     major: string;
   }[];
-  Accolades: {
+  accolades: {
     jobTitle: string;
     startDate: Date;
-    endDate: Date;
+    endDate?: Date;
   }[];
   Achievements: {
     year: number;

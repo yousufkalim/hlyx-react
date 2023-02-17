@@ -1,6 +1,6 @@
 import "../../../../style/components/AboutCard/aboutCard.css";
 import { IonButton, IonCard, IonLabel } from "@ionic/react";
-import { loremText, professionData } from "../../../../constants";
+// import { loremText,  } from "../../../../constants";
 import ReadMoreText from "../../../ReadMoreText";
 import BusinessGoals from "./BusinessGoals";
 import UserDetailCard from "../../UserDetailCard/UserDetailCard";
@@ -9,6 +9,8 @@ import Achievements from "./Achievements/Achievements";
 import EducationCard from "./EducationCard";
 import Icebreakers from "./Icebreakers/Icebreakers";
 import BusinessNeeds from "./BusinessNeeds/BusinessNeeds";
+import { ProfileContext } from "../../../../context/profileContext";
+import { useContext } from "react";
 
 const AboutCard = ({
   title,
@@ -40,23 +42,31 @@ const AboutCard = ({
 };
 
 const AboutTab = () => {
+  const { userProfile } = useContext(ProfileContext);
+  const { about } = userProfile;
   return (
     <>
       <UserDetailCard />
-      <AboutCard title="Bio">
-        <ReadMoreText text={loremText} limit={171} />
-      </AboutCard>
-      <AboutCard title="Profession">
-        <div className="profession-list">
-          {professionData?.map(({ description, title, lineColor }, index) => (
-            <div className="profession-item" key={index}>
-              <div className={`profession-line line-${lineColor}`} />
-              <p className="profession-title">{title}</p>
-              <p className="profession-description">{description}</p>
-            </div>
-          ))}
-        </div>
-      </AboutCard>
+      {about?.bio && (
+        <AboutCard title="Bio">
+          <ReadMoreText text={about?.bio} limit={171} />
+        </AboutCard>
+      )}
+      {about?.profession && (
+        <AboutCard title="Profession">
+          <div className="profession-list">
+            {about?.profession?.map(
+              ({ description, title, lineColor }: any, index: number) => (
+                <div className="profession-item" key={index}>
+                  <div className={`profession-line line-${lineColor}`} />
+                  <p className="profession-title">{title}</p>
+                  <p className="profession-description">{description}</p>
+                </div>
+              )
+            )}
+          </div>
+        </AboutCard>
+      )}
       <AboutCard title="Education">
         <EducationCard />
       </AboutCard>

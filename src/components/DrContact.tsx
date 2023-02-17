@@ -217,7 +217,7 @@ const DrContact = () => {
         >
           {LinksData.map(({ icon, title, hyperadd, description }, index) => (
             <LinkCard
-              icon={icon}
+              icon={title}
               title={title}
               hyperaddress={hyperadd}
               description={description}

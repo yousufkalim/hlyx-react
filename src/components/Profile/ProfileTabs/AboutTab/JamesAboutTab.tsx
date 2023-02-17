@@ -1,10 +1,6 @@
 import "../../../../style/components/AboutCard/aboutCard.css";
 import { IonButton, IonCard, IonLabel } from "@ionic/react";
-import {
-  JamesprofessionData,
-  JamesText,
-  professionData,
-} from "../../../../constants";
+import { JamesprofessionData, JamesText } from "../../../../constants";
 import ReadMoreText from "../../../ReadMoreText";
 import BusinessGoals from "./BusinessGoals";
 import UserDetailCard from "../../UserDetailCard/UserDetailCard";
@@ -14,6 +10,8 @@ import EducationCard from "./EducationCard";
 import Icebreakers from "./Icebreakers/Icebreakers";
 import BusinessNeeds from "./BusinessNeeds/BusinessNeeds";
 import JamesUserDetailCard from "../../UserDetailCard/JamesUserDetails";
+import { ProfileContext } from "../../../../context/profileContext";
+import { useContext } from "react";
 
 const AboutCard = ({
   title,
@@ -45,31 +43,39 @@ const AboutCard = ({
 };
 
 const JamesAboutTab = () => {
+  const { userProfile } = useContext(ProfileContext);
+  const { about } = userProfile;
   return (
     <>
       <JamesUserDetailCard />
-      <AboutCard title="Bio">
-        <ReadMoreText text={JamesText} limit={183} />
-      </AboutCard>
-      <AboutCard title="Profession">
-        <div className="profession-list">
-          {JamesprofessionData?.map(
-            ({ description, title, lineColor }, index) => (
-              <div className="profession-item" key={index}>
-                <div className={`profession-line line-${lineColor}`} />
-                <p className="profession-title">{title}</p>
-                <p className="profession-description">{description}</p>
-              </div>
-            )
-          )}
-        </div>
-      </AboutCard>
-      <AboutCard title="Education">
-        <div className="education-card-list">
-          <EducationCard />
-          <EducationCard />
-        </div>
-      </AboutCard>
+      {about?.bio && (
+        <AboutCard title="Bio">
+          <ReadMoreText text={about?.bio} limit={183} />
+        </AboutCard>
+      )}
+      {about?.profession && (
+        <AboutCard title="Profession">
+          <div className="profession-list">
+            {about?.profession.map(
+              ({ description, title, lineColor }: any, index: number) => (
+                <div className="profession-item" key={index}>
+                  <div className={`profession-line line-${lineColor}`} />
+                  <p className="profession-title">{title}</p>
+                  <p className="profession-description">{description}</p>
+                </div>
+              )
+            )}
+          </div>
+        </AboutCard>
+      )}
+      {about?.education && (
+        <AboutCard title="Education">
+          <div className="education-card-list">
+            <EducationCard />
+            <EducationCard />
+          </div>
+        </AboutCard>
+      )}
       <AboutCard title="Accolades" button="View All">
         <Accolades />
       </AboutCard>

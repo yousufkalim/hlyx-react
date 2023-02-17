@@ -1,9 +1,11 @@
 import {
   AdvanceCellIcon,
+  MediumIcon,
   NumFourIcon,
   NumOneIcon,
   NumThreeIcon,
   NumTwoIcon,
+  SoundCloudIcon,
 } from "../assets/icons";
 import SliderOneImage from "../assets/media/slide-one-image.png";
 import SliderTwoImage from "../assets/media/slide-two-image.png";
@@ -26,29 +28,30 @@ import LinkCard from "../components/LinkCard/index";
 import scientific from "../assets/scientific.png";
 import cellProg from "../assets/cellprog.png";
 import advanced from "../assets/advanced.png";
+import { DriveIcon } from "../assets/icons/index";
 
-export const professionData = [
-  {
-    lineColor: "blue",
-    title: "Company",
-    description: "Sphere Bio Technologies, Inc.",
-  },
-  {
-    lineColor: "green",
-    title: "Title / Role",
-    description: "Executive Director",
-  },
-  {
-    lineColor: "purple",
-    title: "Occupation / Profession",
-    description: "Molecular Scientist, PHD",
-  },
-  {
-    lineColor: "orange",
-    title: "Industry",
-    description: "Life Sciences, Bio-Engineering",
-  },
-];
+// export const professionData = [
+//   {
+//     lineColor: "blue",
+//     title: "Company",
+//     description: "Sphere Bio Technologies, Inc.",
+//   },
+//   {
+//     lineColor: "green",
+//     title: "Title / Role",
+//     description: "Executive Director",
+//   },
+//   {
+//     lineColor: "purple",
+//     title: "Occupation / Profession",
+//     description: "Molecular Scientist, PHD",
+//   },
+//   {
+//     lineColor: "orange",
+//     title: "Industry",
+//     description: "Life Sciences, Bio-Engineering",
+//   },
+// ];
 
 export const JamesprofessionData = [
   {
@@ -369,6 +372,12 @@ export const SocialMediaIcons: any = {
   Instagram: <InstagramIcon color={"var(--social-back)"} />,
 
   Medium: <MediumSocialIcon color={"var(--social-back)"} />,
+};
+
+export const BlogLinkIcons: any = {
+  Medium: <MediumIcon color={"var(--social-back)"} />,
+  GoogleDrive: <SoundCloudIcon color={"var(--social-back)"} />,
+  SoundCloud: <DriveIcon color={"var(--social-back)"} />,
 };
 
 const LinksData = [

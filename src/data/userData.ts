@@ -55,21 +55,24 @@ export const userData = [
           label: "Medium",
         },
       ],
-      BlogLink: [
+      blogLink: [
         {
-          type: "medium",
+          link:"https://medium.com/",
+          type: "Medium",
           title:
             "How Automation Technology Can Increase Efficiency And Revenue",
           description: "Access Article on Medium",
         },
         {
-          type: "soundCloud",
+          link:"https://www.google.com/drive/",
+          type: "GoogleDrive",
           title:
             "The Future of Business Technology And How Oriyn Is Planning Ahead",
           description: "Access Audio on SoundCloud",
         },
         {
-          type: "soundCloud",
+          link:"https://soundcloud.com/",
+          type: "SoundCloud",
           title: "Oriyn Business Solutions Deck 2023",
           description: "Access File on Google Drive",
         },
@@ -77,7 +80,7 @@ export const userData = [
     },
 
     about: {
-      bio: "n the span of 24 years, I have dedicated my career to building technology solutions that have impacted the businesses of startup founders, small business owners, and established enterprise brands. I started my first company at the age of 16, creating custom...",
+      bio: "In the span of 24 years, I have dedicated my career to building technology solutions that have impacted the businesses of startup founders, small business owners, and established enterprise brands. I started my first company at the age of 16, creating custom...",
       profession: [
         {
           lineColor: "blue",
@@ -114,12 +117,12 @@ export const userData = [
         {
           description: "Board Chair at",
           institute: " Boston Medical",
-          date: "November 1,2022",
+          startdate: "November 1,2022",
         },
         {
           description: "Deans List 4 Years in a row at",
           institute: " Stanford University",
-          date: "August 2017 - May 2022",
+          date: "August 2017 - May 2023",
         },
         {
           description: "Summa Cum Laude, Honors Club from",

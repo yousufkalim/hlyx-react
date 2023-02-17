@@ -19,26 +19,26 @@ import { SocialData, SocialMediaIcons } from "../constants/index";
 import { useContext } from "react";
 import { ProfileContext } from "../context/profileContext";
 
-const JamesLinksData = [
-  {
-    hyperadd: "https://medium.com/",
-    icon: <MediumIcon color={"var(--social-back)"} />,
-    title: "How Automation Technology Can Increase Efficiency And Revenue",
-    description: "Access Article on Medium",
-  },
-  {
-    icon: <SoundCloudIcon color={"var(--social-back)"} />,
-    hyperadd: "https://soundcloud.com/",
-    title: "The Future of Business Technology And How Oriyn Is Making Waves",
-    description: "Access Audio on SoundCloud",
-  },
-  {
-    hyperadd: "https://www.google.com/drive/",
-    icon: <DriveIcon color={"var(--social-back)"} />,
-    title: "Oriyn Business Solutions Deck 2023",
-    description: "Access File on Google Drive",
-  },
-];
+// const JamesLinksData = [
+//   {
+//     hyperadd: "https://medium.com/",
+//     icon: <MediumIcon color={"var(--social-back)"} />,
+//     title: "How Automation Technology Can Increase Efficiency And Revenue",
+//     description: "Access Article on Medium",
+//   },
+//   {
+//     icon: <SoundCloudIcon color={"var(--social-back)"} />,
+//     hyperadd: "https://soundcloud.com/",
+//     title: "The Future of Business Technology And How Oriyn Is Making Waves",
+//     description: "Access Audio on SoundCloud",
+//   },
+//   {
+//     hyperadd: "https://www.google.com/drive/",
+//     icon: <DriveIcon color={"var(--social-back)"} />,
+//     title: "Oriyn Business Solutions Deck 2023",
+//     description: "Access File on Google Drive",
+//   },
+// ];
 
 const ContactCard = ({
   title,
@@ -231,29 +231,31 @@ const ContactTab = () => {
           </div>
         </ContactCard>
       )}
-      <ContactCard title="Links">
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: 15,
-            marginTop: 5,
-            marginBottom: 10,
-          }}
-        >
-          {JamesLinksData.map(
-            ({ icon, title, hyperadd, description }, index) => (
-              <LinkCard
-                key={index}
-                icon={icon}
-                title={title}
-                hyperaddress={hyperadd}
-                description={description}
-              />
-            )
-          )}
-        </div>
-      </ContactCard>
+      {contact?.blogLink && (
+        <ContactCard title="Links">
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: 15,
+              marginTop: 5,
+              marginBottom: 10,
+            }}
+          >
+            {contact?.blogLink?.map(
+              ({ type, link, title, description }: any, index: number) => (
+                <LinkCard
+                  key={index}
+                  icon={type}
+                  title={title}
+                  hyperaddress={link}
+                  description={description}
+                />
+              )
+            )}
+          </div>
+        </ContactCard>
+      )}
       <div style={{ paddingBlock: 20, backgroundColor: "var(--bg-color)" }}>
         <IonButton
           className="outline-btn"
