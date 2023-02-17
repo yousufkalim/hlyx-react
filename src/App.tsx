@@ -1,16 +1,4 @@
-import { Route } from "react-router-dom";
-import {
-  IonApp,
-  IonContent,
-  IonRouterOutlet,
-  IonTabBar,
-  IonTabs,
-  setupIonicReact,
-} from "@ionic/react";
-import { IonReactRouter } from "@ionic/react-router";
-import Professional from "./pages/Professional";
-import Profile from "./pages/Profile";
-
+import { setupIonicReact } from "@ionic/react";
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
 
@@ -30,44 +18,10 @@ import "@ionic/react/css/display.css";
 /* Theme variables */
 import "./theme/variables.css";
 import "./global.css";
-import { isMobile } from "react-device-detect";
-import DrProfile from "./pages/DrProfile";
+import Routes from "./routes";
 
 setupIonicReact();
 
-const App: React.FC = () => (
-  <IonApp>
-    {isMobile ? (
-      <>
-        <Professional />
-        <IonReactRouter>
-          <IonTabs>
-            <IonRouterOutlet>
-              <Route exact path="/">
-                <Professional />
-              </Route>
-              <Route exact path="/link/jamesrbeckley">
-                <Profile />
-              </Route>
-              <Route exact path="/demo/doctor">
-                <DrProfile />
-              </Route>
-            </IonRouterOutlet>
-            <IonTabBar />
-          </IonTabs>
-        </IonReactRouter>
-      </>
-    ) : (
-      <IonContent>
-        <div className="browser-alert-container">
-          <h1 className="browser-alert-heading">
-            <strong>Note: </strong>
-            Only mobile browsers are capable of accessing this application.
-          </h1>
-        </div>
-      </IonContent>
-    )}
-  </IonApp>
-);
+const App: React.FC = () => <Routes />;
 
 export default App;

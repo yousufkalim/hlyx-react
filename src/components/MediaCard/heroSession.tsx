@@ -12,12 +12,14 @@ import { BreifIcon, LinkBtnIcon, LocateIcon } from "../../assets/icons";
 const HeroSession = () => {
   return (
     <>
-      <div className="cover_photo_container">
-        <img
-          alt="Silhouette of mountains"
-          src={profileOne}
-          className="cover_photo"
-        />
+      <div style={{ position: "relative" }}>
+        <div className="cover_photo_container">
+          <img
+            alt="Silhouette of mountains"
+            src={profileOne}
+            className="cover_photo"
+          />
+        </div>
         <img alt="company logo" className="avatar-icon" src={sphere} />
       </div>
       <IonCard className="cover_photo_card ion_Card">

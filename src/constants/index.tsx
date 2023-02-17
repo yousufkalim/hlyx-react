@@ -351,6 +351,26 @@ export const SocialData = [
   },
 ];
 
+export const SocialMediaIcons: any = {
+  YouTube: <YoutubeIcon color={"var(--social-back)"} />,
+  Slack: <SlackIcon color={"var(--social-back)"} />,
+  Reddit: <ShipFaceIcon color={"var(--social-back)"} />,
+
+  Discord: <MaskIcon color={"var(--social-back)"} />,
+
+  Twitter: <Twitter color={"var(--social-back)"} />,
+
+  Facebook: <Facebook color={"var(--social-back)"} />,
+
+  Behance: <BehanceIcon color={"var(--social-back)"} />,
+
+  Skype: <SkypeIcon color={"var(--social-back)"} />,
+
+  Instagram: <InstagramIcon color={"var(--social-back)"} />,
+
+  Medium: <MediumSocialIcon color={"var(--social-back)"} />,
+};
+
 const LinksData = [
   {
     icon: <AdvanceCellIcon />,

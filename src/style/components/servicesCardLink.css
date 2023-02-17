@@ -1,5 +1,6 @@
 .services_card_links {
   display: flex;
+  justify-content: space-between;
   /* max-width: 327px; */
   max-height: 90px;
   padding: 15px;

@@ -28,10 +28,10 @@ export const MessageIcon = ({ color = "#FFFFFF" }: { color?: string }) => (
     <path
       d="M18.7698 5.07318V10.2856C18.7698 10.7466 18.7185 11.1821 18.6033 11.5791C18.1294 13.4617 16.567 14.64 14.4154 14.64H10.9319L7.06412 17.2142C6.4878 17.6112 5.71938 17.1886 5.71938 16.497V14.64C4.41306 14.64 3.32447 14.2046 2.56886 13.449C1.80043 12.6805 1.36499 11.5919 1.36499 10.2856V5.07318C1.36499 2.63984 2.87622 0.962109 5.2071 0.744389C5.37359 0.731582 5.54008 0.71875 5.71938 0.71875H14.4154C17.028 0.71875 18.7698 2.46054 18.7698 5.07318Z"
       stroke={color}
-      stroke-width="1.38741"
-      stroke-miterlimit="10"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.38741"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );
@@ -47,33 +47,33 @@ export const ShareIcon = ({ color = "#FFFFFF" }: { color?: string }) => (
     <path
       d="M13.5066 17.3674C14.8858 17.3674 16.0039 16.2494 16.0039 14.8701C16.0039 13.4908 14.8858 12.3728 13.5066 12.3728C12.1273 12.3728 11.0093 13.4908 11.0093 14.8701C11.0093 16.2494 12.1273 17.3674 13.5066 17.3674Z"
       stroke={color}
-      stroke-width="1.38741"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.38741"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
     <path
       d="M13.5066 5.71531C14.8858 5.71531 16.0039 4.59722 16.0039 3.218C16.0039 1.83879 14.8858 0.720703 13.5066 0.720703C12.1273 0.720703 11.0093 1.83879 11.0093 3.218C11.0093 4.59722 12.1273 5.71531 13.5066 5.71531Z"
       stroke={color}
-      stroke-width="1.38741"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.38741"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
     <path
       d="M3.51708 11.5414C4.8963 11.5414 6.01438 10.4233 6.01438 9.04405C6.01438 7.66479 4.8963 6.54675 3.51708 6.54675C2.13786 6.54675 1.01978 7.66479 1.01978 9.04405C1.01978 10.4233 2.13786 11.5414 3.51708 11.5414Z"
       stroke={color}
-      stroke-width="1.38741"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.38741"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
     <path
       d="M11.4249 4.46558L5.5979 7.79531"
       stroke={color}
-      stroke-width="1.38741"
+      strokeWidth="1.38741"
     />
     <path
       d="M5.5979 10.2916L11.4249 13.6214"
       stroke={color}
-      stroke-width="1.38741"
+      strokeWidth="1.38741"
     />
   </svg>
 );
@@ -89,16 +89,16 @@ export const ClockIcon = () => (
     <path
       d="M16.0122 8.13464C16.0122 9.57254 15.5858 10.9781 14.787 12.1737C13.9882 13.3693 12.8528 14.3012 11.5244 14.8515C10.1959 15.4018 8.73418 15.5458 7.3239 15.2654C5.91361 14.985 4.61815 14.2927 3.60132 13.276C2.58449 12.2594 1.89196 10.964 1.61129 9.55378C1.33062 8.14355 1.47442 6.68176 2.02451 5.35325C2.5746 4.02473 3.50627 2.88917 4.70171 2.09014C5.89716 1.29111 7.30269 0.864503 8.74058 0.864258C9.69545 0.864095 10.641 1.05203 11.5232 1.41733C12.4054 1.78263 13.2071 2.31813 13.8823 2.99327C14.5576 3.6684 15.0932 4.46994 15.4587 5.3521C15.8241 6.23426 16.0122 7.17978 16.0122 8.13464V8.13464Z"
       stroke="#868FA0"
-      stroke-width="1.16326"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.16326"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
     <path
       d="M8.74097 3.77136V8.13409L11.6499 9.58792"
       stroke="#868FA0"
-      stroke-width="1.16326"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.16326"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );
