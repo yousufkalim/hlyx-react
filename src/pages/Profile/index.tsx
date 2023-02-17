@@ -8,16 +8,11 @@ import Header from "../../components/Profile/Header";
 import ServicesTab from "../../components/ServicesTab";
 import Tabs from "../../components/Tabs";
 import "../../style/page/profile.css";
-import JamesAboutTab from "../../components/Profile/ProfileTabs/AboutTab/JamesAboutTab";
-import { ProfileContext } from "../../context/profileContext";
-import { useParams } from "react-router";
-import { userData } from "../../data/userData";
-
 export const ProfileTabs = ["Contact", "About", "Service", "Portfolio"];
 
 const ProfileTabsContent = [
   <ContactTab />,
-  <JamesAboutTab />,
+  <AboutTab />,
   <ServicesTab />,
   <PortfolioTab />,
 ];

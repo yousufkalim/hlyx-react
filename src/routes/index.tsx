@@ -3,7 +3,6 @@ import { IonContent, IonRouterOutlet, IonTabBar, IonTabs } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import { isMobile } from "react-device-detect";
 import { Route } from "react-router";
-import DrProfile from "../pages/DrProfile";
 import Professional from "../pages/Professional";
 import Profile from "../pages/Profile";
 import ProfileProvider from "../context/profileContext";
@@ -24,9 +23,6 @@ const Routes = () => {
                   <ProfileProvider>
                     <Profile />
                   </ProfileProvider>
-                </Route>
-                <Route exact path="/demo/doctor">
-                  <DrProfile />
                 </Route>
                 <Route exact path="/page-not-found">
                   <Error404 />

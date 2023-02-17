@@ -4,7 +4,7 @@ import { IonButton, IonCard, IonLabel } from "@ionic/react";
 import ReadMoreText from "../../../ReadMoreText";
 import BusinessGoals from "./BusinessGoals";
 import UserDetailCard from "../../UserDetailCard/UserDetailCard";
-import Accolades from "./Accolades/Accolades";
+import Accolades from "./AccoladesItem";
 import Achievements from "./Achievements/Achievements";
 import EducationCard from "./EducationCard";
 import Icebreakers from "./Icebreakers/Icebreakers";
@@ -67,12 +67,12 @@ const AboutTab = () => {
           </div>
         </AboutCard>
       )}
-      <AboutCard title="Education">
+      {/* <AboutCard title="Education">
         <EducationCard />
-      </AboutCard>
-      <AboutCard title="Accolades" button="View All">
+      </AboutCard> */}
+      {/* <AboutCard title="Accolades" button="View All">
         <Accolades />
-      </AboutCard>
+      </AboutCard> */}
       <AboutCard title="Achievements" button="View All">
         <Achievements />
       </AboutCard>

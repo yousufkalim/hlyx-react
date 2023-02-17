@@ -13,7 +13,7 @@ import scientific from "../assets/scientific.png";
 import cellProg from "../assets/cellprog.png";
 import advanced from "../assets/advanced.png";
 import { IonButton } from "@ionic/react";
-import JamesUserDetailCard from "./Profile/UserDetailCard/JamesUserDetails";
+import UserDetailCard from "./Profile/UserDetailCard/UserDetailCard";
 import FeaturedServices from "./FeaturedServices";
 import ServicesCardsLink from "./ServicesCardsLink";
 
@@ -72,7 +72,7 @@ export const ServiceCard = ({
 const ServicesTab = () => {
   return (
     <>
-      <JamesUserDetailCard />
+      <UserDetailCard />
       <ServiceCard title="Business Services" button="View All">
         <h6 className="feature-services-title">Featured Services</h6>
         <div className="featured-services-cards">

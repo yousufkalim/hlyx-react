@@ -4,6 +4,16 @@ export interface childrenProps {
   children?: JSX.Element;
 }
 
+export interface JobType {
+  position: string;
+  companyName: string;
+}
+
+export interface ImageType {
+  url: string;
+  altText?: string;
+}
+
 export interface TabsProps {
   tabList: string[];
   activeTab: string;
@@ -12,8 +22,13 @@ export interface TabsProps {
 
 export interface UserInterface {
   name: string;
-  jobTitle: string;
+  jobTitle: JobType;
   address: string;
+}
+export interface AccoladesType {
+  jobTitle: JobType;
+  startDate: Date;
+  endDate?: Date;
 }
 
 export interface ActiveAchievedType {
@@ -22,6 +37,15 @@ export interface ActiveAchievedType {
   description: string;
   progress: number;
   timeStamp: string;
+}
+
+export interface Education {
+  name: string;
+  startDate: Date;
+  endDate: Date;
+  image: ImageType;
+  program: string;
+  major: string;
 }
 
 export interface BusinessGoals {
@@ -77,19 +101,8 @@ export interface UserAboutInterface {
     title: string;
     description: string;
   }[];
-  education: {
-    name: string;
-    startDate: Date;
-    endDate: Date;
-    image: string;
-    program: string;
-    major: string;
-  }[];
-  accolades: {
-    jobTitle: string;
-    startDate: Date;
-    endDate?: Date;
-  }[];
+  education: Education[];
+  accolades: AccoladesType[];
   Achievements: {
     year: number;
     title: string;
