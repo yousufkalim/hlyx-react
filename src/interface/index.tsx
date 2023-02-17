@@ -16,20 +16,21 @@ export interface UserInterface {
   address: string;
 }
 
-export interface activeAchieved {
+export interface ActiveAchievedType {
+  color?: "green" | "purple";
   title: string;
   description: string;
   progress: number;
-  timeStamp: Date;
+  timeStamp: string;
 }
 
 export interface BusinessGoals {
-  active: activeAchieved[];
-  achieved: activeAchieved[];
+  active: ActiveAchievedType[];
+  achieved: ActiveAchievedType[];
   assist: {
     status: string;
-    startDate: Date;
-    deadline: Date;
+    startDate: string;
+    deadline: string;
     about: string;
     stats: {
       totalLinks: number;
@@ -96,7 +97,7 @@ export interface UserAboutInterface {
   }[];
   businessGoals: BusinessGoals;
   businessNeeds: {
-    timeStamp: Date;
+    timeStamp: string;
     title: string;
     description: string;
     status: "active" | "filled";

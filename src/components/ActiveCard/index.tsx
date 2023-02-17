@@ -8,26 +8,33 @@ import {
 import ProgressBar from "../ProgressBar";
 
 import "../../style/components/ActiveCard.css";
+import { ActiveAchievedType } from "../../interface";
 
-const ActiveCard = ({ color = "purple" }: { color?: "green" | "purple" }) => {
+const ActiveCard = ({
+  color = "purple",
+  title,
+  description,
+  progress,
+  timeStamp,
+}: ActiveAchievedType) => {
   return (
     <>
       <div className="active_card_container">
         <div className="details">
           <div className="count">1</div>
           <div className="details_data">
-            <h6>Raise Capital</h6>
-            <p>Raise $200M in funding for R&D</p>
+            <h6>{title}</h6>
+            <p>{description}</p>
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-              <ProgressBar color={color} value={70} />
-              <p className="progress">70%</p>
+              <ProgressBar color={color} value={progress} />
+              <p className="progress">{progress}%</p>
             </div>
           </div>
         </div>
         <div className="active_card_footer">
           <div className="time_container">
             <ClockIcon />
-            <p className="time_text">8 mo. 2 days</p>
+            <p className="time_text">{timeStamp}</p>
           </div>
 
           <div className="icon_list">
