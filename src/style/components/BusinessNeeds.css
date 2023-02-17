@@ -75,6 +75,13 @@
   flex-direction: row;
   justify-content: space-between;
 }
+.status-row .blue {
+  background: #1e6eff;
+}
+
+.status-row .green {
+  background: #27a53b;
+}
 
 .status-row p {
   padding: 8px 20px;
@@ -84,7 +91,7 @@
   font-size: 11px;
   line-height: 8px;
   color: #ffffff;
-  background: #27a53b;
+
   border: none;
   border-radius: 10px;
 }

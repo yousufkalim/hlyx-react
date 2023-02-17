@@ -1,8 +1,23 @@
+import JamesCover from "../assets/media/JamesCover.png";
+import DoctorCover from "../assets/media/media-image.png";
 export const userData = [
   {
+    name: "James R. Beckl",
+    jobTitle: {
+      position: "CEO",
+      companyName: " Oriyn",
+    },
+    address: "San Diego, CA",
+    image: {
+      url: JamesCover,
+      altText: "user Picture",
+    },
     contact: {
       name: "James R. Beckley",
-      jobTitle: "CEO at Oriyn",
+      jobTitle: {
+        position: "CEO",
+        companyName: " Oriyn",
+      },
       address: "San Diego, CA",
       email: "jrbeckley@oriyn.com",
       phone: {
@@ -230,10 +245,23 @@ export const userData = [
     },
   },
   {
+    name: "Dr. Kenji Awurama",
+    jobTitle: {
+      position: "Executive Director",
+      companyName: "Sphere Bio Tech",
+    },
+    address: "Palo Alto, California",
+    image: {
+      url: DoctorCover,
+      altText: "user Picture",
+    },
     contact: {
       name: "Dr. Kenji Awurama",
-      jobTitle: "CEO at Oriyn",
-      address: "San Diego, CA",
+      jobTitle: {
+        position: "Executive Director",
+        companyName: "Sphere Bio Tech",
+      },
+      address: "Palo Alto, California",
       email: "kenji.awurama@sperebio.tech",
       phone: {
         number: "+1 (650) 345-6789 Ext 700",
@@ -428,7 +456,7 @@ export const userData = [
       },
       businessNeeds: [
         {
-          timeStamp: "January 28, 2022",
+          timeStamp: "January 28, 2000",
           title: "New Company Website",
           status: "Active",
           description:

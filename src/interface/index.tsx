@@ -21,8 +21,10 @@ export interface TabsProps {
 }
 
 export interface UserInterface {
+  image: ImageType;
   name: string;
   jobTitle: JobType;
+  companyLogo?: ImageType;
   address: string;
 }
 export interface AccoladesType {
