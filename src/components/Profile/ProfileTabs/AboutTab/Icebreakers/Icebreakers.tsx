@@ -10,9 +10,9 @@ const Icebreakers = () => {
         <div className="section">
           <div className="Icebreakers-Sub-heading">{description}</div>
           <div>
-            {tags?.map((item) => (
+            {tags?.map((item, index) => (
               <>
-                <IonChip className="custom-chip" color="dark">
+                <IonChip className="custom-chip" color="dark" key={index}>
                   {item}
                 </IonChip>
               </>

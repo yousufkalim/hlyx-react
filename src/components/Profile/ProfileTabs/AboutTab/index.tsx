@@ -44,6 +44,7 @@ const AboutCard = ({
 const AboutTab = () => {
   const { userProfile } = useContext(ProfileContext);
   const { about } = userProfile;
+
   return (
     <>
       <UserDetailCard />
@@ -67,12 +68,12 @@ const AboutTab = () => {
           </div>
         </AboutCard>
       )}
-      {/* <AboutCard title="Education">
+      <AboutCard title="Education">
         <EducationCard />
-      </AboutCard> */}
-      {/* <AboutCard title="Accolades" button="View All">
+      </AboutCard>
+      <AboutCard title="Accolades" button="View All">
         <Accolades />
-      </AboutCard> */}
+      </AboutCard>
       <AboutCard title="Achievements" button="View All">
         <Achievements />
       </AboutCard>

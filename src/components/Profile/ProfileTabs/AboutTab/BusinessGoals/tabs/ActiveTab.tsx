@@ -1,21 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ProfileContext } from "../../../../../../context/profileContext";
 import ActiveCard from "../../../../../ActiveCard";
 
 const ActiveTab = () => {
+  const { userProfile } = useContext(ProfileContext);
+  const { active } = userProfile?.about?.businessGoal;
   return (
-    <div className="active-card-list" style={{}}>
-      <ActiveCard
-        title="Raise Capital"
-        description="Raise $200M in funding for R&D"
-        progress={70}
-        timeStamp="8 mo. 2 days"
-      />
-      <ActiveCard
-        title="Raise Capital"
-        description="Raise $200M in funding for R&D"
-        progress={45}
-        timeStamp="8 mo. 2 days"
-      />
+    <div className="active-card-list">
+      {active.map(
+        ({ title, description, progress, timeStamp }: any, index: number) => (
+          <ActiveCard
+            key={index}
+            title={title}
+            description={description}
+            progress={progress}
+            timeStamp={timeStamp}
+          />
+        )
+      )}
     </div>
   );
 };

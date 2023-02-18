@@ -1,4 +1,7 @@
 import JamesCover from "../assets/media/JamesCover.png";
+import SanJose from "../assets//SanJose.png";
+import DeAnzaCollege from "../assets//DeAnzaCollege.png";
+
 import DoctorCover from "../assets/media/media-image.png";
 export const userData = [
   {
@@ -120,32 +123,52 @@ export const userData = [
       ],
       education: [
         {
-          name: "name",
+          name: "San Jose State",
           startDate: "2005",
-          endDate: "2009",
+          endDate: "2008",
           image: {
-            url: "../assets/stanfard.png",
-            altText: "Stanford University",
+            url: SanJose,
+            altText: "San Jose State",
           },
           major: "Studied Business Finance",
           program: "Business Administration",
         },
+        {
+          name: "De Anza College",
+          startDate: "2001",
+          endDate: "2005",
+          image: {
+            url: DeAnzaCollege,
+            altText: "De Anza College",
+          },
+          major: "Studied CIS & Bus. Management",
+          program: "Associate Arts",
+        },
       ],
       accolades: [
         {
-          description: "Board Chair at",
-          institute: " Boston Medical",
-          startdate: "November 1,2022",
+          jobTitle: {
+            position: "Board Chair at Boston Medical",
+            companyName: " Boston Medical",
+          },
+          startDate: "November 1,2022",
+          endDate: "November 1,2022",
         },
         {
-          description: "Deans List 4 Years in a row at",
-          institute: " Stanford University",
-          date: "August 2017 - May 2023",
+          jobTitle: {
+            position: "Deans List 4 Years in a row",
+            companyName: "Stanford University",
+          },
+          startDate: "August 2017",
+          endDate: "May 2023",
         },
         {
-          description: "Summa Cum Laude, Honors Club from",
-          date: "August 2017 - May 2022 ",
-          institute: " Stanford University",
+          jobTitle: {
+            position: "Summa Cum Laude, Honors Club",
+            companyName: " Stanford University",
+          },
+          startDate: "August 2017 ",
+          endDate: "May 2022",
         },
       ],
       achievement: [
@@ -162,7 +185,7 @@ export const userData = [
           description: "Presidential Honorin Genetic Science",
         },
       ],
-      bussinessGoal: {
+      businessGoal: {
         active: [
           {
             title: "Raise Capital",
@@ -403,7 +426,7 @@ export const userData = [
           description: "Presidential Honorin Genetic Science",
         },
       ],
-      bussinessGoal: {
+      businessGoal: {
         active: [
           {
             title: "Raise Capital",
