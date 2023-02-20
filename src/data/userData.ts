@@ -1,7 +1,6 @@
 import JamesCover from "../assets/media/JamesCover.png";
 import SanJose from "../assets//SanJose.png";
 import DeAnzaCollege from "../assets//DeAnzaCollege.png";
-
 import DoctorCover from "../assets/media/media-image.png";
 export const userData = [
   {
@@ -259,7 +258,7 @@ export const userData = [
             "Looking for someone that can create a new company website for us",
         },
       ],
-      Icebreakers: {
+      Icebreaker: {
         hobbies: ["Martial Arts", "Stargazing", "Art"],
         Interest: ["Reading", "Legos", "Music"],
         skills: ["Painting", "Piano", "Gardening"],
