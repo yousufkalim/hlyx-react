@@ -13,14 +13,18 @@ import { ProfileContext } from "../../context/profileContext";
 
 const HeroSession = () => {
   const { userProfile } = useContext(ProfileContext);
-  const { image, jobTitle, name, address } = userProfile;
+  const { image, jobTitle, name, address, companyLogo } = userProfile;
   return (
     <>
       <div style={{ position: "relative" }}>
         <div className="cover_photo_container">
           <img alt={image?.altText} src={image?.url} className="cover_photo" />
         </div>
-        <img alt="company logo" className="avatar-icon" src={sphere} />
+        <img
+          alt={companyLogo?.alttext}
+          className="avatar-icon"
+          src={companyLogo?.url}
+        />
       </div>
       <IonCard className="cover_photo_card ion_Card">
         <IonCardSubtitle>{name}</IonCardSubtitle>

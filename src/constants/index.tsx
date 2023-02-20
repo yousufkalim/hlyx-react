@@ -21,6 +21,7 @@ import {
   SlackIcon,
   Twitter,
   YoutubeIcon,
+  LinkedinIcon,
 } from "../assets/icons/SocialIcons";
 import cellAnatomic from "../assets/cellAnatomic.png";
 import bioTech from "../assets/bioTech.png";
@@ -355,6 +356,7 @@ export const SocialData = [
 ];
 
 export const SocialMediaIcons: any = {
+  LinkedIn: <LinkedinIcon color={"var(--social-back)"} />,
   YouTube: <YoutubeIcon color={"var(--social-back)"} />,
   Slack: <SlackIcon color={"var(--social-back)"} />,
   Reddit: <ShipFaceIcon color={"var(--social-back)"} />,

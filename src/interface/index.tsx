@@ -114,6 +114,7 @@ export interface UserAboutInterface {
     year: number;
     title: string;
     description: string;
+    detail?: string;
   }[];
   businessGoals: BusinessGoals;
   businessNeeds: {
