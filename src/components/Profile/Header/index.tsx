@@ -11,6 +11,7 @@ const Header = () => {
           <BackBtnIcon color={"var(--text-color)"} />
         </IonButton>
         <HlyxHeaderLogo color={"var(--text-color)"} />
+
         <img src={ProfileImage} alt="avatar-header-icon" />
       </div>
     </div>

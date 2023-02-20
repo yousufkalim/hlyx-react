@@ -259,11 +259,11 @@ export const userData = [
             "Looking for someone that can create a new company website for us",
         },
       ],
-      Icebreakers: {
+      icebreakers: {
         hobbies: ["Martial Arts", "Stargazing", "Art"],
-        Interest: ["Reading", "Legos", "Music"],
+        interest: ["Reading", "Legos", "Music"],
         skills: ["Painting", "Piano", "Gardening"],
-        Motto: "Science is an oyster, serve it up tastefully.",
+        motto: "Science is an oyster, serve it up tastefully.",
       },
     },
   },
@@ -500,11 +500,11 @@ export const userData = [
             "Looking for someone that can create a new company website for us",
         },
       ],
-      Icebreakers: {
+      icebreakers: {
         hobbies: ["Martial Arts", "Stargazing", "Art"],
-        Interest: ["Reading", "Legos", "Music"],
+        interest: ["Reading", "Legos", "Music"],
         skills: ["Painting", "Piano", "Gardening"],
-        Motto: "Science is an oyster, serve it up tastefully.",
+        motto: "Science is an oyster, serve it up tastefully.",
       },
     },
   },

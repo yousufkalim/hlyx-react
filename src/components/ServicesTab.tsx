@@ -4,6 +4,7 @@ import React from "react";
 import {
   AdvanceCellIcon,
   ChevronIcon,
+  ForwardIcon,
   ServiceIcon,
 } from "../assets/icons/index";
 import cellAnatomic from "../assets/cellAnatomic.png";
@@ -16,6 +17,10 @@ import { IonButton } from "@ionic/react";
 import UserDetailCard from "./Profile/UserDetailCard/UserDetailCard";
 import FeaturedServices from "./FeaturedServices";
 import ServicesCardsLink from "./ServicesCardsLink";
+import {
+  BiDashboardIcon,
+  RightArrowIcon,
+} from "../assets/icons/AboutTabsIcons";
 
 const LinksData = [
   {
@@ -69,6 +74,71 @@ export const ServiceCard = ({
   );
 };
 
+const MainServiceCard = () => {
+  return (
+    <div
+      style={{
+        backgroundColor: "#2A2C31",
+        paddingBlock: 5,
+        paddingInline: "5px 14px",
+        display: "flex",
+        alignItems: "center",
+        gap: 16,
+        borderRadius: 18,
+        fontFamily: "Poppins",
+      }}
+    >
+      <div
+        style={{
+          width: 57,
+          height: 55,
+          backgroundColor: "rgba(60, 62, 70 , 0.5)",
+          borderRadius: 18,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <BiDashboardIcon />
+      </div>
+
+      <div
+        style={{
+          flex: 1,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        <div>
+          <h6
+            style={{
+              fontSize: 15,
+              lineHeight: "20px",
+              fontWeight: 600,
+              color: "white",
+            }}
+          >
+            BI Dashboard Report
+          </h6>
+          <p
+            style={{
+              fontSize: 13,
+              lineHeight: "16px",
+              color: "#8C93A1",
+              paddingTop: 4,
+            }}
+          >
+            View Service Details
+          </p>
+        </div>
+
+        <RightArrowIcon />
+      </div>
+    </div>
+  );
+};
+
 const ServicesTab = () => {
   return (
     <>
@@ -82,14 +152,7 @@ const ServicesTab = () => {
         <div>
           <h6 className="feature-services-title">Main Services</h6>
           <div className="cards-list">
-            {LinksData.map(({ icon, title, description }, index) => (
-              <ServicesCardsLink
-                icon={icon}
-                title={title}
-                key={index}
-                description={description}
-              />
-            ))}
+            <MainServiceCard />
           </div>
         </div>
       </ServiceCard>
