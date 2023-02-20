@@ -1,28 +1,56 @@
-import React from "react";
+import React, { useContext } from "react";
 import { brakerData } from "../../../../../constants";
 import { IonChip } from "@ionic/react";
 import "../../../../../style/components/Icebreakers.css";
+import { ProfileContext } from "../../../../../context/profileContext";
 
 const Icebreakers = () => {
+  const { userProfile } = useContext(ProfileContext);
+  const { hobbies, interest, skills, motto } = userProfile?.about?.icebreakers;
   return (
     <>
-      {brakerData?.map(({ description, tags }) => (
+      {hobbies && (
         <div className="section">
-          <div className="Icebreakers-Sub-heading">{description}</div>
+          <div className="Icebreakers-Sub-heading">Hobbies</div>
           <div>
-            {tags?.map((item) => (
-              <>
-                <IonChip className="custom-chip" color="dark">
-                  {item}
-                </IonChip>
-              </>
+            {hobbies?.map((hobbies: any, index: number) => (
+              <IonChip key={index} className="custom-chip" color="dark">
+                {hobbies}
+              </IonChip>
             ))}
           </div>
         </div>
-      ))}
-      <div className="Icebreakers-Sub-heading">Motto</div>
-      <div className="content-five">
-        Science is an oyster, serve it up tastefully.
+      )}
+
+      {interest && (
+        <div className="section">
+          <div className="Icebreakers-Sub-heading">Interest</div>
+          <div>
+            {interest?.map((interest: any, index: number) => (
+              <IonChip key={index} className="custom-chip" color="dark">
+                {interest}
+              </IonChip>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {skills && (
+        <div className="section">
+          <div className="Icebreakers-Sub-heading">Skills</div>
+          <div>
+            {skills?.map((skill: any, index: number) => (
+              <IonChip key={index} className="custom-chip" color="dark">
+                {skill}
+              </IonChip>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <div>
+        <div className="Icebreakers-Sub-heading">Motto</div>
+        <div className="content-five">{motto}</div>
       </div>
     </>
   );

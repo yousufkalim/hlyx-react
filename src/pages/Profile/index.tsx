@@ -1,5 +1,5 @@
 import { IonContent, IonPage } from "@ionic/react";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import AboutTab from "../../components/Profile/ProfileTabs/AboutTab";
 import ContactTab from "../../components/ContactTab";
 import InfoButton from "../../components/InfoButton";
@@ -8,13 +8,11 @@ import Header from "../../components/Profile/Header";
 import ServicesTab from "../../components/ServicesTab";
 import Tabs from "../../components/Tabs";
 import "../../style/page/profile.css";
-import JamesAboutTab from "../../components/Profile/ProfileTabs/AboutTab/JamesAboutTab";
-
 export const ProfileTabs = ["Contact", "About", "Service", "Portfolio"];
 
 const ProfileTabsContent = [
   <ContactTab />,
-  <JamesAboutTab />,
+  <AboutTab />,
   <ServicesTab />,
   <PortfolioTab />,
 ];

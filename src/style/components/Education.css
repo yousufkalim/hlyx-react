@@ -1,3 +1,11 @@
+.education_list {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin-bottom: -30px;
+  padding-bottom: 30px;
+}
+
 .education_card_container {
   background-color: #24262b;
   border-radius: 18px;
@@ -7,9 +15,10 @@
   padding-inline: 14px;
   display: flex;
   gap: 12px;
+  position: relative;
 }
 
-.color_line {
+.education_card_container .color_line {
   width: 4px;
   height: 43px;
   background-color: #fedd71;
@@ -28,6 +37,7 @@
   justify-content: space-between;
   padding-bottom: 14px;
   border-bottom: 2px solid #505767;
+  padding-top: 4px;
 }
 
 .education_details_container img {
@@ -35,6 +45,9 @@
   height: 46px;
   border-radius: 100px;
   object-fit: cover;
+  position: absolute;
+  top: 10px;
+  right: 13px;
 }
 
 h6,
@@ -47,19 +60,21 @@ p {
   display: flex;
   flex-direction: column;
   font-family: "Poppins";
-  gap: 2px;
+  gap: 6px;
 }
 
 .education_details h6 {
   font-weight: 700;
   font-size: 15px;
   letter-spacing: 0.045em;
+  line-height: 14px;
   color: white;
 }
 
 .education_details p {
   font-weight: 500;
   font-size: 12px;
+  line-height: 14px;
   color: #898b92;
 }
 

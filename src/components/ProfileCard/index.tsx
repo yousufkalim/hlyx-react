@@ -112,7 +112,7 @@ const ProfileCard = ({
               expand="block"
               className="profile-footer-button"
               size="large"
-              routerLink={link}
+              routerLink={`link/${name}`}
             >
               Link with Me
             </IonButton>

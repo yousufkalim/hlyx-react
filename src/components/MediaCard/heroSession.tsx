@@ -8,32 +8,38 @@ import profileOne from "../../assets/media/JamesCover.png";
 import sphere from "../../assets/Oriyn.png";
 import "../../style/components/MediaCard/mediaCard.css";
 import { BreifIcon, LinkBtnIcon, LocateIcon } from "../../assets/icons";
+import { useContext } from "react";
+import { ProfileContext } from "../../context/profileContext";
 
 const HeroSession = () => {
+  const { userProfile } = useContext(ProfileContext);
+  const { image, jobTitle, name, address, companyLogo } = userProfile;
   return (
     <>
-      <div className="cover_photo_container">
+      <div style={{ position: "relative" }}>
+        <div className="cover_photo_container">
+          <img alt={image?.altText} src={image?.url} className="cover_photo" />
+        </div>
         <img
-          alt="Silhouette of mountains"
-          src={profileOne}
-          className="cover_photo"
+          alt={companyLogo?.alttext}
+          className="avatar-icon"
+          src={companyLogo?.url}
         />
-        <img alt="company logo" className="avatar-icon" src={sphere} />
       </div>
       <IonCard className="cover_photo_card ion_Card">
-        <IonCardSubtitle>James R. Beckley</IonCardSubtitle>
+        <IonCardSubtitle>{name}</IonCardSubtitle>
 
         <IonCardContent className="ion-content">
           <div className="ion_text">
             <BreifIcon color="var(--text-color)" />
             <p>
-              CEO at <b>HLYX Inc.</b>
+              {jobTitle?.position} <b>{jobTitle?.companyName}</b>
             </p>
           </div>
 
           <div className="ion_text">
             <LocateIcon color="var(--text-color)" />
-            <p>San Diego, CA</p>
+            <p>{address}</p>
           </div>
         </IonCardContent>
       </IonCard>

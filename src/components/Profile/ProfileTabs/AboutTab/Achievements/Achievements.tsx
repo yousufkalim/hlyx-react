@@ -1,21 +1,24 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BlueDotIcon } from "../../../../../assets/icons";
-import { acheivementData } from "../../../../../constants";
-import { ForwardIcon } from "../../../../../assets/icons/index";
+import { ProfileContext } from "../../../../../context/profileContext";
 import "../../../../../style/components/achievement.css";
 
 const Achievements = () => {
+  const { userProfile } = useContext(ProfileContext);
+  const { achievement } = userProfile?.about;
   return (
     <>
-      {acheivementData?.map(({ description, year }, item) => (
-        <div className="achievement-card">
-          <BlueDotIcon color="gray" />
-          <div className="achievement-description">
-            <p className="year">{year}</p>
-            <p className="text">{description}</p>
+      {achievement?.map(
+        ({ description, title, detail }: any, index: number) => (
+          <div className="achievement-card" key={index}>
+            <BlueDotIcon color="gray" />
+            <div className="achievement-description">
+              <p className="year">{title}</p>
+              <p className="text">{description}</p>
+            </div>
           </div>
-        </div>
-      ))}
+        )
+      )}
     </>
   );
 };

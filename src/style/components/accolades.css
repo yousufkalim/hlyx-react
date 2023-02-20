@@ -1,3 +1,9 @@
+.accolades_list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
 .accolades-card {
   display: flex;
   gap: 15.26px;

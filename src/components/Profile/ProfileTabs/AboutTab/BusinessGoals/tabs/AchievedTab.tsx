@@ -1,52 +1,75 @@
-import React from "react";
+import React, { useContext } from "react";
 import { AccoladesCalender, Checkbox } from "../../../../../../assets/icons";
 import {
   LinksIcon,
   MessageIcon,
   ShareIcon,
 } from "../../../../../../assets/icons/AboutTabsIcons";
-import { achieveData } from "../../../../../../constants";
+import { ProfileContext } from "../../../../../../context/profileContext";
+import { ActiveAchievedType } from "../../../../../../interface";
 import "../../../../../../style/components/achievedTab.css";
 import ProgressBar from "../../../../../ProgressBar";
 
-const AchievedTab = () => {
+const AchievedCard = ({
+  title,
+  description,
+  timeStamp,
+  progress,
+}: ActiveAchievedType) => {
   return (
-    <div>
-      {achieveData?.map(({ description, achieveGoal, date }) => (
-        <div className="achieved-section">
-          <Checkbox />
-          <div className="achieved-whole-card">
-            <div className="achieved-card">
-              <h6>{achieveGoal}</h6>
-              <p>{description}</p>
-              <div className="progress-container">
-                <ProgressBar color={"green"} value={100} />
-                <p className="progress">100%</p>
-              </div>
-            </div>
-            <div className="achieve_card_footer">
-              <div className="date_container">
-                <AccoladesCalender
-                  color={"var(--icon-back)"}
-                  white={"var(--text-color)"}
-                />
-                <p className="date_text">{date}</p>
-              </div>
-
-              <div className="icon_list">
-                <div className="link_badge" data-count="5">
-                  <LinksIcon color={"#CFD4DF"} />
-                </div>
-                <div className="message_badge" data-count="3">
-                  <MessageIcon color={"#CFD4DF"} />
-                </div>
-
-                <ShareIcon color={"#CFD4DF"} />
-              </div>
-            </div>
+    <div className="achieved-section">
+      <Checkbox />
+      <div className="achieved-whole-card">
+        <div className="achieved-card">
+          <h6>{title}</h6>
+          <p>{description}</p>
+          <div className="progress-container">
+            <ProgressBar color={"green"} value={progress} />
+            <p className="progress">{progress}%</p>
           </div>
         </div>
-      ))}
+        <div className="achieve_card_footer">
+          <div className="date_container">
+            <AccoladesCalender
+              color={"var(--icon-back)"}
+              white={"var(--text-color)"}
+            />
+            <p className="date_text">{timeStamp}</p>
+          </div>
+
+          <div className="icon_list">
+            <div className="link_badge" data-count="5">
+              <LinksIcon color={"#CFD4DF"} />
+            </div>
+            <div className="message_badge" data-count="3">
+              <MessageIcon color={"#CFD4DF"} />
+            </div>
+
+            <ShareIcon color={"#CFD4DF"} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const AchievedTab = () => {
+  const { userProfile } = useContext(ProfileContext);
+  const { achieved } = userProfile?.about?.businessGoal ?? [];
+
+  return (
+    <div>
+      {achieved.map(
+        ({ title, description, timeStamp, progress }: any, index: number) => (
+          <AchievedCard
+            key={index}
+            title={title}
+            description={description}
+            timeStamp={timeStamp}
+            progress={progress}
+          />
+        )
+      )}
     </div>
   );
 };

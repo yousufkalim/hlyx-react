@@ -44,7 +44,8 @@
 
 .cover_photo_container {
   max-height: 283px;
-  position: relative;
+  /* position: relative; */
+  overflow: hidden;
   z-index: 10;
 }
 
@@ -98,6 +99,7 @@ ion-segment-button::before {
   bottom: -40px;
   width: 90.47px;
   height: 90.47px;
+  z-index: 8;
 }
 
 ion-card-subtitle {
@@ -269,6 +271,15 @@ ion-accordion.accordion-expanded > [slot="header"] .ion-accordion-toggle-icon {
   justify-content: space-between;
   padding: 22px;
   align-items: center;
+}
+
+.header-image {
+  object-fit: cover;
+  width: 54px;
+  height: 54px;
+  border-radius: 24px;
+  flex-shrink: 0;
+  padding: 5px;
 }
 
 .back-btn {

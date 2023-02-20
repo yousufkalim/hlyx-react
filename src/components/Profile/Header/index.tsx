@@ -1,9 +1,12 @@
 import { IonButton } from "@ionic/react";
-import React from "react";
+import React, { useContext } from "react";
 import { BackBtnIcon, HlyxHeaderLogo } from "../../../assets/icons";
 import ProfileImage from "../../../assets/icons/Avatar_Header.svg";
+import { ProfileContext } from "../../../context/profileContext";
 
 const Header = () => {
+  const { userProfile } = useContext(ProfileContext);
+  const { image } = userProfile;
   return (
     <div className="sticky-header">
       <div className="profile-header-container">
@@ -11,6 +14,7 @@ const Header = () => {
           <BackBtnIcon color={"var(--text-color)"} />
         </IonButton>
         <HlyxHeaderLogo color={"var(--text-color)"} />
+
         <img src={ProfileImage} alt="avatar-header-icon" />
       </div>
     </div>
