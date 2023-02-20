@@ -14,6 +14,11 @@ export interface ImageType {
   altText?: string;
 }
 
+export interface CompanyLogo {
+  url: string;
+  altText?: string;
+}
+
 export interface TabsProps {
   tabList: string[];
   activeTab: string;
@@ -117,7 +122,7 @@ export interface UserAboutInterface {
     description: string;
     status: "active" | "filled";
   }[];
-  Icebreakers: {
+  Icebreaker: {
     hobbies?: string[];
     Interest?: string[];
     skills?: string[];
