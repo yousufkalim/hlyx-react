@@ -1,7 +1,8 @@
 import JamesCover from "../assets/media/JamesCover.png";
 import SanJose from "../assets//SanJose.png";
 import DeAnzaCollege from "../assets//DeAnzaCollege.png";
-import DoctorCover from "../assets/media/media-image.png";
+// import DoctorCover from "../assets/media/media-image.png";
+import DoctorCover from "../assets/physician_male_01.png";
 import SaintFrancis from "../assets/SaintFrancis.png";
 import JoeICalvillo from "../assets/JoeICalvillo.png";
 import JamesHlyx from "../assets/JamesHlyx.png";
@@ -296,7 +297,7 @@ export const userData = [
             "Looking for a skilled React Native developer to join our DevOps product team",
         },
       ],
-      icebreaker: {
+      icebreakers: {
         hobbies: ["Martial Arts", "Stargazing", "Art"],
         interest: ["Reading", "Legos", "Music"],
         skills: ["Painting", "Piano", "Gardening"],
@@ -850,7 +851,7 @@ export const userData = [
             "Looking for someone that can create a new company website for us",
         },
       ],
-      icebreaker: {
+      icebreakers: {
         hobbies: ["Martial Arts", "Stargazing", "Art"],
         Interest: ["Reading", "Legos", "Music"],
         skills: ["Painting", "Piano", "Gardening"],
@@ -877,7 +878,7 @@ export const userData = [
     contact: {
       name: "Joel Calvillo",
       jobTitle: {
-        position: "Senior Vice President at ",
+        position: "Senior Vice President at",
         companyName: "KW Commercial South Bay",
       },
       address: "Los Gatos, CA",
@@ -1112,7 +1113,7 @@ export const userData = [
             "Looking for someone that can create a new company website for us",
         },
       ],
-      icebreaker: {
+      icebreakers: {
         hobbies: ["Martial Arts", "Stargazing", "Art"],
         Interest: ["Reading", "Legos", "Music"],
         skills: ["Painting", "Piano", "Gardening"],

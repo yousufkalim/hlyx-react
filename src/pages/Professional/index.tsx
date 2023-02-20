@@ -16,6 +16,7 @@ import cx from "../../assets/cx_logo.png";
 import RealtyGroup from "../../assets/RealtyGroup.png";
 import HorizonMedia from "../../assets/HorizonMedia.png";
 import HamiltonRestaurant from "../../assets/HamiltonRestaurant.png";
+import { userData } from "../../data/userData";
 
 const slideOpts = {
   initialSlide: 0,
@@ -94,8 +95,8 @@ const Professional = () => {
     setSlideNumber((prevSlideNumber) => prevSlideNumber - 1);
   };
 
-  const userData = profileData.filter((_, index) => index === slideNumber);
-  console.log(userData);
+  // const userData = profileData.filter((_, index) => index === slideNumber);
+  // console.log(userData);
 
   return (
     <>
@@ -107,32 +108,19 @@ const Professional = () => {
             onIonSlidePrevStart={handlePrevSlide}
             onIonSlideNextStart={handleNextSlide}
           >
-            {profileData.map(
-              (
-                {
-                  backgroundImage,
-                  companyLogo,
-                  name,
-                  position,
-                  companyName,
-                  location,
-                  link,
-                },
-                index
-              ) => (
-                <IonSlide key={index} id={`index-{index}`}>
-                  <ProfileCard
-                    companyName={companyName}
-                    backgroundImage={backgroundImage}
-                    name={name}
-                    position={position}
-                    location={location}
-                    companyLogo={companyLogo}
-                    link={link}
-                  />
-                </IonSlide>
-              )
-            )}
+            {userData.map((x, index) => (
+              <IonSlide key={index} id={`index-{index}`}>
+                <ProfileCard
+                  companyName={x?.jobTitle?.companyName}
+                  backgroundImage={x?.image?.url}
+                  name={x?.name}
+                  position={x?.jobTitle.position}
+                  location={x?.address}
+                  companyLogo={x?.companyLogo.url}
+                  link={x?.name}
+                />
+              </IonSlide>
+            ))}
           </IonSlides>
         </IonContent>
       </IonPage>

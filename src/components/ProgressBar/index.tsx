@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
+import { ColorType } from "../../interface";
 import "../../style/components/ProgressBar.css";
 
 const ProgressBar = ({
   color = "purple",
   value = 0,
 }: {
-  color?: "green" | "purple";
+  color?: ColorType;
   value: number;
 }) => {
   return (
