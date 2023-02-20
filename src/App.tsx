@@ -1,4 +1,6 @@
-import { setupIonicReact } from "@ionic/react";
+import { IonApp, IonContent, setupIonicReact } from "@ionic/react";
+import { isMobile } from "react-device-detect";
+
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
 
@@ -22,6 +24,23 @@ import Routes from "./routes";
 
 setupIonicReact();
 
-const App: React.FC = () => <Routes />;
+const App: React.FC = () => {
+  return (
+    <IonApp>
+      {isMobile ? (
+        <Routes />
+      ) : (
+        <IonContent>
+          <div className="browser-alert-container">
+            <h1 className="browser-alert-heading">
+              <strong>Note: </strong>
+              Only mobile browsers are capable of accessing this application.
+            </h1>
+          </div>
+        </IonContent>
+      )}
+    </IonApp>
+  );
+};
 
 export default App;

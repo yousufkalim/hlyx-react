@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { IonAvatar, IonButton, IonLabel } from "@ionic/react";
 import { MoreOptions, Plus } from "../../../../../../assets/icons";
 import "../../../../../../style/components/assistTab.css";
@@ -10,6 +10,7 @@ import {
   ShareIcon,
   MessageIcon,
 } from "../../../../../../assets/icons/AboutTabsIcons";
+import { ProfileContext } from "../../../../../../context/profileContext";
 
 export const assistListData = [
   {
@@ -88,6 +89,9 @@ const AssistCardSections = ({
 };
 
 const AssistTab = () => {
+  const { userProfile } = useContext(ProfileContext);
+  const { assist } = userProfile?.about?.businessGoal ?? [];
+  const { status, startDate, deadline } = assist;
   return (
     <div className="assist_card_container">
       <div className="assist-header">
@@ -103,27 +107,28 @@ const AssistTab = () => {
         </div>
       </div>
       <div className="assist-list">
-        {assistListData?.map(({ description, title }, index) => (
-          <div className="assist-item" key={index}>
-            <p className="assist-title">{title}</p>
-            <p className="assist-description">{description}</p>
-          </div>
-        ))}
+        <div className="assist-item">
+          <p className="assist-title">Status</p>
+          <p className="assist-description">{status}</p>
+        </div>
+        <div className="assist-item">
+          <p className="assist-title">Start</p>
+          <p className="assist-description">{startDate}</p>
+        </div>
+        <div className="assist-item">
+          <p className="assist-title">Deadline</p>
+          <p className="assist-description">{deadline}</p>
+        </div>
       </div>
       <div className="detail-list">
-        <AssistCardSections title="About" lineColor="blue">
-          <p className="assist-about">
-            Community Volunteer, Redhead, Friends of Animals, Water Protector,
-            King of Lies. I like pop-up books.
-          </p>
-        </AssistCardSections>
-        <AssistCardSections title="Stats" lineColor="purple">
+        <AssistCardSections title="Activity" lineColor="blue">
           <div className="stat">
             <StatList digit={95} description="Total Links" />
             <StatList digit={101} description="Total Assists" />
             <StatList digit={3} description="Badges" />
           </div>
         </AssistCardSections>
+
         <AssistCardSections title="Links" lineColor="green">
           <div className="assist_avatar">
             {[...Array(5).keys()].map((index) => (
@@ -146,7 +151,7 @@ const AssistTab = () => {
             ))}
           </div>
         </AssistCardSections>
-        <AssistCardSections title="Support" lineColor="red">
+        {/* <AssistCardSections title="Support" lineColor="red">
           <div className="Support-icons">
             <div className="support-link-badge" data-count="95">
               <LinksIcon />
@@ -159,7 +164,7 @@ const AssistTab = () => {
               {<Plus />}Assist
             </IonButton>
           </div>
-        </AssistCardSections>
+        </AssistCardSections> */}
       </div>
     </div>
   );

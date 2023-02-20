@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { AccoladesCalender, Checkbox } from "../../../../../../assets/icons";
 import {
   LinksIcon,
   MessageIcon,
   ShareIcon,
 } from "../../../../../../assets/icons/AboutTabsIcons";
-import { achieveData } from "../../../../../../constants";
+import { ProfileContext } from "../../../../../../context/profileContext";
 import { ActiveAchievedType } from "../../../../../../interface";
 import "../../../../../../style/components/achievedTab.css";
 import ProgressBar from "../../../../../ProgressBar";
@@ -54,26 +54,22 @@ const AchievedCard = ({
 };
 
 const AchievedTab = () => {
+  const { userProfile } = useContext(ProfileContext);
+  const { achieved } = userProfile?.about?.businessGoal ?? [];
+
   return (
     <div>
-      <AchievedCard
-        title="Compete AMT Certification"
-        description="Get AMT Certification by end of year"
-        timeStamp="Oct. 8, 2022"
-        progress={100}
-      />
-      <AchievedCard
-        title="Compete AMT Certification"
-        description="Get AMT Certification by end of year"
-        timeStamp="Oct. 8, 2022"
-        progress={100}
-      />
-      <AchievedCard
-        title="Compete AMT Certification"
-        description="Get AMT Certification by end of year"
-        timeStamp="Oct. 8, 2022"
-        progress={100}
-      />
+      {achieved.map(
+        ({ title, description, timeStamp, progress }: any, index: number) => (
+          <AchievedCard
+            key={index}
+            title={title}
+            description={description}
+            timeStamp={timeStamp}
+            progress={progress}
+          />
+        )
+      )}
     </div>
   );
 };
