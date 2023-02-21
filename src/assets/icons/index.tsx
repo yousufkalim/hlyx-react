@@ -1,5 +1,6 @@
 export const BagIcon = () => (
   <svg
+    style={{ flexShrink: 0 }}
     width="13"
     height="13"
     viewBox="0 0 13 13"
@@ -58,6 +59,7 @@ export const MediumIcon = ({ color }: { color: string }) => (
 
 export const LocationIcon = () => (
   <svg
+    style={{ flexShrink: 0 }}
     width="13"
     height="16"
     viewBox="0 0 13 16"
@@ -144,6 +146,7 @@ export const BreifIcon = ({
   width?: number;
 }) => (
   <svg
+    style={{ flexShrink: 0 }}
     width={width}
     height={height}
     viewBox="0 0 18 16"
@@ -183,6 +186,7 @@ export const LocateIcon = ({
   width?: number;
 }) => (
   <svg
+    style={{ flexShrink: 0 }}
     width={width}
     height={height}
     viewBox="0 0 18 20"
@@ -218,6 +222,7 @@ export const LinkIcon = ({ color }: { color: string }) => (
 
 export const LinkBtnIcon = () => (
   <svg
+    style={{ flexShrink: 0 }}
     width="19"
     height="19"
     viewBox="0 0 19 19"

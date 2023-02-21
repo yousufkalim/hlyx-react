@@ -59,7 +59,6 @@ const ProfileCard = ({
           zIndex: -3,
           width: "100%",
           height: "100%",
-          objectPosition: "74% 0%",
           objectFit: "cover",
         }}
         src={backgroundImage}
