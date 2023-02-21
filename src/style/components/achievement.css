@@ -1,5 +1,6 @@
 .achievement-card {
   display: flex;
+  justify-content: baseline;
   gap: 15.26px;
 }
 

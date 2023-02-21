@@ -50,7 +50,7 @@ export const userData = [
         faxNumber: ["+1 (888) 796-7496   Ext 700", "+1 (650) 308-8890"],
       },
       calendar: "Setmore > James R. Beckley",
-      website:"www.oriyn.com",
+      website:"https://www.oriyn.com",
       officeAddress:
         "8910 University Center Lane, Suite 400, San Diego, CA 92122",
       socialMedia: [
@@ -379,7 +379,7 @@ export const userData = [
         faxNumber: ["+1 (650) 345-6789"],
       },
       calendar: "Calendly > Kenji Awurama",
-      website: "www.sperebio.tech",
+      website: "https://www.sperebio.tech",
       officeAddress: "1886 Globe Trotter Court Palo Alto, CA 95051",
       socialMedia: [
         {
@@ -686,7 +686,7 @@ export const userData = [
         faxNumber: ["+1 (408) 420-9617   Ext 700", "+1 (408) 420-9617"],
       },
       calendar: "Setmore > James R. Beckley",
-      website: "www.hlyx.io",
+      website: "https://www.hlyx.io",
       officeAddress:
         "8910 University Center Lane, Suite 400, San Diego, CA 92122",
       socialMedia: [
@@ -1005,7 +1005,7 @@ export const userData = [
         faxNumber: ["+1 (650) 345-6789"],
       },
       calendar: "Google > Joel Calvillo’s Calendar",
-      website: "www.thecalvillogroup.com",
+      website: "https://www.thecalvillogroup.com",
       officeAddress: "16780 Lark Avenue Los Gatos, CA 95032",
       socialMedia: [
         {

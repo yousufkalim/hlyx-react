@@ -111,7 +111,7 @@ const ContactTab = () => {
           target={"_blank"}
           rel="noreferrer"
         >
-          <ContactCard title="Calendar">
+          <ContactCard title="Calender" >
             <div className="flex align-center justify-contain mx-19">
               <div className="flex align-center">
                 <CalendarIcon
@@ -129,9 +129,9 @@ const ContactTab = () => {
       {contact?.website && (
         <a
           className="anchor-clear"
-          href={contact.website}
           target={"_blank"}
           rel="noreferrer"
+          href={contact?.website}
         >
           <ContactCard title="Website">
             <div className="flex align-center justify-contain mx-19">
