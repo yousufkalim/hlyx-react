@@ -1,16 +1,18 @@
-// Background Images
+// Background Photos
 import JamesBackground from "../assets/JamesR.png";
 import DoctorBackground from "../assets/physician_male_01.png";
 import JamesHlyxBackground from "../assets/JamesHlyx.png";
 import JoeICalvilloBackground from "../assets/JoeICalvillo.png";
-// Cover Images
+// Cover Photos
 import JamesCover from "../assets/media/JamesCover.png";
 import DoctorCover from "../assets/media/media-image.png";
 import JamesHlyxCover from "../assets/media/JamesHlyxCover.png";
 import JoeICalvilloCover from "../assets/media/JoeICalvilloCover.png";
+// School Logos
 import SanJose from "../assets//SanJose.png";
 import DeAnzaCollege from "../assets//DeAnzaCollege.png";
 import SaintFrancis from "../assets/SaintFrancis.png";
+// Profile Logos
 import Sphere from "../assets/sphere.png";
 import Hylx from "../assets/Hylx.png";
 import Oriyn from "../assets/Oriyn.png";
@@ -55,28 +57,28 @@ export const userData = [
         "8910 University Center Lane, Suite 400, San Diego, CA 92122",
       socialMedia: [
         {
+          link: "https://linkedin.com/in/jamesrbeckley",
+          label: "LinkedIn",
+        },
+        {
+          link: "https://www.twitter.com/",
+          label: "Twitter",
+        },
+        {
+          link: "https://oriyn-workspace.slack.com/archives/D0417NGS8G5",
+          label: "Slack",
+        },
+        {
+          link: "https://www.youtube.com/",
+          label: "Medium",
+        },
+        {
           link: "https://www.youtube.com/",
           label: "YouTube",
         },
         {
           link: "https://www.youtube.com/",
-          label: "Slack",
-        },
-        {
-          link: "https://www.youtube.com/",
-          label: "Reddit",
-        },
-        {
-          link: "https://www.youtube.com/",
-          label: "Discord",
-        },
-        {
-          link: "https://www.youtube.com/",
-          label: "Twitter",
-        },
-        {
-          link: "https://www.youtube.com/",
-          label: "Facebook",
+          label: "Instagram",
         },
         {
           link: "https://www.youtube.com/",
@@ -85,18 +87,6 @@ export const userData = [
         {
           link: "https://www.youtube.com/",
           label: "Skype",
-        },
-        {
-          link: "https://www.youtube.com/",
-          label: "Instagram",
-        },
-        {
-          link: "https://www.youtube.com/",
-          label: "Medium",
-        },
-        {
-          link: "https://linkedin.com/in/jamesrbeckley",
-          label: "LinkedIn",
         },
       ],
       blogLink: [
@@ -124,7 +114,16 @@ export const userData = [
     },
 
     about: {
-      bio: "I have dedicated the last 24 years of my career to building technology solutions that have impacted the businesses of startup founders, small business owners, and established enterprise brands. I started my first company at the age of 16, creating custom...",
+      bio:`24 years of cumulative professional product design experience, specializing in web and mobile UI/UX design. 
+      \n\nVeteran technology entrepreneur, with extensive experience building B2B/B2C digital product companies. Early in my career, I quickly recognized the innumerable challenges facing the majority of startup founders, under-resourced, undercapitalized, underappreciated, and so on. Leveraging my personal resources and skill sets, I founded a company of exceptional individuals, providing both strategic and technical solutions that resolve the pain points of other business owners. Oriyn works with entrepreneurs and brands of all diversities and backgrounds to streamline and optimize product innovation, modernize service processes, and productize their expertise using custom software solutions. 
+      \n\nHIGHLIGHTS: 
+      \n > Grew Oriyn from 0 to 175 clients in 5 years
+      \n > 670 projects completed to present date
+      \n > Serviced clients across 15 vertical industries including automotive, real estate, health care, IT/IoT, business consulting, home automation, education, marketing, insurance, beauty and cosmetics, green tech, and more
+      \n > Completed 1300 career projects from 1999 to present (graphic design, UI/UX product design, branding/brand collateral, social media, web and mobile software)
+      \n > Born in Ghana, raised in the Bay Area, lives in San Marcos, CA
+      \n > Multi-lingual, speaks English, Ewe, some Spanish, and learning Mandarin`
+      ,
       profession: [
         {
           lineColor: "blue",
@@ -379,7 +378,7 @@ export const userData = [
         faxNumber: ["+1 (650) 345-6789"],
       },
       calendar: "Calendly > Kenji Awurama",
-      website: "www.sperebio.tech",
+      website: "www.spherebio.tech",
       officeAddress: "1886 Globe Trotter Court Palo Alto, CA 95051",
       socialMedia: [
         {
@@ -659,7 +658,7 @@ export const userData = [
       url: JamesHlyxBackground,
       altText: "User Background Picture",
     },
-    name: "JamesR. Beckley",
+    name: "James R. Beckley",
     companyLogo: {
       url: Hylx,
       altText: "Company Logo",
@@ -674,7 +673,7 @@ export const userData = [
       altText: "user Picture",
     },
     contact: {
-      name: "JamesR. Beckley",
+      name: "James R. Beckley",
       jobTitle: {
         position: "CEO",
         companyName: " Oriyn",
@@ -759,7 +758,7 @@ export const userData = [
     },
 
     about: {
-      bio: "Hello, I’m James R. Beckley, the founder and creator of HLYX. My team and created HLYX with the principal mission of empowering first time entrepreneurs, small business owners, to established brands to come together and build...",
+      bio: "Hello, I’m James R. Beckley, the founder and creator of HLYX. My team I and created HLYX with the principal mission of empowering first time entrepreneurs, small business owners, to established brands to come together and build...",
       profession: [
         {
           lineColor: "blue",
@@ -1045,7 +1044,10 @@ export const userData = [
     },
 
     about: {
-      bio: "Joel Calvillo is a commercial real estate professional with over 20 years of experience focused on the Sale, and 1031 Exchange of investment properties throughout the Greater Bay Area and across the nation...",
+      bio: `Joel Calvillo is a commercial real estate professional with over 20 years of experience focused on the Sale, and 1031 Exchange of investment properties throughout the Greater Bay Area and across the nation. As Senior Vice President with KW Commercial and leader of The Calvillo Group, he offers a deep understanding of the full range of investment real estate assets types and transactions. He has developed a successful team of professionals along with strong industry relationships to provide a high level of service for investment clients.
+      Previous to his affiliation with KW Commercial, Joel was a Vice President and Shareholder with NAI Northern California and an Investment Specialist with The Losness Group Apartment Brokerage. Prior to real estate, Joel spent over a decade in technology sales for top international semiconductor distribution companies Arrow Electronics and Future Electronics, as well as entrepreneur founding a high value business focused on nationwide networking equipment sales.
+      Born and raised in the San Francisco Bay Area, Joel obtained an early education in real estate investments via his parents who locally owned apartments and other rental properties.
+      `,
       profession: [
         {
           lineColor: "blue",
