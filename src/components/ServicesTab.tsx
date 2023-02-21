@@ -1,26 +1,19 @@
 import { IonCard, IonCardTitle, IonLabel } from "@ionic/react";
 import "./ServicesTab.css";
-import React from "react";
-import {
-  AdvanceCellIcon,
-  ChevronIcon,
-  ForwardIcon,
-  ServiceIcon,
-} from "../assets/icons/index";
+import React, { useContext } from "react";
+import { AdvanceCellIcon } from "../assets/icons/index";
 import cellAnatomic from "../assets/cellAnatomic.png";
 import bioTech from "../assets/bioTech.png";
-import LinkCard from "./LinkCard";
 import scientific from "../assets/scientific.png";
-import cellProg from "../assets/cellprog.png";
-import advanced from "../assets/advanced.png";
 import { IonButton } from "@ionic/react";
 import UserDetailCard from "./Profile/UserDetailCard/UserDetailCard";
 import FeaturedServices from "./FeaturedServices";
-import ServicesCardsLink from "./ServicesCardsLink";
 import {
   BiDashboardIcon,
   RightArrowIcon,
-} from "../assets/icons/AboutTabsIcons";
+} from "../assets/icons/ServiceTabIcons";
+import { ProfileContext } from "../context/profileContext";
+import { ServicesIcons } from "../constants";
 
 const LinksData = [
   {
@@ -74,65 +67,16 @@ export const ServiceCard = ({
   );
 };
 
-const MainServiceCard = () => {
+const MainServiceCard = ({ title, icon }: { title: string; icon: string }) => {
   return (
-    <div
-      style={{
-        backgroundColor: "#2A2C31",
-        paddingBlock: 5,
-        paddingInline: "5px 14px",
-        display: "flex",
-        alignItems: "center",
-        gap: 16,
-        borderRadius: 18,
-        fontFamily: "Poppins",
-      }}
-    >
-      <div
-        style={{
-          width: 57,
-          height: 55,
-          backgroundColor: "rgba(60, 62, 70 , 0.5)",
-          borderRadius: 18,
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <BiDashboardIcon />
-      </div>
+    <div className="dashboard-icon-section">
+      <div className="dashboard-icon">{ServicesIcons[icon]}</div>
 
-      <div
-        style={{
-          flex: 1,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-        }}
-      >
+      <div className="dashboard-report-section">
         <div>
-          <h6
-            style={{
-              fontSize: 15,
-              lineHeight: "20px",
-              fontWeight: 600,
-              color: "white",
-            }}
-          >
-            BI Dashboard Report
-          </h6>
-          <p
-            style={{
-              fontSize: 13,
-              lineHeight: "16px",
-              color: "#8C93A1",
-              paddingTop: 4,
-            }}
-          >
-            View Service Details
-          </p>
+          <h6>{title}</h6>
+          <p style={{}}>View Service Details</p>
         </div>
-
         <RightArrowIcon />
       </div>
     </div>
@@ -140,21 +84,34 @@ const MainServiceCard = () => {
 };
 
 const ServicesTab = () => {
+  const { userProfile } = useContext(ProfileContext);
+  const { service } = userProfile;
   return (
     <>
       <UserDetailCard />
       <ServiceCard title="Business Services" button="View All">
         <h6 className="feature-services-title">Featured Services</h6>
-        <div className="featured-services-cards">
-          <FeaturedServices />
-          <FeaturedServices />
-        </div>
-        <div>
-          <h6 className="feature-services-title">Main Services</h6>
-          <div className="cards-list">
-            <MainServiceCard />
+        {service?.featuredServices && (
+          <div className="featured-services-cards">
+            {service?.featuredServices?.map(
+              ({ title, description }: any, index: number) => (
+                <FeaturedServices title={title} description={description} />
+              )
+            )}
           </div>
-        </div>
+        )}
+        {service?.mainServices && (
+          <div>
+            <h6 className="feature-services-title">Main Services</h6>
+            <div className="cards-list">
+              {service?.mainServices?.map(
+                ({ title, type }: any, index: number) => (
+                  <MainServiceCard title={title} icon={type} />
+                )
+              )}
+            </div>
+          </div>
+        )}
       </ServiceCard>
       <div style={{ paddingBlock: 20, backgroundColor: "var(--bg-color)" }}>
         <IonButton

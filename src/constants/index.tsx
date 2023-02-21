@@ -30,6 +30,16 @@ import scientific from "../assets/scientific.png";
 import cellProg from "../assets/cellprog.png";
 import advanced from "../assets/advanced.png";
 import { DriveIcon } from "../assets/icons/index";
+import {
+  BiDashboardIcon,
+  DataMarketIcon,
+  DevelopmentIcon,
+  IndustrialIcon,
+  MultiUnitIcon,
+  NNNInvestmentIcon,
+  RedovelopmentIcon,
+  UiUxIcon,
+} from "../assets/icons/ServiceTabIcons";
 
 // export const professionData = [
 //   {
@@ -374,6 +384,24 @@ export const SocialMediaIcons: any = {
   Instagram: <InstagramIcon color={"var(--social-back)"} />,
 
   Medium: <MediumSocialIcon color={"var(--social-back)"} />,
+};
+
+export const ServicesIcons: any = {
+  BiDashboard: <BiDashboardIcon />,
+
+  UiUx: <UiUxIcon />,
+
+  Devolpment: <DevelopmentIcon />,
+
+  DataMarketing: <DataMarketIcon />,
+
+  MultiUnit: <MultiUnitIcon />,
+
+  Investment: <NNNInvestmentIcon />,
+
+  Redevolpment: <RedovelopmentIcon />,
+
+  Industrial: <IndustrialIcon />,
 };
 
 export const BlogLinkIcons: any = {

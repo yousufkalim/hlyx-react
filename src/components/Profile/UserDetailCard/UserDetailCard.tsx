@@ -1,14 +1,7 @@
-import {
-  IonCard,
-  IonCardContent,
-  IonCardSubtitle,
-  IonLabel,
-} from "@ionic/react";
+import { IonCard, IonCardContent } from "@ionic/react";
 import React, { useContext } from "react";
-import profileOne from "../../../assets/media/media-image.png";
 import { BreifIcon, LocateIcon } from "../../../assets/icons/index";
 import "../../../style/components/userDetailCard.css";
-import { UserInterface } from "../../../interface";
 import { ProfileContext } from "../../../context/profileContext";
 
 const UserDetailCard = () => {

@@ -38,12 +38,15 @@ export interface AccoladesType {
   endDate?: Date;
 }
 
+export type ColorType = "green" | "purple" | "yellow" | "orange";
+
 export interface ActiveAchievedType {
-  color?: "green" | "purple";
+  color?: ColorType;
   title: string;
   description: string;
   progress: number;
   timeStamp: string;
+  count?: number;
 }
 
 export interface Education {

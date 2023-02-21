@@ -1,10 +1,16 @@
+// Background Images
+import JamesBackground from "../assets/JamesR.png";
+import DoctorBackground from "../assets/physician_male_01.png";
+import JamesHlyxBackground from "../assets/JamesHlyx.png";
+import JoeICalvilloBackground from "../assets/JoeICalvillo.png";
+// Cover Images
 import JamesCover from "../assets/media/JamesCover.png";
+import DoctorCover from "../assets/media/media-image.png";
+import JamesHlyxCover from "../assets/media/JamesHlyxCover.png";
+import JoeICalvilloCover from "../assets/media/JoeICalvilloCover.png";
 import SanJose from "../assets//SanJose.png";
 import DeAnzaCollege from "../assets//DeAnzaCollege.png";
-import DoctorCover from "../assets/media/media-image.png";
 import SaintFrancis from "../assets/SaintFrancis.png";
-import JoeICalvillo from "../assets/JoeICalvillo.png";
-import JamesHlyx from "../assets/JamesHlyx.png";
 import Sphere from "../assets/sphere.png";
 import Hylx from "../assets/Hylx.png";
 import Oriyn from "../assets/Oriyn.png";
@@ -13,6 +19,10 @@ import JoeICompany from "../assets/JoeICompany.png";
 export const userData = [
   // James Oriyan Profile
   {
+    backgroundImage: {
+      url: JamesBackground,
+      altText: "User Background Picture",
+    },
     name: "James R. Beckley",
     companyLogo: {
       url: Oriyn,
@@ -296,16 +306,52 @@ export const userData = [
             "Looking for a skilled React Native developer to join our DevOps product team",
         },
       ],
-      icebreaker: {
+      icebreakers: {
         hobbies: ["Martial Arts", "Stargazing", "Art"],
         interest: ["Reading", "Legos", "Music"],
         skills: ["Painting", "Piano", "Gardening"],
         motto: "Science is an oyster, serve it up tastefully.",
       },
     },
+    service: {
+      featuredServices: [
+        {
+          title: "Market Research & BI ",
+          description:
+            "We help startup founders and SMB’s with quality market research into any vertical",
+        },
+        {
+          title: "Market Research & BI ",
+          description:
+            "We help startup founders and SMB’s with quality market research into any vertical",
+        },
+      ],
+      mainServices: [
+        {
+          type: "BiDashboard",
+          title: "BI Dashboard Report",
+        },
+        {
+          type: "DataMarketing",
+          title: "Data & Market Research",
+        },
+        {
+          type: "UiUx",
+          title: "Product UI/UX Design",
+        },
+        {
+          type: "Devolpment",
+          title: "Software Development",
+        },
+      ],
+    },
   },
   // Doctor Profile
   {
+    backgroundImage: {
+      url: DoctorBackground,
+      altText: "User Background picture",
+    },
     name: "Dr. Kenji Awurama",
     companyLogo: {
       url: Sphere,
@@ -574,9 +620,45 @@ export const userData = [
         motto: "Science is an oyster, serve it up tastefully.",
       },
     },
+    service: {
+      featuredServices: [
+        {
+          title: "Market Research & BI ",
+          description:
+            "We help startup founders and SMB’s with quality market research into any vertical",
+        },
+        {
+          title: "Market Research & BI ",
+          description:
+            "We help startup founders and SMB’s with quality market research into any vertical",
+        },
+      ],
+      mainServices: [
+        {
+          type: "BiDashboard",
+          title: "BI Dashboard Report",
+        },
+        {
+          type: "DataMarketing",
+          title: "Data & Market Research",
+        },
+        {
+          type: "UiUx",
+          title: "Product UI/UX Design",
+        },
+        {
+          type: "Devolpment",
+          title: "Software Development",
+        },
+      ],
+    },
   },
   // James Hlyx Profile
   {
+    backgroundImage: {
+      url: JamesHlyxBackground,
+      altText: "User Background Picture",
+    },
     name: "JamesR. Beckley",
     companyLogo: {
       url: Hylx,
@@ -588,7 +670,7 @@ export const userData = [
     },
     address: "San Diego, CA",
     image: {
-      url: JamesHlyx,
+      url: JamesHlyxCover,
       altText: "user Picture",
     },
     contact: {
@@ -850,16 +932,52 @@ export const userData = [
             "Looking for someone that can create a new company website for us",
         },
       ],
-      icebreaker: {
+      icebreakers: {
         hobbies: ["Martial Arts", "Stargazing", "Art"],
         Interest: ["Reading", "Legos", "Music"],
         skills: ["Painting", "Piano", "Gardening"],
         Motto: "Science is an oyster, serve it up tastefully.",
       },
     },
+    service: {
+      featuredServices: [
+        {
+          title: "Market Research & BI ",
+          description:
+            "We help startup founders and SMB’s with quality market research into any vertical",
+        },
+        {
+          title: "Market Research & BI ",
+          description:
+            "We help startup founders and SMB’s with quality market research into any vertical",
+        },
+      ],
+      mainServices: [
+        {
+          type: "BiDashboard",
+          title: "BI Dashboard Report",
+        },
+        {
+          type: "DataMarketing",
+          title: "Data & Market Research",
+        },
+        {
+          type: "UiUx",
+          title: "Product UI/UX Design",
+        },
+        {
+          type: "Devolpment",
+          title: "Software Development",
+        },
+      ],
+    },
   },
   // Joel Calvillo Profile
   {
+    backgroundImage: {
+      url: JoeICalvilloBackground,
+      altText: "User Background picture",
+    },
     name: "Joel Calvillo",
     jobTitle: {
       position: "Senior Vice President at ",
@@ -867,7 +985,7 @@ export const userData = [
     },
     address: "Los Gatos, CA",
     image: {
-      url: JoeICalvillo,
+      url: JoeICalvilloCover,
       altText: "user Picture",
     },
     companyLogo: {
@@ -877,7 +995,7 @@ export const userData = [
     contact: {
       name: "Joel Calvillo",
       jobTitle: {
-        position: "Senior Vice President at ",
+        position: "Senior Vice President at",
         companyName: "KW Commercial South Bay",
       },
       address: "Los Gatos, CA",
@@ -1112,12 +1230,38 @@ export const userData = [
             "Looking for someone that can create a new company website for us",
         },
       ],
-      icebreaker: {
+      icebreakers: {
         hobbies: ["Martial Arts", "Stargazing", "Art"],
         Interest: ["Reading", "Legos", "Music"],
         skills: ["Painting", "Piano", "Gardening"],
         Motto: "Science is an oyster, serve it up tastefully.",
       },
+    },
+    service: {
+      featuredServices: [
+        {
+          title: "Professional Services & Products",
+          description: "No Details given",
+        },
+      ],
+      mainServices: [
+        {
+          type: "MultiUnit",
+          title: "Multi-Unit Properties",
+        },
+        {
+          type: "Investment",
+          title: "NNN Investments",
+        },
+        {
+          type: "Redevolpment",
+          title: "Land Redevelopment",
+        },
+        {
+          type: "Industrial",
+          title: "Industrial",
+        },
+      ],
     },
   },
 ];

@@ -8,7 +8,7 @@ import {
 import ProgressBar from "../ProgressBar";
 
 import "../../style/components/ActiveCard.css";
-import { ActiveAchievedType } from "../../interface";
+import { ActiveAchievedType, ColorType } from "../../interface";
 
 const ActiveCard = ({
   color = "purple",
@@ -16,17 +16,33 @@ const ActiveCard = ({
   description,
   progress,
   timeStamp,
+  count,
 }: ActiveAchievedType) => {
+  const getColor = (progress: number): ColorType => {
+    let color = "purple" as ColorType;
+    if (progress < 70 && progress > 30) {
+      color = "yellow";
+    } else if (progress < 30) {
+      color = "orange";
+    }
+
+    return color;
+  };
+
+  console.log(getColor(progress), ":::getColor");
   return (
     <>
       <div className="active_card_container">
         <div className="details">
-          <div className="count">1</div>
+          <div className={`count count-${getColor(progress)}`}>{count}</div>
           <div className="details_data">
             <h6>{title}</h6>
             <p>{description}</p>
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-              <ProgressBar color={color} value={progress} />
+              <ProgressBar
+                color={getColor(progress) as ColorType}
+                value={progress}
+              />
               <p className="progress">{progress}%</p>
             </div>
           </div>

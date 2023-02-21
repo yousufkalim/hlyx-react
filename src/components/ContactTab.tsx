@@ -4,41 +4,16 @@ import {
   CalendarIcon,
   CallIcon,
   ChevronIcon,
-  DriveIcon,
-  FaxIcon,
   LocateFillIcon,
   MailIcon,
   MobileIcon,
-  SoundCloudIcon,
   WorldIcon,
-  MediumIcon,
 } from "../assets/icons";
 import LinkCard from "./LinkCard";
 import HeroSession from "./MediaCard/heroSession";
 import { SocialData, SocialMediaIcons } from "../constants/index";
 import { useContext } from "react";
 import { ProfileContext } from "../context/profileContext";
-
-// const JamesLinksData = [
-//   {
-//     hyperadd: "https://medium.com/",
-//     icon: <MediumIcon color={"var(--social-back)"} />,
-//     title: "How Automation Technology Can Increase Efficiency And Revenue",
-//     description: "Access Article on Medium",
-//   },
-//   {
-//     icon: <SoundCloudIcon color={"var(--social-back)"} />,
-//     hyperadd: "https://soundcloud.com/",
-//     title: "The Future of Business Technology And How Oriyn Is Making Waves",
-//     description: "Access Audio on SoundCloud",
-//   },
-//   {
-//     hyperadd: "https://www.google.com/drive/",
-//     icon: <DriveIcon color={"var(--social-back)"} />,
-//     title: "Oriyn Business Solutions Deck 2023",
-//     description: "Access File on Google Drive",
-//   },
-// ];
 
 const ContactCard = ({
   title,
@@ -63,61 +38,56 @@ const ContactTab = () => {
       <HeroSession />
       {contact?.email && (
         <ContactCard title="Email">
-          <div className="flex align-center justify-contain">
-            <div className="flex align-center">
-              <MailIcon
-                color={"var(--icon-back)"}
-                white={"var(--text-color)"}
-              />
-              <IonLabel className="icon_text">
-                <a
-                  href="mailto:kenji.awurama@sperebio.tech"
-                  className="anchor-clear"
-                >
-                  {contact?.email}
-                </a>
-              </IonLabel>
-            </div>
+          <a href="mailto: {contact?.email}" className="anchor-clear">
+            <div className="flex align-center justify-contain">
+              <div className="flex align-center">
+                <MailIcon
+                  color={"var(--icon-back)"}
+                  white={"var(--text-color)"}
+                />
+                <IonLabel className="icon_text">{contact?.email}</IonLabel>
+              </div>
 
-            <ChevronIcon />
-          </div>
+              <ChevronIcon />
+            </div>
+          </a>
         </ContactCard>
       )}
 
       {contact?.phone && (
         <ContactCard title="Phone">
           <IonAccordionGroup expand="compact" className="phone-card-container">
-            <div className="flex align-center justify-contain mb-11">
-              <div className="flex align-center">
-                <MobileIcon
-                  color={"var(--icon-back)"}
-                  white={"var(--text-color)"}
-                />
-                <a href="tel:+16501234567" className="anchor-clear">
-                  <IonLabel className="icon_text">
-                    {contact?.phone?.number}
-                  </IonLabel>
-                </a>
-              </div>
-
-              <ChevronIcon />
-            </div>
-            {contact?.phone?.faxNumber.map((number: any, index: number) => (
-              <div
-                className="flex align-center justify-contain mx-19 mb-11"
-                key={index}
-              >
-                <div className="flex align-center ">
-                  <CallIcon
+            <a href="tel:{contact?.phone?.number}" className="anchor-clear">
+              <div className="flex align-center justify-contain mb-11">
+                <div className="flex align-center">
+                  <MobileIcon
                     color={"var(--icon-back)"}
                     white={"var(--text-color)"}
                   />
-                  <a href="tel:+16503456789" className="anchor-clear">
-                    <IonLabel className="icon_text">{number}</IonLabel>
-                  </a>
+                  <IonLabel className="icon_text">
+                    {contact?.phone?.number}
+                  </IonLabel>
                 </div>
+
                 <ChevronIcon />
               </div>
+            </a>
+            {contact?.phone?.faxNumber.map((number: any, index: number) => (
+              <a href="tel:{number}" className="anchor-clear">
+                <div
+                  className="flex align-center justify-contain mx-19 mb-11"
+                  key={index}
+                >
+                  <div className="flex align-center ">
+                    <CallIcon
+                      color={"var(--icon-back)"}
+                      white={"var(--text-color)"}
+                    />
+                    <IonLabel className="icon_text">{number}</IonLabel>
+                  </div>
+                  <ChevronIcon />
+                </div>
+              </a>
             ))}
 
             {/* <div className="flex align-center justify-contain mx-19 mb-11">
@@ -135,48 +105,48 @@ const ContactTab = () => {
         </ContactCard>
       )}
       {contact?.calendar && (
-        <ContactCard title="Calendar">
-          <div className="flex align-center justify-contain mx-19">
-            <div className="flex align-center">
-              <CalendarIcon
-                color={"var(--icon-back)"}
-                white={"var(--text-color)"}
-              />
-              <a
-                href="https://calendly.com/wajeehaslam/30min"
-                className="anchor-clear"
-                target={"_blank"}
-                rel="noreferrer"
-              >
+        <a
+          href="https://calendly.com/wajeehaslam/30min"
+          className="anchor-clear"
+          target={"_blank"}
+          rel="noreferrer"
+        >
+          <ContactCard title="Calendar">
+            <div className="flex align-center justify-contain mx-19">
+              <div className="flex align-center">
+                <CalendarIcon
+                  color={"var(--icon-back)"}
+                  white={"var(--text-color)"}
+                />
                 <IonLabel className="icon_text">{contact?.calendar}</IonLabel>
-              </a>
+              </div>
+              <ChevronIcon />
             </div>
-            <ChevronIcon />
-          </div>
-        </ContactCard>
+          </ContactCard>
+        </a>
       )}
 
       {contact?.website && (
-        <ContactCard title="Website">
-          <div className="flex align-center justify-contain mx-19">
-            <div className="flex align-center">
-              <WorldIcon
-                color={"var(--icon-back)"}
-                white={"var(--text-color)"}
-              />
-              <a
-                className="anchor-clear"
-                href="https://www.aurorabiomed.com/"
-                target={"_blank"}
-                rel="noreferrer"
-              >
+        <a
+          className="anchor-clear"
+          href={contact?.website}
+          target={"_blank"}
+          rel="noreferrer"
+        >
+          <ContactCard title="Website">
+            <div className="flex align-center justify-contain mx-19">
+              <div className="flex align-center">
+                <WorldIcon
+                  color={"var(--icon-back)"}
+                  white={"var(--text-color)"}
+                />
                 <IonLabel className="icon_text">{contact?.website}</IonLabel>
-              </a>
-            </div>
+              </div>
 
-            <ChevronIcon />
-          </div>
-        </ContactCard>
+              <ChevronIcon />
+            </div>
+          </ContactCard>
+        </a>
       )}
 
       {contact?.officeAddress && (

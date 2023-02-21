@@ -17,7 +17,6 @@
   width: 27px;
   height: 27px;
   border-radius: 8.6px;
-  background-color: #5200ff;
   display: grid;
   place-items: center;
   flex-shrink: 0;
@@ -25,6 +24,22 @@
   font-weight: 600;
   color: white;
   font-family: "Poppins";
+}
+
+.count-purple {
+  background: #5200ff;
+}
+
+.count-green {
+  background: #49be1f;
+}
+
+.count-orange {
+  background: #fe340f;
+}
+
+.count-yellow {
+  background: #ffc202;
 }
 
 .details_data {

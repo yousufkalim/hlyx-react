@@ -15,7 +15,16 @@ const Header = () => {
         </IonButton>
         <HlyxHeaderLogo color={"var(--text-color)"} />
 
-        <img src={ProfileImage} alt="avatar-header-icon" />
+        <img
+          src={image?.url}
+          alt="avatar-header-icon"
+          style={{
+            width: 66,
+            height: 66,
+            borderRadius: 100,
+            objectFit: "cover",
+          }}
+        />
       </div>
     </div>
   );

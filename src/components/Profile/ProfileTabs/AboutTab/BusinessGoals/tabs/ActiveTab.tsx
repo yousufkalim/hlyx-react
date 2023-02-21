@@ -11,6 +11,7 @@ const ActiveTab = () => {
         ({ title, description, progress, timeStamp }: any, index: number) => (
           <ActiveCard
             key={index}
+            count={index + 1}
             title={title}
             description={description}
             progress={progress}

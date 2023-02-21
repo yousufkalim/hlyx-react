@@ -37,3 +37,13 @@ progress::-webkit-progress-bar {
 .progress-green::after {
   background: #49be1f;
 }
+
+.progress-orange::-webkit-progress-value,
+.progress-orange::after {
+  background: #fe340f;
+}
+
+.progress-yellow::-webkit-progress-value,
+.progress-yellow::after {
+  background: #ffc202;
+}

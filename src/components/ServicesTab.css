@@ -68,3 +68,47 @@
   letter-spacing: 0.04em;
   --color: #9899a0;
 }
+/* .dashboard-icon{ 
+  --background
+} */
+.dashboard-icon-section {
+  background-color: #2a2c31;
+  padding-block: 5px;
+  padding-inline: 5px 14px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 18px;
+  font-family: "Poppins";
+}
+
+.dashboard-icon {
+  width: 57px;
+  height: 55px;
+  background-color: rgba(60, 62, 70, 0.5);
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-report-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-report-section h6 {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.dashboard-report-section p {
+  font-size: 13px;
+  line-height: 16px;
+  color: #8c93a1;
+  padding-top: 4px;
+}
