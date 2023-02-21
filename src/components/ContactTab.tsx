@@ -129,7 +129,7 @@ const ContactTab = () => {
       {contact?.website && (
         <a
           className="anchor-clear"
-          href={contact?.website}
+          href={contact.website}
           target={"_blank"}
           rel="noreferrer"
         >
@@ -140,7 +140,7 @@ const ContactTab = () => {
                   color={"var(--icon-back)"}
                   white={"var(--text-color)"}
                 />
-                <IonLabel className="icon_text">{contact?.website}</IonLabel>
+                <IonLabel className="icon_text">{contact.website}</IonLabel>
               </div>
 
               <ChevronIcon />

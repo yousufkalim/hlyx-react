@@ -4,6 +4,7 @@
 }
 
 .achievement-card svg {
+  margin-top: -2px;
   flex-shrink: 0;
 }
 
