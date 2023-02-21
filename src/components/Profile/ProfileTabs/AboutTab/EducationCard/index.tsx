@@ -6,6 +6,21 @@ import { ProfileContext } from "../../../../../context/profileContext";
 const EducationCard = () => {
   const { userProfile } = useContext(ProfileContext);
   const { education } = userProfile?.about;
+
+  let charBuffer = "";
+  function processWords(input: string) {
+    var s = input.split(" ");
+    s.forEach((element) => {
+      if (charBuffer.length < 2) {
+        charBuffer += element[0];
+      } else {
+        return charBuffer;
+      }
+    });
+
+    return charBuffer;
+  }
+
   return (
     <div className="education_list">
       {education.map(
@@ -21,7 +36,13 @@ const EducationCard = () => {
                   <h6>{name}</h6>
                   <p>{`${startDate}-${endDate}`}</p>
                 </div>
-                <img src={image?.url} alt={image?.altText || name} />
+                {image ? (
+                  <img src={image?.url || name} alt={image?.altText || name} />
+                ) : (
+                  <div className="image-replacer">
+                    <p>{processWords(name)}</p>
+                  </div>
+                )}
               </div>
 
               <div className="education_info_text">

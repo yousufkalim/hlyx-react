@@ -8,13 +8,16 @@ import JamesCover from "../assets/media/JamesCover.png";
 import DoctorCover from "../assets/media/media-image.png";
 import JamesHlyxCover from "../assets/media/JamesHlyxCover.png";
 import JoeICalvilloCover from "../assets/media/JoeICalvilloCover.png";
+// Company Logos
+import JoeICompany from "../assets/JoeICompany.png";
+import Oriyn from "../assets/Oriyn.png";
+import Sphere from "../assets/sphere.png";
+import Hylx from "../assets/Hylx.png";
+// University Logos
 import SanJose from "../assets//SanJose.png";
 import DeAnzaCollege from "../assets//DeAnzaCollege.png";
 import SaintFrancis from "../assets/SaintFrancis.png";
-import Sphere from "../assets/sphere.png";
-import Hylx from "../assets/Hylx.png";
-import Oriyn from "../assets/Oriyn.png";
-import JoeICompany from "../assets/JoeICompany.png";
+import Stanfard from "../assets/stanfard.png";
 
 export const userData = [
   // James Oriyan Profile
@@ -476,13 +479,13 @@ export const userData = [
       ],
       education: [
         {
-          name: "name",
+          name: "San Jose State",
           startDate: "2005",
           endDate: "2009",
-          image: {
-            url: "../assets/stanfard.png",
-            altText: "Stanford University",
-          },
+          // image: {
+          //   url: Stanfard,
+          //   altText: "San Jose",
+          // },
           major: "Studied Molecular Biology",
           program: "Masters Degree",
         },
@@ -798,10 +801,13 @@ export const userData = [
           name: "De Anza College",
           startDate: "2001",
           endDate: "2005",
-          image: {
-            url: DeAnzaCollege,
-            altText: "De Anza College",
-          },
+          // image: {
+          //   url: DeAnzaCollege,
+          //   altText: "De Anza College",
+          // },image: {
+          //   url: DeAnzaCollege,
+          //   altText: "De Anza College",
+          // },
           major: "Studied CIS & Bus. Management",
           program: "Associate Arts",
         },

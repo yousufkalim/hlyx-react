@@ -47,7 +47,6 @@ const ContactTab = () => {
                 />
                 <IonLabel className="icon_text">{contact?.email}</IonLabel>
               </div>
-
               <ChevronIcon />
             </div>
           </a>
