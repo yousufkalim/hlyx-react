@@ -55,20 +55,8 @@ export const userData = [
         "8910 University Center Lane, Suite 400, San Diego, CA 92122",
       socialMedia: [
         {
-          link: "https://www.youtube.com/",
-          label: "YouTube",
-        },
-        {
-          link: "https://www.youtube.com/",
-          label: "Slack",
-        },
-        {
-          link: "https://www.youtube.com/",
-          label: "Reddit",
-        },
-        {
-          link: "https://www.youtube.com/",
-          label: "Discord",
+          link: "https://linkedin.com/in/jamesrbeckley",
+          label: "LinkedIn",
         },
         {
           link: "https://www.youtube.com/",
@@ -76,7 +64,20 @@ export const userData = [
         },
         {
           link: "https://www.youtube.com/",
-          label: "Facebook",
+          label: "Slack",
+        },
+        {
+         
+          link: "https://www.youtube.com/",
+          label: "Medium",
+        },
+        {
+          link: "https://www.youtube.com/",
+        label: "YouTube",
+        },
+        {
+          link: "https://www.youtube.com/",
+          label: "Instagram",
         },
         {
           link: "https://www.youtube.com/",
@@ -85,19 +86,7 @@ export const userData = [
         {
           link: "https://www.youtube.com/",
           label: "Skype",
-        },
-        {
-          link: "https://www.youtube.com/",
-          label: "Instagram",
-        },
-        {
-          link: "https://www.youtube.com/",
-          label: "Medium",
-        },
-        {
-          link: "https://linkedin.com/in/jamesrbeckley",
-          label: "LinkedIn",
-        },
+        }
       ],
       blogLink: [
         {
@@ -190,12 +179,21 @@ export const userData = [
         },
         {
           jobTitle: {
-            position: "President & Managing Partner at ",
+            position: "President & Managing Partner  ",
             companyName: " Kiyah Partners",
           },
           startDate: "July 2022  ",
           endDate: "Present",
         },
+        {
+          jobTitle: {
+            position: "Founder and Executive Director  ",
+            companyName: "SCELF",
+          },
+          startDate: "August 2009 ",
+          endDate: "January 2015",
+        },
+      
       ],
       achievement: [
         {
@@ -215,8 +213,7 @@ export const userData = [
         },
         {
           title: "2009 - 2015",
-          description:
-            "Created a non-profit dedicated to finding cures for hematologic disorders Having personally experienced the loss of close family members who suffered from blood disorders that left them debilitated and in pain until the very end, I founded SCELF Org in 2009 to raise awareness and provide educational resources about hematologic disorders like SCD and Leukemia. Through the organization, we hosted several public events, built a donation website, and an interactive portal with real patient video testimonials. During the course of SCELF, we achieved total donated contributions of $20K and serviced over 1200 online Facebook group members. ",
+          description: "Created a non-profit dedicated to finding cures for hematologic disorders Having personally experienced the loss of close family members who suffered from blood disorders that left them debilitated and in pain until the very end, I founded SCELF Org in 2009 to raise awareness and provide educational resources about hematologic disorders like SCD and Leukemia. Through the organization, we hosted several public events, built a donation website, and an interactive portal with real patient video testimonials. During the course of SCELF, we achieved total donated contributions of $20K and serviced over 1200 online Facebook group members. ",
         },
       ],
       businessGoal: {
@@ -825,11 +822,19 @@ export const userData = [
         },
         {
           jobTitle: {
-            position: "President & Managing Partner at ",
+            position: "President & Managing Partner  ",
             companyName: " Kiyah Partners",
           },
           startDate: "July 2022  ",
           endDate: "Present",
+        },
+        {
+          jobTitle: {
+            position: "Founder and Executive Director  ",
+            companyName: "SCELF",
+          },
+          startDate: "August 2009 ",
+          endDate: "January 2015",
         },
       ],
       achievement: [
@@ -1009,17 +1014,18 @@ export const userData = [
       officeAddress: "16780 Lark Avenue Los Gatos, CA 95032",
       socialMedia: [
         {
+          link: "https://www.linkedin.com/in/joelcalvillo/",
+          label: "LinkedIn",
+        },
+        {
           link: "https://www.youtube.com/",
           label: "Slack",
         },
-        {
-          link: "https://www.youtube.com/",
-          label: "Instagram",
-        },
 
         {
-          link: "https://www.linkedin.com/in/joelcalvillo/",
-          label: "LinkedIn",
+        
+          link: "https://www.youtube.com/",
+          label: "Instagram",
         },
       ],
       blogLink: [

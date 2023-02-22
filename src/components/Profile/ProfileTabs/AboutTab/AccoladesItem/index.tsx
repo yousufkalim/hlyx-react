@@ -21,7 +21,7 @@ const AccoladesItem = () => {
           <div className="accolades-card-detail">
             <div className="accolade-description">
               <p>
-                {jobTitle?.position} at<span>{jobTitle?.companyName}</span>
+                {jobTitle?.position} at {" "}<span className="companyname">{jobTitle?.companyName}</span>
               </p>
               <div className="date">
                 <AccoladesCalender
