@@ -934,9 +934,9 @@ export const userData = [
       ],
       icebreakers: {
         hobbies: ["Martial Arts", "Stargazing", "Art"],
-        Interest: ["Reading", "Legos", "Music"],
+        interest: ["Reading", "Legos", "Music"],
         skills: ["Painting", "Piano", "Gardening"],
-        Motto: "Science is an oyster, serve it up tastefully.",
+        motto: "Science is an oyster, serve it up tastefully.",
       },
     },
     service: {
@@ -1232,9 +1232,9 @@ export const userData = [
       ],
       icebreakers: {
         hobbies: ["Martial Arts", "Stargazing", "Art"],
-        Interest: ["Reading", "Legos", "Music"],
+        interest: ["Reading", "Legos", "Music"],
         skills: ["Painting", "Piano", "Gardening"],
-        Motto: "Science is an oyster, serve it up tastefully.",
+        motto: "Science is an oyster, serve it up tastefully.",
       },
     },
     service: {
