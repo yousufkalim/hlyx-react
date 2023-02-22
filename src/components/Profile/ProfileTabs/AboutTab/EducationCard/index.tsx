@@ -8,6 +8,9 @@ const EducationCard = () => {
   const { education } = userProfile?.about;
 
   let charBuffer = "";
+  let colors = ["blue", "green", "yellow", "orange", "purple"];
+  let line_color: any;
+
   function processWords(input: string) {
     var s = input.split(" ");
     s.forEach((element) => {
@@ -21,6 +24,12 @@ const EducationCard = () => {
     return charBuffer;
   }
 
+  function pickColor() {
+    line_color = colors[Math.floor(Math.random() * colors.length)];
+    console.log(line_color);
+    return line_color;
+  }
+
   return (
     <div className="education_list">
       {education.map(
@@ -29,7 +38,7 @@ const EducationCard = () => {
           index: number
         ) => (
           <div className="education_card_container" key={index}>
-            <div className="color_line" />
+            <div className={`education_color_line color-${pickColor()}`} />
             <div className="education_info">
               <div className="education_details_container">
                 <div className="education_details">
@@ -39,7 +48,7 @@ const EducationCard = () => {
                 {image ? (
                   <img src={image?.url || name} alt={image?.altText || name} />
                 ) : (
-                  <div className="image-replacer">
+                  <div className={`image-replacer color-${line_color}`}>
                     <p>{processWords(name)}</p>
                   </div>
                 )}

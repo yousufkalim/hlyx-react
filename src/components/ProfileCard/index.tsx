@@ -78,7 +78,13 @@ const ProfileCard = ({
             paddingBottom: 49,
           }}
         >
-          <img src={companyLogo} alt="company logo" className="company-logo" />
+          <div className="company-logo-section">
+            <img
+              src={companyLogo}
+              alt="company logo"
+              className="company-logo"
+            />
+          </div>
 
           <h1>{name}</h1>
           <section className="detail-container">
