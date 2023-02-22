@@ -131,7 +131,7 @@ const ContactTab = () => {
           className="anchor-clear"
           target={"_blank"}
           rel="noreferrer"
-          href={contact?.website}
+          href={ `https://${contact?.website}`}
         >
           <ContactCard title="Website">
             <div className="flex align-center justify-contain mx-19">
