@@ -8,13 +8,16 @@ import JamesCover from "../assets/media/JamesCover.png";
 import DoctorCover from "../assets/media/media-image.png";
 import JamesHlyxCover from "../assets/media/JamesHlyxCover.png";
 import JoeICalvilloCover from "../assets/media/JoeICalvilloCover.png";
+// Company Logos
+import JoeICompany from "../assets/JoeICompany.png";
+import Oriyn from "../assets/Oriyn.png";
+import Sphere from "../assets/sphere.png";
+import Hylx from "../assets/Hylx.png";
+// University Logos
 import SanJose from "../assets//SanJose.png";
 import DeAnzaCollege from "../assets//DeAnzaCollege.png";
 import SaintFrancis from "../assets/SaintFrancis.png";
-import Sphere from "../assets/sphere.png";
-import Hylx from "../assets/Hylx.png";
-import Oriyn from "../assets/Oriyn.png";
-import JoeICompany from "../assets/JoeICompany.png";
+import Stanfard from "../assets/stanfard.png";
 
 export const userData = [
   // James Oriyan Profile
@@ -50,7 +53,7 @@ export const userData = [
         faxNumber: ["+1 (888) 796-7496   Ext 700", "+1 (650) 308-8890"],
       },
       calendar: "Setmore > James R. Beckley",
-      website:"www.oriyn.com",
+      website: "www.oriyn.com",
       officeAddress:
         "8910 University Center Lane, Suite 400, San Diego, CA 92122",
       socialMedia: [
@@ -476,15 +479,21 @@ export const userData = [
       ],
       education: [
         {
-          name: "name",
+          name: "San Jose State",
           startDate: "2005",
           endDate: "2009",
           image: {
-            url: "../assets/stanfard.png",
-            altText: "Stanford University",
+            url: Stanfard,
+            altText: "San Jose",
           },
           major: "Studied Molecular Biology",
           program: "Masters Degree",
+        },
+        {
+          name: "University San Diego",
+          startDate: "Class of 1996",
+          major: "Biology, Electives, STEM",
+          program: "Diploma",
         },
       ],
       accolades: [
@@ -798,10 +807,13 @@ export const userData = [
           name: "De Anza College",
           startDate: "2001",
           endDate: "2005",
-          image: {
-            url: DeAnzaCollege,
-            altText: "De Anza College",
-          },
+          // image: {
+          //   url: DeAnzaCollege,
+          //   altText: "De Anza College",
+          // },image: {
+          //   url: DeAnzaCollege,
+          //   altText: "De Anza College",
+          // },
           major: "Studied CIS & Bus. Management",
           program: "Associate Arts",
         },
@@ -1020,6 +1032,14 @@ export const userData = [
         {
           link: "https://www.linkedin.com/in/joelcalvillo/",
           label: "LinkedIn",
+        },
+        {
+          link: "https://www.facebook.com/joelcalvillo",
+          label: "Facebook",
+        },
+        {
+          link: "https://twitter.com/jamesrbeckley",
+          label: "Twitter",
         },
       ],
       blogLink: [
