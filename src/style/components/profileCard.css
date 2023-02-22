@@ -37,8 +37,8 @@ h1 {
 }
 
 .detail {
+  align-items:first baseline;
   display: flex;
-  align-items: center;
   gap: 8px;
 }
 

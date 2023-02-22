@@ -35,8 +35,8 @@ const Profile = () => {
 
           {ProfileTabsContent[+activeTab]}
         </IonContent>
+        <InfoButton />
       </IonPage>
-      <InfoButton />
     </>
   );
 };
