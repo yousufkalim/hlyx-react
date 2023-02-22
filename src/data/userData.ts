@@ -53,7 +53,7 @@ export const userData = [
         faxNumber: ["+1 (888) 796-7496   Ext 700", "+1 (650) 308-8890"],
       },
       calendar: "Setmore > James R. Beckley",
-      website:"www.oriyn.com",
+      website: "www.oriyn.com",
       officeAddress:
         "8910 University Center Lane, Suite 400, San Diego, CA 92122",
       socialMedia: [
@@ -482,12 +482,18 @@ export const userData = [
           name: "San Jose State",
           startDate: "2005",
           endDate: "2009",
-          // image: {
-          //   url: Stanfard,
-          //   altText: "San Jose",
-          // },
+          image: {
+            url: Stanfard,
+            altText: "San Jose",
+          },
           major: "Studied Molecular Biology",
           program: "Masters Degree",
+        },
+        {
+          name: "University San Diego",
+          startDate: "Class of 1996",
+          major: "Biology, Electives, STEM",
+          program: "Diploma",
         },
       ],
       accolades: [
@@ -1026,6 +1032,14 @@ export const userData = [
         {
           link: "https://www.linkedin.com/in/joelcalvillo/",
           label: "LinkedIn",
+        },
+        {
+          link: "https://www.facebook.com/joelcalvillo",
+          label: "Facebook",
+        },
+        {
+          link: "https://twitter.com/jamesrbeckley",
+          label: "Twitter",
         },
       ],
       blogLink: [

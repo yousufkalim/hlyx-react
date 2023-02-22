@@ -43,6 +43,7 @@ h1 {
 }
 
 .position-text {
+  text-align: justify;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
