@@ -1,9 +1,11 @@
 .achievement-card {
   display: flex;
+  justify-content: baseline;
   gap: 15.26px;
 }
 
 .achievement-card svg {
+  margin-top: -2px;
   flex-shrink: 0;
 }
 
