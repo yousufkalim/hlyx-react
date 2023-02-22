@@ -53,7 +53,7 @@ export const userData = [
         faxNumber: ["+1 (888) 796-7496   Ext 700", "+1 (650) 308-8890"],
       },
       calendar: "Setmore > James R. Beckley",
-      website: "www.oriyn.com",
+      website:"www.oriyn.com",
       officeAddress:
         "8910 University Center Lane, Suite 400, San Diego, CA 92122",
       socialMedia: [

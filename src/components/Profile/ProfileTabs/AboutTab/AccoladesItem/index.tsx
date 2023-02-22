@@ -10,7 +10,7 @@ import {
 import "../../../../../style/components/accolades.css";
 import { ProfileContext } from "../../../../../context/profileContext";
 
-const AccoladesItem = () => {
+const AccoladesItem = () => { 
   const { userProfile } = useContext(ProfileContext);
   const { accolades } = userProfile?.about;
   return (
