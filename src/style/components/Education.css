@@ -18,11 +18,30 @@
   position: relative;
 }
 
-.education_card_container .color_line {
+.education_card_container .education_color_line {
   width: 4px;
   height: 43px;
-  background-color: #fedd71;
   border-radius: 100px;
+}
+
+.color-blue {
+  background-color: #66a0f7;
+}
+
+.color-green {
+  background-color: #87cc66;
+}
+
+.color-yellow {
+  background-color: #fedd71;
+}
+
+.color-orange {
+  background-color: #ff8368;
+}
+
+.color-purple {
+  background-color: #ac85ff;
 }
 
 .education_info {
@@ -100,7 +119,6 @@ p {
 }
 
 .image-replacer {
-  background: #00a82f;
   border-radius: 45px;
   display: flex;
   align-items: center;
