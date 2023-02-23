@@ -1,0 +1,64 @@
+import {
+  createContext,
+  ReactNode,
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
+import { AuthContextType } from "../interface";
+
+const AuthContext = createContext<AuthContextType>({} as AuthContextType);
+
+export const AuthProvider = ({
+  children,
+}: {
+  children: ReactNode;
+}): JSX.Element => {
+  const [token, setToken] = useState<string>();
+  const [loading, setLoading] = useState<boolean>(false);
+
+  /**
+   * Logout user and remove token from storage
+   */
+  const logout = () => {
+    window.localStorage.removeItem("token");
+    setToken(undefined);
+  };
+
+  // Make the provider update only when it should
+  const memoedUser = useMemo(
+    () => ({
+      token,
+      logout,
+      setToken,
+    }),
+    [token]
+  );
+
+  useEffect(() => {
+    if (window.localStorage.token) {
+      const setAuthToken = () => {
+        try {
+          if (window.localStorage.getItem("token")) {
+            setToken(window.localStorage.getItem("token") || "");
+          }
+        } catch (error) {
+          console.log("Something went wrong!");
+        }
+      };
+      setAuthToken();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [window.localStorage.token]);
+
+  return (
+    <AuthContext.Provider value={memoedUser as AuthContextType}>
+      {children}
+    </AuthContext.Provider>
+  );
+};
+
+export default function useAuth(): AuthContextType {
+  return useContext(AuthContext);
+}
