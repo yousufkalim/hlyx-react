@@ -25,6 +25,22 @@
   width: 100%;
 }
 
+.input_container {
+  position: relative;
+}
+
+.input_container .eye_icon {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+
+.input_container .eye_icon_error svg path {
+  fill: #bc5e5e;
+}
+
 .password_input {
   background: rgba(0, 0, 0, 0.4);
   border-radius: 8px;
@@ -54,10 +70,6 @@
   color: #bc5e5e;
   --placeholder-color: #bc5e5e;
   --placeholder-opacity: 1;
-}
-
-.password_input_error svg path {
-  fill: #bc5e5e;
 }
 
 .error_text {
