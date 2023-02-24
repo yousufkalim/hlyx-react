@@ -8,29 +8,32 @@ import {
 } from "@ionic/react";
 import PortfolioCard from "./PortfolioCard";
 
+
 const PortfolioTab = () => {
   return (
     <>
       <IonCard className="portfolio_container">
+       
         <IonSegment className="portfolio-btn-tab-container" value="Photos">
           <IonSegmentButton
             className="portfolio-tab-segment-button-container"
             value="Photos"
-          >
-            <IonLabel className="portfolio-tab-segment-button">Photos</IonLabel>
+          > 
+            <IonLabel className="portfolio-tab-segment-button">Company</IonLabel>
+            
           </IonSegmentButton>
           <IonSegmentButton
             className="portfolio-tab-segment-button-container"
             value="Video"
           >
-            <IonLabel className="portfolio-tab-segment-button">Video</IonLabel>
+            <IonLabel className="portfolio-tab-segment-button">Ventures</IonLabel>
           </IonSegmentButton>
 
           <IonSegmentButton
             className="portfolio-tab-segment-button-container"
             value="Audio"
           >
-            <IonLabel className="portfolio-tab-segment-button">Audio</IonLabel>
+            <IonLabel className="portfolio-tab-segment-button">Work</IonLabel>
           </IonSegmentButton>
         </IonSegment>
       </IonCard>

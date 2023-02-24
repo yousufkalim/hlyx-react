@@ -1,3 +1,4 @@
+import { Color } from "@ionic/core";
 import { Dispatch } from "react";
 
 export interface childrenProps {
@@ -38,7 +39,7 @@ export interface AccoladesType {
   endDate?: Date;
 }
 
-export type ColorType = "green" | "purple" | "yellow" | "orange";
+export type ColorType = "green" | "purple" | "yellow" | "orange"|"red";
 
 export interface ActiveAchievedType {
   color?: ColorType;
@@ -50,6 +51,7 @@ export interface ActiveAchievedType {
 }
 
 export interface Education {
+  linecolor:ColorType;
   name: string;
   startDate: Date;
   endDate: Date;

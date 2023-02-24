@@ -143,6 +143,7 @@ export const userData = [
           name: "San Jose State",
           startDate: "2005",
           endDate: "2008",
+          linecolor:"yellow",
           image: {
             url: SanJose,
             altText: "San Jose State",
@@ -151,6 +152,7 @@ export const userData = [
           program: "Business Administration",
         },
         {
+          linecolor:"red",
           name: "De Anza College",
           startDate: "2001",
           endDate: "2005",
@@ -165,7 +167,7 @@ export const userData = [
       accolades: [
         {
           jobTitle: {
-            position: "Founder & CEO at ",
+            position: "Founder & CEO  ",
             companyName: " HLYX Inc.",
           },
           startDate: "December 2022 ",
@@ -173,7 +175,7 @@ export const userData = [
         },
         {
           jobTitle: {
-            position: "Founder & CEO at ",
+            position: "Founder & CEO  ",
             companyName: " Oriyn LLC",
           },
           startDate: "June 2018",
@@ -199,21 +201,25 @@ export const userData = [
       achievement: [
         {
           title: "2023",
+          descriptiontitle:"Created a platform to empower founders",
           description:
-            "Created a platform to empower founders Founded and built a first of its kind Business Empowerment Platform designed to optimize the success of entrepreneurs and brands by leveraging the power of their networks to help business owners focus on building quality relationships and creating opportunities that thrive.",
+            "Founded and built a first of its kind Business Empowerment Platform designed to optimize the success of entrepreneurs and brands by leveraging the power of their networks to help business owners focus on building quality relationships and creating opportunities that thrive.",
         },
         {
           title: "2022",
+          descriptiontitle: "1300 completed projects",
           description:
-            "1300 completed projects As of present date, I have successfully completed 1300 career projects encompassing graphic design, branding, BI dashboard reports, market research, web and mobile product design and custom software  development from 2009 to present.",
+            "As of present date, I have successfully completed 1300 career projects encompassing graphic design, branding, BI dashboard reports, market research, web and mobile product design and custom software  development from 2009 to present.",
         },
         {
           title: "2018 - Present",
+          descriptiontitle: "150 clients and counting",
           description:
-            "150 clients and counting Founded, bootstrapped and grew Oriyn from 0 to 150 clients and counting. Through Oriyn, I’ve worked with and helped startup founders, small business owners, to established enterprise clients design and execute technical strategies that return results, and created custom digital solutions that solve real-world challenges.",
+            " Founded, bootstrapped and grew Oriyn from 0 to 150 clients and counting. Through Oriyn, I’ve worked with and helped startup founders, small business owners, to established enterprise clients design and execute technical strategies that return results, and created custom digital solutions that solve real-world challenges.",
         },
         {
           title: "2009 - 2015",
+          descriptiontitle: " Created a non-profit dedicated to finding cures for hematologic disorders",
           description:
             "Created a non-profit dedicated to finding cures for hematologic disorders Having personally experienced the loss of close family members who suffered from blood disorders that left them debilitated and in pain until the very end, I founded SCELF Org in 2009 to raise awareness and provide educational resources about hematologic disorders like SCD and Leukemia. Through the organization, we hosted several public events, built a donation website, and an interactive portal with real patient video testimonials. During the course of SCELF, we achieved total donated contributions of $20K and serviced over 1200 online Facebook group members. ",
         },
@@ -495,7 +501,7 @@ export const userData = [
       accolades: [
         {
           jobTitle: {
-            position: "Board Chair at ",
+            position: "Board Chair  ",
             companyName: " Boston Medical",
           },
           startDate: "November 1, 2022 ",
@@ -503,7 +509,7 @@ export const userData = [
         },
         {
           jobTitle: {
-            position: "Deans List 4 Years in a row at",
+            position: "Deans List 4 Years in a row ",
             companyName: " Stanford University",
           },
           startDate: "August 2017",
@@ -511,7 +517,7 @@ export const userData = [
         },
         {
           jobTitle: {
-            position: "Summa Cum Laude, Honors Club at ",
+            position: "Summa Cum Laude, Honors Club  ",
             companyName: "Stanford University",
           },
           startDate: "August 2017",
@@ -817,7 +823,7 @@ export const userData = [
       accolades: [
         {
           jobTitle: {
-            position: "Founder & CEO at ",
+            position: "Founder & CEO  ",
             companyName: " HLYX Inc.",
           },
           startDate: "December 2022 ",
@@ -825,7 +831,7 @@ export const userData = [
         },
         {
           jobTitle: {
-            position: "Founder & CEO at ",
+            position: "Founder & CEO  ",
             companyName: " Oriyn LLC",
           },
           startDate: "June 2018",
@@ -1015,7 +1021,7 @@ export const userData = [
         companyName: "KW Commercial South Bay",
       },
       address: "Los Gatos, CA",
-      email: "joel@thecalvillogroup.com",
+      email: "joel@TheCalvilloGroup.com",
       phone: {
         number: "+1 (408) 892-9158",
         faxNumber: ["+1 (650) 345-6789"],
@@ -1031,10 +1037,11 @@ export const userData = [
         {
           link: "https://www.facebook.com/joelcalvillo",
           label: "Facebook",
+          
         },
         {
-          link: "https://twitter.com/jamesrbeckley",
-          label: "Twitter",
+          link: "https://www.instagram.com/joelrcalvillo/",
+          label: "Instagram",
         },
       ],
       blogLink: [
@@ -1045,22 +1052,22 @@ export const userData = [
           description: "Access Article on Medium",
         },
         {
-          link: "https://www.google.com/drive/",
-          type: "GoogleDrive",
-          title: "Joel Calvillo’s Service Sheet 2023",
-          description: "Access File on Google Drive ",
-        },
-        {
           link: "https://soundcloud.com/",
-          type: "SoundCloud",
+          type: "GoogleDrive",
           title: "Finding The Right Agent For Your Next Commercial Property",
           description: "Access Audio on SoundCloud",
+        },
+        {
+          link: "https://www.google.com/drive/",
+          type: "SoundCloud",
+          title: "Joel Calvillo's Service Sheet 2023",
+          description: "Access File on Google Drive ",
         },
       ],
     },
 
     about: {
-      bio: "Joel Calvillo is a commercial real estate professional with over 20 years of experience focused on the Sale, and 1031 Exchange of investment properties throughout the Greater Bay Area and across the nation...",
+      bio: "Joel Calvillo is a commercial real estate professional with over 20 years of experience focused on the Sale, and 1031 Exchange of investment properties throughout the Greater Bay Area and across the nation..As senior vice president with KW Commercial and leader of the  Calvillo Group, he offers a deep understanding of the full range  of investment real estate assets types and transactions.He has developed  a successful team of professionals along with strong industry relationships to provide a high level of  service of investment clients. Previous to his affiliation with KW Commercial, Joel was a Vice President and Shareholder with NAI Northern California and an Investment Specialist with The Losness Group Apartment Brokerage. Prior to real estate, Joel spent over a decade in technology sales for top international semiconductor distribution companies Arrow Electronics and Future Electronics, as well as entrepreneur founding a high value business focused on nationwide networking equipment sales. Born and raised in the San Francisco Bay Area, Joel obtained an early education in real estate  investments via his parents who locally owned apartments and other rental properties.",
       profession: [
         {
           lineColor: "blue",
@@ -1110,7 +1117,7 @@ export const userData = [
       accolades: [
         {
           jobTitle: {
-            position: "Senior Vice President at",
+            position: "Senior Vice President",
             companyName: " KP Commerical ",
           },
           startDate: "June 2021",
@@ -1118,7 +1125,7 @@ export const userData = [
         },
         {
           jobTitle: {
-            position: "Shareholder & Vice President at",
+            position: "Shareholder & Vice President ",
             companyName: " NAI NorCal",
           },
           startDate: "Jan 2020",
@@ -1126,7 +1133,7 @@ export const userData = [
         },
         {
           jobTitle: {
-            position: "Commercial Specialist  at",
+            position: "Commercial Specialist ",
             companyName: " KP Commerical ",
           },
           startDate: "Mar 2013",
@@ -1134,7 +1141,7 @@ export const userData = [
         },
         {
           jobTitle: {
-            position: "Real Estate Investment Specialist  at",
+            position: "Real Estate Investment Specialist  ",
             companyName: " Losness Group",
           },
           startDate: "Dec 2008",
