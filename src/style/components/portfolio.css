@@ -6,6 +6,7 @@
   justify-content: flex-start;
   overflow-x: auto;
   gap: 7px;
+  background-color: var(--bg-color);
 }
 .box {
   height: 10rem;
