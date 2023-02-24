@@ -19,6 +19,22 @@ import DeAnzaCollege from "../assets//DeAnzaCollege.png";
 import SaintFrancis from "../assets/SaintFrancis.png";
 import Stanfard from "../assets/stanfard.png";
 
+import OriyanVideo from "../assets/portfolio/oriyan_video.png";
+import audio_interview from "../assets/portfolio/audio_interview.png";
+import CEO from "../assets/portfolio/ceo.png";
+import Kelly_Lan from "../assets/portfolio/Kelly_Lan.png";
+import Jordan_Roessle from "../assets/portfolio/Jordan_Roessle.png";
+import company_video from "../assets/portfolio/company_video.png";
+import company_img from "../assets/portfolio/company_img.png";
+import dashboard from "../assets/portfolio/dashboard.png";
+import hlyx from "../assets/portfolio/hlyx.png";
+import audio_memo from "../assets/portfolio/audio_memo.png";
+import first_item_joel from "../assets/joelPortfolio/first_item.png";
+import two_item_joel from "../assets/joelPortfolio/first_second.png";
+import three_item_joel from "../assets/joelPortfolio/three_item.png";
+import four_item_joel from "../assets/joelPortfolio/four_item.png";
+import five_item_joel from "../assets/joelPortfolio/five_item.png";
+
 export const userData = [
   // James Oriyan Profile
   {
@@ -87,7 +103,7 @@ export const userData = [
           label: "Behance",
         },
         {
-          link:" https://www.skype.com/en/@oriynapps",
+          link: " https://www.skype.com/en/@oriynapps",
           label: "Skype",
         },
       ],
@@ -322,7 +338,7 @@ export const userData = [
     },
     service: {
       featuredServices: [
-        { 
+        {
           lineColor: "yellow",
           title: "Market Research & BI ",
           description:
@@ -334,7 +350,7 @@ export const userData = [
           description:
             "We provide modern UI/UX Product Design and full-service software development",
         },
-        { 
+        {
           lineColor: "purple",
           title: "Venture Lab ",
           description:
@@ -360,6 +376,18 @@ export const userData = [
         },
       ],
     },
+    portfolio: [
+      OriyanVideo,
+      audio_interview,
+      CEO,
+      Kelly_Lan,
+      Jordan_Roessle,
+      company_video,
+      company_img,
+      dashboard,
+      hlyx,
+      audio_memo,
+    ],
   },
   // Doctor Profile
   {
@@ -1297,5 +1325,13 @@ export const userData = [
         },
       ],
     },
+    portfolioTitle: "Commercial Real Estate Properties",
+    portfolio: [
+      first_item_joel,
+      two_item_joel,
+      three_item_joel,
+      four_item_joel,
+      five_item_joel,
+    ],
   },
 ];
