@@ -89,6 +89,13 @@ ion-segment-button::before {
   all: unset;
 }
 
+.joi-avatar-icon {
+  width: 100%;
+  left: 0px;
+  border-radius: 0;
+  border: none;
+}
+
 .avatar-icon {
   border: 5px solid var(--bg-color);
   background-color: var(--bg-color);

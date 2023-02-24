@@ -9,6 +9,16 @@
   z-index: -2;
 }
 
+.joi-company-logo-section {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.joi-company-logo {
+  border-radius: 0;
+}
+
 .cardContainer {
   height: 100%;
   color: white;
@@ -109,6 +119,7 @@ h1 {
   position: absolute;
   bottom: 13px;
   height: 87.57px;
+  mix-blend-mode: lighten;
   /* background: rgb(60, 77, 95, 0.5);
   border: "1px solid" rgba(255, 255, 255, 0.19);
   border-radius: 30px 30px 0 0; */
