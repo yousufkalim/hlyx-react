@@ -144,7 +144,7 @@ export const userData = [
           name: "San Jose State",
           startDate: "2005",
           endDate: "2008",
-          linecolor:"yellow",
+          linecolor: "yellow",
           image: {
             url: SanJose,
             altText: "San Jose State",
@@ -153,7 +153,7 @@ export const userData = [
           program: "Business Administration",
         },
         {
-          linecolor:"red",
+          linecolor: "red",
           name: "De Anza College",
           startDate: "2001",
           endDate: "2005",
@@ -202,7 +202,7 @@ export const userData = [
       achievement: [
         {
           title: "2023",
-          descriptiontitle:"Created a platform to empower founders",
+          descriptiontitle: "Created a platform to empower founders",
           description:
             "Founded and built a first of its kind Business Empowerment Platform designed to optimize the success of entrepreneurs and brands by leveraging the power of their networks to help business owners focus on building quality relationships and creating opportunities that thrive.",
         },
@@ -220,7 +220,8 @@ export const userData = [
         },
         {
           title: "2009 - 2015",
-          descriptiontitle: " Created a non-profit dedicated to finding cures for hematologic disorders",
+          descriptiontitle:
+            " Created a non-profit dedicated to finding cures for hematologic disorders",
           description:
             "Created a non-profit dedicated to finding cures for hematologic disorders Having personally experienced the loss of close family members who suffered from blood disorders that left them debilitated and in pain until the very end, I founded SCELF Org in 2009 to raise awareness and provide educational resources about hematologic disorders like SCD and Leukemia. Through the organization, we hosted several public events, built a donation website, and an interactive portal with real patient video testimonials. During the course of SCELF, we achieved total donated contributions of $20K and serviced over 1200 online Facebook group members. ",
         },
@@ -672,6 +673,7 @@ export const userData = [
       url: JamesHlyxBackground,
       altText: "User Background Picture",
     },
+    id: "james-hlyx",
     name: "JamesR. Beckley",
     companyLogo: {
       url: Hylx,
@@ -1040,7 +1042,6 @@ export const userData = [
         {
           link: "https://www.facebook.com/joelcalvillo",
           label: "Facebook",
-          
         },
         {
           link: "https://www.instagram.com/joelrcalvillo/",
