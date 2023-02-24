@@ -63,23 +63,23 @@ export const userData = [
           label: "LinkedIn",
         },
         {
-          link: "https://www.youtube.com/",
+          link: "https://twitter.com/jamesrbeckley",
           label: "Twitter",
         },
         {
-          link: "https://www.youtube.com/",
+          link: "https://oriyn-workspace.slack.com/archives/D0417NGS8G5",
           label: "Slack",
         },
         {
-          link: "https://www.youtube.com/",
+          link: "https://www.medium.com/@jamesrbeckley",
           label: "Medium",
         },
         {
-          link: "https://www.youtube.com/",
+          link: "https://www.youtube.com/oriynapps",
           label: "YouTube",
         },
         {
-          link: "https://www.youtube.com/",
+          link: "https://www.instagram.com/weareoriyn",
           label: "Instagram",
         },
         {
@@ -87,7 +87,7 @@ export const userData = [
           label: "Behance",
         },
         {
-          link: "https://www.youtube.com/",
+          link:" https://www.skype.com/en/@oriynapps",
           label: "Skype",
         },
       ],
@@ -153,7 +153,7 @@ export const userData = [
           program: "Business Administration",
         },
         {
-          lineColor: "orange",
+          lineColor: "red",
           name: "De Anza College",
           startDate: "2001",
           endDate: "2005",
