@@ -12,8 +12,14 @@
   flex-shrink: 0;
   width: 4px;
   height: 49px;
-  background-color: #fedd71;
   border-radius: 100px;
+}
+.color_line-yellow {
+  flex-shrink: 0;
+  width: 4px;
+  height: 49px;
+  border-radius: 100px;
+  border-left: #d7e60c;
 }
 
 .featured_details_container {

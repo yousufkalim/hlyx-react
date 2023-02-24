@@ -8,7 +8,6 @@ const EducationCard = () => {
   const { education } = userProfile?.about;
 
   let charBuffer = "";
-  let colors = ["blue", "green", "yellow", "orange", "purple"];
   let line_color: any;
 
   function processWords(input: string) {
@@ -24,21 +23,15 @@ const EducationCard = () => {
     return charBuffer;
   }
 
-  function pickColor() {
-    line_color = colors[Math.floor(Math.random() * colors.length)];
-    console.log(line_color);
-    return line_color;
-  }
-
   return (
     <div className="education_list">
       {education.map(
         (
-          { name, startDate, endDate,linecolor, image, major, program }: Education,
+          { name, startDate, endDate,lineColor, image, major, program }: Education,
           index: number
         ) => (
           <div className="education_card_container" key={index}>
-            <div className={`education_color_line color-${pickColor()}`} />
+            <div className={`education_color_line color-${lineColor}`} />
             <div className="education_info">
               <div className="education_details_container">
                 <div className="education_details">

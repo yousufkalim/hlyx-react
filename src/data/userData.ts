@@ -141,10 +141,10 @@ export const userData = [
       ],
       education: [
         {
+          lineColor: "yellow",
           name: "San Jose State",
           startDate: "2005",
           endDate: "2008",
-          linecolor: "yellow",
           image: {
             url: SanJose,
             altText: "San Jose State",
@@ -153,7 +153,7 @@ export const userData = [
           program: "Business Administration",
         },
         {
-          linecolor: "red",
+          lineColor: "orange",
           name: "De Anza College",
           startDate: "2001",
           endDate: "2005",
@@ -322,15 +322,23 @@ export const userData = [
     },
     service: {
       featuredServices: [
-        {
+        { 
+          lineColor: "yellow",
           title: "Market Research & BI ",
           description:
             "We help startup founders and SMB’s with quality market research into any vertical",
         },
         {
-          title: "Market Research & BI ",
+          lineColor: "green",
+          title: "Product Development ",
           description:
-            "We help startup founders and SMB’s with quality market research into any vertical",
+            "We provide modern UI/UX Product Design and full-service software development",
+        },
+        { 
+          lineColor: "purple",
+          title: "Venture Lab ",
+          description:
+            "R&D Arm dedicated to the development of innovative new digital technology ventures",
         },
       ],
       mainServices: [

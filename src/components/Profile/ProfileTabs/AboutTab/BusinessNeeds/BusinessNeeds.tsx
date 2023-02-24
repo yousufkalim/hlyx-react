@@ -22,7 +22,7 @@ const BusinessNeeds = () => {
               <div className="Bussiness-card">
                 <div className="Business-card-main">
                   <p>{timeStamp}</p>
-                  <h6>{title}</h6>
+                  <h6 className="business_needs_title">{title}</h6>
                   <p>{description}</p>
                 </div>
                 <div className="status-row">
