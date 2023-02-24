@@ -17,6 +17,7 @@ import ProfileProvider from "../context/profileContext";
 import Error404 from "../components/Error404";
 import useAuth from "../hooks/useAuth";
 import { LOGIN_SECRET } from "../constants";
+import Login from "../pages/Auth/Login";
 
 /**
  * @description This component for is a placholder of login flow
@@ -80,7 +81,7 @@ const LoginPage = (): JSX.Element => {
 
 const ProtectRoute = ({ children }: any) => {
   const { token } = useAuth();
-  return <>{token ? children : <LoginPage />}</>;
+  return <>{token ? children : <Login />}</>;
 };
 
 const Routes = () => {
