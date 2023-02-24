@@ -18,11 +18,19 @@ const HeroSession = () => {
         <div className="cover_photo_container">
           <img alt={image?.altText} src={image?.url} className="cover_photo" />
         </div>
-        <img
-          alt={companyLogo?.alttext}
-          className="avatar-icon"
-          src={companyLogo?.url}
-        />
+        {name === "Joel Calvillo" ? (
+          <img
+            alt={companyLogo?.alttext}
+            className="joi-avatar-icon"
+            src={companyLogo?.url}
+          />
+        ) : (
+          <img
+            alt={companyLogo?.alttext}
+            className="avatar-icon"
+            src={companyLogo?.url}
+          />
+        )}
       </div>
       <IonCard className="cover_photo_card ion_Card">
         <IonCardSubtitle>{name}</IonCardSubtitle>
