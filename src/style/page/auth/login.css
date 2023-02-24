@@ -1,0 +1,87 @@
+.login_container {
+  --background: linear-gradient(180deg, #0b0d13 0%, #1b1c21 100%) !important;
+}
+
+.login_container section {
+  display: flex;
+  flex-direction: column;
+  gap: 97px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 328px;
+  margin-inline: auto;
+}
+
+.login_container img {
+  width: 203px;
+  height: 23px;
+}
+
+.login_container form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+}
+
+.password_input {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  --padding-top: 15px;
+  --padding-bottom: 15px;
+  --padding-start: 16px;
+  --padding-end: 36px;
+  color: #fff;
+  --placeholder-color: #fff;
+  --placeholder-opacity: 1;
+  position: relative;
+}
+
+.eye_icon {
+  all: unset;
+  position: absolute;
+  right: 18px;
+  --background: transparent;
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+.password_input_error {
+  outline: 1px solid #bc5e5e;
+  color: #bc5e5e;
+  --placeholder-color: #bc5e5e;
+  --placeholder-opacity: 1;
+}
+
+.password_input_error svg path {
+  fill: #bc5e5e;
+}
+
+.error_text {
+  font-family: Poppins;
+  font-size: 12px;
+  line-height: 18.37px;
+  color: #bc5e5e;
+  padding-bottom: 8px;
+}
+
+.login_btn {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.5px;
+  --background: #fff;
+  --color: #000;
+  --padding-top: 14px;
+  --padding-bottom: 14px;
+  width: 100%;
+  position: relative;
+}
+
+.login_btn svg {
+  position: absolute;
+  right: 12px;
+}

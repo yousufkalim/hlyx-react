@@ -138,3 +138,9 @@ export interface UserProfile extends UserInterface {
   contact: UserContactInterface;
   about: UserAboutInterface;
 }
+
+export interface AuthContextType {
+  token?: string;
+  setToken: Function;
+  logout: () => void;
+}

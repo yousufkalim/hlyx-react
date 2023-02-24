@@ -21,25 +21,28 @@ import "@ionic/react/css/display.css";
 import "./theme/variables.css";
 import "./global.css";
 import Routes from "./routes";
+import { AuthProvider } from "./hooks/useAuth";
 
 setupIonicReact();
 
 const App: React.FC = () => {
   return (
-    <IonApp>
-      {isMobile ? (
-        <Routes />
-      ) : (
-        <IonContent>
-          <div className="browser-alert-container">
-            <h1 className="browser-alert-heading">
-              <strong>Note: </strong>
-              Only mobile browsers are capable of accessing this application.
-            </h1>
-          </div>
-        </IonContent>
-      )}
-    </IonApp>
+    <AuthProvider>
+      <IonApp>
+        {isMobile ? (
+          <Routes />
+        ) : (
+          <IonContent>
+            <div className="browser-alert-container">
+              <h1 className="browser-alert-heading">
+                <strong>Note: </strong>
+                Only mobile browsers are capable of accessing this application.
+              </h1>
+            </div>
+          </IonContent>
+        )}
+      </IonApp>
+    </AuthProvider>
   );
 };
 
