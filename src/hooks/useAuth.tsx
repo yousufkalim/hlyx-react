@@ -15,7 +15,9 @@ export const AuthProvider = ({
 }: {
   children: ReactNode;
 }): JSX.Element => {
-  const [token, setToken] = useState<string>();
+  const [token, setToken] = useState<string | undefined>(
+    window.localStorage.getItem("token") as string
+  );
   const [loading, setLoading] = useState<boolean>(false);
 
   /**
@@ -32,19 +34,24 @@ export const AuthProvider = ({
       token,
       logout,
       setToken,
+      loading,
     }),
     [token]
   );
 
   useEffect(() => {
     if (window.localStorage.token) {
+      setLoading(true);
       const setAuthToken = () => {
         try {
           if (window.localStorage.getItem("token")) {
             setToken(window.localStorage.getItem("token") || "");
           }
+          setLoading(false);
         } catch (error) {
           console.log("Something went wrong!");
+        } finally {
+          setLoading(false);
         }
       };
       setAuthToken();
