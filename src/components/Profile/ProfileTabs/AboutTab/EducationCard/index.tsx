@@ -34,7 +34,7 @@ const EducationCard = () => {
     <div className="education_list">
       {education.map(
         (
-          { name, startDate, endDate, image, major, program }: Education,
+          { name, startDate, endDate,linecolor, image, major, program }: Education,
           index: number
         ) => (
           <div className="education_card_container" key={index}>

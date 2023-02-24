@@ -23,6 +23,12 @@
   font-size: 16px;
   line-height: 8px;
 }
+.descriptiontitle{
+  /* color: #ffffff; */
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 600;
+}
 
 .achievement-description .text {
   font-family: "Poppins";

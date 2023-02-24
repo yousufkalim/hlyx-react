@@ -3,6 +3,7 @@ import React, { useContext } from "react";
 import { BackBtnIcon, HlyxHeaderLogo } from "../../../assets/icons";
 import ProfileImage from "../../../assets/icons/Avatar_Header.svg";
 import { ProfileContext } from "../../../context/profileContext";
+import "./avatarimage.css"
 
 const Header = () => {
   const { userProfile } = useContext(ProfileContext);
@@ -16,13 +17,16 @@ const Header = () => {
         <HlyxHeaderLogo color={"var(--text-color)"} />
 
         <img
+        className="avatarimage"
           src={image?.url}
           alt="avatar-header-icon"
           style={{
             width: 66,
             height: 66,
-            borderRadius: 100,
+            borderRadius: 25,
             objectFit: "cover",
+            padding:3
+
           }}
         />
       </div>
