@@ -1,29 +1,23 @@
-import React, { useContext } from "react";
-import "../style/components/featureServices.css";
 import { IonButton } from "@ionic/react";
 import {
   MessagesIcon,
   SaveIcon,
-  ShareFeaturedIcon,
+  ShareFeaturedIcon
 } from "../assets/icons/Featured_Card_Icons";
-import { ProfileContext } from "../context/profileContext";
+import "../style/components/featureServices.css";
 
 const FeaturedServices = ({
   title,
   description,
-  lineColor
+  lineColor,
 }: {
   title: string;
   description: string;
-  lineColor:string
+  lineColor: string;
 }) => {
-
-  const { userProfile } = useContext(ProfileContext);
-  console.log({lineColor})
-
   return (
     <div className="featured_card_container">
-      <div className={`color_line-${lineColor}`}></div>
+      <div className={`color_line border-${lineColor}`}></div>
       <div className="featured_details_container">
         <div className="featured_details">
           <h6>{title}</h6>
