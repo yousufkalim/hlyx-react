@@ -27,11 +27,11 @@ const Profile = () => {
     <>
       <IonPage>
         <IonContent className="overflow-auto profile-container">
+          <Header />
           {userProfile?.id === "james-hlyx" ? (
             <></>
           ) : (
             <div className="sticky-header">
-              <Header />
               <Tabs
                 tabList={ProfileTabs}
                 activeTab={activeTab}
