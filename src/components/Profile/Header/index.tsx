@@ -23,7 +23,7 @@ const Header = () => {
           style={{
             width: 66,
             height: 66,
-            borderRadius: 25,
+            borderRadius: 28,
             objectFit: "cover",
             padding:3
 
