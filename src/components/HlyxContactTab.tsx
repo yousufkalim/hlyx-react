@@ -1,10 +1,6 @@
 import { IonAccordionGroup, IonButton, IonCard, IonLabel } from "@ionic/react";
 import { useContext } from "react";
-import {
-    ChevronIcon, MailIcon,
-    MobileIcon,
-    WorldIcon
-} from "../assets/icons";
+import { ChevronIcon, MailIcon, MobileIcon, WorldIcon } from "../assets/icons";
 import { SocialMediaIcons } from "../constants/index";
 import { ProfileContext } from "../context/profileContext";
 import "../style/components/ContactTab.css";
@@ -44,7 +40,7 @@ const HlyxContactTab = () => {
         <ContactCard title="Contact Me">
           <IonAccordionGroup expand="compact" className="phone-card-container">
             {userProfile?.contact?.email && (
-              <a href="tel:{number}" className="anchor-clear">
+              <a href={`mailto:${userProfile?.contact?.email}`} target="__blank" className="anchor-clear">
                 <div className="flex align-center justify-contain mx-19 mb-11">
                   <div className="flex align-center ">
                     <MailIcon
@@ -59,7 +55,7 @@ const HlyxContactTab = () => {
                 </div>
               </a>
             )}
-            <a href="tel:{contact?.phone?.number}" className="anchor-clear">
+            <a href={`tel:${contact?.phone?.number}`} className="anchor-clear">
               <div className="flex align-center justify-contain mb-11">
                 <div className="flex align-center">
                   <MobileIcon
