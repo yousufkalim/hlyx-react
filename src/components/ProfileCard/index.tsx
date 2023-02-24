@@ -78,13 +78,23 @@ const ProfileCard = ({
             paddingBottom: 49,
           }}
         >
-          <div className="company-logo-section">
-            <img
-              src={companyLogo}
-              alt="company logo"
-              className="company-logo"
-            />
-          </div>
+          {name === "Joel Calvillo" ? (
+            <div className="joi-company-logo-section">
+              <img
+                src={companyLogo}
+                alt="company logo"
+                className="joi-company-logo"
+              />
+            </div>
+          ) : (
+            <div className="company-logo-section">
+              <img
+                src={companyLogo}
+                alt="company logo"
+                className="company-logo"
+              />
+            </div>
+          )}
 
           <h1>{name}</h1>
           <section className="detail-container">
