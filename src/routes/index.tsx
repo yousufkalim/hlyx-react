@@ -1,22 +1,16 @@
-import React, { useState } from "react";
 import {
-  IonButton,
-  IonContent,
-  IonInput,
-  IonPage,
   IonRouterOutlet,
   IonTabBar,
-  IonTabs,
-  useIonAlert,
+  IonTabs
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import { Route } from "react-router";
-import Professional from "../pages/Professional";
-import Profile from "../pages/Profile";
-import ProfileProvider from "../context/profileContext";
 import Error404 from "../components/Error404";
+import ProfileProvider from "../context/profileContext";
 import useAuth from "../hooks/useAuth";
 import Login from "../pages/Auth/Login";
+import Professional from "../pages/Professional";
+import Profile from "../pages/Profile";
 
 const ProtectRoute = ({ children }: any) => {
   const { token } = useAuth();
