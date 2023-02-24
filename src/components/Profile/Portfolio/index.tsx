@@ -1,33 +1,11 @@
 import { IonButton, IonCard, IonLabel } from "@ionic/react";
-import React from "react";
+import React, { useContext } from "react";
 import UserDetailCard from "../UserDetailCard/UserDetailCard";
 import "../../../style/components/portfolio.css";
-
-import OriyanVideo from "../../../assets/portfolio/oriyan_video.png";
-import audio_interview from "../../../assets/portfolio/audio_interview.png";
-import CEO from "../../../assets/portfolio/ceo.png";
-import Kelly_Lan from "../../../assets/portfolio/Kelly_Lan.png";
-import Jordan_Roessle from "../../../assets/portfolio/Jordan_Roessle.png";
-import company_video from "../../../assets/portfolio/company_video.png";
-import company_img from "../../../assets/portfolio/company_img.png";
-import dashboard from "../../../assets/portfolio/dashboard.png";
-import hlyx from "../../../assets/portfolio/hlyx.png";
-import audio_memo from "../../../assets/portfolio/audio_memo.png";
-
-const PortfolioData = [
-  OriyanVideo,
-  audio_interview,
-  CEO,
-  Kelly_Lan,
-  Jordan_Roessle,
-  company_video,
-  company_img,
-  dashboard,
-  hlyx,
-  audio_memo,
-];
+import { ProfileContext } from "../../../context/profileContext";
 
 const Portfolio = () => {
+  const { userProfile } = useContext(ProfileContext);
   return (
     <>
       <IonCard className="service-card-container">
@@ -44,13 +22,33 @@ const Portfolio = () => {
           </IonButton>
         </div>
 
-        <div className="container">
-          {PortfolioData.map((src, index) => (
-            <div className="box" key={index}>
-              <img src={src} alt="portfolio" />
-            </div>
-          ))}
-        </div>
+        {userProfile?.portfolioTitle && (
+          <div style={{ display: "flex", gap: 11 }}>
+            <div style={{ width: 4, backgroundColor: "#236BFE", height: 42 }} />
+            <p
+              style={{
+                fontSize: 15,
+                lineHeight: "20px",
+                letterSpacing: "0.04em",
+                fontWeight: 600,
+                color: "#9899A0",
+                maxWidth: 188,
+              }}
+            >
+              Commercial Real Estate Properties
+            </p>
+          </div>
+        )}
+
+        {userProfile?.portfolio && (
+          <div className="container">
+            {userProfile?.portfolio?.map((src: any, index: number) => (
+              <div className="box" key={index}>
+                <img src={src} alt="portfolio" />
+              </div>
+            ))}
+          </div>
+        )}
       </IonCard>
     </>
   );

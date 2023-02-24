@@ -4,9 +4,15 @@
   flex-wrap: wrap;
   height: 20.45rem;
   justify-content: flex-start;
-  overflow-x: auto;
+  overflow-x: scroll;
   gap: 7px;
 }
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #f10000;
+  border-radius: 6px;
+}
+
 .box {
   height: 10rem;
   border-radius: 11px;
