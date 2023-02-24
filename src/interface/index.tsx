@@ -141,6 +141,7 @@ export interface UserProfile extends UserInterface {
 
 export interface AuthContextType {
   token?: string;
+  loading: boolean;
   setToken: Function;
   logout: () => void;
 }

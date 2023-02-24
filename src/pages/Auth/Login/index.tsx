@@ -1,16 +1,9 @@
-import {
-  IonButton,
-  IonContent,
-  IonIcon,
-  IonInput,
-  IonPage,
-  useIonAlert,
-} from "@ionic/react";
-import React, { useState } from "react";
+import { IonButton, IonContent, IonInput, useIonAlert } from "@ionic/react";
+import { useState } from "react";
+import Logo from "../../../assets/hlyx_logo.png";
 import { LOGIN_SECRET } from "../../../constants";
 import useAuth from "../../../hooks/useAuth";
 import "../../../style/page/auth/login.css";
-import Logo from "../../../assets/hlyx_logo.png";
 
 export const EyeCloseIcon = () => (
   <svg
@@ -57,6 +50,11 @@ export const EyeIcon = () => (
     </defs>
   </svg>
 );
+
+/**
+ * @description This component for is a placholder of login flow
+ * @returns JSX.Element
+ */
 
 const Login = (): JSX.Element => {
   const { setToken } = useAuth();
