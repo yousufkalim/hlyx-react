@@ -1034,7 +1034,7 @@ export const userData = [
         companyName: "KW Commercial South Bay",
       },
       address: "Los Gatos, CA",
-      email: "joel@TheCalvilloGroup.com",
+      email: "joel@thecalvillogroup.com",
       phone: {
         number: "+1 (408) 892-9158",
         faxNumber: ["+1 (650) 345-6789"],
