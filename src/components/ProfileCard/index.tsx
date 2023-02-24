@@ -38,6 +38,7 @@ export interface ProfileCardProps {
   location: string;
   companyName?: string | undefined;
   link: string;
+  blend?: string;
 }
 
 const ProfileCard = ({
@@ -48,8 +49,10 @@ const ProfileCard = ({
   position,
   location,
   link,
+  blend,
 }: ProfileCardProps) => {
   const [btn, setbtn] = useState(true);
+  console.log(blend);
   return (
     <IonContent class="overflow-hidden" fullscreen>
       <img
@@ -60,11 +63,13 @@ const ProfileCard = ({
           width: "100%",
           height: "100%",
           objectFit: "cover",
+          background: "#000",
         }}
         src={backgroundImage}
         alt="user profile"
       />
-      <section className="linear-bg"></section>
+
+      <section className={blend ?? `linear-bg`}></section>
 
       {/* <FloatingButtonGroup icons={floatingIcons} /> Floating icons remove  */}
       <article className="cardContainer">

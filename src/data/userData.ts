@@ -22,6 +22,7 @@ import Stanfard from "../assets/stanfard.png";
 export const userData = [
   // James Oriyan Profile
   {
+    blend: "james",
     backgroundImage: {
       url: JamesBackground,
       altText: "User Background Picture",
@@ -666,6 +667,7 @@ export const userData = [
   },
   // James Hlyx Profile
   {
+    blend: "hlyx",
     backgroundImage: {
       url: JamesHlyxBackground,
       altText: "User Background Picture",
@@ -996,6 +998,7 @@ export const userData = [
   },
   // Joel Calvillo Profile
   {
+    blend: "blue",
     backgroundImage: {
       url: JoeICalvilloBackground,
       altText: "User Background picture",

@@ -9,6 +9,32 @@
   z-index: -2;
 }
 
+.blue {
+  position: absolute;
+  left: -0.27%;
+  right: 0%;
+  top: 51.39%;
+  bottom: -0.16%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -2.04%, #161a2e 45.94%);
+  z-index: -2;
+}
+
+.hlyx {
+  position: absolute;
+  left: -0.27%;
+  right: 0%;
+  top: 51.6%;
+  bottom: -0.12%;
+  z-index: -2;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 74.47%);
+}
+
+.james {
+  position: absolute;
+  inset: 155px 0 0;
+  z-index: -2;
+}
+
 .joi-company-logo-section {
   position: absolute;
   top: 0px;
@@ -120,15 +146,14 @@ h1 {
   bottom: 13px;
   height: 87.57px;
   mix-blend-mode: lighten;
-  /* background: rgb(60, 77, 95, 0.5);
-  border: "1px solid" rgba(255, 255, 255, 0.19);
-  border-radius: 30px 30px 0 0; */
 }
 /* Add/Message Buttons Start */
 .link-Button-section .button-section {
   margin: 0 !important;
-  background: rgb(37, 39, 49, 0.5);
+  background-color: #0000;
+  /* background: rgb(37, 39, 49, 0.5); */
   border: 1px solid rgba(255, 255, 255, 0.19);
+  /* border: 1px solid #0000; */
   height: 78.58px;
   border-top-left-radius: 11px;
   border-top-right-radius: 11px;
