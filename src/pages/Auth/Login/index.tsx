@@ -92,31 +92,32 @@ const Login = (): JSX.Element => {
             }
           }}
         >
-          <div>
+          <div className="input_container">
             {error && <p className="error_text">{error}</p>}
-            <IonInput
-              className={`password_input ${error && "password_input_error"}`}
-              type={showPassword ? "text" : "password"}
-              placeholder="Password"
-              value={password}
-              clearInput
-              onIonInput={(event: Event) => {
-                setError("");
-                const value = (event.target as HTMLIonInputElement)
-                  .value as string;
-                const regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{7,}$/;
-                if (!regex.test(value)) {
-                  setError("Please enter an 8 digit alphanumeric password");
-                }
-                setPassword(value);
-              }}
-            ></IonInput>
-            <IonButton
-              className="eye_icon"
-              onClick={() => setShowPassword(!showPassword)}
-            >
-              {showPassword ? <EyeIcon /> : <EyeCloseIcon />}
-            </IonButton>
+            <div className="input_container">
+              <IonInput
+                className={`password_input ${error && "password_input_error"}`}
+                type={showPassword ? "text" : "password"}
+                placeholder="Password"
+                value={password}
+                onIonInput={(event: Event) => {
+                  setError("");
+                  const value = (event.target as HTMLIonInputElement)
+                    .value as string;
+                  const regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{7,}$/;
+                  if (!regex.test(value)) {
+                    setError("Please enter an 8 digit alphanumeric password");
+                  }
+                  setPassword(value);
+                }}
+              ></IonInput>
+              <IonButton
+                className={`eye_icon ${error && "eye_icon_error"}`}
+                onClick={() => setShowPassword(!showPassword)}
+              >
+                {showPassword ? <EyeIcon /> : <EyeCloseIcon />}
+              </IonButton>
+            </div>
           </div>
           <IonButton
             fill="solid"

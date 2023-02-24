@@ -8,13 +8,14 @@ import Header from "../../components/Profile/Header";
 import ServicesTab from "../../components/ServicesTab";
 import Tabs from "../../components/Tabs";
 import "../../style/page/profile.css";
+import Portfolio from "../../components/Profile/Portfolio";
 export const ProfileTabs = ["Contact", "About", "Service", "Portfolio"];
 
 const ProfileTabsContent = [
   <ContactTab />,
   <AboutTab />,
   <ServicesTab />,
-  <PortfolioTab />,
+  <Portfolio />,
 ];
 
 const Profile = () => {
