@@ -90,39 +90,42 @@ const Login = (): JSX.Element => {
                     role: "confirm",
                   },
                 ],
-                // onDidDismiss: (e: CustomEvent) =>
-                //   setRoleMessage(`Dismissed with role: ${e.detail.role}`),
               });
             }
           }}
         >
           <div>
-            {true && (
-              <p className="error_text">
-                Please enter an 8 digit alphanumeric password
-              </p>
-            )}
-
+            {error && <p className="error_text">{error}</p>}
             <IonInput
-              className={`password_input ${true && "password_input_error"}`}
+              className={`password_input ${error && "password_input_error"}`}
               type={showPassword ? "text" : "password"}
               placeholder="Password"
               value={password}
+              clearInput
               onIonInput={(event: Event) => {
+                setError("");
                 const value = (event.target as HTMLIonInputElement)
                   .value as string;
+                const regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{7,}$/;
+                if (!regex.test(value)) {
+                  setError("Please enter an 8 digit alphanumeric password");
+                }
                 setPassword(value);
               }}
+            ></IonInput>
+            <IonButton
+              className="eye_icon"
+              onClick={() => setShowPassword(!showPassword)}
             >
-              <IonButton
-                className="eye_icon"
-                onClick={() => setShowPassword(!showPassword)}
-              >
-                {showPassword ? <EyeIcon /> : <EyeCloseIcon />}
-              </IonButton>
-            </IonInput>
+              {showPassword ? <EyeIcon /> : <EyeCloseIcon />}
+            </IonButton>
           </div>
-          <IonButton fill="solid" className="login_btn">
+          <IonButton
+            fill="solid"
+            disabled={!!error}
+            type="submit"
+            className="login_btn"
+          >
             Continue
             <svg
               width="11"

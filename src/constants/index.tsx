@@ -443,4 +443,4 @@ const LinksData = [
   },
 ];
 
-export const LOGIN_SECRET = "hlyx123";
+export const LOGIN_SECRET = "hlyx1234";
