@@ -51,7 +51,7 @@ export interface ActiveAchievedType {
 }
 
 export interface Education {
-  linecolor:ColorType;
+  lineColor:ColorType;
   name: string;
   startDate: Date;
   endDate: Date;

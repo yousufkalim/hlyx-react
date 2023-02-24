@@ -6,6 +6,7 @@
   justify-content: flex-start;
   overflow-x: scroll;
   gap: 7px;
+  background-color: var(--bg-color);
 }
 
 .container::-webkit-scrollbar-thumb {

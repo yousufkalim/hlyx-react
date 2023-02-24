@@ -38,6 +38,7 @@ import five_item_joel from "../assets/joelPortfolio/five_item.png";
 export const userData = [
   // James Oriyan Profile
   {
+    blend: "james",
     backgroundImage: {
       url: JamesBackground,
       altText: "User Background Picture",
@@ -78,23 +79,23 @@ export const userData = [
           label: "LinkedIn",
         },
         {
-          link: "https://www.youtube.com/",
+          link: "https://twitter.com/jamesrbeckley",
           label: "Twitter",
         },
         {
-          link: "https://www.youtube.com/",
+          link: "https://oriyn-workspace.slack.com/archives/D0417NGS8G5",
           label: "Slack",
         },
         {
-          link: "https://www.youtube.com/",
+          link: "https://www.medium.com/@jamesrbeckley",
           label: "Medium",
         },
         {
-          link: "https://www.youtube.com/",
+          link: "https://www.youtube.com/oriynapps",
           label: "YouTube",
         },
         {
-          link: "https://www.youtube.com/",
+          link: "https://www.instagram.com/weareoriyn",
           label: "Instagram",
         },
         {
@@ -102,11 +103,7 @@ export const userData = [
           label: "Behance",
         },
         {
-<<<<<<< Updated upstream
-          link: "https://www.youtube.com/",
-=======
           link: " https://www.skype.com/en/@oriynapps",
->>>>>>> Stashed changes
           label: "Skype",
         },
       ],
@@ -160,10 +157,10 @@ export const userData = [
       ],
       education: [
         {
+          lineColor: "yellow",
           name: "San Jose State",
           startDate: "2005",
           endDate: "2008",
-          linecolor: "yellow",
           image: {
             url: SanJose,
             altText: "San Jose State",
@@ -172,7 +169,7 @@ export const userData = [
           program: "Business Administration",
         },
         {
-          linecolor: "red",
+          lineColor: "red",
           name: "De Anza College",
           startDate: "2001",
           endDate: "2005",
@@ -342,18 +339,12 @@ export const userData = [
     service: {
       featuredServices: [
         {
-<<<<<<< Updated upstream
-=======
           lineColor: "yellow",
->>>>>>> Stashed changes
           title: "Market Research & BI ",
           description:
             "We help startup founders and SMB’s with quality market research into any vertical",
         },
         {
-<<<<<<< Updated upstream
-          title: "Market Research & BI ",
-=======
           lineColor: "green",
           title: "Product Development ",
           description:
@@ -362,9 +353,8 @@ export const userData = [
         {
           lineColor: "purple",
           title: "Venture Lab ",
->>>>>>> Stashed changes
           description:
-            "We help startup founders and SMB’s with quality market research into any vertical",
+            "R&D Arm dedicated to the development of innovative new digital technology ventures",
         },
       ],
       mainServices: [
@@ -386,7 +376,6 @@ export const userData = [
         },
       ],
     },
-
     portfolio: [
       OriyanVideo,
       audio_interview,
@@ -715,6 +704,7 @@ export const userData = [
   },
   // James Hlyx Profile
   {
+    blend: "hlyx",
     backgroundImage: {
       url: JamesHlyxBackground,
       altText: "User Background Picture",
@@ -1046,6 +1036,7 @@ export const userData = [
   },
   // Joel Calvillo Profile
   {
+    blend: "blue",
     backgroundImage: {
       url: JoeICalvilloBackground,
       altText: "User Background picture",
@@ -1071,7 +1062,7 @@ export const userData = [
         companyName: "KW Commercial South Bay",
       },
       address: "Los Gatos, CA",
-      email: "joel@TheCalvilloGroup.com",
+      email: "joel@thecalvillogroup.com",
       phone: {
         number: "+1 (408) 892-9158",
         faxNumber: ["+1 (650) 345-6789"],
