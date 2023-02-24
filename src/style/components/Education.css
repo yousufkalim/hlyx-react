@@ -21,7 +21,9 @@
 .education_card_container .education_color_line {
   width: 4px;
   height: 43px;
+  /* background-color: #fedd71; */
   border-radius: 100px;
+
 }
 
 .color-blue {

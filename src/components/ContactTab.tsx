@@ -38,7 +38,9 @@ const ContactTab = () => {
       <HeroSession />
       {contact?.email && (
         <ContactCard title="Email">
-          <a href="mailto: {contact?.email}" className="anchor-clear">
+          <a href={`mailto:${contact.email}`}
+           target={"_blank"}
+          className="anchor-clear">
             <div className="flex align-center justify-contain">
               <div className="flex align-center">
                 <MailIcon
@@ -105,7 +107,7 @@ const ContactTab = () => {
       )}
       {contact?.calendar && (
         <a
-          href="https://calendly.com/wajeehaslam/30min"
+          href={`https://calendly.com/${contact?.calender}`}
           className="anchor-clear"
           target={"_blank"}
           rel="noreferrer"
@@ -151,7 +153,7 @@ const ContactTab = () => {
       {contact?.officeAddress && (
         <ContactCard title="Office">
           <a
-            href={`http://maps.google.com/?q=lahore`}
+            href={`https://www.google.com/maps/place/${contact?.officeAddress}`}
             className="anchor-clear"
             target={"_blank"}
             rel="noreferrer"

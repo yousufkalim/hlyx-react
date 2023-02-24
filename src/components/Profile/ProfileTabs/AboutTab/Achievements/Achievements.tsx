@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import { BlueDotIcon } from "../../../../../assets/icons";
 import { ProfileContext } from "../../../../../context/profileContext";
 import "../../../../../style/components/achievement.css";
+import ReadMoreText from "../../../../ReadMoreText";
+
 
 const Achievements = () => {
   const { userProfile } = useContext(ProfileContext);
@@ -9,13 +11,14 @@ const Achievements = () => {
   return (
     <>
       {achievement?.map(
-        ({ description, title, detail }: any, index: number) => (
+        ({ description,descriptiontitle, title, detail }: any, index: number) => (
           <div className="achievement-card" key={index}>
             <BlueDotIcon color="gray" />
             <div className="achievement-description">
               <p className="year">{title}</p>
-              <p className="text">{description}</p>
-            </div>
+              <p className="descriptiontitle">{descriptiontitle}</p>
+              <ReadMoreText text={description} limit={100}/>
+              </div>
           </div>
         )
       )}
