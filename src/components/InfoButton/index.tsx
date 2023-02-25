@@ -1,29 +1,43 @@
 import { IonFab, IonFabButton, IonFabList, IonIcon } from "@ionic/react";
-import { colorPalette, document, globe, linkOutline } from "ionicons/icons";
+import {
+  bookmark,
+  chatbubble,
+  colorPalette,
+  document,
+  globe,
+  helpCircle,
+  linkOutline,
+  send,
+  text,
+} from "ionicons/icons";
 // import { LinkInfoButton } from "../../assets/icons";
-import { LinkIcon } from '../../assets/icons/index';
+import { LinkIcon } from "../../assets/icons/index";
+import "./fabbtn.css";
 
 const InfoButton = () => {
   return (
     <>
       <IonFab className="info-button">
-        <IonFabButton >
-           <LinkIcon color="#fff"/>
+        <IonFabButton>
+          <LinkIcon color="#fff" />
         </IonFabButton>
-        <IonFabList side="top" >
+        <IonFabList side="top">
           <IonFabButton>
-            <IonIcon icon={document}></IonIcon>
+            <IonIcon className="help icon-colour" icon={helpCircle}></IonIcon>
           </IonFabButton>
           <IonFabButton>
-            <IonIcon icon={colorPalette}></IonIcon>
+            <IonIcon className="icon-colour" icon={chatbubble}></IonIcon>
           </IonFabButton>
           <IonFabButton>
-            <IonIcon icon={globe}></IonIcon>
+            <IonIcon className="send" icon={send}></IonIcon>
+          </IonFabButton>
+          <IonFabButton>
+            <IonIcon icon={bookmark}></IonIcon>
           </IonFabButton>
         </IonFabList>
       </IonFab>
     </>
-  )
-}
+  );
+};
 
-export default InfoButton
+export default InfoButton;

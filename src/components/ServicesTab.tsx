@@ -8,6 +8,7 @@ import scientific from "../assets/scientific.png";
 import { IonButton } from "@ionic/react";
 import UserDetailCard from "./Profile/UserDetailCard/UserDetailCard";
 import FeaturedServices from "./FeaturedServices";
+// import { userData } from "../data/userData";
 import {
   BiDashboardIcon,
   RightArrowIcon,
@@ -94,8 +95,8 @@ const ServicesTab = () => {
         {service?.featuredServices && (
           <div className="featured-services-cards">
             {service?.featuredServices?.map(
-              ({ title, description }: any, index: number) => (
-                <FeaturedServices title={title} description={description} />
+              ({ title, description,lineColor }: any, index: number) => (
+                <FeaturedServices lineColor={lineColor} title={title} description={description} />
               )
             )}
           </div>

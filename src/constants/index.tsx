@@ -442,3 +442,5 @@ const LinksData = [
     description: "View Service Details",
   },
 ];
+
+export const LOGIN_SECRET = "hlyx1234";

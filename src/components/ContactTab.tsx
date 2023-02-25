@@ -38,7 +38,9 @@ const ContactTab = () => {
       <HeroSession />
       {contact?.email && (
         <ContactCard title="Email">
-          <a href="mailto: {contact?.email}" className="anchor-clear">
+          <a href={`mailto:${contact.email}`}
+           target={"_blank"}
+          className="anchor-clear">
             <div className="flex align-center justify-contain">
               <div className="flex align-center">
                 <MailIcon
@@ -47,7 +49,6 @@ const ContactTab = () => {
                 />
                 <IonLabel className="icon_text">{contact?.email}</IonLabel>
               </div>
-
               <ChevronIcon />
             </div>
           </a>
@@ -106,12 +107,12 @@ const ContactTab = () => {
       )}
       {contact?.calendar && (
         <a
-          href="https://calendly.com/wajeehaslam/30min"
+          href={`https://calendly.com/${contact?.calender}`}
           className="anchor-clear"
           target={"_blank"}
           rel="noreferrer"
         >
-          <ContactCard title="Calendar">
+          <ContactCard title="Calender" >
             <div className="flex align-center justify-contain mx-19">
               <div className="flex align-center">
                 <CalendarIcon
@@ -129,9 +130,9 @@ const ContactTab = () => {
       {contact?.website && (
         <a
           className="anchor-clear"
-          href={contact?.website}
           target={"_blank"}
           rel="noreferrer"
+          href={ `https://${contact?.website}`}
         >
           <ContactCard title="Website">
             <div className="flex align-center justify-contain mx-19">
@@ -140,7 +141,7 @@ const ContactTab = () => {
                   color={"var(--icon-back)"}
                   white={"var(--text-color)"}
                 />
-                <IonLabel className="icon_text">{contact?.website}</IonLabel>
+                <IonLabel className="icon_text">{contact.website}</IonLabel>
               </div>
 
               <ChevronIcon />
@@ -152,7 +153,7 @@ const ContactTab = () => {
       {contact?.officeAddress && (
         <ContactCard title="Office">
           <a
-            href={`http://maps.google.com/?q=lahore`}
+            href={`https://www.google.com/maps/place/${contact?.officeAddress}`}
             className="anchor-clear"
             target={"_blank"}
             rel="noreferrer"

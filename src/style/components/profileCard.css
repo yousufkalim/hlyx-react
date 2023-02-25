@@ -9,6 +9,42 @@
   z-index: -2;
 }
 
+.blue {
+  position: absolute;
+  left: -0.27%;
+  right: 0%;
+  top: 51.39%;
+  bottom: -0.16%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -2.04%, #161a2e 45.94%);
+  z-index: -2;
+}
+
+.hlyx {
+  position: absolute;
+  left: -0.27%;
+  right: 0%;
+  top: 51.6%;
+  bottom: -0.12%;
+  z-index: -2;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 74.47%);
+}
+
+.james {
+  position: absolute;
+  inset: 155px 0 0;
+  z-index: -2;
+}
+
+.joi-company-logo-section {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.joi-company-logo {
+  border-radius: 0;
+}
+
 .cardContainer {
   height: 100%;
   color: white;
@@ -38,11 +74,12 @@ h1 {
 
 .detail {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 8px;
 }
 
 .position-text {
+  text-align: justify;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -50,15 +87,6 @@ h1 {
   line-height: 21px;
   color: #ffffff;
   margin: 0;
-}
-
-.position-text span {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 15px;
-  line-height: 21px;
-  color: #ffffff;
 }
 
 .location-text {
@@ -69,6 +97,11 @@ h1 {
   font-size: 15px;
   line-height: 16px;
   color: #ffffff;
+}
+
+.company-logo-section {
+  height: 90px;
+  width: 90px;
 }
 
 .company-logo {
@@ -112,16 +145,16 @@ h1 {
   position: absolute;
   bottom: 13px;
   height: 87.57px;
-  /* background: rgb(60, 77, 95, 0.5);
-  border: "1px solid" rgba(255, 255, 255, 0.19);
-  border-radius: 30px 30px 0 0; */
+  mix-blend-mode: lighten;
 }
 /* Add/Message Buttons Start */
 .link-Button-section .button-section {
   margin: 0 !important;
-  background: rgb(37, 39, 49, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.19);
-  height: 78.58px;
+  background-color: #0000;
+  /* background: rgb(37, 39, 49, 0.5); */
+  border-top: 1px solid rgba(255, 255, 255, 0.19);
+  /* border: 1px solid #0000; */
+  /* height: 78.58px; */
   border-top-left-radius: 11px;
   border-top-right-radius: 11px;
   border-bottom-left-radius: 0;

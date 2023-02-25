@@ -13,6 +13,9 @@
 .accolades-card svg {
   flex-shrink: 0;
 }
+.companyname{
+  color: #454545;
+}
 
 .accolades-card-detail {
   width: 100%;

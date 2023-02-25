@@ -89,15 +89,21 @@ ion-segment-button::before {
   all: unset;
 }
 
+.joi-avatar-icon {
+  width: 100%;
+  left: 0px;
+  border-radius: 0;
+  border: none;
+}
+
 .avatar-icon {
   border: 5px solid var(--bg-color);
   background-color: var(--bg-color);
   position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  left: 19px;
+  top: 238px;
   border-radius: 37.49%;
-  bottom: -40px;
+  /* bottom: -40px; */
   width: 90.47px;
   height: 90.47px;
   z-index: 8;
@@ -321,4 +327,8 @@ ion-accordion.accordion-expanded > [slot="header"] .ion-accordion-toggle-icon {
 }
 .info-button ion-fab-list {
   right: 6px;
+}
+
+.info-button ion-icon {
+  color: #000000;
 }

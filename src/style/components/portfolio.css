@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 20.45rem;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  gap: 7px;
+  background-color: var(--bg-color);
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #f10000;
+  border-radius: 6px;
+}
+
+.box {
+  height: 10rem;
+  border-radius: 11px;
+}
+
+.box img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 11px;
+}
+
+.box:nth-child(10n + 1) {
+  height: 10rem;
+}
+
+.box:nth-child(10n + 2) {
+  height: 10rem;
+}
+
+.box:nth-child(10n + 3) {
+  height: 100%;
+}
+
+.box:nth-child(10n + 4),
+.box:nth-child(10n + 9) {
+  height: 12rem;
+}
+
+.box:nth-child(10n + 5),
+.box:nth-child(10n) {
+  height: 8rem;
+}
+
+.box:nth-child(10n + 6) {
+  height: 10rem;
+}
+
+.box:nth-child(10n + 7) {
+  height: 10rem;
+}
+
+.box:nth-child(10n + 8) {
+  height: 100%;
+}

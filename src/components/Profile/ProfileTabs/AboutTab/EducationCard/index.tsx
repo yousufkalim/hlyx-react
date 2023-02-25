@@ -6,22 +6,45 @@ import { ProfileContext } from "../../../../../context/profileContext";
 const EducationCard = () => {
   const { userProfile } = useContext(ProfileContext);
   const { education } = userProfile?.about;
+
+  let charBuffer = "";
+  let line_color: any;
+
+  function processWords(input: string) {
+    var s = input.split(" ");
+    s.forEach((element) => {
+      if (charBuffer.length < 2) {
+        charBuffer += element[0];
+      } else {
+        return charBuffer;
+      }
+    });
+
+    return charBuffer;
+  }
+
   return (
     <div className="education_list">
       {education.map(
         (
-          { name, startDate, endDate, image, major, program }: Education,
+          { name, startDate, endDate,lineColor, image, major, program }: Education,
           index: number
         ) => (
           <div className="education_card_container" key={index}>
-            <div className="color_line" />
+            <div className={`education_color_line color-${lineColor}`} />
             <div className="education_info">
               <div className="education_details_container">
                 <div className="education_details">
                   <h6>{name}</h6>
                   <p>{`${startDate}-${endDate}`}</p>
                 </div>
-                <img src={image?.url} alt={image?.altText || name} />
+                {image ? (
+                  <img src={image?.url || name} alt={image?.altText || name} />
+                ) : (
+                  <div className={`image-replacer color-${line_color}`}>
+                    <p>{processWords(name)}</p>
+                  </div>
+                )}
               </div>
 
               <div className="education_info_text">

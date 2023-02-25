@@ -10,7 +10,7 @@ import {
 import "../../../../../style/components/accolades.css";
 import { ProfileContext } from "../../../../../context/profileContext";
 
-const AccoladesItem = () => {
+const AccoladesItem = () => { 
   const { userProfile } = useContext(ProfileContext);
   const { accolades } = userProfile?.about;
   return (
@@ -21,7 +21,7 @@ const AccoladesItem = () => {
           <div className="accolades-card-detail">
             <div className="accolade-description">
               <p>
-                {jobTitle?.position} at<span>{jobTitle?.companyName}</span>
+                {jobTitle?.position} at {" "}<span className="companyname">{jobTitle?.companyName}</span>
               </p>
               <div className="date">
                 <AccoladesCalender

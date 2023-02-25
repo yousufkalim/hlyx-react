@@ -8,19 +8,37 @@ import JamesCover from "../assets/media/JamesCover.png";
 import DoctorCover from "../assets/media/media-image.png";
 import JamesHlyxCover from "../assets/media/JamesHlyxCover.png";
 import JoeICalvilloCover from "../assets/media/JoeICalvilloCover.png";
-// School Logos
+// Company Logos
+import JoeICompany from "../assets/JoeICompany.png";
+import Oriyn from "../assets/Oriyn.png";
+import Sphere from "../assets/sphere.png";
+import Hylx from "../assets/Hylx.png";
+// University Logos
 import SanJose from "../assets//SanJose.png";
 import DeAnzaCollege from "../assets//DeAnzaCollege.png";
 import SaintFrancis from "../assets/SaintFrancis.png";
-// Profile Logos
-import Sphere from "../assets/sphere.png";
-import Hylx from "../assets/Hylx.png";
-import Oriyn from "../assets/Oriyn.png";
-import JoeICompany from "../assets/JoeICompany.png";
+import Stanfard from "../assets/stanfard.png";
+
+import OriyanVideo from "../assets/portfolio/oriyan_video.png";
+import audio_interview from "../assets/portfolio/audio_interview.png";
+import CEO from "../assets/portfolio/ceo.png";
+import Kelly_Lan from "../assets/portfolio/Kelly_Lan.png";
+import Jordan_Roessle from "../assets/portfolio/Jordan_Roessle.png";
+import company_video from "../assets/portfolio/company_video.png";
+import company_img from "../assets/portfolio/company_img.png";
+import dashboard from "../assets/portfolio/dashboard.png";
+import hlyx from "../assets/portfolio/hlyx.png";
+import audio_memo from "../assets/portfolio/audio_memo.png";
+import first_item_joel from "../assets/joelPortfolio/first_item.png";
+import two_item_joel from "../assets/joelPortfolio/first_second.png";
+import three_item_joel from "../assets/joelPortfolio/three_item.png";
+import four_item_joel from "../assets/joelPortfolio/four_item.png";
+import five_item_joel from "../assets/joelPortfolio/five_item.png";
 
 export const userData = [
   // James Oriyan Profile
   {
+    blend: "james",
     backgroundImage: {
       url: JamesBackground,
       altText: "User Background Picture",
@@ -61,7 +79,7 @@ export const userData = [
           label: "LinkedIn",
         },
         {
-          link: "https://www.twitter.com/",
+          link: "https://twitter.com/jamesrbeckley",
           label: "Twitter",
         },
         {
@@ -69,25 +87,17 @@ export const userData = [
           label: "Slack",
         },
         {
-          link: "https://www.youtube.com/",
+          link: "https://www.medium.com/@jamesrbeckley",
           label: "Medium",
         },
         {
-          link: "https://www.youtube.com/",
+          link: "https://www.youtube.com/oriynapps",
           label: "YouTube",
         },
         {
-          link: "https://www.youtube.com/",
-          label: "Instagram",
-        },
-        {
-          link: "https://www.youtube.com/",
-          label: "Behance",
-        },
-        {
-          link: "https://www.youtube.com/",
+          link: " https://www.skype.com/en/@oriynapps",
           label: "Skype",
-        },
+        }
       ],
       blogLink: [
         {
@@ -148,6 +158,7 @@ export const userData = [
       ],
       education: [
         {
+          lineColor: "yellow",
           name: "San Jose State",
           startDate: "2005",
           endDate: "2008",
@@ -159,6 +170,7 @@ export const userData = [
           program: "Business Administration",
         },
         {
+          lineColor: "red",
           name: "De Anza College",
           startDate: "2001",
           endDate: "2005",
@@ -173,7 +185,7 @@ export const userData = [
       accolades: [
         {
           jobTitle: {
-            position: "Founder & CEO at ",
+            position: "Founder & CEO  ",
             companyName: " HLYX Inc.",
           },
           startDate: "December 2022 ",
@@ -181,7 +193,7 @@ export const userData = [
         },
         {
           jobTitle: {
-            position: "Founder & CEO at ",
+            position: "Founder & CEO  ",
             companyName: " Oriyn LLC",
           },
           startDate: "June 2018",
@@ -189,31 +201,44 @@ export const userData = [
         },
         {
           jobTitle: {
-            position: "President & Managing Partner at ",
+            position: "President & Managing Partner  ",
             companyName: " Kiyah Partners",
           },
           startDate: "July 2022  ",
           endDate: "Present",
         },
+        {
+          jobTitle: {
+            position: "Founder and Executive Director  ",
+            companyName: "SCELF",
+          },
+          startDate: "August 2009 ",
+          endDate: "January 2015",
+        },
       ],
       achievement: [
         {
           title: "2023",
+          descriptiontitle: "Created a platform to empower founders",
           description:
-            "Created a platform to empower founders Founded and built a first of its kind Business Empowerment Platform designed to optimize the success of entrepreneurs and brands by leveraging the power of their networks to help business owners focus on building quality relationships and creating opportunities that thrive.",
+            "Founded and built a first of its kind Business Empowerment Platform designed to optimize the success of entrepreneurs and brands by leveraging the power of their networks to help business owners focus on building quality relationships and creating opportunities that thrive.",
         },
         {
           title: "2022",
+          descriptiontitle: "1300 completed projects",
           description:
-            "1300 completed projects As of present date, I have successfully completed 1300 career projects encompassing graphic design, branding, BI dashboard reports, market research, web and mobile product design and custom software  development from 2009 to present.",
+            "As of present date, I have successfully completed 1300 career projects encompassing graphic design, branding, BI dashboard reports, market research, web and mobile product design and custom software  development from 2009 to present.",
         },
         {
           title: "2018 - Present",
+          descriptiontitle: "150 clients and counting",
           description:
-            "150 clients and counting Founded, bootstrapped and grew Oriyn from 0 to 150 clients and counting. Through Oriyn, I’ve worked with and helped startup founders, small business owners, to established enterprise clients design and execute technical strategies that return results, and created custom digital solutions that solve real-world challenges.",
+            " Founded, bootstrapped and grew Oriyn from 0 to 150 clients and counting. Through Oriyn, I’ve worked with and helped startup founders, small business owners, to established enterprise clients design and execute technical strategies that return results, and created custom digital solutions that solve real-world challenges.",
         },
         {
           title: "2009 - 2015",
+          descriptiontitle:
+            " Created a non-profit dedicated to finding cures for hematologic disorders",
           description:
             "Created a non-profit dedicated to finding cures for hematologic disorders Having personally experienced the loss of close family members who suffered from blood disorders that left them debilitated and in pain until the very end, I founded SCELF Org in 2009 to raise awareness and provide educational resources about hematologic disorders like SCD and Leukemia. Through the organization, we hosted several public events, built a donation website, and an interactive portal with real patient video testimonials. During the course of SCELF, we achieved total donated contributions of $20K and serviced over 1200 online Facebook group members. ",
         },
@@ -315,14 +340,22 @@ export const userData = [
     service: {
       featuredServices: [
         {
+          lineColor: "yellow",
           title: "Market Research & BI ",
           description:
             "We help startup founders and SMB’s with quality market research into any vertical",
         },
         {
-          title: "Market Research & BI ",
+          lineColor: "green",
+          title: "Product Development ",
           description:
-            "We help startup founders and SMB’s with quality market research into any vertical",
+            "We provide modern UI/UX Product Design and full-service software development",
+        },
+        {
+          lineColor: "purple",
+          title: "Venture Lab ",
+          description:
+            "R&D Arm dedicated to the development of innovative new digital technology ventures",
         },
       ],
       mainServices: [
@@ -344,6 +377,18 @@ export const userData = [
         },
       ],
     },
+    portfolio: [
+      OriyanVideo,
+      audio_interview,
+      CEO,
+      Kelly_Lan,
+      Jordan_Roessle,
+      company_video,
+      company_img,
+      dashboard,
+      hlyx,
+      audio_memo,
+    ],
   },
   // Doctor Profile
   {
@@ -475,21 +520,27 @@ export const userData = [
       ],
       education: [
         {
-          name: "name",
+          name: "San Jose State",
           startDate: "2005",
           endDate: "2009",
           image: {
-            url: "../assets/stanfard.png",
-            altText: "Stanford University",
+            url: Stanfard,
+            altText: "San Jose",
           },
           major: "Studied Molecular Biology",
           program: "Masters Degree",
+        },
+        {
+          name: "University San Diego",
+          startDate: "Class of 1996",
+          major: "Biology, Electives, STEM",
+          program: "Diploma",
         },
       ],
       accolades: [
         {
           jobTitle: {
-            position: "Board Chair at ",
+            position: "Board Chair  ",
             companyName: " Boston Medical",
           },
           startDate: "November 1, 2022 ",
@@ -497,7 +548,7 @@ export const userData = [
         },
         {
           jobTitle: {
-            position: "Deans List 4 Years in a row at",
+            position: "Deans List 4 Years in a row ",
             companyName: " Stanford University",
           },
           startDate: "August 2017",
@@ -505,7 +556,7 @@ export const userData = [
         },
         {
           jobTitle: {
-            position: "Summa Cum Laude, Honors Club at ",
+            position: "Summa Cum Laude, Honors Club  ",
             companyName: "Stanford University",
           },
           startDate: "August 2017",
@@ -654,10 +705,12 @@ export const userData = [
   },
   // James Hlyx Profile
   {
+    blend: "hlyx",
     backgroundImage: {
       url: JamesHlyxBackground,
       altText: "User Background Picture",
     },
+    id: "james-hlyx",
     name: "James R. Beckley",
     companyLogo: {
       url: Hylx,
@@ -797,10 +850,13 @@ export const userData = [
           name: "De Anza College",
           startDate: "2001",
           endDate: "2005",
-          image: {
-            url: DeAnzaCollege,
-            altText: "De Anza College",
-          },
+          // image: {
+          //   url: DeAnzaCollege,
+          //   altText: "De Anza College",
+          // },image: {
+          //   url: DeAnzaCollege,
+          //   altText: "De Anza College",
+          // },
           major: "Studied CIS & Bus. Management",
           program: "Associate Arts",
         },
@@ -808,7 +864,7 @@ export const userData = [
       accolades: [
         {
           jobTitle: {
-            position: "Founder & CEO at ",
+            position: "Founder & CEO  ",
             companyName: " HLYX Inc.",
           },
           startDate: "December 2022 ",
@@ -816,7 +872,7 @@ export const userData = [
         },
         {
           jobTitle: {
-            position: "Founder & CEO at ",
+            position: "Founder & CEO  ",
             companyName: " Oriyn LLC",
           },
           startDate: "June 2018",
@@ -824,11 +880,19 @@ export const userData = [
         },
         {
           jobTitle: {
-            position: "President & Managing Partner at ",
+            position: "President & Managing Partner  ",
             companyName: " Kiyah Partners",
           },
           startDate: "July 2022  ",
           endDate: "Present",
+        },
+        {
+          jobTitle: {
+            position: "Founder and Executive Director  ",
+            companyName: "SCELF",
+          },
+          startDate: "August 2009 ",
+          endDate: "January 2015",
         },
       ],
       achievement: [
@@ -933,9 +997,9 @@ export const userData = [
       ],
       icebreakers: {
         hobbies: ["Martial Arts", "Stargazing", "Art"],
-        Interest: ["Reading", "Legos", "Music"],
+        interest: ["Reading", "Legos", "Music"],
         skills: ["Painting", "Piano", "Gardening"],
-        Motto: "Science is an oyster, serve it up tastefully.",
+        motto: "Science is an oyster, serve it up tastefully.",
       },
     },
     service: {
@@ -973,6 +1037,7 @@ export const userData = [
   },
   // Joel Calvillo Profile
   {
+    blend: "blue",
     backgroundImage: {
       url: JoeICalvilloBackground,
       altText: "User Background picture",
@@ -1008,17 +1073,16 @@ export const userData = [
       officeAddress: "16780 Lark Avenue Los Gatos, CA 95032",
       socialMedia: [
         {
-          link: "https://www.youtube.com/",
-          label: "Slack",
-        },
-        {
-          link: "https://www.youtube.com/",
-          label: "Instagram",
-        },
-
-        {
           link: "https://www.linkedin.com/in/joelcalvillo/",
           label: "LinkedIn",
+        },
+        {
+          link: "https://www.facebook.com/joelcalvillo",
+          label: "Facebook",
+        },
+        {
+          link: "https://www.instagram.com/joelrcalvillo/",
+          label: "Instagram",
         },
       ],
       blogLink: [
@@ -1029,16 +1093,16 @@ export const userData = [
           description: "Access Article on Medium",
         },
         {
-          link: "https://www.google.com/drive/",
-          type: "GoogleDrive",
-          title: "Joel Calvillo’s Service Sheet 2023",
-          description: "Access File on Google Drive ",
-        },
-        {
           link: "https://soundcloud.com/",
-          type: "SoundCloud",
+          type: "GoogleDrive",
           title: "Finding The Right Agent For Your Next Commercial Property",
           description: "Access Audio on SoundCloud",
+        },
+        {
+          link: "https://www.google.com/drive/",
+          type: "SoundCloud",
+          title: "Joel Calvillo's Service Sheet 2023",
+          description: "Access File on Google Drive ",
         },
       ],
     },
@@ -1097,7 +1161,7 @@ export const userData = [
       accolades: [
         {
           jobTitle: {
-            position: "Senior Vice President at",
+            position: "Senior Vice President",
             companyName: " KP Commerical ",
           },
           startDate: "June 2021",
@@ -1105,7 +1169,7 @@ export const userData = [
         },
         {
           jobTitle: {
-            position: "Shareholder & Vice President at",
+            position: "Shareholder & Vice President ",
             companyName: " NAI NorCal",
           },
           startDate: "Jan 2020",
@@ -1113,7 +1177,7 @@ export const userData = [
         },
         {
           jobTitle: {
-            position: "Commercial Specialist  at",
+            position: "Commercial Specialist ",
             companyName: " KP Commerical ",
           },
           startDate: "Mar 2013",
@@ -1121,7 +1185,7 @@ export const userData = [
         },
         {
           jobTitle: {
-            position: "Real Estate Investment Specialist  at",
+            position: "Real Estate Investment Specialist  ",
             companyName: " Losness Group",
           },
           startDate: "Dec 2008",
@@ -1234,9 +1298,9 @@ export const userData = [
       ],
       icebreakers: {
         hobbies: ["Martial Arts", "Stargazing", "Art"],
-        Interest: ["Reading", "Legos", "Music"],
+        interest: ["Reading", "Legos", "Music"],
         skills: ["Painting", "Piano", "Gardening"],
-        Motto: "Science is an oyster, serve it up tastefully.",
+        motto: "Science is an oyster, serve it up tastefully.",
       },
     },
     service: {
@@ -1265,5 +1329,13 @@ export const userData = [
         },
       ],
     },
+    portfolioTitle: "Commercial Real Estate Properties",
+    portfolio: [
+      first_item_joel,
+      two_item_joel,
+      three_item_joel,
+      four_item_joel,
+      five_item_joel,
+    ],
   },
 ];

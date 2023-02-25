@@ -12,7 +12,7 @@ import BusinessNeeds from "./BusinessNeeds/BusinessNeeds";
 import { ProfileContext } from "../../../../context/profileContext";
 import { useContext } from "react";
 
-const AboutCard = ({
+export const AboutCard = ({
   title,
   children,
   button,

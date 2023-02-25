@@ -18,11 +18,35 @@
   position: relative;
 }
 
-.education_card_container .color_line {
+.education_card_container .education_color_line {
   width: 4px;
   height: 43px;
-  background-color: #fedd71;
+  /* background-color: #fedd71; */
   border-radius: 100px;
+
+}
+
+.color-blue {
+  background-color: #66a0f7;
+}
+.color-red {
+  background-color: #D8213A;
+}
+
+.color-green {
+  background-color: #87cc66;
+}
+
+.color-yellow {
+  background-color: #fedd71;
+}
+
+.color-orange {
+  background-color: #ff8368;
+}
+
+.color-purple {
+  background-color: #ac85ff;
 }
 
 .education_info {
@@ -97,4 +121,25 @@ p {
   line-height: 18px;
   letter-spacing: 0.025em;
   color: #7d8597;
+}
+
+.image-replacer {
+  border-radius: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  width: 46px;
+  position: absolute;
+  top: 10px;
+  right: 13px;
+}
+
+.image-replacer p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
 }

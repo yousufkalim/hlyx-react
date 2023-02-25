@@ -1,22 +1,23 @@
-import React from "react";
-import "../style/components/featureServices.css";
 import { IonButton } from "@ionic/react";
 import {
   MessagesIcon,
   SaveIcon,
-  ShareFeaturedIcon,
+  ShareFeaturedIcon
 } from "../assets/icons/Featured_Card_Icons";
+import "../style/components/featureServices.css";
 
 const FeaturedServices = ({
   title,
   description,
+  lineColor,
 }: {
   title: string;
   description: string;
+  lineColor: string;
 }) => {
   return (
     <div className="featured_card_container">
-      <div className="color_line" />
+      <div className={`color_line border-${lineColor}`}></div>
       <div className="featured_details_container">
         <div className="featured_details">
           <h6>{title}</h6>
