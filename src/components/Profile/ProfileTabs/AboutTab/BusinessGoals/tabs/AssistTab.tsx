@@ -91,7 +91,9 @@ const AssistCardSections = ({
 const AssistTab = () => {
   const { userProfile } = useContext(ProfileContext);
   const { assist } = userProfile?.about?.businessGoal ?? [];
-  const { status, startDate, deadline } = assist;
+  const { status, startDate, deadline, links } = assist;
+  const { name, imageUrl } = assist?.links ?? [];
+
   return (
     <div className="assist_card_container">
       <div className="assist-header">
@@ -126,20 +128,15 @@ const AssistTab = () => {
             <StatList digit={95} description="Total Links" />
             <StatList digit={101} description="Total Assists" />
             <StatList digit={3} description="Badges" />
-          </div>
+          </div>  
         </AssistCardSections>
 
         <AssistCardSections title="Links" lineColor="green">
           <div className="assist_avatar">
-            {[...Array(5).keys()].map((index) => (
+            {links.map(({imageUrl,name}:any,index:number) => (
               <div className="ionAvatar_container">
-                <IonAvatar className="ion_avatar">
-                  <img
-                    alt="Silhouette of a person's head"
-                    src="https://ionicframework.com/docs/img/demos/avatar.svg"
-                  />
-                </IonAvatar>
-                <IonLabel className="ionlabel">Avatar</IonLabel>
+                <IonAvatar className="ion_avatar"><img src={imageUrl}/></IonAvatar>
+                <IonLabel className="ionlabel">{name}</IonLabel>
               </div>
             ))}
           </div>
@@ -161,7 +158,7 @@ const AssistTab = () => {
             </div>
             <ShareIcon />
             <IonButton className="Assist-Button" shape="round" size="default">
-              {<Plus />}Assist
+              {<Plus />}Support
             </IonButton>
           </div>
         </AssistCardSections> */}

@@ -19,6 +19,15 @@ import DeAnzaCollege from "../assets//DeAnzaCollege.png";
 import SaintFrancis from "../assets/SaintFrancis.png";
 import Stanfard from "../assets/stanfard.png";
 
+// Avatars
+import BlakeB from "../assets/BlakeB.png"
+import JamesC from "../assets/JamesC.png"
+import JordanR from "../assets/JordanR.png"
+import LenaX from "../assets/LenaX.png"
+import NinaM from "../assets/NinaM.png"
+import TallikaP from "../assets/TallikaP.png"
+import TinaM from "../assets/TinaM.png"
+
 export const userData = [
   // James Oriyan Profile
   {
@@ -100,14 +109,14 @@ export const userData = [
           description: "Access Article on Medium",
         },
         {
-          link: "https://www.google.com/drive/",
+          link: "https://soundcloud.com/",
           type: "GoogleDrive",
           title:
             "The Future of Business Technology And How Oriyn Is Planning Ahead",
           description: "Access Audio on SoundCloud",
         },
         {
-          link: "https://soundcloud.com/",
+          link: "https://www.google.com/drive/",
           type: "SoundCloud",
           title: "Oriyn Business Solutions Deck 2023",
           description: "Access File on Google Drive",
@@ -279,10 +288,38 @@ export const userData = [
             totalAssist: 101,
             badges: 3,
           },
-          links: {
-            imageUrl: "image URL",
-            name: "Name of avatar",
+          links:[ 
+            {
+            imageUrl: BlakeB,
+            name: "Blake B."
           },
+          {
+            imageUrl: LenaX,
+            name: "Lena X."
+          },
+          {
+            imageUrl:NinaM,
+            name: "Nina M."
+          },
+          {
+            imageUrl: TallikaP,
+            name: "Tallia P."
+          },
+          {
+            imageUrl: JordanR,
+            name: "Jordan R."
+          },
+          {
+            imageUrl: JamesC,
+            name: "James C.",
+          },
+          {
+            imageUrl: TinaM,
+            name: "Tina M.",
+          },
+
+        ],
+
           badge: ["Pioneer", "Leader", "Legend"],
           support: {
             linkCount: 95,
@@ -600,10 +637,38 @@ export const userData = [
             totalAssist: 101,
             badges: 3,
           },
-          links: {
-            imageUrl: "image URL",
-            name: "Name of avatar",
+          links:[ 
+            {
+            imageUrl: BlakeB,
+            name: "Blake B."
           },
+          {
+            imageUrl: LenaX,
+            name: "Lena X."
+          },
+          {
+            imageUrl:NinaM,
+            name: "Nina M."
+          },
+          {
+            imageUrl: TallikaP,
+            name: "Tallia P."
+          },
+          {
+            imageUrl: JordanR,
+            name: "Jordan R."
+          },
+          {
+            imageUrl: JamesC,
+            name: "James C.",
+          },
+          {
+            imageUrl: TinaM,
+            name: "Tina M.",
+          },
+
+        ],
+
           badge: ["Pioneer", "Leader", "Legend"],
           support: {
             linkCount: 95,
@@ -932,10 +997,38 @@ export const userData = [
             totalAssist: 101,
             badges: 3,
           },
-          links: {
-            imageUrl: "image URL",
-            name: "Name of avatar",
+          links:[ 
+            {
+            imageUrl: BlakeB,
+            name: "Blake B."
           },
+          {
+            imageUrl: LenaX,
+            name: "Lena X."
+          },
+          {
+            imageUrl:NinaM,
+            name: "Nina M."
+          },
+          {
+            imageUrl: TallikaP,
+            name: "Tallia P."
+          },
+          {
+            imageUrl: JordanR,
+            name: "Jordan R."
+          },
+          {
+            imageUrl: JamesC,
+            name: "James C.",
+          },
+          {
+            imageUrl: TinaM,
+            name: "Tina M.",
+          },
+
+        ],
+
           badge: ["Pioneer", "Leader", "Legend"],
           support: {
             linkCount: 95,
@@ -1230,10 +1323,38 @@ export const userData = [
             totalAssist: 101,
             badges: 3,
           },
-          links: {
-            imageUrl: "image URL",
-            name: "Name of avatar",
+          links:[ 
+            {
+            imageUrl: BlakeB,
+            name: "Blake B."
           },
+          {
+            imageUrl: LenaX,
+            name: "Lena X."
+          },
+          {
+            imageUrl:NinaM,
+            name: "Nina M."
+          },
+          {
+            imageUrl: TallikaP,
+            name: "Tallia P."
+          },
+          {
+            imageUrl: JordanR,
+            name: "Jordan R."
+          },
+          {
+            imageUrl: JamesC,
+            name: "James C.",
+          },
+          {
+            imageUrl: TinaM,
+            name: "Tina M.",
+          },
+
+        ],
+
           badge: ["Pioneer", "Leader", "Legend"],
           support: {
             linkCount: 95,
