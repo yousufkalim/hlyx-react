@@ -386,37 +386,5 @@ export const BlogLinkIcons: any = {
   SoundCloud: <DriveIcon color={"var(--social-back)"} />,
 };
 
-export const LinksData = [
-  {
-    icon: <AdvanceCellIcon />,
-    title: "Advanced Cell Research & Analysis",
-    description: "View Service Details",
-  },
-  {
-    icon: <img src={cellAnatomic} alt="Cell IMG" height={45} width={45} />,
-    title: "Cell Anatomic Molecular Splicing",
-    description: "View Service Details",
-  },
-  {
-    icon: <img src={bioTech} alt="Cell IMG" height={45} width={45} />,
-    title: "Bio-Technology Design & Implementation",
-    description: "View Service Details",
-  },
-  {
-    icon: <img src={scientific} alt="Cell IMG" height={45} width={45} />,
-    title: "Scientific Program Management",
-    description: "View Service Details",
-  },
-  {
-    icon: <img src={cellProg} alt="Cell IMG" height={45} width={45} />,
-    title: "Cell Programming and Rejuvenation",
-    description: "View Service Details",
-  },
-  {
-    icon: <img src={advanced} alt="Cell IMG" height={45} width={45} />,
-    title: "Advanced Molecular Splicing Interpolization ",
-    description: "View Service Details",
-  },
-];
 
 export const LOGIN_SECRET = "hlyx1234";

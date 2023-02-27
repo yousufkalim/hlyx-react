@@ -1,6 +1,7 @@
-import { IonAvatar, IonLabel } from "@ionic/react";
+import { IonAvatar, IonButton, IonIcon, IonLabel } from "@ionic/react";
+import { add } from "ionicons/icons";
 import React, { useContext } from "react";
-import { MoreOptions } from "../../../../../../assets/icons";
+import { MoreOptions, Plus } from "../../../../../../assets/icons";
 import Leader from "../../../../../../assets/icons/gold_medal.svg";
 import Legend from "../../../../../../assets/icons/grandprix_trophy.svg";
 import Pioneer from "../../../../../../assets/icons/silver_medal.svg";
@@ -132,13 +133,17 @@ const AssistTab = () => {
             ))}
           </div>
         </AssistCardSections>
-        <AssistCardSections title="Badges" lineColor="yellow">
+        {/* <AssistCardSections title="Badges" lineColor="yellow">
           <div className="badge-list">
             {UserBadges?.map((badge, index) => (
               <BadgeList badge={badge} />
             ))}
           </div>
-        </AssistCardSections>
+        </AssistCardSections> */}
+        <IonButton className="supportbtn" shape="round">
+          <IonIcon  icon={add}></IonIcon>
+        <p>Support</p>  
+        </IonButton>
       </div>
     </div>
   );

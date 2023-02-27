@@ -12,6 +12,7 @@ import { ProfileContext } from "../../context/profileContext";
 const HeroSession = () => {
   const { userProfile } = useContext(ProfileContext);
   const { image, jobTitle, name, address, companyLogo } = userProfile;
+  // const[jobTitle]=userProfile.contact[]
   return (
     <>
       <div style={{ position: "relative" }}>
@@ -39,7 +40,7 @@ const HeroSession = () => {
           <div className="ion_text">
             <BreifIcon color="var(--text-color)" />
             <p>
-              {jobTitle?.position} <b>{jobTitle?.companyName}</b>
+              {jobTitle?.position} at <b>{jobTitle?.companyName}</b>
             </p>
           </div>
 

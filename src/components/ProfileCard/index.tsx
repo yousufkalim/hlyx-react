@@ -69,7 +69,7 @@ const ProfileCard = ({
             <section className="detail">
               <BagIcon />
               <p className="position-text">
-                {position}{" "}
+                {position} at {" "}
                 <span style={{ fontWeight: "bold", color: "white" }}>
                   {companyName}
                 </span>

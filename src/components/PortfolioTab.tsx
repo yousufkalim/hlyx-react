@@ -19,21 +19,21 @@ const PortfolioTab = () => {
             className="portfolio-tab-segment-button-container"
             value="Photos"
           > 
-            <IonLabel className="portfolio-tab-segment-button">Company</IonLabel>
+            <IonLabel className="portfolio-tab-segment-button">Featured</IonLabel>
             
           </IonSegmentButton>
           <IonSegmentButton
             className="portfolio-tab-segment-button-container"
             value="Video"
           >
-            <IonLabel className="portfolio-tab-segment-button">Ventures</IonLabel>
+            <IonLabel className="portfolio-tab-segment-button">Research</IonLabel>
           </IonSegmentButton>
 
           <IonSegmentButton
             className="portfolio-tab-segment-button-container"
             value="Audio"
           >
-            <IonLabel className="portfolio-tab-segment-button">Work</IonLabel>
+            <IonLabel className="portfolio-tab-segment-button">Splicing</IonLabel>
           </IonSegmentButton>
         </IonSegment>
       </IonCard>

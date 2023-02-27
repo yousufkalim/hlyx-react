@@ -17,7 +17,7 @@ const Achievements = () => {
             <div className="achievement-description">
               <p className="year">{title}</p>
               <p className="descriptiontitle">{descriptiontitle}</p>
-              <ReadMoreText text={description} limit={100}/>
+              <ReadMoreText text={description} limit={200}/>
               </div>
           </div>
         )
