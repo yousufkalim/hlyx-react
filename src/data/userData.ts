@@ -797,7 +797,7 @@ export const userData = [
       altText: "Company Logo",
     },
     jobTitle: {
-      position: "CEO at",
+      position: "CEO",
       companyName: " HLYX Inc.",
     },
     address: "San Diego, CA",
