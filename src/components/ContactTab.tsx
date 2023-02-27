@@ -1,4 +1,4 @@
-import { IonAccordionGroup, IonButton, IonCard, IonLabel } from "@ionic/react";
+import { IonAccordionGroup, IonCard, IonLabel } from "@ionic/react";
 import { useContext } from "react";
 import {
   CalendarIcon,
@@ -11,19 +11,15 @@ import {
 } from "../assets/icons";
 import { SocialMediaIcons } from "../constants/index";
 import { ProfileContext } from "../context/profileContext";
+import { ContactCardProps } from "../interface";
 import "../style/components/ContactTab.css";
 import LinkCard from "./LinkCard";
 import HeroSession from "./MediaCard/heroSession";
 
-const ContactCard = ({
-  title,
-  children,
-}: {
-  title: string;
-  children: React.ReactNode;
-}) => {
+const ContactCard = ({ title, children, ...rest }: ContactCardProps) => {
+  const { className } = rest;
   return (
-    <IonCard className="card-container">
+    <IonCard className={`card-container ${className}`}>
       <IonLabel className="content-card-heading">{title}</IonLabel>
       {children}
     </IonCard>
@@ -155,10 +151,7 @@ const ContactTab = () => {
                   color={"var(--icon-back)"}
                   white={"var(--text-color)"}
                 />
-                <IonLabel
-                  className="icon_text office_icon_text"
-                
-                >
+                <IonLabel className="icon_text office_icon_text">
                   {contact?.officeAddress}
                 </IonLabel>
               </div>
@@ -194,7 +187,7 @@ const ContactTab = () => {
         </ContactCard>
       )}
       {contact?.blogLink && (
-        <ContactCard title="Links">
+        <ContactCard title="Links" className="border_none">
           <div
             style={{
               display: "flex",
@@ -218,22 +211,6 @@ const ContactTab = () => {
           </div>
         </ContactCard>
       )}
-      <div style={{ paddingBlock: 20, backgroundColor: "var(--bg-color)" }}>
-        <IonButton
-          className="outline-btn"
-          fill="outline"
-          expand="block"
-          shape="round"
-          style={{
-            fontWeight: 600,
-            fontSize: 15,
-            lineHeight: "17px",
-            fontFamily: "Poppins",
-          }}
-        >
-          Create Your Free Profile
-        </IonButton>
-      </div>
     </>
   );
 };

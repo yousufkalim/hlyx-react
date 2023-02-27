@@ -1,6 +1,5 @@
 import "../../../../style/components/AboutCard/aboutCard.css";
 import { IonButton, IonCard, IonLabel } from "@ionic/react";
-// import { loremText,  } from "../../../../constants";
 import ReadMoreText from "../../../ReadMoreText";
 import BusinessGoals from "./BusinessGoals";
 import UserDetailCard from "../../UserDetailCard/UserDetailCard";
@@ -11,18 +10,17 @@ import Icebreakers from "./Icebreakers/Icebreakers";
 import BusinessNeeds from "./BusinessNeeds/BusinessNeeds";
 import { ProfileContext } from "../../../../context/profileContext";
 import { useContext } from "react";
+import { AboutTabProps } from "../../../../interface";
 
 export const AboutCard = ({
   title,
   children,
   button,
-}: {
-  title: string;
-  button?: string;
-  children: React.ReactNode;
-}) => {
+  ...rest
+}: AboutTabProps) => {
+  const { className } = rest;
   return (
-    <IonCard className="card-container">
+    <IonCard className={`card-container ${className}`}>
       <div className="about-card-title">
         <IonLabel className="card-heading-lg">{title}</IonLabel>
         {button && (
@@ -83,14 +81,9 @@ const AboutTab = () => {
       <AboutCard title="Business Needs" button="View All">
         <BusinessNeeds />
       </AboutCard>
-      <AboutCard title="Icebreakers">
+      <AboutCard title="Icebreakers" className="border_none">
         <Icebreakers />
       </AboutCard>
-      <div style={{ paddingBlock: 20, backgroundColor: "var(--bg-color)" }}>
-        <IonButton className="outline-btn" fill="outline" expand="block">
-          Create Your Free Profile
-        </IonButton>
-      </div>
     </>
   );
 };

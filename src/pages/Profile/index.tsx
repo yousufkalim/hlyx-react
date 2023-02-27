@@ -1,4 +1,4 @@
-import { IonContent, IonPage } from "@ionic/react";
+import { IonButton, IonContent, IonPage } from "@ionic/react";
 import { useContext, useState } from "react";
 import ContactTab from "../../components/ContactTab";
 import HlyxContactTab from "../../components/HlyxContactTab";
@@ -55,6 +55,25 @@ const Profile = () => {
           ) : (
             <>
               <ProfileTabsContent activeTab={activeTab} />
+              <div
+                style={{ paddingBlock: 20, backgroundColor: "var(--bg-color)" }}
+              >
+                <div className="line-btn" />
+                <IonButton
+                  className="outline-btn"
+                  fill="outline"
+                  expand="block"
+                  shape="round"
+                  style={{
+                    fontWeight: 600,
+                    fontSize: 15,
+                    lineHeight: "17px",
+                    fontFamily: "Poppins",
+                  }}
+                >
+                  Create Your Free Profile
+                </IonButton>
+              </div>
             </>
           )}
         </IonContent>

@@ -1,6 +1,12 @@
 import { IonAccordionGroup, IonButton, IonCard, IonLabel } from "@ionic/react";
 import { useContext } from "react";
-import { CallIcon, ChevronIcon, MailIcon, MobileIcon, WorldIcon } from "../assets/icons";
+import {
+  CallIcon,
+  ChevronIcon,
+  MailIcon,
+  MobileIcon,
+  WorldIcon,
+} from "../assets/icons";
 import { SocialMediaIcons } from "../constants/index";
 import { ProfileContext } from "../context/profileContext";
 import "../style/components/ContactTab.css";
@@ -82,7 +88,9 @@ const HlyxContactTab = () => {
                     color={"var(--icon-back)"}
                     white={"var(--text-color)"}
                   />
-                  <IonLabel className="icon_text">{contact?.phone?.mobile}</IonLabel>
+                  <IonLabel className="icon_text">
+                    {contact?.phone?.mobile}
+                  </IonLabel>
                 </div>
                 <ChevronIcon />
               </div>
@@ -159,22 +167,6 @@ const HlyxContactTab = () => {
           </div>
         </ContactCard>
       )}
-      <div style={{ paddingBlock: 20, backgroundColor: "var(--bg-color)" }}>
-        <IonButton
-          className="outline-btn"
-          fill="outline"
-          expand="block"
-          shape="round"
-          style={{
-            fontWeight: 600,
-            fontSize: 15,
-            lineHeight: "17px",
-            fontFamily: "Poppins",
-          }}
-        >
-          Create Your Free Profile
-        </IonButton>
-      </div>
     </>
   );
 };

@@ -217,9 +217,16 @@ ion-accordion.accordion-expanded > [slot="header"] .ion-accordion-toggle-icon {
   line-height: 19px !important;
 }
 
+.line-btn {
+  width: 60px;
+  height: 2px;
+  background-color: #484953;
+  margin: 0 auto;
+}
+
 .outline-btn {
   color: var(--create-button);
-  --border-color: var(--create-button);
+  --border-color: #4a4a57;
   font-weight: 600;
   font-size: 15;
   line-height: 17px;

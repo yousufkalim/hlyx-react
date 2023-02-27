@@ -2,12 +2,14 @@ import { IonButton, IonCard, IonLabel } from "@ionic/react";
 import { useContext } from "react";
 import { ProfileContext } from "../../../context/profileContext";
 import "../../../style/components/portfolio.css";
+import UserDetailCard from "../UserDetailCard/UserDetailCard";
 
 const Portfolio = () => {
   const { userProfile } = useContext(ProfileContext);
   return (
     <>
-      <IonCard className="service-card-container">
+      <UserDetailCard />
+      <IonCard className="service-card-container border_none">
         <div className="service-card-title">
           <IonLabel className="card-heading-lg">Portfolio</IonLabel>
 
@@ -29,7 +31,7 @@ const Portfolio = () => {
                 maxWidth: 188,
               }}
             >
-              Commercial Real Estate Properties
+              {userProfile?.portfolioTitle}
             </p>
           </div>
         )}

@@ -43,11 +43,10 @@ import four_item_joel from "../assets/joelPortfolio/four_item.png";
 import five_item_joel from "../assets/joelPortfolio/five_item.png";
 
 //Main services
-import  Cellanatomic from "../assets/Cellanatomic.png"
-import  Ddiscussion from "../assets/Ddiscussion.png"
-import  DNA from "../assets/DNA.png"
-import  RBC from "../assets/RBC.png"
-
+import Cellanatomic from "../assets/Cellanatomic.png";
+import Ddiscussion from "../assets/Ddiscussion.png";
+import DNA from "../assets/DNA.png";
+import RBC from "../assets/RBC.png";
 
 export const userData = [
   // James Oriyan Profile
@@ -1433,12 +1432,7 @@ export const userData = [
       },
     },
     service: {
-      featuredServices: [
-        {
-          title: "Professional Services & Products",
-          description: "No Details given",
-        },
-      ],
+      title: "Professional Services & Products",
       mainServices: [
         {
           type: "MultiUnit",
