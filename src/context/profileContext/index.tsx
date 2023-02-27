@@ -28,6 +28,7 @@ const ProfileProvider = ({ children }: childrenProps) => {
     return () => {
       setUserProfile({});
     };
+    // eslint-disable-next-line
   }, [id]);
   const store = useMemo(() => ({ userProfile, setUserProfile }), [userProfile]);
 

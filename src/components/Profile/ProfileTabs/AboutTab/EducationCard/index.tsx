@@ -1,14 +1,13 @@
-import React, { useContext } from "react";
-import "../../../../../style/components/Education.css";
-import { Education } from "../../../../../interface";
+import { useContext } from "react";
 import { ProfileContext } from "../../../../../context/profileContext";
+import { Education } from "../../../../../interface";
+import "../../../../../style/components/Education.css";
 
 const EducationCard = () => {
   const { userProfile } = useContext(ProfileContext);
   const { education } = userProfile?.about;
 
   let charBuffer = "";
-  let colors = ["blue", "green", "yellow", "orange", "purple"];
   let line_color: any;
 
   function processWords(input: string) {
@@ -24,12 +23,19 @@ const EducationCard = () => {
     return charBuffer;
   }
 
-
   return (
     <div className="education_list">
       {education.map(
         (
-          { name, startDate, endDate,lineColor, image, major, program }: Education,
+          {
+            name,
+            startDate,
+            endDate,
+            lineColor,
+            image,
+            major,
+            program,
+          }: Education,
           index: number
         ) => (
           <div className="education_card_container" key={index}>

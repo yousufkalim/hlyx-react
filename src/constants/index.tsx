@@ -1,3 +1,7 @@
+import advanced from "../assets/advanced.png";
+import bioTech from "../assets/bioTech.png";
+import cellAnatomic from "../assets/cellAnatomic.png";
+import cellProg from "../assets/cellprog.png";
 import {
   AdvanceCellIcon,
   MediumIcon,
@@ -7,28 +11,6 @@ import {
   NumTwoIcon,
   SoundCloudIcon,
 } from "../assets/icons";
-import SliderOneImage from "../assets/media/slide-one-image.png";
-import SliderTwoImage from "../assets/media/slide-two-image.png";
-import SliderThreeImage from "../assets/media/slide-three-image.png";
-import {
-  BehanceIcon,
-  Facebook,
-  InstagramIcon,
-  MaskIcon,
-  MediumSocialIcon,
-  ShipFaceIcon,
-  SkypeIcon,
-  SlackIcon,
-  Twitter,
-  YoutubeIcon,
-  LinkedinIcon,
-} from "../assets/icons/SocialIcons";
-import cellAnatomic from "../assets/cellAnatomic.png";
-import bioTech from "../assets/bioTech.png";
-import LinkCard from "../components/LinkCard/index";
-import scientific from "../assets/scientific.png";
-import cellProg from "../assets/cellprog.png";
-import advanced from "../assets/advanced.png";
 import { DriveIcon } from "../assets/icons/index";
 import {
   BiDashboardIcon,
@@ -40,29 +22,23 @@ import {
   RedovelopmentIcon,
   UiUxIcon,
 } from "../assets/icons/ServiceTabIcons";
-
-// export const professionData = [
-//   {
-//     lineColor: "blue",
-//     title: "Company",
-//     description: "Sphere Bio Technologies, Inc.",
-//   },
-//   {
-//     lineColor: "green",
-//     title: "Title / Role",
-//     description: "Executive Director",
-//   },
-//   {
-//     lineColor: "purple",
-//     title: "Occupation / Profession",
-//     description: "Molecular Scientist, PHD",
-//   },
-//   {
-//     lineColor: "orange",
-//     title: "Industry",
-//     description: "Life Sciences, Bio-Engineering",
-//   },
-// ];
+import {
+  BehanceIcon,
+  Facebook,
+  InstagramIcon,
+  LinkedinIcon,
+  MaskIcon,
+  MediumSocialIcon,
+  ShipFaceIcon,
+  SkypeIcon,
+  SlackIcon,
+  Twitter,
+  YoutubeIcon,
+} from "../assets/icons/SocialIcons";
+import SliderOneImage from "../assets/media/slide-one-image.png";
+import SliderThreeImage from "../assets/media/slide-three-image.png";
+import SliderTwoImage from "../assets/media/slide-two-image.png";
+import scientific from "../assets/scientific.png";
 
 export const JamesprofessionData = [
   {
@@ -410,7 +386,7 @@ export const BlogLinkIcons: any = {
   SoundCloud: <DriveIcon color={"var(--social-back)"} />,
 };
 
-const LinksData = [
+export const LinksData = [
   {
     icon: <AdvanceCellIcon />,
     title: "Advanced Cell Research & Analysis",

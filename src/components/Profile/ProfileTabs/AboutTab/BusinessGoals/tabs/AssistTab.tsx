@@ -1,16 +1,12 @@
+import { IonAvatar, IonLabel } from "@ionic/react";
 import React, { useContext } from "react";
-import { IonAvatar, IonButton, IonLabel } from "@ionic/react";
-import { MoreOptions, Plus } from "../../../../../../assets/icons";
-import "../../../../../../style/components/assistTab.css";
-import Pioneer from "../../../../../../assets/icons/silver_medal.svg";
-import Legend from "../../../../../../assets/icons/grandprix_trophy.svg";
+import { MoreOptions } from "../../../../../../assets/icons";
 import Leader from "../../../../../../assets/icons/gold_medal.svg";
-import {
-  LinksIcon,
-  ShareIcon,
-  MessageIcon,
-} from "../../../../../../assets/icons/AboutTabsIcons";
+import Legend from "../../../../../../assets/icons/grandprix_trophy.svg";
+import Pioneer from "../../../../../../assets/icons/silver_medal.svg";
 import { ProfileContext } from "../../../../../../context/profileContext";
+import { BadgeListProps, BadgeType } from "../../../../../../interface";
+import "../../../../../../style/components/assistTab.css";
 
 export const assistListData = [
   {
@@ -30,12 +26,6 @@ export const assistListData = [
     description: "Dec. 21, 2023",
   },
 ];
-
-interface BadgeListProps {
-  badge: BadgeType;
-}
-
-type BadgeType = "Pioneer" | "Legend" | "Leader";
 
 const UserBadges: BadgeType[] = ["Pioneer", "Leader", "Legend"];
 
@@ -92,7 +82,6 @@ const AssistTab = () => {
   const { userProfile } = useContext(ProfileContext);
   const { assist } = userProfile?.about?.businessGoal ?? [];
   const { status, startDate, deadline, links } = assist;
-  const { name, imageUrl } = assist?.links ?? [];
 
   return (
     <div className="assist_card_container">
@@ -128,14 +117,16 @@ const AssistTab = () => {
             <StatList digit={95} description="Total Links" />
             <StatList digit={101} description="Total Assists" />
             <StatList digit={3} description="Badges" />
-          </div>  
+          </div>
         </AssistCardSections>
 
         <AssistCardSections title="Links" lineColor="green">
           <div className="assist_avatar">
-            {links.map(({imageUrl,name}:any,index:number) => (
+            {links.map(({ imageUrl, name }: any, index: number) => (
               <div className="ionAvatar_container">
-                <IonAvatar className="ion_avatar"><img src={imageUrl}/></IonAvatar>
+                <IonAvatar className="ion_avatar">
+                  <img src={imageUrl} alt="" />
+                </IonAvatar>
                 <IonLabel className="ionlabel">{name}</IonLabel>
               </div>
             ))}
@@ -148,20 +139,6 @@ const AssistTab = () => {
             ))}
           </div>
         </AssistCardSections>
-        {/* <AssistCardSections title="Support" lineColor="red">
-          <div className="Support-icons">
-            <div className="support-link-badge" data-count="95">
-              <LinksIcon />
-            </div>
-            <div className="support-message-badge" data-count="101">
-              <MessageIcon />
-            </div>
-            <ShareIcon />
-            <IonButton className="Assist-Button" shape="round" size="default">
-              {<Plus />}Support
-            </IonButton>
-          </div>
-        </AssistCardSections> */}
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
-import { IonCard, IonLabel, IonSegment, IonSegmentButton } from "@ionic/react";
-import React, { useState } from "react";
+import { IonLabel, IonSegment, IonSegmentButton } from "@ionic/react";
+import { useState } from "react";
 import { TabsProps } from "../../../../../interface";
 import "../../../../../style/components/toggleButton.css";
 import AchievedTab from "./tabs/AchievedTab";

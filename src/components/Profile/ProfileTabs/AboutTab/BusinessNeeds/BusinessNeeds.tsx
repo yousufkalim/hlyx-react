@@ -1,12 +1,11 @@
-import React, { useContext } from "react";
-import { needsData } from "../../../../../constants";
-import "../../../../../style/components/BusinessNeeds.css";
+import { useContext } from "react";
 import {
   LinksIcon,
   MessageIcon,
-  ShareIcon,
+  ShareIcon
 } from "../../../../../assets/icons/AboutTabsIcons";
 import { ProfileContext } from "../../../../../context/profileContext";
+import "../../../../../style/components/BusinessNeeds.css";
 
 const BusinessNeeds = () => {
   const { userProfile } = useContext(ProfileContext);

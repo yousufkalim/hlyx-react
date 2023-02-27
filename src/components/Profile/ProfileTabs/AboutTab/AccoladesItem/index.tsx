@@ -1,14 +1,11 @@
-import { IonCard, IonCardContent } from "@ionic/react";
-import React, { useContext } from "react";
-import { IonButton } from "@ionic/react";
-import { accolatesData } from "../../../../../constants/index";
+import { useContext } from "react";
 import { BlueDotIcon } from "../../../../../assets/icons";
 import {
   AccoladesCalender,
-  ForwardIcon,
+  ForwardIcon
 } from "../../../../../assets/icons/index";
-import "../../../../../style/components/accolades.css";
 import { ProfileContext } from "../../../../../context/profileContext";
+import "../../../../../style/components/accolades.css";
 
 const AccoladesItem = () => { 
   const { userProfile } = useContext(ProfileContext);
