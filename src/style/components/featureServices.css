@@ -13,9 +13,23 @@
   width: 4px;
   height: 49px;
   border-radius: 100px;
-  border-left: 4px solid #AC85FF;
+  /* border-left: 4px solid #AC85FF; */
 }
+.border-red {
+ 
+  background-color: #D8213A;
+}
+.border-yellow {
+  background-color: #FEDD71;
+}
+.border-green {
 
+  background-color: #59D456;
+}
+.border-purple {
+ 
+  background-color: #D14CE7;
+}
 .featured_details_container {
   max-width: 231px;
   display: flex;
