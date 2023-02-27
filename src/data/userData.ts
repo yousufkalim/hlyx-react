@@ -1,9 +1,9 @@
-// Background Images
+// Background Photos
 import JamesBackground from "../assets/JamesR.png";
 import DoctorBackground from "../assets/physician_male_01.png";
 import JamesHlyxBackground from "../assets/JamesHlyx.png";
 import JoeICalvilloBackground from "../assets/JoeICalvillo.png";
-// Cover Images
+// Cover Photos
 import JamesCover from "../assets/media/JamesCover.png";
 import DoctorCover from "../assets/media/media-image.png";
 import JamesHlyxCover from "../assets/media/JamesHlyxCover.png";
@@ -27,10 +27,26 @@ import LenaX from "../assets/LenaX.png";
 import NinaM from "../assets/NinaM.png";
 import TallikaP from "../assets/TallikaP.png";
 import TinaM from "../assets/TinaM.png";
+import OriyanVideo from "../assets/portfolio/oriyan_video.png";
+import audio_interview from "../assets/portfolio/audio_interview.png";
+import CEO from "../assets/portfolio/ceo.png";
+import Kelly_Lan from "../assets/portfolio/Kelly_Lan.png";
+import Jordan_Roessle from "../assets/portfolio/Jordan_Roessle.png";
+import company_video from "../assets/portfolio/company_video.png";
+import company_img from "../assets/portfolio/company_img.png";
+import dashboard from "../assets/portfolio/dashboard.png";
+import hlyx from "../assets/portfolio/hlyx.png";
+import audio_memo from "../assets/portfolio/audio_memo.png";
+import first_item_joel from "../assets/joelPortfolio/first_item.png";
+import two_item_joel from "../assets/joelPortfolio/first_second.png";
+import three_item_joel from "../assets/joelPortfolio/three_item.png";
+import four_item_joel from "../assets/joelPortfolio/four_item.png";
+import five_item_joel from "../assets/joelPortfolio/five_item.png";
 
 export const userData = [
   // James Oriyan Profile
   {
+    id: "james-oriyn",
     blend: "james",
     backgroundImage: {
       url: JamesBackground,
@@ -125,7 +141,15 @@ export const userData = [
     },
 
     about: {
-      bio: "I have dedicated the last 24 years of my career to building technology solutions that have impacted the businesses of startup founders, small business owners, and established enterprise brands. I started my first company at the age of 16, creating custom...",
+      bio: `24 years of cumulative professional product design experience, specializing in web and mobile UI/UX design. 
+      \n\nVeteran technology entrepreneur, with extensive experience building B2B/B2C digital product companies. Early in my career, I quickly recognized the innumerable challenges facing the majority of startup founders, under-resourced, undercapitalized, underappreciated, and so on. Leveraging my personal resources and skill sets, I founded a company of exceptional individuals, providing both strategic and technical solutions that resolve the pain points of other business owners. Oriyn works with entrepreneurs and brands of all diversities and backgrounds to streamline and optimize product innovation, modernize service processes, and productize their expertise using custom software solutions. 
+      \n\nHIGHLIGHTS: 
+      \n > Grew Oriyn from 0 to 175 clients in 5 years
+      \n > 670 projects completed to present date
+      \n > Serviced clients across 15 vertical industries including automotive, real estate, health care, IT/IoT, business consulting, home automation, education, marketing, insurance, beauty and cosmetics, green tech, and more
+      \n > Completed 1300 career projects from 1999 to present (graphic design, UI/UX product design, branding/brand collateral, social media, web and mobile software)
+      \n > Born in Ghana, raised in the Bay Area, lives in San Marcos, CA
+      \n > Multi-lingual, speaks English, Ewe, some Spanish, and learning Mandarin`,
       profession: [
         {
           lineColor: "blue",
@@ -396,9 +420,22 @@ export const userData = [
         },
       ],
     },
+    portfolio: [
+      OriyanVideo,
+      audio_interview,
+      CEO,
+      Kelly_Lan,
+      Jordan_Roessle,
+      company_video,
+      company_img,
+      dashboard,
+      hlyx,
+      audio_memo,
+    ],
   },
   // Doctor Profile
   {
+    id: "kenji-sphere",
     backgroundImage: {
       url: DoctorBackground,
       altText: "User Background picture",
@@ -430,7 +467,7 @@ export const userData = [
         faxNumber: ["+1 (650) 345-6789"],
       },
       calendar: "Calendly > Kenji Awurama",
-      website: "www.sperebio.tech",
+      website: "www.spherebio.tech",
       officeAddress: "1886 Globe Trotter Court Palo Alto, CA 95051",
       socialMedia: [
         {
@@ -749,13 +786,13 @@ export const userData = [
   },
   // James Hlyx Profile
   {
+    id: "james-hlyx",
     blend: "hlyx",
     backgroundImage: {
       url: JamesHlyxBackground,
       altText: "User Background Picture",
     },
-    id: "james-hlyx",
-    name: "JamesR. Beckley",
+    name: "James R. Beckley",
     companyLogo: {
       url: Hylx,
       altText: "Company Logo",
@@ -770,7 +807,7 @@ export const userData = [
       altText: "user Picture",
     },
     contact: {
-      name: "JamesR. Beckley",
+      name: "James R. Beckley",
       jobTitle: {
         position: "CEO",
         companyName: " Oriyn",
@@ -779,6 +816,7 @@ export const userData = [
       email: "james.beckley@hlyx.io",
       phone: {
         number: "+1 (408) 420-9617",
+        mobile: "+1 (659) 308-8890",
         faxNumber: ["+1 (408) 420-9617   Ext 700", "+1 (408) 420-9617"],
       },
       calendar: "Setmore > James R. Beckley",
@@ -855,7 +893,7 @@ export const userData = [
     },
 
     about: {
-      bio: "Hello, I’m James R. Beckley, the founder and creator of HLYX. My team and created HLYX with the principal mission of empowering first time entrepreneurs, small business owners, to established brands to come together and build...",
+      bio: "Hello, I’m James R. Beckley, the founder and creator of HLYX. My team I and created HLYX with the principal mission of empowering first time entrepreneurs, small business owners, to established brands to come together and build...",
       profession: [
         {
           lineColor: "blue",
@@ -1108,6 +1146,7 @@ export const userData = [
   },
   // Joel Calvillo Profile
   {
+    id: "joel-calvillogroup",
     blend: "blue",
     backgroundImage: {
       url: JoeICalvilloBackground,
@@ -1179,7 +1218,10 @@ export const userData = [
     },
 
     about: {
-      bio: "Joel Calvillo is a commercial real estate professional with over 20 years of experience focused on the Sale, and 1031 Exchange of investment properties throughout the Greater Bay Area and across the nation..As senior vice president with KW Commercial and leader of the  Calvillo Group, he offers a deep understanding of the full range  of investment real estate assets types and transactions.He has developed  a successful team of professionals along with strong industry relationships to provide a high level of  service of investment clients. Previous to his affiliation with KW Commercial, Joel was a Vice President and Shareholder with NAI Northern California and an Investment Specialist with The Losness Group Apartment Brokerage. Prior to real estate, Joel spent over a decade in technology sales for top international semiconductor distribution companies Arrow Electronics and Future Electronics, as well as entrepreneur founding a high value business focused on nationwide networking equipment sales. Born and raised in the San Francisco Bay Area, Joel obtained an early education in real estate  investments via his parents who locally owned apartments and other rental properties.",
+      bio: `Joel Calvillo is a commercial real estate professional with over 20 years of experience focused on the Sale, and 1031 Exchange of investment properties throughout the Greater Bay Area and across the nation. As Senior Vice President with KW Commercial and leader of The Calvillo Group, he offers a deep understanding of the full range of investment real estate assets types and transactions. He has developed a successful team of professionals along with strong industry relationships to provide a high level of service for investment clients.
+      Previous to his affiliation with KW Commercial, Joel was a Vice President and Shareholder with NAI Northern California and an Investment Specialist with The Losness Group Apartment Brokerage. Prior to real estate, Joel spent over a decade in technology sales for top international semiconductor distribution companies Arrow Electronics and Future Electronics, as well as entrepreneur founding a high value business focused on nationwide networking equipment sales.
+      Born and raised in the San Francisco Bay Area, Joel obtained an early education in real estate investments via his parents who locally owned apartments and other rental properties.
+      `,
       profession: [
         {
           lineColor: "blue",
@@ -1426,5 +1468,13 @@ export const userData = [
         },
       ],
     },
+    portfolioTitle: "Commercial Real Estate Properties",
+    portfolio: [
+      first_item_joel,
+      two_item_joel,
+      three_item_joel,
+      four_item_joel,
+      five_item_joel,
+    ],
   },
 ];
