@@ -1198,13 +1198,13 @@ export const userData = [
         },
         {
           link: "https://soundcloud.com/",
-          type: "GoogleDrive",
+          type: "SoundCloud",
           title: "Finding The Right Agent For Your Next Commercial Property",
           description: "Access Audio on SoundCloud",
         },
         {
           link: "https://www.google.com/drive/",
-          type: "SoundCloud",
+          type: "GoogleDrive",
           title: "Joel Calvillo's Service Sheet 2023",
           description: "Access File on Google Drive ",
         },

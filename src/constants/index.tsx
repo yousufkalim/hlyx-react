@@ -382,8 +382,8 @@ export const ServicesIcons: any = {
 
 export const BlogLinkIcons: any = {
   Medium: <MediumIcon color={"var(--social-back)"} />,
-  GoogleDrive: <SoundCloudIcon color={"var(--social-back)"} />,
-  SoundCloud: <DriveIcon color={"var(--social-back)"} />,
+  GoogleDrive:  <DriveIcon color={"var(--social-back)"} />,
+  SoundCloud:<SoundCloudIcon color={"var(--social-back)"} />,
 };
 
 
