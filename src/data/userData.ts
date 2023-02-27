@@ -20,13 +20,13 @@ import SaintFrancis from "../assets/SaintFrancis.png";
 import Stanfard from "../assets/stanfard.png";
 
 // Avatars
-import BlakeB from "../assets/BlakeB.png"
-import JamesC from "../assets/JamesC.png"
-import JordanR from "../assets/JordanR.png"
-import LenaX from "../assets/LenaX.png"
-import NinaM from "../assets/NinaM.png"
-import TallikaP from "../assets/TallikaP.png"
-import TinaM from "../assets/TinaM.png"
+import BlakeB from "../assets/BlakeB.png";
+import JamesC from "../assets/JamesC.png";
+import JordanR from "../assets/JordanR.png";
+import LenaX from "../assets/LenaX.png";
+import NinaM from "../assets/NinaM.png";
+import TallikaP from "../assets/TallikaP.png";
+import TinaM from "../assets/TinaM.png";
 
 export const userData = [
   // James Oriyan Profile
@@ -96,7 +96,7 @@ export const userData = [
           label: "Behance",
         },
         {
-          link:" https://www.skype.com/en/@oriynapps",
+          link: " https://www.skype.com/en/@oriynapps",
           label: "Skype",
         },
       ],
@@ -288,37 +288,36 @@ export const userData = [
             totalAssist: 101,
             badges: 3,
           },
-          links:[ 
+          links: [
             {
-            imageUrl: BlakeB,
-            name: "Blake B."
-          },
-          {
-            imageUrl: LenaX,
-            name: "Lena X."
-          },
-          {
-            imageUrl:NinaM,
-            name: "Nina M."
-          },
-          {
-            imageUrl: TallikaP,
-            name: "Tallia P."
-          },
-          {
-            imageUrl: JordanR,
-            name: "Jordan R."
-          },
-          {
-            imageUrl: JamesC,
-            name: "James C.",
-          },
-          {
-            imageUrl: TinaM,
-            name: "Tina M.",
-          },
-
-        ],
+              imageUrl: BlakeB,
+              name: "Blake B.",
+            },
+            {
+              imageUrl: LenaX,
+              name: "Lena X.",
+            },
+            {
+              imageUrl: NinaM,
+              name: "Nina M.",
+            },
+            {
+              imageUrl: TallikaP,
+              name: "Tallia P.",
+            },
+            {
+              imageUrl: JordanR,
+              name: "Jordan R.",
+            },
+            {
+              imageUrl: JamesC,
+              name: "James C.",
+            },
+            {
+              imageUrl: TinaM,
+              name: "Tina M.",
+            },
+          ],
 
           badge: ["Pioneer", "Leader", "Legend"],
           support: {
@@ -359,7 +358,7 @@ export const userData = [
     },
     service: {
       featuredServices: [
-        { 
+        {
           lineColor: "yellow",
           title: "Market Research & BI ",
           description:
@@ -371,7 +370,7 @@ export const userData = [
           description:
             "We provide modern UI/UX Product Design and full-service software development",
         },
-        { 
+        {
           lineColor: "purple",
           title: "Venture Lab ",
           description:
@@ -637,37 +636,36 @@ export const userData = [
             totalAssist: 101,
             badges: 3,
           },
-          links:[ 
+          links: [
             {
-            imageUrl: BlakeB,
-            name: "Blake B."
-          },
-          {
-            imageUrl: LenaX,
-            name: "Lena X."
-          },
-          {
-            imageUrl:NinaM,
-            name: "Nina M."
-          },
-          {
-            imageUrl: TallikaP,
-            name: "Tallia P."
-          },
-          {
-            imageUrl: JordanR,
-            name: "Jordan R."
-          },
-          {
-            imageUrl: JamesC,
-            name: "James C.",
-          },
-          {
-            imageUrl: TinaM,
-            name: "Tina M.",
-          },
-
-        ],
+              imageUrl: BlakeB,
+              name: "Blake B.",
+            },
+            {
+              imageUrl: LenaX,
+              name: "Lena X.",
+            },
+            {
+              imageUrl: NinaM,
+              name: "Nina M.",
+            },
+            {
+              imageUrl: TallikaP,
+              name: "Tallia P.",
+            },
+            {
+              imageUrl: JordanR,
+              name: "Jordan R.",
+            },
+            {
+              imageUrl: JamesC,
+              name: "James C.",
+            },
+            {
+              imageUrl: TinaM,
+              name: "Tina M.",
+            },
+          ],
 
           badge: ["Pioneer", "Leader", "Legend"],
           support: {
@@ -997,37 +995,36 @@ export const userData = [
             totalAssist: 101,
             badges: 3,
           },
-          links:[ 
+          links: [
             {
-            imageUrl: BlakeB,
-            name: "Blake B."
-          },
-          {
-            imageUrl: LenaX,
-            name: "Lena X."
-          },
-          {
-            imageUrl:NinaM,
-            name: "Nina M."
-          },
-          {
-            imageUrl: TallikaP,
-            name: "Tallia P."
-          },
-          {
-            imageUrl: JordanR,
-            name: "Jordan R."
-          },
-          {
-            imageUrl: JamesC,
-            name: "James C.",
-          },
-          {
-            imageUrl: TinaM,
-            name: "Tina M.",
-          },
-
-        ],
+              imageUrl: BlakeB,
+              name: "Blake B.",
+            },
+            {
+              imageUrl: LenaX,
+              name: "Lena X.",
+            },
+            {
+              imageUrl: NinaM,
+              name: "Nina M.",
+            },
+            {
+              imageUrl: TallikaP,
+              name: "Tallia P.",
+            },
+            {
+              imageUrl: JordanR,
+              name: "Jordan R.",
+            },
+            {
+              imageUrl: JamesC,
+              name: "James C.",
+            },
+            {
+              imageUrl: TinaM,
+              name: "Tina M.",
+            },
+          ],
 
           badge: ["Pioneer", "Leader", "Legend"],
           support: {
@@ -1323,37 +1320,36 @@ export const userData = [
             totalAssist: 101,
             badges: 3,
           },
-          links:[ 
+          links: [
             {
-            imageUrl: BlakeB,
-            name: "Blake B."
-          },
-          {
-            imageUrl: LenaX,
-            name: "Lena X."
-          },
-          {
-            imageUrl:NinaM,
-            name: "Nina M."
-          },
-          {
-            imageUrl: TallikaP,
-            name: "Tallia P."
-          },
-          {
-            imageUrl: JordanR,
-            name: "Jordan R."
-          },
-          {
-            imageUrl: JamesC,
-            name: "James C.",
-          },
-          {
-            imageUrl: TinaM,
-            name: "Tina M.",
-          },
-
-        ],
+              imageUrl: BlakeB,
+              name: "Blake B.",
+            },
+            {
+              imageUrl: LenaX,
+              name: "Lena X.",
+            },
+            {
+              imageUrl: NinaM,
+              name: "Nina M.",
+            },
+            {
+              imageUrl: TallikaP,
+              name: "Tallia P.",
+            },
+            {
+              imageUrl: JordanR,
+              name: "Jordan R.",
+            },
+            {
+              imageUrl: JamesC,
+              name: "James C.",
+            },
+            {
+              imageUrl: TinaM,
+              name: "Tina M.",
+            },
+          ],
 
           badge: ["Pioneer", "Leader", "Legend"],
           support: {

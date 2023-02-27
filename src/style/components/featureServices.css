@@ -12,21 +12,6 @@
   flex-shrink: 0;
   width: 4px;
   height: 49px;
-}
-
-.border-yellow {
-  border-radius: 100px;
-  border-left: 4px solid #FFD84F;
-}
-.border-red {
-  border-radius: 100px;
-  border-left: 4px solid #9c2626;
-}
-.border-green {
-  border-radius: 100px;
-  border-left: 4px solid #87CC66;
-}
-.border-purple {
   border-radius: 100px;
   border-left: 4px solid #AC85FF;
 }

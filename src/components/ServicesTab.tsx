@@ -8,7 +8,6 @@ import scientific from "../assets/scientific.png";
 import { IonButton } from "@ionic/react";
 import UserDetailCard from "./Profile/UserDetailCard/UserDetailCard";
 import FeaturedServices from "./FeaturedServices";
-// import { userData } from "../data/userData";
 import {
   BiDashboardIcon,
   RightArrowIcon,
