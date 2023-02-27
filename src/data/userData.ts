@@ -19,6 +19,14 @@ import DeAnzaCollege from "../assets//DeAnzaCollege.png";
 import SaintFrancis from "../assets/SaintFrancis.png";
 import Stanfard from "../assets/stanfard.png";
 
+// Avatars
+import BlakeB from "../assets/BlakeB.png";
+import JamesC from "../assets/JamesC.png";
+import JordanR from "../assets/JordanR.png";
+import LenaX from "../assets/LenaX.png";
+import NinaM from "../assets/NinaM.png";
+import TallikaP from "../assets/TallikaP.png";
+import TinaM from "../assets/TinaM.png";
 import OriyanVideo from "../assets/portfolio/oriyan_video.png";
 import audio_interview from "../assets/portfolio/audio_interview.png";
 import CEO from "../assets/portfolio/ceo.png";
@@ -96,6 +104,14 @@ export const userData = [
           label: "YouTube",
         },
         {
+          link: "https://www.instagram.com/weareoriyn",
+          label: "Instagram",
+        },
+        {
+          link: "https://www.youtube.com/",
+          label: "Behance",
+        },
+        {
           link: " https://www.skype.com/en/@oriynapps",
           label: "Skype",
         },
@@ -109,14 +125,14 @@ export const userData = [
           description: "Access Article on Medium",
         },
         {
-          link: "https://www.google.com/drive/",
+          link: "https://soundcloud.com/",
           type: "GoogleDrive",
           title:
             "The Future of Business Technology And How Oriyn Is Planning Ahead",
           description: "Access Audio on SoundCloud",
         },
         {
-          link: "https://soundcloud.com/",
+          link: "https://www.google.com/drive/",
           type: "SoundCloud",
           title: "Oriyn Business Solutions Deck 2023",
           description: "Access File on Google Drive",
@@ -296,10 +312,37 @@ export const userData = [
             totalAssist: 101,
             badges: 3,
           },
-          links: {
-            imageUrl: "image URL",
-            name: "Name of avatar",
-          },
+          links: [
+            {
+              imageUrl: BlakeB,
+              name: "Blake B.",
+            },
+            {
+              imageUrl: LenaX,
+              name: "Lena X.",
+            },
+            {
+              imageUrl: NinaM,
+              name: "Nina M.",
+            },
+            {
+              imageUrl: TallikaP,
+              name: "Tallia P.",
+            },
+            {
+              imageUrl: JordanR,
+              name: "Jordan R.",
+            },
+            {
+              imageUrl: JamesC,
+              name: "James C.",
+            },
+            {
+              imageUrl: TinaM,
+              name: "Tina M.",
+            },
+          ],
+
           badge: ["Pioneer", "Leader", "Legend"],
           support: {
             linkCount: 95,
@@ -521,6 +564,7 @@ export const userData = [
       ],
       education: [
         {
+          lineColor: "yellow",
           name: "San Jose State",
           startDate: "2005",
           endDate: "2009",
@@ -532,6 +576,7 @@ export const userData = [
           program: "Masters Degree",
         },
         {
+          lineColor: "green",
           name: "University San Diego",
           startDate: "Class of 1996",
           major: "Biology, Electives, STEM",
@@ -630,10 +675,37 @@ export const userData = [
             totalAssist: 101,
             badges: 3,
           },
-          links: {
-            imageUrl: "image URL",
-            name: "Name of avatar",
-          },
+          links: [
+            {
+              imageUrl: BlakeB,
+              name: "Blake B.",
+            },
+            {
+              imageUrl: LenaX,
+              name: "Lena X.",
+            },
+            {
+              imageUrl: NinaM,
+              name: "Nina M.",
+            },
+            {
+              imageUrl: TallikaP,
+              name: "Tallia P.",
+            },
+            {
+              imageUrl: JordanR,
+              name: "Jordan R.",
+            },
+            {
+              imageUrl: JamesC,
+              name: "James C.",
+            },
+            {
+              imageUrl: TinaM,
+              name: "Tina M.",
+            },
+          ],
+
           badge: ["Pioneer", "Leader", "Legend"],
           support: {
             linkCount: 95,
@@ -674,11 +746,19 @@ export const userData = [
     service: {
       featuredServices: [
         {
+          lineColor: "yellow",
+          title: "Advanced Research",
+          description:
+            "We help startup founders and SMB’s with quality market research into any vertical",
+        },
+        {
+          lineColor: "green",
           title: "Market Research & BI ",
           description:
             "We help startup founders and SMB’s with quality market research into any vertical",
         },
         {
+          lineColor: "purple",
           title: "Market Research & BI ",
           description:
             "We help startup founders and SMB’s with quality market research into any vertical",
@@ -963,10 +1043,37 @@ export const userData = [
             totalAssist: 101,
             badges: 3,
           },
-          links: {
-            imageUrl: "image URL",
-            name: "Name of avatar",
-          },
+          links: [
+            {
+              imageUrl: BlakeB,
+              name: "Blake B.",
+            },
+            {
+              imageUrl: LenaX,
+              name: "Lena X.",
+            },
+            {
+              imageUrl: NinaM,
+              name: "Nina M.",
+            },
+            {
+              imageUrl: TallikaP,
+              name: "Tallia P.",
+            },
+            {
+              imageUrl: JordanR,
+              name: "Jordan R.",
+            },
+            {
+              imageUrl: JamesC,
+              name: "James C.",
+            },
+            {
+              imageUrl: TinaM,
+              name: "Tina M.",
+            },
+          ],
+
           badge: ["Pioneer", "Leader", "Legend"],
           support: {
             linkCount: 95,
@@ -1139,6 +1246,7 @@ export const userData = [
       ],
       education: [
         {
+           lineColor: "red",
           name: "De Anza College",
           startDate: "1994",
           endDate: "1996",
@@ -1150,6 +1258,7 @@ export const userData = [
           program: "Associate Arts",
         },
         {
+          lineColor: "yellow",
           name: "Saint Francis High",
           startDate: "2005",
           endDate: "2008",
@@ -1265,10 +1374,37 @@ export const userData = [
             totalAssist: 101,
             badges: 3,
           },
-          links: {
-            imageUrl: "image URL",
-            name: "Name of avatar",
-          },
+          links: [
+            {
+              imageUrl: BlakeB,
+              name: "Blake B.",
+            },
+            {
+              imageUrl: LenaX,
+              name: "Lena X.",
+            },
+            {
+              imageUrl: NinaM,
+              name: "Nina M.",
+            },
+            {
+              imageUrl: TallikaP,
+              name: "Tallia P.",
+            },
+            {
+              imageUrl: JordanR,
+              name: "Jordan R.",
+            },
+            {
+              imageUrl: JamesC,
+              name: "James C.",
+            },
+            {
+              imageUrl: TinaM,
+              name: "Tina M.",
+            },
+          ],
+
           badge: ["Pioneer", "Leader", "Legend"],
           support: {
             linkCount: 95,

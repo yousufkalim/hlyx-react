@@ -8,6 +8,7 @@ const EducationCard = () => {
   const { education } = userProfile?.about;
 
   let charBuffer = "";
+  let colors = ["blue", "green", "yellow", "orange", "purple"];
   let line_color: any;
 
   function processWords(input: string) {
@@ -22,6 +23,7 @@ const EducationCard = () => {
 
     return charBuffer;
   }
+
 
   return (
     <div className="education_list">

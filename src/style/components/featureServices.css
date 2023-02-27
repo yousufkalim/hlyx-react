@@ -12,25 +12,24 @@
   flex-shrink: 0;
   width: 4px;
   height: 49px;
-}
-
-.border-yellow {
   border-radius: 100px;
-  border-left: 4px solid #FFD84F;
+  /* border-left: 4px solid #AC85FF; */
 }
 .border-red {
-  border-radius: 100px;
-  border-left: 4px solid #9c2626;
+ 
+  background-color: #D8213A;
+}
+.border-yellow {
+  background-color: #FEDD71;
 }
 .border-green {
-  border-radius: 100px;
-  border-left: 4px solid #87CC66;
+
+  background-color: #59D456;
 }
 .border-purple {
-  border-radius: 100px;
-  border-left: 4px solid #AC85FF;
+ 
+  background-color: #D14CE7;
 }
-
 .featured_details_container {
   max-width: 231px;
   display: flex;
