@@ -1,51 +1,15 @@
-import { IonButton, IonContent, IonModal, IonCard } from "@ionic/react";
-import React, { useState } from "react";
-import {
-  BagIcon,
-  // BookMarkIcon,
-  // ChatIcon,
-  // HeartIcon,
-  LocationIcon,
-  // SendIcon,
-  SwipeBar,
-} from "../../assets/icons";
+import { useState } from "react";
+import { IonButton, IonCard, IonContent } from "@ionic/react";
+import { ProfileCardProps } from "../../interface";
+import { BagIcon, LocationIcon, SwipeBar } from "../../assets/icons";
 import "../../style/components/profileCard.css";
-
-// export const floatingIcons = [
-//   <HeartIcon />,
-//   <BookMarkIcon />,
-//   <ChatIcon />,
-//   <SendIcon />,
-// ];
-// Floating Component Removed
-// export const FloatingButtonGroup = ({ icons }: { icons: JSX.Element[] }) => {
-//   return (
-//     <section className="floatingButton-container">
-//       {icons.map((icon, index) => (
-//         <div className="floating-btn" key={index}>
-//           {icon}
-//         </div>
-//       ))}
-//     </section>
-//   );
-// };
-
-export interface ProfileCardProps {
-  backgroundImage: string;
-  companyLogo: string;
-  name: string;
-  position: string;
-  location: string;
-  companyName?: string | undefined;
-  link: string;
-  blend?: string;
-}
 
 const ProfileCard = ({
   backgroundImage,
   companyName,
   companyLogo,
   name,
+  id,
   position,
   location,
   link,
@@ -71,7 +35,6 @@ const ProfileCard = ({
 
       <section className={blend ?? `linear-bg`}></section>
 
-      {/* <FloatingButtonGroup icons={floatingIcons} /> Floating icons remove  */}
       <article className="cardContainer">
         <section
           className="logoName"
@@ -134,7 +97,7 @@ const ProfileCard = ({
               expand="block"
               className="profile-footer-button"
               size="large"
-              routerLink={`link/${name}`}
+              routerLink={`link/${id}`}
             >
               Link with Me
             </IonButton>

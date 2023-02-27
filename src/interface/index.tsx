@@ -39,7 +39,7 @@ export interface AccoladesType {
   endDate?: Date;
 }
 
-export type ColorType = "green" | "purple" | "yellow" | "orange"|"red";
+export type ColorType = "green" | "purple" | "yellow" | "orange" | "red";
 
 export interface ActiveAchievedType {
   color?: ColorType;
@@ -51,7 +51,7 @@ export interface ActiveAchievedType {
 }
 
 export interface Education {
-  lineColor:ColorType;
+  lineColor: ColorType;
   name: string;
   startDate: Date;
   endDate: Date;
@@ -146,4 +146,16 @@ export interface AuthContextType {
   loading: boolean;
   setToken: Function;
   logout: () => void;
+}
+
+export interface ProfileCardProps {
+  backgroundImage: string;
+  companyLogo: string;
+  name: string;
+  position: string;
+  location: string;
+  companyName?: string | undefined;
+  link: string;
+  id: string;
+  blend?: string;
 }

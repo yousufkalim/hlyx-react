@@ -1,18 +1,17 @@
-import React, { createContext, useEffect, useMemo, useState } from "react";
-import { useHistory, useParams } from "react-router-dom";
+import { createContext, useEffect, useMemo, useState } from "react";
+import { useParams } from "react-router-dom";
 import { userData } from "../../data/userData";
 import { childrenProps } from "../../interface";
 
 export const ProfileContext = createContext<any>({});
 
 const ProfileProvider = ({ children }: childrenProps) => {
-  const { name } = useParams();
-  const history = useHistory();
+  const { id } = useParams();
 
   const [userProfile, setUserProfile] = useState<any>({});
 
   const getUser = () => {
-    const data = userData.find((user) => user.contact.name === name);
+    const data = userData.find((user) => user.id === id);
     return data;
   };
 
@@ -29,10 +28,9 @@ const ProfileProvider = ({ children }: childrenProps) => {
     return () => {
       setUserProfile({});
     };
-  }, [name]);
+  }, [id]);
   const store = useMemo(() => ({ userProfile, setUserProfile }), [userProfile]);
 
-  console.log(userProfile, name);
   return (
     <ProfileContext.Provider value={{ ...store }}>
       {children}
