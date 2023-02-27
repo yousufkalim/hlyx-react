@@ -23,19 +23,13 @@ const EducationCard = () => {
     return charBuffer;
   }
 
+  
+
   return (
     <div className="education_list">
       {education.map(
         (
-          {
-            name,
-            startDate,
-            endDate,
-            lineColor,
-            image,
-            major,
-            program,
-          }: Education,
+          { name, startDate, endDate,lineColor, image, major, program }: Education,
           index: number
         ) => (
           <div className="education_card_container" key={index}>

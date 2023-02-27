@@ -22,7 +22,6 @@ import Stanfard from "../assets/stanfard.png";
 // Avatars
 import BlakeB from "../assets/BlakeB.png";
 import JamesC from "../assets/JamesC.png";
-import JordanR from "../assets/JordanR.png";
 import LenaX from "../assets/LenaX.png";
 import NinaM from "../assets/NinaM.png";
 import TallikaP from "../assets/TallikaP.png";
@@ -43,6 +42,13 @@ import three_item_joel from "../assets/joelPortfolio/three_item.png";
 import four_item_joel from "../assets/joelPortfolio/four_item.png";
 import five_item_joel from "../assets/joelPortfolio/five_item.png";
 
+//Main services
+import  Cellanatomic from "../assets/Cellanatomic.png"
+import  Ddiscussion from "../assets/Ddiscussion.png"
+import  DNA from "../assets/DNA.png"
+import  RBC from "../assets/RBC.png"
+
+
 export const userData = [
   // James Oriyan Profile
   {
@@ -58,8 +64,8 @@ export const userData = [
       altText: "Company Logo",
     },
     jobTitle: {
-      position: "CEO",
-      companyName: " Oriyn",
+      position: "CEO ",
+      companyName: " Oriyn LLC.",
     },
     address: "San Diego, CA",
     image: {
@@ -69,8 +75,8 @@ export const userData = [
     contact: {
       name: "James R. Beckley",
       jobTitle: {
-        position: "CEO",
-        companyName: " Oriyn",
+        position: "CEO at",
+        companyName: " Oriyn LLC",
       },
       address: "San Diego, CA",
       email: "jrbeckley@oriyn.com",
@@ -100,7 +106,7 @@ export const userData = [
           label: "Medium",
         },
         {
-          link: "https://www.youtube.com/oriynapps",
+          link: "https://www.youtube.com/@oriynapps",
           label: "YouTube",
         },
         {
@@ -330,10 +336,6 @@ export const userData = [
               name: "Tallia P.",
             },
             {
-              imageUrl: JordanR,
-              name: "Jordan R.",
-            },
-            {
               imageUrl: JamesC,
               name: "James C.",
             },
@@ -524,13 +526,13 @@ export const userData = [
           description: "Access Article on Medium",
         },
         {
-          link: "https://www.google.com/drive/",
+          link: "https://soundcloud.com/",
           type: "GoogleDrive",
           title: "Cellular Science Chat With Kenji Awurama",
           description: "Access Audio on SoundCloud",
         },
         {
-          link: "https://soundcloud.com/",
+          link: "https://www.google.com/drive/",
           type: "SoundCloud",
           title: "Sphere Bio Customer Spec Sheet",
           description: "Access File on Google Drive",
@@ -539,7 +541,7 @@ export const userData = [
     },
 
     about: {
-      bio: "In the span of 24 years, I have dedicated my career to building technology solutions that have impacted the businesses of startup founders, small business owners, and established enterprise brands. I started my first company at the age of 16, creating custom...",
+      bio: "In the span of 24 years, I have dedicated my career to building technology solutions that have impacted the businesses of startup founders, small business owners, and established enterprise brands. I started my first company at the age of 16, creating custom",
       profession: [
         {
           lineColor: "blue",
@@ -693,10 +695,6 @@ export const userData = [
               name: "Tallia P.",
             },
             {
-              imageUrl: JordanR,
-              name: "Jordan R.",
-            },
-            {
               imageUrl: JamesC,
               name: "James C.",
             },
@@ -749,37 +747,37 @@ export const userData = [
           lineColor: "yellow",
           title: "Advanced Research",
           description:
-            "We help startup founders and SMB’s with quality market research into any vertical",
+            "Cutting edge cellular bio-tech research in microscopic nanite nutrient deliver",
         },
         {
           lineColor: "green",
-          title: "Market Research & BI ",
+          title: "Cell Rejuvenation",
           description:
-            "We help startup founders and SMB’s with quality market research into any vertical",
+            "Cell rejuvenation therapy with spliced H20 saline infusion delivered through nano...",
         },
         {
           lineColor: "purple",
-          title: "Market Research & BI ",
+          title: "CRSPR DNA Splicing",
           description:
-            "We help startup founders and SMB’s with quality market research into any vertical",
+            "Cell rejuvenation therapy with spliced H20 saline infusion delivered through nano...",
         },
       ],
       mainServices: [
         {
-          type: "BiDashboard",
-          title: "BI Dashboard Report",
+          type: "MultiUnit",
+          title: "Multi-Unit Properties",
         },
         {
-          type: "DataMarketing",
-          title: "Data & Market Research",
+          type: "Investment",
+          title: "NNN Investments",
         },
         {
-          type: "UiUx",
-          title: "Product UI/UX Design",
+          type: "Redevolpment",
+          title: "Land Redevelopment",
         },
         {
-          type: "Devolpment",
-          title: "Software Development",
+          type: "Industrial",
+          title: "Industrial",
         },
       ],
     },
@@ -809,8 +807,8 @@ export const userData = [
     contact: {
       name: "James R. Beckley",
       jobTitle: {
-        position: "CEO",
-        companyName: " Oriyn",
+        position: "CEO ",
+        companyName: " Oriyn LLC",
       },
       address: "San Diego, CA",
       email: "james.beckley@hlyx.io",
@@ -1061,10 +1059,6 @@ export const userData = [
               name: "Tallia P.",
             },
             {
-              imageUrl: JordanR,
-              name: "Jordan R.",
-            },
-            {
               imageUrl: JamesC,
               name: "James C.",
             },
@@ -1204,13 +1198,13 @@ export const userData = [
         },
         {
           link: "https://soundcloud.com/",
-          type: "GoogleDrive",
+          type: "SoundCloud",
           title: "Finding The Right Agent For Your Next Commercial Property",
           description: "Access Audio on SoundCloud",
         },
         {
           link: "https://www.google.com/drive/",
-          type: "SoundCloud",
+          type: "GoogleDrive",
           title: "Joel Calvillo's Service Sheet 2023",
           description: "Access File on Google Drive ",
         },
@@ -1246,7 +1240,7 @@ export const userData = [
       ],
       education: [
         {
-           lineColor: "red",
+          lineColor: "red",
           name: "De Anza College",
           startDate: "1994",
           endDate: "1996",
@@ -1390,10 +1384,6 @@ export const userData = [
             {
               imageUrl: TallikaP,
               name: "Tallia P.",
-            },
-            {
-              imageUrl: JordanR,
-              name: "Jordan R.",
             },
             {
               imageUrl: JamesC,

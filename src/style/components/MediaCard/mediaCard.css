@@ -70,6 +70,7 @@
 
 .office_icon_text {
   line-height: 21px !important;
+  max-width: 230px;
 }
 
 ion-label {

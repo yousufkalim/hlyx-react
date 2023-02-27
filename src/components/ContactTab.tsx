@@ -157,7 +157,7 @@ const ContactTab = () => {
                 />
                 <IonLabel
                   className="icon_text office_icon_text"
-                  style={{ maxWidth: 200 }}
+                
                 >
                   {contact?.officeAddress}
                 </IonLabel>
