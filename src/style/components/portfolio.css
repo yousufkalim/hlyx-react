@@ -26,6 +26,7 @@
   display: block;
   object-fit: cover;
   border-radius: 11px;
+  max-width: 10rem;
 }
 
 .box:nth-child(10n + 1) {
