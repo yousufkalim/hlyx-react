@@ -26,7 +26,7 @@ const Header = () => {
             height: 61,
             borderRadius: 25,
             objectFit: "cover",
-            padding:3
+            padding:2
 
           }}
         />
