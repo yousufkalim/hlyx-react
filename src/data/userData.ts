@@ -1150,7 +1150,7 @@ export const userData = [
     },
     name: "Joel Calvillo",
     jobTitle: {
-      position: "Senior Vice President at ",
+      position: "Senior Vice President  ",
       companyName: " KW Commercial South Bay",
     },
     address: "Los Gatos, CA",
@@ -1166,7 +1166,7 @@ export const userData = [
     contact: {
       name: "Joel Calvillo",
       jobTitle: {
-        position: "Senior Vice President at",
+        position: "Senior Vice President ",
         companyName: "KW Commercial South Bay",
       },
       address: "Los Gatos, CA",
