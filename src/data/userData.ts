@@ -527,6 +527,7 @@ export const userData = [
       ],
       education: [
         {
+          lineColor: "yellow",
           name: "San Jose State",
           startDate: "2005",
           endDate: "2009",
@@ -538,6 +539,7 @@ export const userData = [
           program: "Masters Degree",
         },
         {
+          lineColor: "green",
           name: "University San Diego",
           startDate: "Class of 1996",
           major: "Biology, Electives, STEM",
@@ -707,11 +709,19 @@ export const userData = [
     service: {
       featuredServices: [
         {
+          lineColor: "yellow",
+          title: "Advanced Research",
+          description:
+            "We help startup founders and SMB’s with quality market research into any vertical",
+        },
+        {
+          lineColor: "green",
           title: "Market Research & BI ",
           description:
             "We help startup founders and SMB’s with quality market research into any vertical",
         },
         {
+          lineColor: "purple",
           title: "Market Research & BI ",
           description:
             "We help startup founders and SMB’s with quality market research into any vertical",
@@ -1194,6 +1204,7 @@ export const userData = [
       ],
       education: [
         {
+           lineColor: "red",
           name: "De Anza College",
           startDate: "1994",
           endDate: "1996",
@@ -1205,6 +1216,7 @@ export const userData = [
           program: "Associate Arts",
         },
         {
+          lineColor: "yellow",
           name: "Saint Francis High",
           startDate: "2005",
           endDate: "2008",
