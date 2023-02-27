@@ -159,3 +159,22 @@ export interface ProfileCardProps {
   id: string;
   blend?: string;
 }
+
+export interface IGalleryCard {
+  img: string;
+  imgAlt: string;
+  title: string;
+  publishDate: string;
+}
+
+export type BadgeType = "Pioneer" | "Legend" | "Leader";
+export interface BadgeListProps {
+  badge: BadgeType;
+}
+
+export interface ISliderCard {
+  img: string;
+  imgAlt: string;
+  title: string;
+  publishDate: string;
+}

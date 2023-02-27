@@ -1,20 +1,20 @@
-import SliderCard from "../SliderCard";
+import { IonButton, IonCard, IonLabel } from "@ionic/react";
 import { galleryData, sliderData } from "../../constants";
 import "../../style/components/Silder/slider.css";
-import { IonButton, IonCard, IonLabel } from "@ionic/react";
 import GalleryCard from "../GalleryCard";
+import SliderCard from "../SliderCard";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/scrollbar";
 import "swiper/css/navigation";
+import "swiper/css/scrollbar";
 
 // import required modules
+import { useRef, useState } from "react";
 import { Navigation, Scrollbar, Swiper as SwiperType } from "swiper";
-import { useCallback, useRef, useState } from "react";
 import { NextImageIcon, PrevImageIcon } from "../../assets/icons";
 
 const PortfolioCard = () => {

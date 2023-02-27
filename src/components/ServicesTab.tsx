@@ -1,42 +1,11 @@
-import { IonCard, IonCardTitle, IonLabel } from "@ionic/react";
-import "./ServicesTab.css";
+import { IonButton, IonCard, IonLabel } from "@ionic/react";
 import React, { useContext } from "react";
-import { AdvanceCellIcon } from "../assets/icons/index";
-import cellAnatomic from "../assets/cellAnatomic.png";
-import bioTech from "../assets/bioTech.png";
-import scientific from "../assets/scientific.png";
-import { IonButton } from "@ionic/react";
-import UserDetailCard from "./Profile/UserDetailCard/UserDetailCard";
-import FeaturedServices from "./FeaturedServices";
-import {
-  BiDashboardIcon,
-  RightArrowIcon,
-} from "../assets/icons/ServiceTabIcons";
-import { ProfileContext } from "../context/profileContext";
+import { RightArrowIcon } from "../assets/icons/ServiceTabIcons";
 import { ServicesIcons } from "../constants";
-
-const LinksData = [
-  {
-    icon: <AdvanceCellIcon />,
-    title: "Advanced Cell Research & Analysis",
-    description: "View Service Details",
-  },
-  {
-    icon: <img src={cellAnatomic} alt="Cell IMG" height={45} width={45} />,
-    title: "Cell Anatomic Molecular Splicing",
-    description: "View Service Details",
-  },
-  {
-    icon: <img src={bioTech} alt="Cell IMG" height={45} width={45} />,
-    title: "Bio-Technology Design & Implementation",
-    description: "View Service Details",
-  },
-  {
-    icon: <img src={scientific} alt="Cell IMG" height={45} width={45} />,
-    title: "Scientific Program Management",
-    description: "View Service Details",
-  },
-];
+import { ProfileContext } from "../context/profileContext";
+import FeaturedServices from "./FeaturedServices";
+import UserDetailCard from "./Profile/UserDetailCard/UserDetailCard";
+import "./ServicesTab.css";
 
 export const ServiceCard = ({
   title,
@@ -52,12 +21,7 @@ export const ServiceCard = ({
       <div className="service-card-title">
         <IonLabel className="card-heading-lg">{title}</IonLabel>
         {button && (
-          <IonButton
-            fill="outline"
-            shape="round"
-            // color="var(--card-button-color)"
-            className="view-all-button"
-          >
+          <IonButton fill="outline" shape="round" className="view-all-button">
             {button}
           </IonButton>
         )}
@@ -94,8 +58,12 @@ const ServicesTab = () => {
         {service?.featuredServices && (
           <div className="featured-services-cards">
             {service?.featuredServices?.map(
-              ({ title, description,lineColor }: any, index: number) => (
-                <FeaturedServices lineColor={lineColor} title={title} description={description} />
+              ({ title, description, lineColor }: any, index: number) => (
+                <FeaturedServices
+                  lineColor={lineColor}
+                  title={title}
+                  description={description}
+                />
               )
             )}
           </div>

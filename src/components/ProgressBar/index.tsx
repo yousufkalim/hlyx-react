@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import { ColorType } from "../../interface";
 import "../../style/components/ProgressBar.css";
 

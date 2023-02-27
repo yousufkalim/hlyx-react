@@ -1,9 +1,8 @@
 import { IonButton } from "@ionic/react";
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { BackBtnIcon, HlyxHeaderLogo } from "../../../assets/icons";
-import ProfileImage from "../../../assets/icons/Avatar_Header.svg";
 import { ProfileContext } from "../../../context/profileContext";
-import "./avatarimage.css"
+import "./avatarimage.css";
 
 const Header = () => {
   const { userProfile } = useContext(ProfileContext);

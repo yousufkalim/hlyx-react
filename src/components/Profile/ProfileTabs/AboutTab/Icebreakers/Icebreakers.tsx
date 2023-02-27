@@ -1,8 +1,7 @@
-import React, { useContext } from "react";
-import { brakerData } from "../../../../../constants";
 import { IonChip } from "@ionic/react";
-import "../../../../../style/components/Icebreakers.css";
+import { useContext } from "react";
 import { ProfileContext } from "../../../../../context/profileContext";
+import "../../../../../style/components/Icebreakers.css";
 
 const Icebreakers = () => {
   const { userProfile } = useContext(ProfileContext);

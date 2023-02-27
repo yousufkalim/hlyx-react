@@ -1,8 +1,7 @@
 import { IonButton, IonCard, IonLabel } from "@ionic/react";
-import React, { useContext } from "react";
-import UserDetailCard from "../UserDetailCard/UserDetailCard";
-import "../../../style/components/portfolio.css";
+import { useContext } from "react";
 import { ProfileContext } from "../../../context/profileContext";
+import "../../../style/components/portfolio.css";
 
 const Portfolio = () => {
   const { userProfile } = useContext(ProfileContext);
@@ -12,12 +11,7 @@ const Portfolio = () => {
         <div className="service-card-title">
           <IonLabel className="card-heading-lg">Portfolio</IonLabel>
 
-          <IonButton
-            fill="outline"
-            shape="round"
-            // color="var(--card-button-color)"
-            className="view-all-button"
-          >
+          <IonButton fill="outline" shape="round" className="view-all-button">
             View All
           </IonButton>
         </div>

@@ -1,16 +1,8 @@
 import { IonFab, IonFabButton, IonFabList, IonIcon } from "@ionic/react";
 import {
   bookmark,
-  chatbubble,
-  colorPalette,
-  document,
-  globe,
-  helpCircle,
-  linkOutline,
-  send,
-  text,
+  chatbubble, helpCircle, send
 } from "ionicons/icons";
-// import { LinkInfoButton } from "../../assets/icons";
 import { LinkIcon } from "../../assets/icons/index";
 import "./fabbtn.css";
 

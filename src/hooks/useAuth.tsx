@@ -36,6 +36,7 @@ export const AuthProvider = ({
       setToken,
       loading,
     }),
+    // eslint-disable-next-line
     [token]
   );
 

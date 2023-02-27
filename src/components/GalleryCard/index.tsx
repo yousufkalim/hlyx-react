@@ -1,25 +1,11 @@
-import {
-  IonCard,
-  IonLabel,
-} from "@ionic/react";
+import { IonLabel } from "@ionic/react";
+import { IGalleryCard } from "../../interface";
+import "../../style/components/Silder/slider.css";
 
-import "../../style/components/Silder/slider.css"
-
-interface GalleryCard {
-  img: string;
-  imgAlt: string;
-  title: string;
-  publishDate: string;
-}
-
-const GalleryCard = ({ img, imgAlt, title, publishDate }: GalleryCard) => {
+const GalleryCard = ({ img, imgAlt, title, publishDate }: IGalleryCard) => {
   return (
     <div className="flex flex-wrap gallery-card-container">
-      <img
-        alt={imgAlt}
-        src={img}
-        className="gallery-image-container"
-      />
+      <img alt={imgAlt} src={img} className="gallery-image-container" />
 
       <div className="flex flex-col gallery-padding align-left">
         <IonLabel className="gallery-title">{title}</IonLabel>
@@ -28,4 +14,5 @@ const GalleryCard = ({ img, imgAlt, title, publishDate }: GalleryCard) => {
     </div>
   );
 };
+
 export default GalleryCard;
