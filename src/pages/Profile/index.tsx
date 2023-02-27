@@ -13,7 +13,6 @@ import "../../style/page/profile.css";
 import PortfolioTab from "../../components/PortfolioTab";
 export const ProfileTabs = ["Contact", "About", "Service", "Portfolio"];
 
-
 const ProfileTabsContent = ({ activeTab }: { activeTab: string }) => {
   const { userProfile } = useContext(ProfileContext);
 
@@ -38,18 +37,18 @@ const Profile = () => {
     <>
       <IonPage>
         <IonContent className="overflow-auto profile-container">
-          <Header />
-          {userProfile?.id === "james-hlyx" ? (
-            <></>
-          ) : (
-            <div className="sticky-header">
+          <div className="sticky-header">
+            <Header />
+            {userProfile?.id === "james-hlyx" ? (
+              <></>
+            ) : (
               <Tabs
                 tabList={ProfileTabs}
                 activeTab={activeTab}
                 setActiveTab={setActiveTab}
               />
-            </div>
-          )}
+            )}
+          </div>
 
           {userProfile?.id === "james-hlyx" ? (
             <HlyxContactTab />
