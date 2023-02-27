@@ -3,6 +3,7 @@ import React, { useContext } from "react";
 import { RightArrowIcon } from "../assets/icons/ServiceTabIcons";
 import { ServicesIcons } from "../constants";
 import { ProfileContext } from "../context/profileContext";
+import { ServiceCardProps } from "../interface";
 import FeaturedServices from "./FeaturedServices";
 import UserDetailCard from "./Profile/UserDetailCard/UserDetailCard";
 import "./ServicesTab.css";
@@ -11,13 +12,11 @@ export const ServiceCard = ({
   title,
   children,
   button,
-}: {
-  title: string;
-  children: React.ReactNode;
-  button?: string;
-}) => {
+  ...rest
+}: ServiceCardProps) => {
+  const { className } = rest;
   return (
-    <IonCard className="service-card-container">
+    <IonCard className={`service-card-container ${className}`}>
       <div className="service-card-title">
         <IonLabel className="card-heading-lg">{title}</IonLabel>
         {button && (
@@ -53,19 +52,43 @@ const ServicesTab = () => {
   return (
     <>
       <UserDetailCard />
-      <ServiceCard title="Business Services" button="View All">
-        <h6 className="feature-services-title">Featured Services</h6>
+      <ServiceCard
+        title="Business Services"
+        button="View All"
+        className="border_none"
+      >
         {service?.featuredServices && (
-          <div className="featured-services-cards">
-            {service?.featuredServices?.map(
-              ({ title, description, lineColor }: any, index: number) => (
-                <FeaturedServices
-                  lineColor={lineColor}
-                  title={title}
-                  description={description}
-                />
-              )
-            )}
+          <>
+            <h6 className="feature-services-title">Featured Services</h6>
+            <div className="featured-services-cards">
+              {service?.featuredServices?.map(
+                ({ title, description, lineColor }: any, index: number) => (
+                  <FeaturedServices
+                    lineColor={lineColor}
+                    title={title}
+                    description={description}
+                  />
+                )
+              )}
+            </div>
+          </>
+        )}
+
+        {service?.title && (
+          <div style={{ display: "flex", gap: 11 }}>
+            <div style={{ width: 4, backgroundColor: "#9C2626", height: 42 }} />
+            <p
+              style={{
+                fontSize: 15,
+                lineHeight: "20px",
+                letterSpacing: "0.04em",
+                fontWeight: 600,
+                color: "#9899A0",
+                maxWidth: 168,
+              }}
+            >
+              {service?.title}
+            </p>
           </div>
         )}
         {service?.mainServices && (
@@ -81,22 +104,6 @@ const ServicesTab = () => {
           </div>
         )}
       </ServiceCard>
-      <div style={{ paddingBlock: 20, backgroundColor: "var(--bg-color)" }}>
-        <IonButton
-          className="outline-btn"
-          fill="outline"
-          expand="block"
-          shape="round"
-          style={{
-            fontWeight: 600,
-            fontSize: 15,
-            lineHeight: "17px",
-            fontFamily: "Poppins",
-          }}
-        >
-          Create Your Free Profile
-        </IonButton>
-      </div>
     </>
   );
 };

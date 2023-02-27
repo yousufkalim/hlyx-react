@@ -1,9 +1,29 @@
 import { Color } from "@ionic/core";
-import { Dispatch } from "react";
+import { IonicReactProps } from "@ionic/react/dist/types/components/IonicReactProps";
+import { CSSProperties, Dispatch, PropsWithChildren } from "react";
 
 export interface childrenProps {
   children?: JSX.Element;
 }
+
+export type AboutCardProps = PropsWithChildren & {
+  icon: JSX.Element;
+  cardTitle: string;
+  cardTagTitle?: string;
+  isTagTitle: boolean;
+  style?: CSSProperties;
+};
+
+export interface ContactCardProps extends IonicReactProps {
+  title: string;
+  children: React.ReactNode;
+}
+
+export interface AboutTabProps extends ContactCardProps {
+  button?: string;
+}
+
+export interface ServiceCardProps extends AboutTabProps {}
 
 export interface JobType {
   position: string;

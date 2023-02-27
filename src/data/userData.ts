@@ -43,11 +43,10 @@ import four_item_joel from "../assets/joelPortfolio/four_item.png";
 import five_item_joel from "../assets/joelPortfolio/five_item.png";
 
 //Main services
-import  Cellanatomic from "../assets/Cellanatomic.png"
-import  Ddiscussion from "../assets/Ddiscussion.png"
-import  DNA from "../assets/DNA.png"
-import  RBC from "../assets/RBC.png"
-
+import Cellanatomic from "../assets/Cellanatomic.png";
+import Ddiscussion from "../assets/Ddiscussion.png";
+import DNA from "../assets/DNA.png";
+import RBC from "../assets/RBC.png";
 
 export const userData = [
   // James Oriyan Profile
@@ -1170,6 +1169,7 @@ export const userData = [
       email: "joel@thecalvillogroup.com",
       phone: {
         number: "+1 (408) 892-9158",
+        mobile:"+1 (408) 628-1206",
         faxNumber: ["+1 (650) 345-6789"],
       },
       calendar: "Google > Joel Calvillo’s Calendar",
@@ -1433,12 +1433,7 @@ export const userData = [
       },
     },
     service: {
-      featuredServices: [
-        {
-          title: "Professional Services & Products",
-          description: "No Details given",
-        },
-      ],
+      title: "Professional Services & Products",
       mainServices: [
         {
           type: "MultiUnit",

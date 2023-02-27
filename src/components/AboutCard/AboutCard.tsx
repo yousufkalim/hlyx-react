@@ -1,14 +1,7 @@
-import { IonCard, IonCardTitle, IonChip, IonIcon } from "@ionic/react";
-import { CSSProperties, FunctionComponent, PropsWithChildren } from "react";
+import { IonCard, IonCardTitle, IonChip } from "@ionic/react";
+import { FunctionComponent, PropsWithChildren } from "react";
+import { AboutCardProps } from "../../interface";
 import "../../style/components/AboutCard/aboutCard.css";
-
-type AboutCardProps = PropsWithChildren & {
-  icon: JSX.Element;
-  cardTitle: string;
-  cardTagTitle?: string;
-  isTagTitle: boolean;
-  style?: CSSProperties;
-};
 
 const AboutCard: FunctionComponent<AboutCardProps> = ({
   cardTitle,
