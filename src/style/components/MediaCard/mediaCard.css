@@ -305,6 +305,8 @@ ion-accordion.accordion-expanded > [slot="header"] .ion-accordion-toggle-icon {
   --background-focused: transparent !important;
   --box-shadow: none;
   margin: 0px;
+  width: 20px;
+  height: 16px;
 }
 
 .back-btn::part(native) {

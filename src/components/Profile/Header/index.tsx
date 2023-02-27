@@ -13,16 +13,18 @@ const Header = () => {
         <IonButton expand="full" className="back-btn" routerLink="/">
           <BackBtnIcon color={"var(--text-color)"} />
         </IonButton>
-        <HlyxHeaderLogo color={"var(--text-color)"} />
+        <HlyxHeaderLogo  color={"var(--text-color)"} />
 
         <img
         className="avatarimage"
           src={image?.url}
           alt="avatar-header-icon"
           style={{
-            width: 66,
-            height: 66,
-            borderRadius: 28,
+            top:21,
+            right:24.89,
+            width: 61,
+            height: 61,
+            borderRadius: 25,
             objectFit: "cover",
             padding:3
 
