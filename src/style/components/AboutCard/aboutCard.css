@@ -103,7 +103,8 @@ ion-card {
 .profession-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 28px;
+  margin-top: 22px;
 }
 
 .profession-line {
@@ -128,7 +129,7 @@ p {
   font-weight: 400;
   font-size: 14px;
   color: var(--profession-gary-color);
-  margin-top: 10px;
+  margin-top: 12px !important;
 }
 
 .profession-description {
