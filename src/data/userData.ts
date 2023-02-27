@@ -41,7 +41,7 @@ import two_item_joel from "../assets/joelPortfolio/first_second.png";
 import three_item_joel from "../assets/joelPortfolio/three_item.png";
 import four_item_joel from "../assets/joelPortfolio/four_item.png";
 import five_item_joel from "../assets/joelPortfolio/five_item.png";
-import JamesAvatar from "../assets/JamesAvatar.png"
+import JamesAvatar from "../assets/JamesAvatar.png";
 //Main services
 import Cellanatomic from "../assets/Cellanatomic.png";
 import Ddiscussion from "../assets/Ddiscussion.png";
@@ -67,7 +67,7 @@ export const userData = [
       companyName: " Oriyn LLC.",
     },
     address: "San Diego, CA",
-    Avatar:JamesAvatar,
+    Avatar: JamesAvatar,
     image: {
       url: JamesCover,
       altText: "user Picture",
@@ -452,7 +452,7 @@ export const userData = [
       companyName: "Sphere Bio Tech",
     },
     address: "Palo Alto, California",
-    Avatar:DoctorCover,
+    Avatar: DoctorCover,
     image: {
       url: DoctorCover,
       altText: "user Picture",
@@ -801,7 +801,7 @@ export const userData = [
       companyName: " HLYX Inc.",
     },
     address: "San Diego, CA",
-    Avatar:JamesAvatar,
+    Avatar: JamesAvatar,
     image: {
       url: JamesHlyxCover,
       altText: "user Picture",
@@ -1154,7 +1154,7 @@ export const userData = [
       companyName: " KW Commercial South Bay",
     },
     address: "Los Gatos, CA",
-    Avatar:JoeICalvilloCover,
+    Avatar: JoeICalvilloCover,
     image: {
       url: JoeICalvilloCover,
       altText: "user Picture",
@@ -1173,7 +1173,7 @@ export const userData = [
       email: "joel@thecalvillogroup.com",
       phone: {
         number: "+1 (408) 892-9158",
-        mobile:"+1 (408) 628-1206",
+        mobile: "+1 (408) 628-1206",
         faxNumber: ["+1 (650) 345-6789"],
       },
       calendar: "Google > Joel Calvillo’s Calendar",
@@ -1458,6 +1458,7 @@ export const userData = [
       ],
     },
     portfolioTitle: "Commercial Real Estate Properties",
+    mslLink: true,
     portfolio: [
       first_item_joel,
       two_item_joel,

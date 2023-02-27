@@ -16,7 +16,12 @@
   padding: 0 !important;
   flex-direction: column;
   display: flex;
+
   gap: 9px;
+}
+
+.user-detail:not(:last-child) {
+  flex-shrink: 0;
 }
 .user-detail h1 {
   font-family: "Montserrat";
