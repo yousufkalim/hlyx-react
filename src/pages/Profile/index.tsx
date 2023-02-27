@@ -13,12 +13,6 @@ import "../../style/page/profile.css";
 import PortfolioTab from "../../components/PortfolioTab";
 export const ProfileTabs = ["Contact", "About", "Service", "Portfolio"];
 
-// const ProfileTabsContent = [
-//   <ContactTab />,
-//   <AboutTab />,
-//   <ServicesTab />,
-//   <Portfolio />,
-// ];
 
 const ProfileTabsContent = ({ activeTab }: { activeTab: string }) => {
   const { userProfile } = useContext(ProfileContext);

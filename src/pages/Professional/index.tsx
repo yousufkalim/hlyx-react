@@ -1,5 +1,5 @@
 import { IonContent, IonPage, IonSlide, IonSlides } from "@ionic/react";
-import React, { useState } from "react";
+import { useState } from "react";
 import ProfileCard from "../../components/ProfileCard";
 import "../../style/page/professional.css";
 import { userData } from "../../data/userData";
@@ -10,7 +10,7 @@ const slideOpts = {
 };
 
 const Professional = () => {
-  const [slideNumber, setSlideNumber] = useState(0);
+  const [, setSlideNumber] = useState(0);
 
   const handleNextSlide = () => {
     setSlideNumber((prevSlideNumber) => prevSlideNumber + 1);
@@ -34,6 +34,7 @@ const Professional = () => {
               <IonSlide key={index} id={`index-{index}`}>
                 <ProfileCard
                   blend={x?.blend}
+                  id={x.id}
                   companyName={x?.jobTitle?.companyName}
                   backgroundImage={x?.backgroundImage?.url}
                   name={x?.name}

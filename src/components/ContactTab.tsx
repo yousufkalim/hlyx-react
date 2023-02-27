@@ -1,5 +1,5 @@
-import { IonButton, IonCard, IonLabel, IonAccordionGroup } from "@ionic/react";
-import "../style/components/ContactTab.css";
+import { IonAccordionGroup, IonButton, IonCard, IonLabel } from "@ionic/react";
+import { useContext } from "react";
 import {
   CalendarIcon,
   CallIcon,
@@ -9,11 +9,11 @@ import {
   MobileIcon,
   WorldIcon,
 } from "../assets/icons";
+import { SocialMediaIcons } from "../constants/index";
+import { ProfileContext } from "../context/profileContext";
+import "../style/components/ContactTab.css";
 import LinkCard from "./LinkCard";
 import HeroSession from "./MediaCard/heroSession";
-import { SocialData, SocialMediaIcons } from "../constants/index";
-import { useContext } from "react";
-import { ProfileContext } from "../context/profileContext";
 
 const ContactCard = ({
   title,
@@ -38,9 +38,12 @@ const ContactTab = () => {
       <HeroSession />
       {contact?.email && (
         <ContactCard title="Email">
-          <a href={`mailto:${contact.email}`}
-           target={"_blank"}
-          className="anchor-clear">
+          <a
+            href={`mailto:${contact.email}`}
+            target={"_blank"}
+            rel="noreferrer"
+            className="anchor-clear"
+          >
             <div className="flex align-center justify-contain">
               <div className="flex align-center">
                 <MailIcon
@@ -58,7 +61,7 @@ const ContactTab = () => {
       {contact?.phone && (
         <ContactCard title="Phone">
           <IonAccordionGroup expand="compact" className="phone-card-container">
-            <a href="tel:{contact?.phone?.number}" className="anchor-clear">
+            <a href={`tel:${contact?.phone?.number}`} className="anchor-clear">
               <div className="flex align-center justify-contain mb-11">
                 <div className="flex align-center">
                   <MobileIcon
@@ -74,7 +77,7 @@ const ContactTab = () => {
               </div>
             </a>
             {contact?.phone?.faxNumber.map((number: any, index: number) => (
-              <a href="tel:{number}" className="anchor-clear">
+              <a href={`tel:${number}`} className="anchor-clear">
                 <div
                   className="flex align-center justify-contain mx-19 mb-11"
                   key={index}
@@ -90,18 +93,6 @@ const ContactTab = () => {
                 </div>
               </a>
             ))}
-
-            {/* <div className="flex align-center justify-contain mx-19 mb-11">
-              <div className="flex align-center">
-                <FaxIcon white={"var(--text-color)"} />
-                <a href="tel:+16503456789" className="anchor-clear">
-                  <IonLabel className="icon_text">
-                    +1 (888) 796-7496 Ext 700
-                  </IonLabel>
-                </a>
-              </div>
-              <ChevronIcon />
-            </div> */}
           </IonAccordionGroup>
         </ContactCard>
       )}
@@ -112,7 +103,7 @@ const ContactTab = () => {
           target={"_blank"}
           rel="noreferrer"
         >
-          <ContactCard title="Calender" >
+          <ContactCard title="Calender">
             <div className="flex align-center justify-contain mx-19">
               <div className="flex align-center">
                 <CalendarIcon
@@ -132,7 +123,7 @@ const ContactTab = () => {
           className="anchor-clear"
           target={"_blank"}
           rel="noreferrer"
-          href={ `https://${contact?.website}`}
+          href={`https://${contact?.website}`}
         >
           <ContactCard title="Website">
             <div className="flex align-center justify-contain mx-19">

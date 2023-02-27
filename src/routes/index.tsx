@@ -27,7 +27,7 @@ const Routes = () => {
               <Professional />
             </ProtectRoute>
           </Route>
-          <Route exact path="/link/:name">
+          <Route exact path="/link/:id">
             <ProtectRoute>
               <ProfileProvider>
                 <Profile />

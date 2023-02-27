@@ -38,6 +38,7 @@ import five_item_joel from "../assets/joelPortfolio/five_item.png";
 export const userData = [
   // James Oriyan Profile
   {
+    id: "james-oriyn",
     blend: "james",
     backgroundImage: {
       url: JamesBackground,
@@ -97,7 +98,7 @@ export const userData = [
         {
           link: " https://www.skype.com/en/@oriynapps",
           label: "Skype",
-        }
+        },
       ],
       blogLink: [
         {
@@ -124,7 +125,7 @@ export const userData = [
     },
 
     about: {
-      bio:`24 years of cumulative professional product design experience, specializing in web and mobile UI/UX design. 
+      bio: `24 years of cumulative professional product design experience, specializing in web and mobile UI/UX design. 
       \n\nVeteran technology entrepreneur, with extensive experience building B2B/B2C digital product companies. Early in my career, I quickly recognized the innumerable challenges facing the majority of startup founders, under-resourced, undercapitalized, underappreciated, and so on. Leveraging my personal resources and skill sets, I founded a company of exceptional individuals, providing both strategic and technical solutions that resolve the pain points of other business owners. Oriyn works with entrepreneurs and brands of all diversities and backgrounds to streamline and optimize product innovation, modernize service processes, and productize their expertise using custom software solutions. 
       \n\nHIGHLIGHTS: 
       \n > Grew Oriyn from 0 to 175 clients in 5 years
@@ -132,8 +133,7 @@ export const userData = [
       \n > Serviced clients across 15 vertical industries including automotive, real estate, health care, IT/IoT, business consulting, home automation, education, marketing, insurance, beauty and cosmetics, green tech, and more
       \n > Completed 1300 career projects from 1999 to present (graphic design, UI/UX product design, branding/brand collateral, social media, web and mobile software)
       \n > Born in Ghana, raised in the Bay Area, lives in San Marcos, CA
-      \n > Multi-lingual, speaks English, Ewe, some Spanish, and learning Mandarin`
-      ,
+      \n > Multi-lingual, speaks English, Ewe, some Spanish, and learning Mandarin`,
       profession: [
         {
           lineColor: "blue",
@@ -392,6 +392,7 @@ export const userData = [
   },
   // Doctor Profile
   {
+    id: "kenji-sphere",
     backgroundImage: {
       url: DoctorBackground,
       altText: "User Background picture",
@@ -705,12 +706,12 @@ export const userData = [
   },
   // James Hlyx Profile
   {
+    id: "james-hlyx",
     blend: "hlyx",
     backgroundImage: {
       url: JamesHlyxBackground,
       altText: "User Background Picture",
     },
-    id: "james-hlyx",
     name: "James R. Beckley",
     companyLogo: {
       url: Hylx,
@@ -735,6 +736,7 @@ export const userData = [
       email: "james.beckley@hlyx.io",
       phone: {
         number: "+1 (408) 420-9617",
+        mobile: "+1 (659) 308-8890",
         faxNumber: ["+1 (408) 420-9617   Ext 700", "+1 (408) 420-9617"],
       },
       calendar: "Setmore > James R. Beckley",
@@ -1037,6 +1039,7 @@ export const userData = [
   },
   // Joel Calvillo Profile
   {
+    id: "joel-calvillogroup",
     blend: "blue",
     backgroundImage: {
       url: JoeICalvilloBackground,
