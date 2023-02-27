@@ -6,7 +6,7 @@ import "./avatarimage.css";
 
 const Header = () => {
   const { userProfile } = useContext(ProfileContext);
-  const { image } = userProfile;
+  const { Avatar } = userProfile;
   return (
     <div className="sticky-header">
       <div className="profile-header-container">
@@ -17,7 +17,7 @@ const Header = () => {
 
         <img
         className="avatarimage"
-          src={image?.url}
+          src={Avatar}
           alt="avatar-header-icon"
           style={{
             top:21,
