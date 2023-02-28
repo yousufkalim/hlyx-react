@@ -41,7 +41,7 @@ const PortfolioCard = () => {
             onSwiper={() => console.log("")}
           >
             {sliderData.map(({ img, imgAlt, publishDate, title }, index) => (
-              <SwiperSlide>
+              <SwiperSlide className="gap">
                 <SliderCard
                   img={img}
                   imgAlt={imgAlt}

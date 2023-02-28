@@ -7,30 +7,26 @@
   min-height: 151.51px !important;
   height: 100%;
   width: 100%;
-  background: #2A2C31;
+  background: #2a2c31;
   border-radius: 12px;
   margin-bottom: 14.68px;
   margin-right: 9px;
   margin-left: 9px;
 }
-
+.gap {
+  display: flex !important;
+  gap: 9px !important;
+}
 .slider-card-container {
-  max-width: 131.32px !important;
-  min-height: 197.px !important;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 8px;
-  padding-right: 8px;
-  background: #2A2C31;
- border-radius: 12px;
-  margin-left: 50px;
-  margin-right:50px ;
+  background: #2a2c31;
+  border-radius: 12px;
+  margin-left: 9px;
 }
 
 .slider-title {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
   font-style: normal;
   font-weight: 500;
   font-size: 12px !important;
@@ -40,18 +36,18 @@
 }
 
 .gallery-title {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
   font-style: normal;
   font-weight: 500;
   font-size: 9px !important;
   line-height: 11px;
   color: #ffffff;
 }
-/* .mySwiper{
-  height:197px;
-} */
+.mySwiper {
+  margin-left: 15px;
+}
 .gallery-description {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
   font-style: normal;
   font-weight: 500;
   font-size: 7.59863px !important;
@@ -61,7 +57,7 @@
 }
 
 .slider-description {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
   font-style: normal;
   font-weight: 500;
   font-size: 9.90032px !important;
@@ -79,7 +75,7 @@
 
 .swiper-image-container {
   margin-left: 10.52px;
-  margin-right:14.52px ;
+  margin-right: 14.52px;
   margin-top: 15.35px;
 }
 
@@ -88,7 +84,7 @@
 }
 
 .slider-card-heading {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
   font-style: normal;
   font-weight: 700;
   font-size: 13px !important;
@@ -98,7 +94,6 @@
 }
 
 .slide-image-container {
-  max-width: 131.32px !important;
   min-height: 137.72px;
   width: 100%;
   height: 100%;
@@ -125,7 +120,7 @@
 }
 
 .load-more-btn {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: 400;
   font-size: 9.54648px !important;
@@ -134,7 +129,7 @@
   text-transform: capitalize;
   --box-shadow: none;
   --color: #000000 !important;
-  --background: #FFFFFF;
+  --background: #ffffff;
   --border-radius: 8px;
   --border-width: 1px;
   --border-style: solid;
@@ -166,12 +161,11 @@
   opacity: 0.5;
 }
 
-
 .opacity-dark {
   opacity: 1;
 }
 
-.swiper-image-container>div>.swiper-scrollbar {
+.swiper-image-container > div > .swiper-scrollbar {
   position: relative !important;
   background-color: grey;
   height: 1px !important;
@@ -180,24 +174,23 @@
 .portfolio_container {
   margin: 0px !important;
   padding: 0 !important;
- 
-} 
+}
 
 .portfolio-tab-segment-button {
   /* border-bottom: none; */
-  font-family: Montserrat,sans-serif!important;
-  font-size: 13px!important;
+  font-family: Montserrat, sans-serif !important;
+  font-size: 13px !important;
   border-radius: 0;
   font-weight: inherit;
   height: 20px;
   color: var(--text-grey-color);
   line-height: 12px;
   max-width: 93.95px;
-  opacity: .8;
+  opacity: 0.8;
   padding: 0px;
 }
 
-.portfolio-tab-segment-button-container{
+.portfolio-tab-segment-button-container {
   --indicatorbox-shadow: none;
   --background: 888888;
   border-bottom: 1px solid grey;
@@ -206,15 +199,15 @@
   border-radius: 0;
   border-top: none;
 }
-.portfolio-btn-tab-container>.segment-button-checked{
+.portfolio-btn-tab-container > .segment-button-checked {
   --indicator-color: transparent;
-    --indicator-box-shadow: none;
-    border-radius: 0px;
-    color: #FFFFFF;
-    border-bottom: 1px solid red;
-    /* color: var(--text-color); */
-    font-weight: 600;
-    border-top: none;
+  --indicator-box-shadow: none;
+  border-radius: 0px;
+  color: #ffffff;
+  border-bottom: 1px solid red;
+  /* color: var(--text-color); */
+  font-weight: 600;
+  border-top: none;
 }
 
 .portfolio-btn-tab-container {
