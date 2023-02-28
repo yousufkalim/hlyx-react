@@ -14,7 +14,7 @@
 .more_options {
   position: absolute;
   right: 40px;
-  top: 145px;
+  top: 220px;
 }
 
 .color_line {
@@ -114,23 +114,18 @@
   overflow-x: auto;
 }
 
-.assist-list:hover {
-}
-
 .assist-item {
   display: flex;
   flex-direction: column;
   gap: 13px;
 }
-.supportbtn{
+.supportbtn {
   margin-top: 20px;
   margin-left: auto;
   width: 130px;
   justify-content: space-between;
   display: flex;
   font-family: "Poppins";
-
-
 }
 
 .assist-title {

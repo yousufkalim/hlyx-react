@@ -20,7 +20,11 @@ export const ToggleButton = ({
   setActiveTab,
 }: TabsProps) => {
   return (
-    <IonSegment className="toggle-container" value={activeTab}>
+    <IonSegment
+      className="toggle-container"
+      swipeGesture={false}
+      value={activeTab}
+    >
       {tabList.map((tab, index) => (
         <IonSegmentButton
           className="toggle-button"
