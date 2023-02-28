@@ -13,7 +13,7 @@
 .accolades-card svg {
   flex-shrink: 0;
 }
-.companyname{
+.companyname {
   color: #ffffff;
 }
 
@@ -51,7 +51,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
-  line-height: 133.5%;
+  line-height: 17.36px;
   letter-spacing: 0.02em;
   color: #868fa0;
 }

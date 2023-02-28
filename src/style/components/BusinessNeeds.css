@@ -10,8 +10,8 @@
 
 .bussiness-section h6:hover {
   font-size: 15px;
- font-weight: 700;
- color: #ffffff;
+  font-weight: 700;
+  color: #ffffff;
 }
 .bussiness-section:not(:last-child) {
   padding-bottom: 28px;
@@ -80,7 +80,11 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.status-row .blue {
+/* .status-row .blue {
+  background: #1e6eff;
+} */
+
+.status-row .color_Blue {
   background: #1e6eff;
 }
 
