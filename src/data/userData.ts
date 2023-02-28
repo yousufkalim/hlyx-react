@@ -769,28 +769,28 @@ export const userData = [
             url: RBC,
             altText: "RBC",
           },
-          title: "Advanced Cell Research & Analysis",
+          title: "Advanced Cell Research ",
         },
         {
           image: {
             url: Cellanatomic,
             altText: "Cellanatomic",
           },
-          title: "Cell Anatomic Molecular Splicing",
+          title: "Cell Molecular Splicing",
         },
         {
           image: {
             url: Ddiscussion,
             altText: "Ddiscussion",
           },
-          title: "Bio-Technology Design & Implementation",
+          title: "Bio-Tech Implementation",
         },
         {
           image: {
             url: DNA,
             altText: "DNA",
           },
-          title: "Scientific Program Management",
+          title: "Scientific Program Manager ",
         },
       ],
     },
