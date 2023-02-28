@@ -19,10 +19,14 @@
   min-height: 197.px !important;
   height: 100%;
   width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
   background: #2A2C31;
-  border-radius: 12px;
-  margin-left: 20px;
-  margin-right:40px ;
+ border-radius: 12px;
+  margin-left: 50px;
+  margin-right:50px ;
 }
 
 .slider-title {
@@ -208,7 +212,6 @@
     border-radius: 0px;
     color: #FFFFFF;
     border-bottom: 1px solid red;
-    border-radius: 7.93643px;
     /* color: var(--text-color); */
     font-weight: 600;
     border-top: none;
