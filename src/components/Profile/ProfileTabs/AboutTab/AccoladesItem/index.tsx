@@ -2,12 +2,12 @@ import { useContext } from "react";
 import { BlueDotIcon } from "../../../../../assets/icons";
 import {
   AccoladesCalender,
-  ForwardIcon
+  ForwardIcon,
 } from "../../../../../assets/icons/index";
 import { ProfileContext } from "../../../../../context/profileContext";
 import "../../../../../style/components/accolades.css";
 
-const AccoladesItem = () => { 
+const AccoladesItem = () => {
   const { userProfile } = useContext(ProfileContext);
   const { accolades } = userProfile?.about;
   return (
@@ -18,14 +18,15 @@ const AccoladesItem = () => {
           <div className="accolades-card-detail">
             <div className="accolade-description">
               <p>
-                {jobTitle?.position} at {" "}<span className="companyname">{jobTitle?.companyName}</span>
+                {jobTitle?.position} at{" "}
+                <span className="companyname">{jobTitle?.companyName}</span>
               </p>
               <div className="date">
                 <AccoladesCalender
                   color={"var(--icon-back)"}
                   white={"#868FA0"}
                 />
-                <p>{`${startDate}-${endDate ?? "Present"}`}</p>
+                <p>{`${startDate} - ${endDate ?? "Present"}`}</p>
               </div>
             </div>
             <div>

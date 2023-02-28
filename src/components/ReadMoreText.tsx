@@ -12,7 +12,9 @@ const ReadMoreText = ({ text, limit = 200 }: ReadMoreTextProps) => {
     <p>
       {showText
         ? text
-        : `${text.substring(0, limit)}${charLength > limit && "... "}`}{" "}
+        : `${text.substring(0, limit)}${
+            charLength > limit ? "... " : " "
+          }`}{" "}
       {charLength > limit && (
         <span onClick={() => setShowText(!showText)}>
           {showText ? "Read Less" : "Read More"}

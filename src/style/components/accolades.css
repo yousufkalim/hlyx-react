@@ -13,8 +13,9 @@
 .accolades-card svg {
   flex-shrink: 0;
 }
-.companyname{
-  color: #ffffff;
+.companyname {
+  font-weight: 600;
+  color: var(--text-color);
 }
 
 .accolades-card-detail {
@@ -31,15 +32,15 @@
 }
 
 .accolade-description p {
-  max-width: 283px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  line-height: 21px;
+  line-height: 20px;
+  letter-spacing: 0.045em;
+  max-width: 283px;
   color: var(--text-color);
 }
-
 .date {
   display: flex;
   align-items: center;
@@ -51,7 +52,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
-  line-height: 133.5%;
+  line-height: 17.36px;
   letter-spacing: 0.02em;
   color: #868fa0;
 }

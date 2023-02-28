@@ -2,7 +2,7 @@ import { useContext } from "react";
 import {
   LinksIcon,
   MessageIcon,
-  ShareIcon
+  ShareIcon,
 } from "../../../../../assets/icons/AboutTabsIcons";
 import { ProfileContext } from "../../../../../context/profileContext";
 import "../../../../../style/components/BusinessNeeds.css";
@@ -25,7 +25,7 @@ const BusinessNeeds = () => {
                   <p>{description}</p>
                 </div>
                 <div className="status-row">
-                  <p className={status === "Active" ? "green" : "blue"}>
+                  <p className={status === "Active" ? "green" : "color_Blue"}>
                     {status}
                   </p>
                   <div className="card-icons">

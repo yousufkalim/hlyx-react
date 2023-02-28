@@ -623,7 +623,7 @@ export const userData = [
         },
         {
           title: "2021",
-          description: "Presidential Honorin Genetic Science",
+          description: "Presidential Honor in Genetic Science",
         },
       ],
       businessGoal: {

@@ -11,7 +11,7 @@ import Tabs from "../../components/Tabs";
 import { ProfileContext } from "../../context/profileContext";
 import "../../style/page/profile.css";
 import PortfolioTab from "../../components/PortfolioTab";
-export const ProfileTabs = ["Contact", "About", "Service", "Portfolio"];
+export const ProfileTabs = ["Contact", "About", "Services", "Portfolio"];
 
 const ProfileTabsContent = ({ activeTab }: { activeTab: string }) => {
   const { userProfile } = useContext(ProfileContext);
