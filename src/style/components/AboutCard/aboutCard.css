@@ -180,3 +180,32 @@ p {
   padding-bottom: 30px;
   overflow-x: auto;
 }
+
+.profession-about-card {
+  padding-block: 48px 62.86px;
+}
+
+.education-about-card {
+  padding-block: 44px 47.96px;
+}
+
+.accolades-about-card {
+  padding-block: 47px 49px;
+}
+
+.achievement-about-card {
+  padding-block: 43px 63px;
+}
+
+.bussiness-goals-about-card {
+  padding-block: 60px 54px;
+  gap: 51px;
+}
+
+.business-needs-about-card {
+  padding-block: 56px 48px;
+}
+
+.icebreakers-about-card {
+  padding-block: 58px 51px;
+}

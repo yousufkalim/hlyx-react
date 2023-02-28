@@ -52,7 +52,7 @@ const AboutTab = () => {
         </AboutCard>
       )}
       {about?.profession && (
-        <AboutCard title="Profession">
+        <AboutCard title="Profession" className="profession-about-card">
           <div className="profession-list">
             {about?.profession?.map(
               ({ description, title, lineColor }: any, index: number) => (
@@ -66,22 +66,37 @@ const AboutTab = () => {
           </div>
         </AboutCard>
       )}
-      <AboutCard title="Education">
+      <AboutCard title="Education" className="education-about-card">
         <EducationCard />
       </AboutCard>
-      <AboutCard title="Accolades" button="View All">
+      <AboutCard
+        title="Accolades"
+        button="View All"
+        className="accolades-about-card"
+      >
         <Accolades />
       </AboutCard>
-      <AboutCard title="Achievements" button="View All">
+      <AboutCard
+        title="Achievements"
+        button="View All"
+        className="achievement-about-card"
+      >
         <Achievements />
       </AboutCard>
-      <AboutCard title="Business Goals">
+      <AboutCard title="Business Goals" className="bussiness-goals-about-card">
         <BusinessGoals />
       </AboutCard>
-      <AboutCard title="Business Needs" button="View All">
+      <AboutCard
+        title="Business Needs"
+        button="View All"
+        className="business-needs-about-card"
+      >
         <BusinessNeeds />
       </AboutCard>
-      <AboutCard title="Icebreakers" className="border_none">
+      <AboutCard
+        title="Icebreakers"
+        className="border_none icebreakers-about-card"
+      >
         <Icebreakers />
       </AboutCard>
     </>

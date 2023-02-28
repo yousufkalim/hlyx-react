@@ -24,7 +24,7 @@ const BusinessNeeds = () => {
                 <p>{description}</p>
               </div>
               <div className="status-row">
-                <p className={status === "Active" ? "green" : "blue"}>
+                <p className={status === "Active" ? "green" : "color_Blue"}>
                   {status}
                 </p>
                 <div className="card-icons">

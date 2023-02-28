@@ -4,21 +4,27 @@ import { ProfileContext } from "../../../../../context/profileContext";
 import "../../../../../style/components/achievement.css";
 import ReadMoreText from "../../../../ReadMoreText";
 
-
 const Achievements = () => {
   const { userProfile } = useContext(ProfileContext);
   const { achievement } = userProfile?.about;
   return (
     <>
       {achievement?.map(
-        ({ description,descriptiontitle, title, detail }: any, index: number) => (
+        (
+          { description, descriptiontitle, title, detail }: any,
+          index: number
+        ) => (
           <div className="achievement-card" key={index}>
             <BlueDotIcon color="gray" />
             <div className="achievement-description">
               <p className="year">{title}</p>
-              <p className="descriptiontitle">{descriptiontitle}</p>
-              <ReadMoreText text={description} limit={200}/>
+              <div className="detail-block">
+                <p className="descriptiontitle">{descriptiontitle}</p>
+                <p className="details">
+                  <ReadMoreText text={description} limit={200} />
+                </p>
               </div>
+            </div>
           </div>
         )
       )}

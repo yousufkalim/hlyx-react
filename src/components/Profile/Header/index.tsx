@@ -1,5 +1,6 @@
 import { IonButton } from "@ionic/react";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { BackBtnIcon, HlyxHeaderLogo } from "../../../assets/icons";
 import { ProfileContext } from "../../../context/profileContext";
 import "./avatarimage.css";
@@ -10,24 +11,24 @@ const Header = () => {
   return (
     <div className="sticky-header">
       <div className="profile-header-container">
-        <IonButton expand="full" className="back-btn" routerLink="/">
-          <BackBtnIcon color={"var(--text-color)"} />
-        </IonButton>
-        <HlyxHeaderLogo  color={"var(--text-color)"} />
-
+        <Link to="/" replace={true}>
+          <IonButton expand="full" className="back-btn">
+            <BackBtnIcon color={"var(--text-color)"} />
+          </IonButton>
+        </Link>
+        <HlyxHeaderLogo color={"var(--text-color)"} />
         <img
-        className="avatarimage"
+          className="avatarimage"
           src={Avatar}
           alt="avatar-header-icon"
           style={{
-            top:21,
-            right:24.89,
+            top: 21,
+            right: 24.89,
             width: 61,
             height: 61,
             borderRadius: 25,
             objectFit: "cover",
-            padding:2
-
+            padding: 2,
           }}
         />
       </div>
