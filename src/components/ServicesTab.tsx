@@ -51,7 +51,7 @@ const MainServiceCard = ({
       <div className="dashboard-report-section">
         <div>
           <h6>{title}</h6>
-          <p style={{}}>View Service Details</p>
+          <p>View Service Details</p>
         </div>
         <RightArrowIcon />
       </div>
