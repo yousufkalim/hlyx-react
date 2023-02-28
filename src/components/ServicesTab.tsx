@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { RightArrowIcon } from "../assets/icons/ServiceTabIcons";
 import { ServicesIcons } from "../constants";
 import { ProfileContext } from "../context/profileContext";
-import { ServiceCardProps } from "../interface";
+import { ImageType, ServiceCardProps } from "../interface";
 import FeaturedServices from "./FeaturedServices";
 import UserDetailCard from "./Profile/UserDetailCard/UserDetailCard";
 import "./ServicesTab.css";
@@ -30,10 +30,23 @@ export const ServiceCard = ({
   );
 };
 
-const MainServiceCard = ({ title, icon }: { title: string; icon: string }) => {
+const MainServiceCard = ({
+  title,
+  icon,
+  image,
+}: {
+  title: string;
+  image?: ImageType;
+  icon?: string;
+}) => {
   return (
     <div className="dashboard-icon-section">
-      <div className="dashboard-icon">{ServicesIcons[icon]}</div>
+      {icon && <div className="dashboard-icon">{ServicesIcons[icon]}</div>}
+      {image && (
+        <div className="dashboard-image">
+          <img src={image.url} alt={image.altText} height={55} width={57} />
+        </div>
+      )}
 
       <div className="dashboard-report-section">
         <div>
@@ -96,8 +109,8 @@ const ServicesTab = () => {
             <h6 className="feature-services-title">Main Services</h6>
             <div className="cards-list">
               {service?.mainServices?.map(
-                ({ title, type }: any, index: number) => (
-                  <MainServiceCard title={title} icon={type} />
+                ({ title, type, image }: any, index: number) => (
+                  <MainServiceCard title={title} icon={type} image={image} />
                 )
               )}
             </div>

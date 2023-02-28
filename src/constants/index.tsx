@@ -2,6 +2,7 @@ import advanced from "../assets/advanced.png";
 import bioTech from "../assets/bioTech.png";
 import cellAnatomic from "../assets/cellAnatomic.png";
 import cellProg from "../assets/cellprog.png";
+
 import {
   AdvanceCellIcon,
   MediumIcon,
@@ -364,9 +365,7 @@ export const SocialMediaIcons: any = {
 
 export const ServicesIcons: any = {
   BiDashboard: <BiDashboardIcon />,
-
   UiUx: <UiUxIcon />,
-
   Devolpment: <DevelopmentIcon />,
 
   DataMarketing: <DataMarketIcon />,
@@ -382,9 +381,8 @@ export const ServicesIcons: any = {
 
 export const BlogLinkIcons: any = {
   Medium: <MediumIcon color={"var(--social-back)"} />,
-  GoogleDrive:  <DriveIcon color={"var(--social-back)"} />,
-  SoundCloud:<SoundCloudIcon color={"var(--social-back)"} />,
+  GoogleDrive: <DriveIcon color={"var(--social-back)"} />,
+  SoundCloud: <SoundCloudIcon color={"var(--social-back)"} />,
 };
-
 
 export const LOGIN_SECRET = "hlyx1234";

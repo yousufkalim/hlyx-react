@@ -43,10 +43,10 @@ import four_item_joel from "../assets/joelPortfolio/four_item.png";
 import five_item_joel from "../assets/joelPortfolio/five_item.png";
 import JamesAvatar from "../assets/JamesAvatar.png";
 //Main services
+import RBC from "../assets/RBC.png";
+import DNA from "../assets/DNA.png";
 import Cellanatomic from "../assets/Cellanatomic.png";
 import Ddiscussion from "../assets/Ddiscussion.png";
-import DNA from "../assets/DNA.png";
-import RBC from "../assets/RBC.png";
 
 export const userData = [
   // James Oriyan Profile
@@ -765,20 +765,32 @@ export const userData = [
       ],
       mainServices: [
         {
-          type: "MultiUnit",
-          title: "Multi-Unit Properties",
+          image: {
+            url: RBC,
+            altText: "RBC",
+          },
+          title: "Advanced Cell Research & Analysis",
         },
         {
-          type: "Investment",
-          title: "NNN Investments",
+          image: {
+            url: Cellanatomic,
+            altText: "Cellanatomic",
+          },
+          title: "Cell Anatomic Molecular Splicing",
         },
         {
-          type: "Redevolpment",
-          title: "Land Redevelopment",
+          image: {
+            url: Ddiscussion,
+            altText: "Ddiscussion",
+          },
+          title: "Bio-Technology Design & Implementation",
         },
         {
-          type: "Industrial",
-          title: "Industrial",
+          image: {
+            url: DNA,
+            altText: "DNA",
+          },
+          title: "Scientific Program Management",
         },
       ],
     },

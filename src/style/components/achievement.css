@@ -12,7 +12,7 @@
 .achievement-description {
   display: flex;
   flex-direction: column;
-  gap: 11.54px;
+  gap: 12.75px;
 }
 
 .achievement-description .year {
@@ -23,23 +23,22 @@
   font-size: 16px;
   line-height: 8px;
 }
-.descriptiontitle{
-  /* color: #ffffff; */
-  font-size: 18px;
-  font-family: "Poppins";
-  font-weight: 600;
-}
-
-.achievement-description .text {
+.descriptiontitle {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 21px;
-  /* color: var(--text-color); */
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--text-color);
 }
 
-.achievement-description .detail {
+.detail-block {
+  display: flex;
+  flex-direction: column;
+  gap: 9.57px;
+}
+
+.details p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;

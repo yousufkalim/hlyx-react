@@ -58,7 +58,7 @@ const AchievedTab = () => {
   const { achieved } = userProfile?.about?.businessGoal ?? [];
 
   return (
-    <div>
+    <div className="achievetab">
       {achieved.map(
         ({ title, description, timeStamp, progress }: any, index: number) => (
           <AchievedCard

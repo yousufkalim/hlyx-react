@@ -82,6 +82,14 @@
   font-family: "Poppins";
 }
 
+.dashboard-image {
+  height: 55px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .dashboard-icon {
   width: 57px;
   height: 55px;
