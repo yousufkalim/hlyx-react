@@ -17,6 +17,7 @@
 .bussiness-section:first-child .blue-Dot {
   background-color: #1e6eff;
   outline: none;
+  border-radius: 100px;
 }
 
 .bussiness-section::before {
@@ -32,10 +33,12 @@
   display: flex;
   height: 18px;
   width: 18px;
-  outline: 1px solid #3b3c42;
-
-  border-radius: 100%;
   flex-shrink: 0;
+}
+
+.business-list .bussiness-section:not(:first-child) .blue-Dot {
+  border: 1px solid #3b3c42;
+  border-radius: 100px;
 }
 
 .Bussiness-card {
