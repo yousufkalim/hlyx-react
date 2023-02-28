@@ -14,7 +14,8 @@
   flex-shrink: 0;
 }
 .companyname {
-  color: #ffffff;
+  font-weight: 600;
+  color: var(--text-color);
 }
 
 .accolades-card-detail {
@@ -31,15 +32,15 @@
 }
 
 .accolade-description p {
-  max-width: 283px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  line-height: 21px;
+  line-height: 20px;
+  letter-spacing: 0.045em;
+  max-width: 283px;
   color: var(--text-color);
 }
-
 .date {
   display: flex;
   align-items: center;
