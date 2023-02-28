@@ -24,29 +24,7 @@ const PortfolioCard = () => {
   return (
     <>
       <IonCard>
-        <div className="flex align-center justify-between">
-          <IonLabel className="slider-card-heading">Featured Photos</IonLabel>
-          <div className="flex justify-end">
-            <IonButton
-              disabled={activeIndex === 0 ? true : false}
-              className={`prev-img-icon ${
-                activeIndex === 0 ? "opacity-light" : "opacity-dark"
-              }`}
-              onClick={() => swiperRef.current?.slidePrev()}
-            >
-              <PrevImageIcon />
-            </IonButton>
-            <IonButton
-              disabled={activeIndex === 4 ? true : false}
-              className={`next-img-icon ${
-                activeIndex === 4 ? "opacity-light" : "opacity-dark"
-              }`}
-              onClick={() => swiperRef.current?.slideNext()}
-            >
-              <NextImageIcon />
-            </IonButton>
-          </div>
-        </div>
+
         <div className="swiper-image-container">
           <Swiper
             onRealIndexChange={(element) => setActiveIndex(element.activeIndex)}
