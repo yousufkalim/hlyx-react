@@ -23,8 +23,7 @@ const PortfolioCard = () => {
 
   return (
     <>
-      <IonCard>
-
+      <IonCard  className="border_none" style={{ paddingTop: 0}}>
         <div className="swiper-image-container">
           <Swiper
             onRealIndexChange={(element) => setActiveIndex(element.activeIndex)}
@@ -40,12 +39,12 @@ const PortfolioCard = () => {
             onSlideChange={() => console.log("")}
             onSwiper={() => console.log("")}
           >
-            {sliderData.map(({ img, imgAlt, publishDate, title }, index) => (
+            {sliderData.map(({ img, imgAlt, subtitle, title }, index) => (
               <SwiperSlide className="gap">
                 <SliderCard
                   img={img}
                   imgAlt={imgAlt}
-                  publishDate={publishDate}
+                  publishDate={subtitle}
                   title={title}
                 />
               </SwiperSlide>
@@ -65,9 +64,9 @@ const PortfolioCard = () => {
             />
           ))}
         </div>
-        <div className="flex align-center justify-center">
+        {/* <div className="flex align-center justify-center">
           <IonButton className="load-more-btn">Load More</IonButton>
-        </div>
+        </div> */}
       </IonCard>
     </>
   );

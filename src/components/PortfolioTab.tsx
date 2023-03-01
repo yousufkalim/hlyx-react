@@ -1,5 +1,11 @@
 import "../style/components/MediaCard/mediaCard.css";
-import { IonCard, IonLabel,IonButton, IonSegment, IonSegmentButton } from "@ionic/react";
+import {
+  IonCard,
+  IonLabel,
+  IonButton,
+  IonSegment,
+  IonSegmentButton,
+} from "@ionic/react";
 import PortfolioCard from "./PortfolioCard";
 import UserDetailCard from "./Profile/UserDetailCard/UserDetailCard";
 
@@ -8,43 +14,41 @@ const PortfolioTab = () => {
     <>
       <UserDetailCard />
       <IonCard className="portfolio_container">
-      <div className="portfoli-card-title">
-        <IonLabel className="card-heading-lg">Portfolio</IonLabel>
+        <div className="portfoli-card-title">
+          <IonLabel className="card-heading-lg">Portfolio</IonLabel>
           <IonButton fill="outline" shape="round" className="view-all-button">
-            View All   
+            View All
           </IonButton>
-      
-      </div>
-        <IonSegment className="portfolio-btn-tab-container" value="Photos">
+        </div>
+        <IonSegment className="portfolio-btn-tab-container" value="Featured">
           <IonSegmentButton
             className="portfolio-tab-segment-button-container"
-            value="Photos"
+            value="Featured"
           >
-            <IonButton fill="clear"  className="portfolio-tab-segment-button">
+            <IonButton fill="clear" className="portfolio-tab-segment-button">
               Featured
             </IonButton>
           </IonSegmentButton>
           <IonSegmentButton
             className="portfolio-tab-segment-button-container"
-            value="Video"
+            value="Research"
           >
-             <IonButton fill="clear"  className="portfolio-tab-segment-button">
+            <IonButton fill="clear" className="portfolio-tab-segment-button">
               Research
             </IonButton>
           </IonSegmentButton>
 
           <IonSegmentButton
             className="portfolio-tab-segment-button-container"
-            value="Audio"
+            value="Splicing"
           >
-            <IonButton fill="clear"  className="portfolio-tab-segment-button">
+            <IonButton fill="clear" className="portfolio-tab-segment-button">
               Splicing
             </IonButton>
           </IonSegmentButton>
         </IonSegment>
-        <PortfolioCard />
       </IonCard>
-    
+      <PortfolioCard />
     </>
   );
 };
