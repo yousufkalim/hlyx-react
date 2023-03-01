@@ -354,7 +354,9 @@ export const SocialMediaIcons: any = {
 
   Facebook: <Facebook color={"var(--social-back)"} />,
 
-  Behance: <BehanceIcon color={"var(--social-back)"} />,
+  Behance: (
+    <BehanceIcon color={"var(--social-back)"} white={"var(--text-color)"} />
+  ),
 
   Skype: <SkypeIcon color={"var(--social-back)"} />,
 
