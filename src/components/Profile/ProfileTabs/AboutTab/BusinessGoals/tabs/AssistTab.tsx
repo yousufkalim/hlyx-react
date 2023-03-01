@@ -140,9 +140,9 @@ const AssistTab = () => {
             ))}
           </div>
         </AssistCardSections> */}
-        <IonButton className="supportbtn" shape="round">
-          <IonIcon  icon={add}></IonIcon>
-        <p>Support</p>  
+        <IonButton className="supportBtn" shape="round">
+          <IonIcon className="supportIcon"  icon={add}></IonIcon>
+          Support
         </IonButton>
       </div>
     </div>
