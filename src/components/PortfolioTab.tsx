@@ -47,8 +47,8 @@ const PortfolioTab = () => {
             </IonButton>
           </IonSegmentButton>
         </IonSegment>
-        <PortfolioCard />
       </IonCard>
+      <PortfolioCard />
     </>
   );
 };

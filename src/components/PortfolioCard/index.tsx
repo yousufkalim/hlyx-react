@@ -23,7 +23,7 @@ const PortfolioCard = () => {
 
   return (
     <>
-      <IonCard style={{ paddingTop: 0 }}>
+      <IonCard  className="border_none" style={{ paddingTop: 0}}>
         <div className="swiper-image-container">
           <Swiper
             onRealIndexChange={(element) => setActiveIndex(element.activeIndex)}

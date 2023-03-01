@@ -5,24 +5,17 @@
 .gallery-card-container {
   max-width: 104.42px !important;
   min-height: 156.97px !important;
-  height: 100%;
-  /* width: 100%; */
+  line-height: 100%;
   background: #2a2c31;
   border-radius: 12px;
   margin-bottom: 14.68px;
-  /* margin-right: 9px; */
-  /* margin-left: 9px; */
-}
-.gap {
-  display: flex !important;
-  gap: 9px !important;
 }
 .slider-card-container {
   min-height: 100%;
-  width: 100%;
+  max-width: 100%;
   background: #2a2c31;
   border-radius: 12px;
-  margin-left: 9px;
+  margin-right: 9px;
 }
 
 .slider-title {
@@ -92,31 +85,25 @@
 }
 
 .slide-image-container {
-  /* min-height: 137.72px; */
   width: 100%;
   height: 100%;
   border-radius: 0;
 }
 
 .gallery-image-container {
-  max-width: 100.79px;
+  min-width: 104.79px;
   min-height: 105px;
   width: 100%;
-  height: 100%;
 }
 
 .gallery-container {
-  padding: 19.25px 16px 32.6px 16px;
+  gap: 5.18px;
+  padding: 19.25px 26px 32.6px 26px;
 }
 
 .flex-wrap {
   flex-wrap: wrap;
 }
-
-.justify-between {
-  justify-content: space-between;
-}
-
 .load-more-btn {
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
@@ -165,11 +152,13 @@
 
 .swiper-image-container > div > .swiper-scrollbar {
   position: relative !important;
-  background-color: grey;
+  background-color: #DEDADA;
   height: 1px !important;
   margin-top: 23.91px !important;
 }
-
+.borderbottom{
+  border-bottom: none;
+}
 .swiper-image-container > div > .swiper-scrollbar .swiper-scrollbar-drag {
   background: #c03b3b;
 }
@@ -181,6 +170,7 @@
 .portfolio_container {
   margin: 0px !important;
   padding: 0 !important;
+  border: none !important;
 }
 
 .portfolio-tab-segment-button {
