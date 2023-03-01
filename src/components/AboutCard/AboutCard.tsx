@@ -1,5 +1,5 @@
 import { IonCard, IonCardTitle, IonChip } from "@ionic/react";
-import { FunctionComponent, PropsWithChildren } from "react";
+import { FunctionComponent } from "react";
 import { AboutCardProps } from "../../interface";
 import "../../style/components/AboutCard/aboutCard.css";
 

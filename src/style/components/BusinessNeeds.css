@@ -80,9 +80,6 @@
   flex-direction: row;
   justify-content: space-between;
 }
-/* .status-row .blue {
-  background: #1e6eff;
-} */
 
 .status-row .color_Blue {
   background: #1e6eff;

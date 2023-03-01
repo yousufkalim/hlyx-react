@@ -1,4 +1,4 @@
-import { IonButton, IonCard, IonLabel } from "@ionic/react";
+import { IonCard, IonLabel } from "@ionic/react";
 import { galleryData, sliderData } from "../../constants";
 import "../../style/components/Silder/slider.css";
 import GalleryCard from "../GalleryCard";
@@ -23,7 +23,7 @@ const PortfolioCard = () => {
 
   return (
     <>
-      <IonCard  className="border_none" style={{ paddingTop: 0}}>
+      <IonCard className="border_none" style={{ paddingTop: 0 }}>
         <div className="swiper-image-container">
           <Swiper
             onRealIndexChange={(element) => setActiveIndex(element.activeIndex)}

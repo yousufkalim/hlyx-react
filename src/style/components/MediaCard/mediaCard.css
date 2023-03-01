@@ -44,7 +44,6 @@
 
 .cover_photo_container {
   max-height: 283px;
-  /* position: relative; */
   overflow: hidden;
   z-index: 10;
 }
@@ -65,7 +64,6 @@
   line-height: 14px;
   font-weight: 500;
   color: var(--text-color);
-  /* font-weight: 600; */
 }
 
 .office_icon_text {
@@ -104,7 +102,6 @@ ion-segment-button::before {
   left: 19px;
   top: 238px;
   border-radius: 37.49%;
-  /* bottom: -40px; */
   width: 90.47px;
   height: 90.47px;
   z-index: 8;

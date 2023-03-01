@@ -8,7 +8,6 @@
 .assist-header {
   display: flex;
   gap: 8.5px;
-  /* padding-left: 25px; */
 }
 
 .more_options {
@@ -89,9 +88,7 @@
 }
 
 .Assist-Button {
-  /* width: 85px; */
   margin: 0;
-  /* padding: 10px; */
   border-radius: 100%;
   font-family: "Poppins";
   font-style: normal;

@@ -21,16 +21,14 @@
 .education_card_container .education_color_line {
   width: 4px;
   height: 43px;
-  /* background-color: #fedd71; */
   border-radius: 100px;
-
 }
 
 .color-blue {
   background-color: #66a0f7;
 }
 .color-red {
-  background-color: #D8213A;
+  background-color: #d8213a;
 }
 
 .color-green {

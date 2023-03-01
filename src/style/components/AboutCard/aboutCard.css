@@ -1,6 +1,5 @@
 ion-card {
   margin: 0px;
-  /* padding: 14.76px 23.73px 16.04px 20.26px; */
   padding: 14.76px 0px 18px 0px;
   border-radius: 0px;
   box-shadow: none;
@@ -9,7 +8,6 @@ ion-card {
 
 .flex {
   display: flex;
-  /* background-color: var(--bg-color); */
 }
 
 .align-center {
@@ -28,7 +26,6 @@ ion-card {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
-  /* font-weight: 600; */
   font-size: 14.5px;
   line-height: 15px;
 }
@@ -168,8 +165,6 @@ p {
   font-weight: 600;
   font-size: 13px;
   line-height: 9px;
-  /* border: 1px solid #71757b;
-  border-radius: 17px; */
   color: var(--card-button-color);
 }
 

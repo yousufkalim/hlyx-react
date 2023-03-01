@@ -151,10 +151,7 @@ h1 {
 .link-Button-section .button-section {
   margin: 0 !important;
   background-color: #0000;
-  /* background: rgb(37, 39, 49, 0.5); */
   border-top: 1px solid rgba(255, 255, 255, 0.19);
-  /* border: 1px solid #0000; */
-  /* height: 78.58px; */
   border-top-left-radius: 11px;
   border-top-right-radius: 11px;
   border-bottom-left-radius: 0;

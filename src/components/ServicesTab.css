@@ -37,25 +37,8 @@
 .service-card-container .service-card-title {
   display: flex;
   justify-content: space-between;
-  /* gap: 44px; */
   align-items: center;
 }
-
-/* .service-card-container .service-card-title-button {
-  --padding-start: 16px;
-  --padding-end: 16px;
-  --padding-top: 12px;
-  --padding-bottom: 12px;
-  --color: #71757b;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 9px;
-  --border-color: #71757b;
-  --border-width: 1px;
-  --border-style: solid;
-} */
 
 /* Feature Services */
 
@@ -68,9 +51,7 @@
   letter-spacing: 0.04em;
   --color: #9899a0;
 }
-/* .dashboard-icon{ 
-  --background
-} */
+
 .dashboard-icon-section {
   background-color: #2a2c31;
   padding-block: 5px;
