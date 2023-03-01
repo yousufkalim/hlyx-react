@@ -3,15 +3,15 @@
 }
 
 .gallery-card-container {
-  max-width: 100.79px !important;
-  min-height: 151.51px !important;
+  max-width: 104.42px !important;
+  min-height: 156.97px !important;
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
   background: #2a2c31;
   border-radius: 12px;
   margin-bottom: 14.68px;
-  margin-right: 9px;
-  margin-left: 9px;
+  /* margin-right: 9px; */
+  /* margin-left: 9px; */
 }
 .gap {
   display: flex !important;
@@ -74,9 +74,8 @@
 }
 
 .swiper-image-container {
-  margin-left: 10.52px;
-  margin-right: 14.52px;
-  margin-top: 15.35px;
+  padding-left: 23px;
+  margin: 0 !important;
 }
 
 .align-left {
@@ -84,17 +83,16 @@
 }
 
 .slider-card-heading {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Montserrat" !important;
   font-style: normal;
   font-weight: 700;
   font-size: 13px !important;
   line-height: 16px;
-  color: var(--portfolio-heading);
-  margin: 0px 0px 0px 14.52px;
+  margin-left: 26px;
 }
 
 .slide-image-container {
-  min-height: 137.72px;
+  /* min-height: 137.72px; */
   width: 100%;
   height: 100%;
   border-radius: 0;
@@ -108,7 +106,7 @@
 }
 
 .gallery-container {
-  padding: 19.25px 13.84px 12.87px 14.52px;
+  padding: 19.25px 16px 32.6px 16px;
 }
 
 .flex-wrap {
@@ -169,25 +167,29 @@
   position: relative !important;
   background-color: grey;
   height: 1px !important;
-  margin-top: 15.91px !important;
+  margin-top: 23.91px !important;
 }
+
+.swiper-image-container > div > .swiper-scrollbar .swiper-scrollbar-drag {
+  background: #c03b3b;
+}
+
+.swiper-image-container .swiper-slide {
+  height: auto;
+}
+
 .portfolio_container {
   margin: 0px !important;
   padding: 0 !important;
 }
 
 .portfolio-tab-segment-button {
-  /* border-bottom: none; */
-  font-family: Montserrat, sans-serif !important;
-  font-size: 13px !important;
-  border-radius: 0;
-  font-weight: inherit;
-  height: 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
   color: var(--text-grey-color);
-  line-height: 12px;
-  max-width: 93.95px;
-  opacity: 0.8;
-  padding: 0px;
 }
 
 .portfolio-tab-segment-button-container {
@@ -203,18 +205,14 @@
   --indicator-color: transparent;
   --indicator-box-shadow: none;
   border-radius: 0px;
-  color: #ffffff;
-  border-bottom: 1px solid red;
-  /* color: var(--text-color); */
+  color: var(--text-color);
+  border-bottom: 2px solid #e83030;
   font-weight: 600;
   border-top: none;
 }
 
 .portfolio-btn-tab-container {
-  /* margin: -11px 11px 0px 11px; */
-  padding: 15.04px 25.83px;
+  padding: 31px 22px 36px 26px;
   border-radius: 0;
-  justify-content: space-between;
   display: flex;
-  /* background-color: var(--bg-color); */
 }

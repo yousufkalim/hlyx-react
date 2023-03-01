@@ -214,39 +214,39 @@ export const brakerData = [
 export const sliderData = [
   {
     img: SliderOneImage,
-    imgAlt: "cell-interpolization",
-    title: "Cell Interpolization",
-    publishDate: "Dec. 21, 2022",
+    imgAlt: "cel DNA Mapping",
+    title: "Cell DNA Mapping",
+    subtitle: "Nano-tech AI",
   },
   {
     img: SliderTwoImage,
     imgAlt: "cell-interpolization",
     title: "Cell Interpolization",
-    publishDate: "Dec. 21, 2022",
+    subtitle: "Discovery Process",
   },
   {
     img: SliderThreeImage,
-    imgAlt: "cell-interpolization",
-    title: "Cell Interpolization",
-    publishDate: "Dec. 21, 2022",
+    imgAlt: "DNA Therapy",
+    title: "DNA Therapy",
+    subtitle: "Cell Rejuvenation",
   },
   {
     img: SliderOneImage,
-    imgAlt: "cell-interpolization",
-    title: "Cell Interpolization",
-    publishDate: "Dec. 21, 2022",
+    imgAlt: "cel DNA Mapping",
+    title: "Cell DNA Mapping",
+    subtitle: "Nano-tech AI",
   },
   {
     img: SliderTwoImage,
     imgAlt: "cell-interpolization",
     title: "Cell Interpolization",
-    publishDate: "Dec. 21, 2022",
+    subtitle: "Discovery Process",
   },
   {
     img: SliderThreeImage,
-    imgAlt: "cell-interpolization",
-    title: "Cell Interpolization",
-    publishDate: "Dec. 21, 2022",
+    imgAlt: "DNA Therapy",
+    title: "DNA Therapy",
+    subtitle: "Cell Rejuvenation",
   },
 ];
 

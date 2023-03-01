@@ -184,18 +184,17 @@ ion-segment {
 .ion-accordion-toggle-icon {
   color: #b6b6b6 !important;
 }
-.portfoli-card-title{
+.portfoli-card-title {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  padding-top:20px ;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 20px 23px 0px 26px;
 }
-.card-heading-lg{
+.card-heading-lg {
   font-size: 20px;
   font-family: "Poppins";
   font-weight: 600;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 ion-accordion.accordion-expanded > [slot="header"] .ion-accordion-toggle-icon {
