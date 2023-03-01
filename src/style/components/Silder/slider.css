@@ -154,11 +154,11 @@
 
 .swiper-image-container > div > .swiper-scrollbar {
   position: relative !important;
-  background-color: #DEDADA;
+  background-color: #dedada;
   height: 1px !important;
   margin-top: 23.91px !important;
 }
-.borderbottom{
+.borderbottom {
   border-bottom: none;
 }
 .swiper-image-container > div > .swiper-scrollbar .swiper-scrollbar-drag {
@@ -187,11 +187,19 @@
 .portfolio-tab-segment-button-container {
   --indicatorbox-shadow: none;
   --background: 888888;
-  border-bottom: 1px solid grey;
-  min-height: 27.02px;
-  padding: 0;
+  font-size: 14px;
+  line-height: 19px;
+  color: #606271;
   border-radius: 0;
   border-top: none;
+  min-width: auto;
+  --padding-start: 8px;
+  --padding-end: 8px;
+  flex: none;
+  min-width: 86px;
+  --padding-top: 11px;
+  --padding-bottom: 11px;
+  margin: 0;
 }
 .portfolio-btn-tab-container > .segment-button-checked {
   --indicator-color: transparent;
@@ -204,8 +212,14 @@
 }
 
 .portfolio-btn-tab-container {
-  padding: 31px 22px 36px 26px;
+  margin-inline: 26px;
   border-radius: 0;
   display: flex;
   justify-content: space-between;
+  max-width: 100%;
+  border-bottom: 1px solid #606271;
+  justify-content: space-between;
+  width: auto;
+  margin-block: 31px 36px;
+  overflow-x: auto;
 }

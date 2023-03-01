@@ -25,26 +25,20 @@ const PortfolioTab = () => {
             className="portfolio-tab-segment-button-container"
             value="Featured"
           >
-            <IonButton fill="clear" className="portfolio-tab-segment-button">
-              Featured
-            </IonButton>
+            Featured
           </IonSegmentButton>
           <IonSegmentButton
             className="portfolio-tab-segment-button-container"
             value="Research"
           >
-            <IonButton fill="clear" className="portfolio-tab-segment-button">
-              Research
-            </IonButton>
+            Research
           </IonSegmentButton>
 
           <IonSegmentButton
             className="portfolio-tab-segment-button-container"
             value="Splicing"
           >
-            <IonButton fill="clear" className="portfolio-tab-segment-button">
-              Splicing
-            </IonButton>
+            Splicing
           </IonSegmentButton>
         </IonSegment>
       </IonCard>
