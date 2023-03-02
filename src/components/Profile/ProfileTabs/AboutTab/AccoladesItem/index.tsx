@@ -22,10 +22,7 @@ const AccoladesItem = () => {
                 <span className="companyname">{jobTitle?.companyName}</span>
               </p>
               <div className="date">
-                <AccoladesCalender
-                  color={"var(--icon-back)"}
-                  white={"#868FA0"}
-                />
+                <AccoladesCalender color={"var(--active-card-text-color)"} />
                 <p>{`${startDate} - ${endDate ?? "Present"}`}</p>
               </div>
             </div>
