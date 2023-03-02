@@ -21,16 +21,16 @@
   border-radius: 100px;
 }
 .border-red {
-  background-color: #d8213a;
+  background-color: var(--color-red-200);
 }
 .border-yellow {
-  background-color: #fedd71;
+  background-color: var(--color-yellow);
 }
 .border-green {
-  background-color: #59d456;
+  background-color: var(--color-green-200);
 }
 .border-purple {
-  background-color: #d14ce7;
+  background-color: var( --color-purple-200);
 }
 .featured_details_container {
   display: flex;
@@ -76,7 +76,7 @@
   font-size: 13.2209px;
   line-height: 18px;
   text-align: center;
-  --color: #ffffff;
+  --color: var( --text-white-color);
   text-transform: capitalize;
   margin-left: 12px;
 }

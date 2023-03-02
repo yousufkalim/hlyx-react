@@ -20,7 +20,7 @@
   flex-shrink: 0;
   width: 4px;
   height: 30px;
-  background-color: #fedd71;
+  background-color: var(--color-yellow);
   border-radius: 100px;
 }
 
@@ -85,7 +85,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  color: #aab2b7;
+  color: var(--color-grey-50);
 }
 
 .Assist-Button {
@@ -96,7 +96,7 @@
   font-weight: 500;
   font-size: 14.0894px;
   line-height: 19px;
-  color: #ffffff;
+  color: var( --text-white-color);
   --padding-bottom: 10px;
   --padding-end: 10px;
   --padding-start: 10px;
@@ -134,7 +134,7 @@
   --padding-top: 10px;
 }
 .supportIcon {
-  color: #ffffff;
+  color:var( --text-white-color);
   width: 20px;
   height: 20px;
   right: 29.48%;
@@ -148,7 +148,7 @@
   font-weight: 600;
   font-size: 12px;
   line-height: 9px;
-  color: #606271;
+  color: var( --color-grey-100);
 }
 
 .assist-description {
@@ -157,7 +157,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 11px;
-  color: #aab2b7;
+  color: var(--color-grey-50);
   min-width: 100px;
 }
 
@@ -176,7 +176,7 @@
 }
 
 .assist-list-card-container:not(:last-child) .children {
-  border-bottom: 1px solid #40414d;
+  border-bottom: 1px solid var( --border-color);
 }
 
 .assist-list-card-title {
@@ -185,7 +185,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
-  color: #606271;
+  color: var( --color-grey-100);
   display: flex;
   flex-direction: column;
   gap: 14.09px;
@@ -197,7 +197,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
-  color: #606271;
+  color: var( --color-grey-100);
 }
 
 .assist-line {
@@ -206,27 +206,27 @@
   border-radius: 100px;
 }
 .assist-line-blue {
-  background-color: #4782f2;
+  background-color: var(--color-blue-200);
 }
 
 .assist-line-green {
-  background-color: #3ebf00;
+  background-color: var( --color-green-600);
 }
 
 .assist-line-purple {
-  background-color: #c623e0;
+  background-color: var(--color-purple-100);
 }
 
 .assist-line-red {
-  background-color: #f61e2b;
+  background-color: var(--color-red-400);
 }
 
 .assist-line-yellow {
-  background-color: #eeb600;
+  background-color: var( --color-yellow-200);
 }
 
 .detail-list {
-  border-top: 2px solid #363a46;
+  border-top: 2px solid var( --color-grey-970);
 }
 
 .assist-about {
@@ -235,7 +235,7 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
-  color: #adadad;
+  color: var(--color-grey-980);
 }
 
 /* Stat data */
@@ -263,7 +263,7 @@
   font-size: 12px;
   line-height: 11px;
   text-align: center;
-  color: #606271;
+  color: var( --color-grey-100)
 }
 
 .stat {
@@ -297,7 +297,7 @@
   background: rgba(70, 73, 81, 0.62);
   display: grid;
   place-items: center;
-  color: white;
+  color: var(--text-white-color);
   border-radius: 100px;
   font-size: 11px;
   font-weight: 500;
@@ -319,7 +319,7 @@
   font-weight: 400;
   font-size: 10px;
   line-height: 15px;
-  color: #aab2b7;
+  color: var(--color-grey-50);
 }
 
 .badge-list {

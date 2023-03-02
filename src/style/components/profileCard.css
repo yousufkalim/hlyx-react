@@ -85,7 +85,7 @@ h1 {
   font-weight: 400;
   font-size: 15px;
   line-height: 21px;
-  color: #ffffff;
+  color: var( --text-white-color);
   margin: 0;
 }
 
@@ -96,7 +96,7 @@ h1 {
   font-weight: 400;
   font-size: 15px;
   line-height: 16px;
-  color: #ffffff;
+  color:var( --text-white-color);
 }
 
 .company-logo-section {
@@ -186,7 +186,7 @@ h1 {
   font-weight: 700;
   font-size: 35px;
   line-height: 44px;
-  color: #ffffff;
+  color: var( --text-white-color);
 }
 .profile-footer-button {
   font-family: "Montserrat";

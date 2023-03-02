@@ -23,7 +23,7 @@
 }
 
 .achieved-section:not(:last-child) .achieved-whole-card {
-  border-bottom: 1px solid #40414d;
+  border-bottom: 1px solid var( --segment-border-top);
 }
 
 .achieved-section:last-child {

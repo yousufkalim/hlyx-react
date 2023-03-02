@@ -16,7 +16,7 @@
 }
 
 .achievement-description .year {
-  color: #437ff2;
+  color: var( --color-blue-800);
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;

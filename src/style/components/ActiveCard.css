@@ -27,19 +27,19 @@
 }
 
 .count-purple {
-  background: #5200ff;
+  background: var( --color-purple);
 }
 
 .count-green {
-  background: #49be1f;
+  background: var(--color-green-300);
 }
 
 .count-orange {
-  background: #fe340f;
+  background: var( --color-red-100);
 }
 
 .count-yellow {
-  background: #ffc202;
+  background: var( --color-yellow-100);
 }
 
 .details_data {
@@ -58,7 +58,7 @@
 .details_data p {
   font-size: 14px;
   font-weight: 400;
-  color: #8f97a6;
+  color:var(--color-grey-700);
   margin: 0;
 }
 
@@ -109,7 +109,7 @@
   background: rgba(70, 73, 81, 0.62);
   display: grid;
   place-items: center;
-  color: white;
+  color: var( --color-white-100);
   border-radius: 100px;
   font-size: 9px;
   line-height: 15px;

@@ -18,7 +18,7 @@
   font-weight: 400;
   font-size: 11px;
   line-height: 16px;
-  color: #838489;
+  color: var( --color-grey-1100);
 }
 
 .Social-icons-list {

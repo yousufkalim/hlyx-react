@@ -29,17 +29,17 @@ progress::-webkit-progress-bar {
 
 .progress-purple::-webkit-progress-value,
 .progress-purple::after {
-  background: #5200ff;
+  background: var( --color-purple);
 }
 
 .progress-green::-webkit-progress-value,
 .progress-green::after {
-  background: #49be1f;
+  background: var(--color-green-300);
 }
 
 .progress-orange::-webkit-progress-value,
 .progress-orange::after {
-  background: #fe340f;
+  background: var( --color-red-100);
 }
 
 .progress-yellow::-webkit-progress-value,

@@ -49,7 +49,7 @@ const ActiveCard = ({
         </div>
         <div className="active_card_footer">
           <div className="time_container">
-            <ClockIcon />
+            <ClockIcon color="var(--active-card-text-color)"/>
             <p className="time_text">{timeStamp}</p>
           </div>
 

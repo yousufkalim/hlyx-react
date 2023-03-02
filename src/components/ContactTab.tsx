@@ -43,8 +43,8 @@ const ContactTab = () => {
             <div className="flex align-center justify-contain">
               <div className="flex align-center">
                 <MailIcon
-                  color={"var(--icon-back)"}
-                  white={"var(--text-color)"}
+                  color={"var(--text-color)"}
+                  white={"var(--bg-color)"}
                 />
                 <IonLabel className="icon_text">{contact?.email}</IonLabel>
               </div>

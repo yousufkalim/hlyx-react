@@ -43,7 +43,7 @@
 
 .segment-button-checked ion-label {
   background-color: var(--ion-color-primary);
-  color: white;
+  color: var(--color-white-100);
   font-weight: 600 !important;
   border-radius: 100px;
 }

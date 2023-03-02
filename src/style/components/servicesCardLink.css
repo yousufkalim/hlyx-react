@@ -3,7 +3,7 @@
   justify-content: space-between;
   max-height: 90px;
   padding: 15px;
-  background: #2a2c31;
+  background:var( --service-main-card-bg);
   border-radius: 18px;
   align-items: center;
 }
@@ -24,7 +24,7 @@
   font-weight: 600 !important;
   font-size: 15px !important;
   line-height: 20px !important;
-  color: #ffffff;
+  color: var( --text-white-color);
   margin-bottom: 10px;
 }
 

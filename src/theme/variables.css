@@ -52,6 +52,77 @@ http://ionicframework.com/docs/theming/ */
   --border-color: #e2e6eb;
   --card-button-color: #0047fe;
 
+  /* Black Variant*/
+  --color-deep-black: #000000;
+  --color-black: #1b1c21;
+
+  /* white */
+  --color-white-100: #ffffff;
+
+  /* Grey variants */
+  --color-grey-20: #485565;
+  --color-grey-50: #aab2b7;
+  --color-grey-100: #606271;
+  --color-grey-200: #606c82;
+  --color-grey-300: #71757b;
+  --color-grey-400: #757880;
+  --color-grey-500: #7d8597;
+  --color-grey-600: #868fa0;
+  --color-grey-700: #8f97a6;
+  --color-grey-800: #9498aa;
+  --color-grey-900: #a0a1a2;
+  --color-grey-950: #787878;
+  --color-grey-970: #363a46;
+  --color-grey-980: #adadad;
+  --color-grey-985: #888888;
+  --color-grey-990: #3b3c42;
+  --color-grey-995: #878787;
+  --color-grey-1000: #9798a3;
+  --color-grey-1100: #838489;
+  --color-grey-1200: #9899a0;
+  --color-grey-1300:#8c93a1;
+
+  /* Blue Variants */
+  --color-blue-100: #66a0f7;
+  --color-blue-200: #4782f2;
+  --color-blue-400: #1e6eff;
+  --color-blue-500: #236bfe;
+  --color-blue-600: #0047fe;
+  --color-blue-800: #437ff2;
+
+  /* purple */
+  --color-purple: #5200ff;
+  --color-purple-100: #c623e0;
+  --color-purple-200: #d14ce7;
+  --color-purple-300: #ac85ff;
+
+  /* --color-green variants */
+
+  --color-green-100: #87cc66;
+  --color-green-200: #59d456;
+  --color-green-300: #49be1f;
+  --color-green-400: #61e013;
+  --color-green-500: #27a53b;
+  --color-green-600: #3ebf00;
+
+  /* Orange and red Variant */
+
+  --color-orange: #ff8368;
+  --color-red-100: #fe340f;
+  --color-red-200: #d8213a;
+  --color-red-300: #e83030;
+  --color-red-400: #f61e2b;
+  --color-red-500:#f10000;
+
+  /* white Variant */
+  --color-white-200: #b6b6b6;
+
+  /* Yellow variant */
+  --color-yellow: #fedd71;
+  --color-yellow-100: #ffc202;
+  --color-yellow-200: #eeb600;
+  --color-yellow: #fedd71;
+
   /** primary **/
   --ion-color-primary: #0047ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -123,6 +194,8 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  --mail-icon-back:#ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -157,6 +230,9 @@ http://ionicframework.com/docs/theming/ */
     --portfolio-description-color: #989898;
     /* Portfolio Tab Color Scheme End */
 
+/* mail */
+--mail-icon-back:#0000;
+
     --card-bg-color: #24262b;
     --about-card-text: white;
     --scrollbar-color: #fff;
@@ -164,7 +240,6 @@ http://ionicframework.com/docs/theming/ */
     --header-bg-color: #0a0a0d82;
     --text-gray-color: #fff;
     --text-color: #fff;
-    --text-white-color: #252731;
     --text-tab-color: #a0a1a2;
     --text-gary-color: #a0a1a2;
     --segment-btn-checked: #5b16ee;

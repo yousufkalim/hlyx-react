@@ -15,14 +15,14 @@
 }
 
 .bussiness-section:first-child .blue-Dot {
-  background-color: #1e6eff;
+  background-color: var( --color-blue-400);
   outline: none;
   border-radius: 100px;
 }
 
 .bussiness-section::before {
   content: "";
-  border-left: 1px dashed #3b3c42;
+  border-left: 1px dashed var(--color-grey-990);
   position: absolute;
   height: calc(100% - 18px);
   top: 18px;
@@ -37,7 +37,7 @@
 }
 
 .business-list .bussiness-section:not(:first-child) .blue-Dot {
-  border: 1px solid #3b3c42;
+  border: 1px solid var(--color-grey-990);
   border-radius: 100px;
 }
 
@@ -61,7 +61,7 @@
   font-size: 13px;
   line-height: 16px;
   align-items: center;
-  color: #878787;
+  color: var( --color-grey-995);
 }
 
 .Business-card-main h6 {
@@ -72,7 +72,7 @@
   line-height: 19px;
   align-items: center;
   letter-spacing: 0.02em;
-  color: #9798a3;
+  color: var( --color-grey-1000);
 }
 
 .status-row {
@@ -82,11 +82,11 @@
 }
 
 .status-row .color_Blue {
-  background: #1e6eff;
+  background: var(--color-blue-400);
 }
 
 .status-row .green {
-  background: #27a53b;
+  background: var(--color-green-500);
 }
 
 .status-row p {
@@ -96,7 +96,7 @@
   font-weight: 500;
   font-size: 11px;
   line-height: 8px;
-  color: #ffffff;
+  color: var( --text-white-color);
 
   border: none;
   border-radius: 10px;

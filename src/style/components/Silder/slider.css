@@ -116,7 +116,7 @@
   text-transform: capitalize;
   --box-shadow: none;
   --color: #000000 !important;
-  --background: #ffffff;
+  --background: var( --text-white-color);
   --border-radius: 8px;
   --border-width: 1px;
   --border-style: solid;
@@ -189,7 +189,7 @@
   --background: 888888;
   font-size: 14px;
   line-height: 19px;
-  color: #606271;
+  color: var( --color-grey-100);
   border-radius: 0;
   border-top: none;
   min-width: auto;
@@ -206,7 +206,7 @@
   --indicator-box-shadow: none;
   border-radius: 0px;
   color: var(--text-color);
-  border-bottom: 2px solid #e83030;
+  border-bottom: 2px solid var(--color-red-300);
   font-weight: 600;
   border-top: none;
 }
@@ -217,7 +217,7 @@
   display: flex;
   justify-content: space-between;
   max-width: 100%;
-  border-bottom: 1px solid #606271;
+  border-bottom: 1px solid var( --color-grey-100);
   justify-content: space-between;
   width: auto;
   margin-block: 31px 36px;

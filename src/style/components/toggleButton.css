@@ -18,7 +18,7 @@
 }
 
 .segment-button-checked .label {
-  background: #485565;
+  background: var(--color-grey-20);
 }
 
 .active-card-list {

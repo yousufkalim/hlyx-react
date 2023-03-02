@@ -31,8 +31,8 @@ const AchievedCard = ({
         <div className="achieve_card_footer">
           <div className="date_container">
             <AccoladesCalender
-              color={"var(--icon-back)"}
-              white={"var(--text-color)"}
+              color={"var(--active-card-text-color)"}
+              // white={"var(--text-color)"}
             />
             <p className="date_text">{timeStamp}</p>
           </div>
