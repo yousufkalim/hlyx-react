@@ -36,9 +36,9 @@ const FeaturedServices = ({
           Details
         </IonButton>
         <div className="featured_icons">
-          <MessagesIcon />
-          <SaveIcon />
-          <ShareFeaturedIcon />
+          <MessagesIcon color="var(--text-color)" />
+          <SaveIcon color="var(--text-color)" />
+          <ShareFeaturedIcon color="var(--text-color)" />
         </div>
       </div>
     </div>

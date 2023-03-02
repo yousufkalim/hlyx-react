@@ -39,13 +39,13 @@ const AchievedCard = ({
 
           <div className="icon_list">
             <div className="link_badge" data-count="5">
-              <LinksIcon color={"#CFD4DF"} />
+              <LinksIcon color="var(--achieved-icon-color)" />
             </div>
             <div className="message_badge" data-count="3">
-              <MessageIcon color={"#CFD4DF"} />
+              <MessageIcon color="var(--achieved-icon-color)" />
             </div>
 
-            <ShareIcon color={"#CFD4DF"} />
+            <ShareIcon color="var(--achieved-icon-color)" />
           </div>
         </div>
       </div>

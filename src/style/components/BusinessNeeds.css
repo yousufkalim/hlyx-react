@@ -8,7 +8,7 @@
 .bussiness-section h6:hover {
   font-size: 15px;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text-color);
 }
 .bussiness-section:not(:last-child) {
   padding-bottom: 28px;

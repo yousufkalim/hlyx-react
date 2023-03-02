@@ -4,11 +4,33 @@ http://ionicframework.com/docs/theming/ */
 /** Ionic CSS Variables **/
 
 :root {
-  --education-card-degree-title:#000;
-  --education-card-degree:#000;
-  --education-card-date:#000;
+  /* Education Card Color Scheme Start */
+  --education-card-degree-title: #000;
+  --education-card-degree: #000;
+  --education-card-date: #000;
   --card-text-color: ;
-  --card-bg-color:#D7D8DA;
+  /* Education Card Color Scheme End */
+
+  /* Active Card Color Scheme Start */
+  --active-card-text-color: #000;
+  /* Active Card Color Scheme End */
+
+  /* Achieved Card Color Scheme Start */
+  --achieved-card-text-color: #24262b;
+  --achieved-icon-color: #000;
+  /* Achieved Card Color Scheme End */
+
+  /* Service card Color Scheme Start */
+  --service-main-card-bg: #d7d8da;
+  --service-main-card-icons-bg: none;
+  --featured-detail-discrpt-color: #000;
+  /* Service card Color Scheme End */
+
+  /* Portfolio Tab Color Scheme End */
+  --portfolio-description-color: #000;
+  /* Portfolio Tab Color Scheme End */
+
+  --card-bg-color: #d7d8da;
   --about-card-text: #787878;
   --bg-color: white;
   --header-bg-color: transparent;
@@ -28,7 +50,7 @@ http://ionicframework.com/docs/theming/ */
   --scrollbar-color: rgba(0, 0, 0, 0.5);
   --segment-border-top: #c4c4c4;
   --border-color: #e2e6eb;
-  --card-button-color: #0047fe;;
+  --card-button-color: #0047fe;
 
   /** primary **/
   --ion-color-primary: #0047ff;
@@ -110,10 +132,32 @@ http://ionicframework.com/docs/theming/ */
    */
 
   :root {
-    --education-card-degree-title:#7d8597;
-    --education-card-degree:#fafbff;
-    --education-card-date:#898B92;
-    --card-bg-color:#24262b;
+    /* Education Card Color Scheme Start */
+    --education-card-degree-title: #7d8597;
+    --education-card-degree: #fafbff;
+    --education-card-date: #898b92;
+    /* Education Card Color Scheme End */
+
+    /* Active Card Color Scheme Start */
+    --active-card-text-color: #868fa0;
+    /* Active Card Color Scheme End */
+
+    /* Achieved Card Color Scheme Start */
+    --achieved-card-text-color: rgba(222, 222, 222, 0.86);
+    --achieved-icon-color: #cfd4df;
+    /* Achieved Card Color Scheme End */
+
+    /* Service tab Color Scheme Start */
+    --service-main-card-bg: #2a2c31;
+    --service-main-card-icons-bg: rgba(60, 62, 70, 0.5);
+    --featured-detail-discrpt-color: #8f97a6;
+    /* Service Tab Color Scheme End */
+
+    /* Portfolio Tab Color Scheme End */
+    --portfolio-description-color: #989898;
+    /* Portfolio Tab Color Scheme End */
+
+    --card-bg-color: #24262b;
     --about-card-text: white;
     --scrollbar-color: #fff;
     --bg-color: #1b1c21;

@@ -6,14 +6,14 @@
   max-width: 104.42px !important;
   min-height: 156.97px !important;
   line-height: 100%;
-  background: #2a2c31;
+  background: var(--service-main-card-bg);
   border-radius: 12px;
   margin-bottom: 14.68px;
 }
 .slider-card-container {
   min-height: 100%;
   max-width: 100%;
-  background: #2a2c31;
+  background: var(--service-main-card-bg);
   border-radius: 12px;
   margin-right: 9px;
 }
@@ -24,7 +24,7 @@
   font-weight: 500;
   font-size: 12px !important;
   line-height: 15px;
-  color: #ffffff;
+  color: var(--text-color);
   padding-bottom: 2.68px;
 }
 
@@ -34,7 +34,7 @@
   font-weight: 500;
   font-size: 9px !important;
   line-height: 11px;
-  color: #ffffff;
+  color: var(--text-color);
 }
 .mySwiper {
   margin-left: 15px;
@@ -45,7 +45,7 @@
   font-weight: 500;
   font-size: 7.59863px !important;
   line-height: 9px;
-  color: #989898;
+  color: var(--portfolio-description-color);
   margin-top: 2.53px;
 }
 
@@ -55,7 +55,7 @@
   font-weight: 500;
   font-size: 9.90032px !important;
   line-height: 12px;
-  color: #989898;
+  color: var(--portfolio-description-color);
 }
 
 .slider-padding {

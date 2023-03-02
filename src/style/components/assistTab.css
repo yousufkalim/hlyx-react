@@ -38,7 +38,7 @@
   line-height: 18px;
   align-items: center;
   letter-spacing: 0.045em;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .assist_details p {
@@ -134,7 +134,7 @@
   --padding-top: 10px;
 }
 .supportIcon {
-  color: #FFFFFF;
+  color: #ffffff;
   width: 20px;
   height: 20px;
   right: 29.48%;
@@ -253,7 +253,7 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .stat-data p {

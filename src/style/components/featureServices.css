@@ -1,6 +1,6 @@
 .featured_card_container {
   min-width: 282px;
-  background-color:var( --card-bg-color);
+  background-color: var(--card-bg-color);
   border-radius: 18px;
   padding-block: 17px;
   padding-inline: 14px;
@@ -60,7 +60,7 @@
   font-weight: 400;
   font-size: 11px;
   line-height: 14px;
-  color: #8f97a6;
+  color: var(--featured-detail-discrpt-color);
 }
 
 .card_footer {

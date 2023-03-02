@@ -2,7 +2,7 @@
   min-width: 296px;
   max-width: 296px;
   padding: 25px 15px;
-  background-color: #24262b;
+  background-color: var(--card-bg-color);
   border-radius: 18px;
   display: flex;
   flex-direction: column;
@@ -51,7 +51,7 @@
 .details_data h6 {
   font-size: 14px;
   font-weight: 700;
-  color: white;
+  color: var(--text-color);
   margin: 0;
 }
 
@@ -84,7 +84,7 @@
   font-size: 12px;
   line-height: 9px;
   font-family: "Poppins";
-  color: #868fa0;
+  color: var(--active-card-text-color);
   margin-left: 6px;
 }
 

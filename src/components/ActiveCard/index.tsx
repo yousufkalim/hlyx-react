@@ -55,12 +55,12 @@ const ActiveCard = ({
 
           <div className="icon_list">
             <div className="link_badge" data-count="5">
-              <LinksIcon />
+              <LinksIcon color="var(--text-color)" />
             </div>
             <div className="message_badge" data-count="3">
-              <MessageIcon />
+              <MessageIcon color="var(--text-color)" />
             </div>
-            <ShareIcon />
+            <ShareIcon color="var(--text-color)" />
           </div>
         </div>
       </div>
