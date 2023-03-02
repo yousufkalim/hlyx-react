@@ -2,7 +2,13 @@
 http://ionicframework.com/docs/theming/ */
 
 /** Ionic CSS Variables **/
+
 :root {
+  --education-card-degree-title:#000;
+  --education-card-degree:#000;
+  --education-card-date:#000;
+  --card-text-color: ;
+  --card-bg-color:#D7D8DA;
   --about-card-text: #787878;
   --bg-color: white;
   --header-bg-color: transparent;
@@ -22,7 +28,7 @@ http://ionicframework.com/docs/theming/ */
   --scrollbar-color: rgba(0, 0, 0, 0.5);
   --segment-border-top: #c4c4c4;
   --border-color: #e2e6eb;
-  --card-button-color: #0047fe;
+  --card-button-color: #0047fe;;
 
   /** primary **/
   --ion-color-primary: #0047ff;
@@ -104,6 +110,10 @@ http://ionicframework.com/docs/theming/ */
    */
 
   :root {
+    --education-card-degree-title:#7d8597;
+    --education-card-degree:#fafbff;
+    --education-card-date:#898B92;
+    --card-bg-color:#24262b;
     --about-card-text: white;
     --scrollbar-color: #fff;
     --bg-color: #1b1c21;

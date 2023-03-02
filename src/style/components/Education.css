@@ -7,7 +7,8 @@
 }
 
 .education_card_container {
-  background-color: #24262b;
+
+  background-color: var( --card-bg-color);
   border-radius: 18px;
   max-width: 282px;
   min-width: 282px;
@@ -90,14 +91,14 @@ p {
   font-size: 15px;
   letter-spacing: 0.045em;
   line-height: 14px;
-  color: white;
+  color: var(--text-color);
 }
 
 .education_details p {
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
-  color: #898b92;
+  color:var(--education-card-date);
 }
 
 .education_info_text {
@@ -110,7 +111,7 @@ p {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: 0.025em;
-  color: #fafbff;
+  color: var(--education-card-degree);
 }
 
 .education_info_text p {
@@ -118,7 +119,7 @@ p {
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.025em;
-  color: #7d8597;
+  color: var(--education-card-degree-title);
 }
 
 .image-replacer {
