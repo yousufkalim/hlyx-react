@@ -21,7 +21,7 @@ http://ionicframework.com/docs/theming/ */
   /* Achieved Card Color Scheme End */
 
   /* Service card Color Scheme Start */
-  --service-main-card-bg: #d7d8da;
+  --service-main-card-bg: #f1f4f9;
   --service-main-card-icons-bg: none;
   --featured-detail-discrpt-color: #000;
   /* Service card Color Scheme End */
@@ -30,7 +30,7 @@ http://ionicframework.com/docs/theming/ */
   --portfolio-description-color: #000;
   /* Portfolio Tab Color Scheme End */
 
-  --card-bg-color: #d7d8da;
+  --card-bg-color: #f1f4f9;
   --about-card-text: #787878;
   --bg-color: white;
   --header-bg-color: transparent;
@@ -80,7 +80,7 @@ http://ionicframework.com/docs/theming/ */
   --color-grey-1000: #9798a3;
   --color-grey-1100: #838489;
   --color-grey-1200: #9899a0;
-  --color-grey-1300:#8c93a1;
+  --color-grey-1300: #8c93a1;
 
   /* Blue Variants */
   --color-blue-100: #66a0f7;
@@ -112,7 +112,7 @@ http://ionicframework.com/docs/theming/ */
   --color-red-200: #d8213a;
   --color-red-300: #e83030;
   --color-red-400: #f61e2b;
-  --color-red-500:#f10000;
+  --color-red-500: #f10000;
 
   /* white Variant */
   --color-white-200: #b6b6b6;
@@ -195,7 +195,7 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 
-  --mail-icon-back:#ffffff;
+  --mail-icon-back: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -230,8 +230,8 @@ http://ionicframework.com/docs/theming/ */
     --portfolio-description-color: #989898;
     /* Portfolio Tab Color Scheme End */
 
-/* mail */
---mail-icon-back:#0000;
+    /* mail */
+    --mail-icon-back: #0000;
 
     --card-bg-color: #24262b;
     --about-card-text: white;
