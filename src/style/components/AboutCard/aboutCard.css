@@ -3,7 +3,7 @@ ion-card {
   padding: 14.76px 0px 18px 0px;
   border-radius: 0px;
   box-shadow: none;
-  border-bottom: 1px solid #c4c4c4;
+  border-bottom: 1px solid var(--text-gray-color);
 }
 
 .flex {
@@ -76,7 +76,7 @@ ion-card {
 }
 
 .chip-container {
-  background: #5087ec;
+  background: var( --color-blue-900);
   border-radius: 15px;
   color: var(--text-white-color);
   width: 72px;
