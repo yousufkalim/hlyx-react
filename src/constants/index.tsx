@@ -385,4 +385,4 @@ export const BlogLinkIcons: any = {
   SoundCloud: <SoundCloudIcon color={"var(--social-back)"} />,
 };
 
-export const LOGIN_SECRET = "hlyx1234";
+export const LOGIN_SECRET = "hlyx2358";
