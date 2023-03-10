@@ -1,12 +1,8 @@
 import { IonAvatar, IonButton, IonIcon, IonLabel } from "@ionic/react";
 import { add } from "ionicons/icons";
 import React, { useContext } from "react";
-import { MoreOptions, Plus } from "../../../../../../assets/icons";
-import Leader from "../../../../../../assets/icons/gold_medal.svg";
-import Legend from "../../../../../../assets/icons/grandprix_trophy.svg";
-import Pioneer from "../../../../../../assets/icons/silver_medal.svg";
+import { MoreOptions } from "../../../../../../assets/icons";
 import { ProfileContext } from "../../../../../../context/profileContext";
-import { BadgeListProps, BadgeType } from "../../../../../../interface";
 import "../../../../../../style/components/assistTab.css";
 
 export const assistListData = [
@@ -27,22 +23,6 @@ export const assistListData = [
     description: "Dec. 21, 2023",
   },
 ];
-
-const UserBadges: BadgeType[] = ["Pioneer", "Leader", "Legend"];
-
-const badges = {
-  Pioneer: Pioneer,
-  Legend: Legend,
-  Leader: Leader,
-};
-const BadgeList = ({ badge }: BadgeListProps) => {
-  return (
-    <div className="badge-data">
-      <img src={badges[badge]} alt="" />
-      <p>{badge}</p>
-    </div>
-  );
-};
 
 const StatList = ({
   digit = 0,
@@ -141,8 +121,8 @@ const AssistTab = () => {
           </div>
         </AssistCardSections> */}
         <IonButton className="supportbtn" shape="round">
-          <IonIcon  icon={add}></IonIcon>
-        <p>Support</p>  
+          <IonIcon icon={add}></IonIcon>
+          <p>Support</p>
         </IonButton>
       </div>
     </div>

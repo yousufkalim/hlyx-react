@@ -69,7 +69,7 @@ const ProfileCard = ({
             <section className="detail">
               <BagIcon />
               <p className="position-text">
-                {position} at {" "}
+                {position} at{" "}
                 <span style={{ fontWeight: "bold", color: "white" }}>
                   {companyName}
                 </span>
@@ -84,7 +84,7 @@ const ProfileCard = ({
       </article>
       <section className="link-Button-section">
         <button
-          style={{ all: "unset" }}
+          style={{ all: "unset", marginInline: "auto", display: "block" }}
           onClick={() => {
             setbtn(!btn);
           }}

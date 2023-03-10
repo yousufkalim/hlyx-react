@@ -1,10 +1,4 @@
-import advanced from "../assets/advanced.png";
-import bioTech from "../assets/bioTech.png";
-import cellAnatomic from "../assets/cellAnatomic.png";
-import cellProg from "../assets/cellprog.png";
-
 import {
-  AdvanceCellIcon,
   MediumIcon,
   NumFourIcon,
   NumOneIcon,
@@ -39,7 +33,6 @@ import {
 import SliderOneImage from "../assets/media/slide-one-image.png";
 import SliderThreeImage from "../assets/media/slide-three-image.png";
 import SliderTwoImage from "../assets/media/slide-two-image.png";
-import scientific from "../assets/scientific.png";
 
 export const JamesprofessionData = [
   {
