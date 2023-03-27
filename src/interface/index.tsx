@@ -19,6 +19,17 @@ export interface ContactCardProps extends IonicReactProps {
   children: React.ReactNode;
 }
 
+export interface Card {
+  city: string;
+  company: string;
+  fullName: string;
+  profTitle: string;
+  publicCard?: boolean;
+  state: string;
+  templateId: string;
+  userAvatar?: string;
+}
+
 export interface AboutTabProps extends ContactCardProps {
   button?: string;
 }

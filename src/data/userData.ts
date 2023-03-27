@@ -1479,4 +1479,331 @@ export const userData = [
       five_item_joel,
     ],
   },
+  // jordanroessle Profile
+  {
+    id: "f51721a2-ae41-48f3-a700-6dfc57701ee5",
+    blend: "blue",
+    backgroundImage: {
+      url: JoeICalvilloBackground,
+      altText: "User Background picture",
+    },
+    name: "Joel Calvillo",
+    jobTitle: {
+      position: "Senior Vice President  ",
+      companyName: " KW Commercial South Bay",
+    },
+    address: "Los Gatos, CA",
+    Avatar: JoeICalvilloCover,
+    image: {
+      url: JoeICalvilloCover,
+      altText: "user Picture",
+    },
+    companyLogo: {
+      url: JoeICompany,
+      altText: "Company Logo",
+    },
+    contact: {
+      name: "Joel Calvillo",
+      jobTitle: {
+        position: "Senior Vice President ",
+        companyName: "KW Commercial South Bay",
+      },
+      address: "Los Gatos, CA",
+      email: "joel@thecalvillogroup.com",
+      phone: {
+        number: "+1 (408) 892-9158",
+        mobile: "+1 (408) 628-1206",
+        faxNumber: ["+1 (650) 345-6789"],
+      },
+      calendar: "Google > Joel Calvillo’s Calendar",
+      website: "www.thecalvillogroup.com",
+      officeAddress: "16780 Lark Avenue Los Gatos, CA 95032",
+      socialMedia: [
+        {
+          link: "https://www.linkedin.com/in/joelcalvillo/",
+          label: "LinkedIn",
+        },
+        {
+          link: "https://www.facebook.com/joelcalvillo",
+          label: "Facebook",
+        },
+        {
+          link: "https://www.instagram.com/joelrcalvillo/",
+          label: "Instagram",
+        },
+      ],
+      blogLink: [
+        {
+          link: "https://medium.com/",
+          type: "Medium",
+          title: "10 Best Locations For Prime Commercial Real Estate",
+          description: "Access Article on Medium",
+        },
+        {
+          link: "https://soundcloud.com/",
+          type: "SoundCloud",
+          title: "Finding The Right Agent For Your Next Commercial Property",
+          description: "Access Audio on SoundCloud",
+        },
+        {
+          link: "https://www.google.com/drive/",
+          type: "GoogleDrive",
+          title: "Joel Calvillo's Service Sheet 2023",
+          description: "Access File on Google Drive ",
+        },
+      ],
+    },
+
+    about: {
+      bio: `Joel Calvillo is a commercial real estate professional with over 20 years of experience focused on the Sale, and 1031 Exchange of investment properties throughout the Greater Bay Area and across the nation. As Senior Vice President with KW Commercial and leader of The Calvillo Group, he offers a deep understanding of the full range of investment real estate assets types and transactions. He has developed a successful team of professionals along with strong industry relationships to provide a high level of service for investment clients.
+      Previous to his affiliation with KW Commercial, Joel was a Vice President and Shareholder with NAI Northern California and an Investment Specialist with The Losness Group Apartment Brokerage. Prior to real estate, Joel spent over a decade in technology sales for top international semiconductor distribution companies Arrow Electronics and Future Electronics, as well as entrepreneur founding a high value business focused on nationwide networking equipment sales.
+      Born and raised in the San Francisco Bay Area, Joel obtained an early education in real estate investments via his parents who locally owned apartments and other rental properties.
+      `,
+      profession: [
+        {
+          lineColor: "blue",
+          title: "Company",
+          description: "KP Commercial South Bay",
+        },
+        {
+          lineColor: "green",
+          title: "Title / Role",
+          description: "Senior Vice President",
+        },
+        {
+          lineColor: "purple",
+          title: "Occupation",
+          description: "Entrepreneur / Senior Executive",
+        },
+        {
+          lineColor: "orange",
+          title: "Industry",
+          description: "Commercial Real Estate",
+        },
+      ],
+      education: [
+        {
+          lineColor: "red",
+          name: "De Anza College",
+          startDate: "1994",
+          endDate: "1996",
+          image: {
+            url: DeAnzaCollege,
+            altText: "De Anza College",
+          },
+          major: "Studied Business Management",
+          program: "Associate Arts",
+        },
+        {
+          lineColor: "yellow",
+          name: "Saint Francis High",
+          startDate: "2005",
+          endDate: "2008",
+          image: {
+            url: SaintFrancis,
+            altText: "Saint Francis",
+          },
+          major: "General Electives",
+          program: "High School Diploma",
+        },
+      ],
+      accolades: [
+        {
+          jobTitle: {
+            position: "Senior Vice President",
+            companyName: " KP Commerical ",
+          },
+          startDate: "June 2021",
+          endDate: "Present",
+        },
+        {
+          jobTitle: {
+            position: "Shareholder & Vice President ",
+            companyName: " NAI NorCal",
+          },
+          startDate: "Jan 2020",
+          endDate: "Present",
+        },
+        {
+          jobTitle: {
+            position: "Commercial Specialist ",
+            companyName: " KP Commerical ",
+          },
+          startDate: "Mar 2013",
+          endDate: "Jun 2016",
+        },
+        {
+          jobTitle: {
+            position: "Real Estate Investment Specialist  ",
+            companyName: " Losness Group",
+          },
+          startDate: "Dec 2008",
+          endDate: "Mar 2013",
+        },
+      ],
+      achievement: [
+        {
+          title: "Extensive Experience",
+          description:
+            "Over 20 years of experience focused on the Sale, and 1031 Exchange of investment properties",
+        },
+        {
+          title: "Endorsements",
+          description:
+            "61 Endorsements in Commercial Real Estate 84 Endorsements in Investment Properties",
+        },
+        {
+          title: "Volunteer",
+          description: "Director of Compliance",
+        },
+      ],
+      businessGoal: {
+        active: [
+          {
+            title: "Raise Capital",
+            description: "Raise $3-5M for new investment",
+            progress: 70,
+            timeStamp: "8 mo. 2 days",
+          },
+          {
+            title: "Acquire Property Portfolio",
+            description: "Acquire 10 new portfolio properties",
+            progress: 18,
+            timeStamp: "65 days",
+          },
+          {
+            title: "Develop Retail Center",
+            description: "Begin construction on retail center",
+            progress: 60,
+            timeStamp: "4 wk. 3 days",
+          },
+        ],
+        achieved: [
+          {
+            title: "Raise $2M For Property Acquisition",
+            description:
+              "Bring in investors to participate in acquisition of new commercial property ",
+            timeStamp: "Oct. 8, 2022",
+            progress: 100,
+          },
+          {
+            title: "Find Buyer For Commercial Property",
+            description:
+              "Find a buyer to acquire prime property in Los Gatos, California",
+            timeStamp: "Oct. 8, 2022",
+            progress: 100,
+          },
+          {
+            title: "Acquire New Business Office",
+            description: "Close deal on new office park by early 2023",
+            timeStamp: "Dec. 28, 2022",
+            progress: 100,
+          },
+        ],
+        assist: {
+          status: "Goal achieved!",
+          startDate: "May 6, 2022",
+          deadline: "Dec. 31, 2022",
+          about:
+            "Community Volunteer, Redhead, Friends of Animals, Water Protector, King of Lies. I like pop-up books.",
+          stats: {
+            totalLinks: 95,
+            totalAssist: 101,
+            badges: 3,
+          },
+          links: [
+            {
+              imageUrl: BlakeB,
+              name: "Blake B.",
+            },
+            {
+              imageUrl: LenaX,
+              name: "Lena X.",
+            },
+            {
+              imageUrl: NinaM,
+              name: "Nina M.",
+            },
+            {
+              imageUrl: TallikaP,
+              name: "Tallia P.",
+            },
+            {
+              imageUrl: JamesC,
+              name: "James C.",
+            },
+            {
+              imageUrl: TinaM,
+              name: "Tina M.",
+            },
+          ],
+
+          badge: ["Pioneer", "Leader", "Legend"],
+          support: {
+            linkCount: 95,
+            messageCount: 101,
+          },
+        },
+      },
+      businessNeeds: [
+        {
+          timeStamp: "January 28, 2000",
+          title: "New Company Website",
+          status: "Active",
+          description:
+            "Looking for someone that can create a new company website for us",
+        },
+        {
+          timeStamp: "December 11, 2022",
+          title: "Find Business Partner",
+          status: "Active",
+          description:
+            "Looking for business partner that has experience building bio-tech companies",
+        },
+        {
+          timeStamp: "November 8, 2022",
+          title: "Seeking Experienced Scientist",
+          status: "Filled",
+          description:
+            "Looking for someone that can create a new company website for us",
+        },
+      ],
+      icebreakers: {
+        hobbies: ["Martial Arts", "Stargazing", "Art"],
+        interest: ["Reading", "Legos", "Music"],
+        skills: ["Painting", "Piano", "Gardening"],
+        motto: "Science is an oyster, serve it up tastefully.",
+      },
+    },
+    service: {
+      title: "Professional Services & Products",
+      mainServices: [
+        {
+          type: "MultiUnit",
+          title: "Multi-Unit Properties",
+        },
+        {
+          type: "Investment",
+          title: "NNN Investments",
+        },
+        {
+          type: "Redevolpment",
+          title: "Land Redevelopment",
+        },
+        {
+          type: "Industrial",
+          title: "Industrial",
+        },
+      ],
+    },
+    portfolioTitle: "Commercial Real Estate Properties",
+    mslLink: true,
+    portfolio: [
+      first_item_joel,
+      two_item_joel,
+      three_item_joel,
+      four_item_joel,
+      five_item_joel,
+    ],
+  },
 ];
