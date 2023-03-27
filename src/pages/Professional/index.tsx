@@ -23,7 +23,7 @@ const Professional = () => {
         console.log(cardInfo);
         return;
       }
-      // window.location.replace("/page-not-found");
+      window.location.replace("/page-not-found");
       console.log("Card Info: ", cardInfo);
     })();
   }, [id]);
