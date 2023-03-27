@@ -1,6 +1,9 @@
+import { Card } from "../interface";
 import { api } from "../utils/axios";
 
-export const getBasicCardInfo = async (cardId: string) => {
+export const getBasicCardInfo = async (
+  cardId: string
+): Promise<Card | string> => {
   try {
     const { data } = await api.get(`card/find/base-info/${cardId}`, {
       headers: {
