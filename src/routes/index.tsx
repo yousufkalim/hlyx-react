@@ -1,4 +1,8 @@
-import { IonRouterOutlet, IonTabBar, IonTabs } from "@ionic/react";
+import {
+  IonRouterOutlet,
+  IonTabBar,
+  IonTabs
+} from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import { Route } from "react-router";
 import Error404 from "../components/Error404";
@@ -18,6 +22,11 @@ const Routes = () => {
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
+          <Route exact path="/">
+            <ProtectRoute>
+              <Professional />
+            </ProtectRoute>
+          </Route>
           <Route exact path="/:id">
             <ProtectRoute>
               <Professional />
