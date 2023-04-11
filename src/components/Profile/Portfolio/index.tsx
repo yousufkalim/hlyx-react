@@ -2,7 +2,20 @@ import { IonButton, IonCard, IonLabel } from "@ionic/react";
 import { useContext } from "react";
 import { ProfileContext } from "../../../context/profileContext";
 import "../../../style/components/portfolio.css";
-import UserDetailCard from "../UserDetailCard/UserDetailCard";
+// import UserDetailCard from "../UserDetailCard/UserDetailCard";
+import LargeImage from "../../../assets/LargeImage.png";
+import shadeImage from "../../../assets/shadeImage.png";
+import checkEyeIcon from "../../../assets/checkEyeIcon.svg";
+import minorOne from "../../../assets/minorOne.png";
+import minorTwo from "../../../assets/minorTwo.jpg";
+import minorThree from "../../../assets/minorThree.png";
+import minorFour from "../../../assets/minorFour.png";
+import minorFive from "../../../assets/minorFive.png";
+import minorSix from "../../../assets/minorSix.png";
+import minorSeven from "../../../assets/minorSeven.jpg";
+import minorEight from "../../../assets/minorEight.png";
+import minorNine from "../../../assets/minorNine.png";
+
 
 export const CopyIcon = () => (
   <svg
@@ -51,8 +64,41 @@ const Portfolio = () => {
   const { userProfile } = useContext(ProfileContext);
   return (
     <>
-      <UserDetailCard />
-      <IonCard className="service-card-container border_none">
+      {/* <UserDetailCard /> */}
+      <div className="wrapperClass" style={{position:'relative'}}>
+        <div className="fullImgDiv" >
+              <img src={LargeImage}  alt="FullImage" style={{width:'100%'}}/>
+        </div>
+        <div className="shadeDive" style={{width:'33px' , position:"absolute", top:'3%',right:'86%'}} > <img src={checkEyeIcon}  alt="Image" style={{width:'100%'}}></img></div>
+        <div className="shadeDive" style={{width:'100%' , backgroundSize: 'cover', position:"absolute", top:'17%',right:'0%'}} > <img src={shadeImage}  alt="Image" style={{width:'100%'}}></img></div>
+<div className="picTextDiv" style={{padding:'4%' ,position:"absolute", top:'38%',zIndex:'1'}}>
+  
+<div className="txtContentDiv" style={{display:'flex', flexDirection:'column'}}><h2 className="headingImages" style={{fontFamily:'poppins'}}>Walking The Line</h2>
+<p className="paraTxt" style={{fontFamily:'poppins'}}>This is me at Navajo Hills Village touring the beautiful location back in March 2022.</p>
+</div>
+</div>
+        <div className="minorImgRowWrapper" style={{display:'flex', flexDirection:'column',maxHeight:'30rem',justifyContent:'space-between'}}>
+    <div className="minorImg1" style={{display:'flex', flexDirection:'row',minHeight:'4rem',justifyContent:'space-between'}}> 
+    <div className="img11" style={{width:'33%'}}> <img src={minorOne}  alt="Image" /></div>
+    <div className="img22"style={{width:'33%'}}> <img src={minorTwo}  alt="Image" /></div>
+    <div className="img33" style={{width:'33%'}}><img src={minorThree}  alt="Image" /> </div>
+
+</div>
+    <div className="minorImg2" style={{display:'flex', flexDirection:'row',minHeight:'4rem',justifyContent:'space-between'}}> 
+    <div className="img44" style={{width:'33%'}}> <img src={minorFour}  alt="Image" /></div>
+    <div className="img55" style={{width:'33%'}}><img src={minorFive}  alt="Image" /></div>
+    <div className="img66" style={{width:'33%'}}> <img src={minorSix}  alt="Image" /></div>
+</div>
+
+<div className="minorImg3" style={{display:'flex', flexDirection:'row',minHeight:'4rem' ,width:'100%',justifyContent:'space-between'}}>
+<div className="img77" style={{width:'33%'}}><img src={minorSeven}  alt="Image" /></div>
+<div className="img88" style={{width:'33%'}}><img src={minorEight}  alt="Image" /></div>
+<div className="img99" style={{width:'33%'}}><img src={minorNine}  alt="Image" /></div>
+   </div>
+   </div>
+
+      </div>
+      {/* <IonCard className="service-card-container border_none">
         <div className="service-card-title">
           <IonLabel className="card-heading-lg">Portfolio</IonLabel>
 
@@ -111,7 +157,7 @@ const Portfolio = () => {
             <ArrowIcon />
           </div>
         )}
-      </IonCard>
+      </IonCard> */}
     </>
   );
 };
