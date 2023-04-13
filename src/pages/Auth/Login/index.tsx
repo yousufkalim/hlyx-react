@@ -1,9 +1,10 @@
 import { IonButton, IonContent, IonInput, useIonAlert } from "@ionic/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Logo from "../../../assets/hlyx_logo.png";
 import { LOGIN_SECRET } from "../../../constants";
-import useAuth from "../../../hooks/useAuth";
+// import useAuth from "../../../hooks/useAuth";
 import "../../../style/page/auth/login.css";
+import axios from "axios";
 
 export const EyeCloseIcon = () => (
   <svg
@@ -57,12 +58,20 @@ export const EyeIcon = () => (
  */
 
 const Login = (): JSX.Element => {
-  const { setToken } = useAuth();
+
+ 
+
+
+  const [token, setToken ] = useState<string>();
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
   const [presentAlert] = useIonAlert();
 
+  
+  useEffect(()=>{
+   
+  },[])
   return (
     <IonContent class="overflow-hidden login_container">
       <section>
@@ -71,8 +80,20 @@ const Login = (): JSX.Element => {
           onSubmit={(event) => {
             event?.preventDefault();
             if (LOGIN_SECRET === password) {
-              window.localStorage?.setItem("token", password);
-              setToken(password);
+              axios.post('https://dev.api.hlyx.me/api/v1/auth/login',{
+                email: "adeelbaig828@gmail.com",
+                password: "A2345678"
+              }).then((res)=>{
+                console.log(res)
+                const userToken = res?.data?.token;
+                if(userToken) {
+                  setToken(userToken)
+                  window.localStorage?.setItem("token", userToken);
+                }
+              }).catch((err)=>{
+                console.log(err)
+              })
+              // setToken(password);
             } else {
               setError("Invalid Password");
               presentAlert({

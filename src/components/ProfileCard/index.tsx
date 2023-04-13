@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IonButton, IonCard, IonContent } from "@ionic/react";
 import { ProfileCardProps } from "../../interface";
 import { BagIcon, LocationIcon, SwipeBar } from "../../assets/icons";
 import "../../style/components/profileCard.css";
+import axios from "axios";
+
 
 const ProfileCard = ({
   backgroundImage,
@@ -15,6 +17,24 @@ const ProfileCard = ({
   link,
   blend,
 }: ProfileCardProps) => {
+
+  const[user ,setUser]=useState({})
+
+  useEffect(()=>{
+    const token = localStorage.getItem("token")
+    axios.get('https://dev.api.hlyx.me/api/v1/user/find/me', {
+      headers:{
+        Authorization: token
+      }
+    }).then((res)=>{
+      setUser(res?.data?.user)
+    }).catch((err)=>{
+      console.log(err)
+    })
+  },[])
+
+console.log(user,"user")
+
   const [btn, setbtn] = useState(true);
   console.log(blend);
   return (
