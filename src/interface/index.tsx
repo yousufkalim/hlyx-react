@@ -23,7 +23,7 @@ export interface AboutTabProps extends ContactCardProps {
   button?: string;
 }
 
-export interface ServiceCardProps extends AboutTabProps {}
+export interface ServiceCardProps extends AboutTabProps { }
 
 export interface JobType {
   position: string;
@@ -197,4 +197,99 @@ export interface ISliderCard {
   imgAlt: string;
   title: string;
   publishDate: string;
+}
+
+export interface UserProps {
+  id: string;
+  profileAvatar: string;
+  isOnBoardingComplete: boolean;
+  firstName: string;
+  middleInitial: string;
+  lastName: string;
+  email: string;
+  phone?: any;
+  company: string;
+  profTitle: string;
+  industry: string;
+  profRole: string;
+  website: string;
+  country: string;
+  city: string;
+  state: string;
+  zipcode: string;
+  updatedAt: string;
+  cards: Card[];
+}
+interface Card {
+  cardId: string;
+}
+
+export interface AboutProps {
+  about: string;
+  accolades: AccoladesProps[];
+  achievements: AchievementsProps[];
+  businessGoals: BusinessGoalsProps[];
+  businessNeeds: BusinessNeeds[];
+  city: string;
+  company: string;
+  education: EducationProps[];
+  fullName: string;
+  hobbies: string[]
+  industry: string;
+  interests: string[]
+  motto: string;
+  occupation: string
+  profTitle: string
+  skills: string[]
+  state: string
+  userAvatar: string
+}
+interface AccoladesProps {
+  endDate: null;
+  fromWho: string;
+  startDate: string;
+  title: string;
+}
+interface AchievementsProps {
+  description: string
+  issuedYear: null
+  startYear: string
+  title: string
+}
+interface BusinessGoalsProps {
+  description: string
+  endDate: null
+  percentComplete: number
+  startDate: string
+  status: string
+  title: string
+}
+interface BusinessNeeds {
+  date: string
+  description: string
+  status: string
+  title: string
+}
+interface EducationProps {
+  academicFocus: string
+  academicLevel: string
+  degreeType: string
+  graduationYear: string
+  schoolName: string
+  startYear: string
+}
+
+export interface ServiceProps {
+  details: string
+  positioning: number
+  subtitle: string
+  title: string
+  type: string
+}
+
+export interface PortfolioProps {
+  details: string
+  image: string
+  positioning: number
+  title: string
 }

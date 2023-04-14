@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { FC, useContext } from "react";
 import {
   LinksIcon,
   MessageIcon,
@@ -6,20 +6,27 @@ import {
 } from "../../../../../assets/icons/AboutTabsIcons";
 import { ProfileContext } from "../../../../../context/profileContext";
 import "../../../../../style/components/BusinessNeeds.css";
+import { AboutProps } from "../../../../../interface";
+import moment from 'moment'
 
-const BusinessNeeds = () => {
+
+interface IBusinessNeeds {
+  aboutData: AboutProps
+}
+
+const BusinessNeeds: FC<IBusinessNeeds> = ({ aboutData }) => {
   const { userProfile } = useContext(ProfileContext);
   const { businessNeeds } = userProfile.about;
   console.log(businessNeeds, "Business Needs");
   return (
     <div className="business-list">
-      {businessNeeds?.map(
-        ({ description, timeStamp, title, status }: any, index: number) => (
+      {aboutData?.businessNeeds?.map(
+        ({ description, date, title, status }: any, index: number) => (
           <div className="bussiness-section">
             <div className="blue-Dot"></div>
             <div className="Bussiness-card">
               <div className="Business-card-main">
-                <p>{timeStamp}</p>
+                <p>{moment(date).format(`MMMM D, YYYY`)}</p>
                 <h6 className="business_needs_title">{title}</h6>
                 <p>{description}</p>
               </div>

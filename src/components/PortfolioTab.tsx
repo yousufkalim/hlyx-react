@@ -10,6 +10,7 @@ import PortfolioCard from "./PortfolioCard";
 import UserDetailCard from "./Profile/UserDetailCard/UserDetailCard";
 
 const PortfolioTab = () => {
+
   return (
     <>
       <UserDetailCard />

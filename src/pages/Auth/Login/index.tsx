@@ -2,7 +2,7 @@ import { IonButton, IonContent, IonInput, useIonAlert } from "@ionic/react";
 import { useEffect, useState } from "react";
 import Logo from "../../../assets/hlyx_logo.png";
 import { LOGIN_SECRET } from "../../../constants";
-// import useAuth from "../../../hooks/useAuth";
+import useAuth from "../../../hooks/useAuth";
 import "../../../style/page/auth/login.css";
 import axios from "axios";
 
@@ -62,7 +62,7 @@ const Login = (): JSX.Element => {
  
 
 
-  const [token, setToken ] = useState<string>();
+  const {setToken }= useAuth();
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
@@ -93,7 +93,6 @@ const Login = (): JSX.Element => {
               }).catch((err)=>{
                 console.log(err)
               })
-              // setToken(password);
             } else {
               setError("Invalid Password");
               presentAlert({

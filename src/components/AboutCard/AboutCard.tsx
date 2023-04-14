@@ -1,5 +1,5 @@
 import { IonCard, IonCardTitle, IonChip } from "@ionic/react";
-import { FunctionComponent, PropsWithChildren } from "react";
+import { FunctionComponent, PropsWithChildren, } from "react";
 import { AboutCardProps } from "../../interface";
 import "../../style/components/AboutCard/aboutCard.css";
 
@@ -11,6 +11,8 @@ const AboutCard: FunctionComponent<AboutCardProps> = ({
   isTagTitle,
   style,
 }) => {
+
+  
   return (
     <IonCard style={style}>
       <div className="flex align-center br-btm justify-contain">

@@ -47,7 +47,26 @@ import RBC from "../assets/RBC.png";
 import DNA from "../assets/DNA.png";
 import Cellanatomic from "../assets/Cellanatomic.png";
 import Ddiscussion from "../assets/Ddiscussion.png";
-
+export const featuredServices=[
+  {
+    lineColor: "yellow",
+    title: "Market Research & BI ",
+    description:
+      "We help startup founders and SMB’s with quality market research into any vertical",
+  },
+  {
+    lineColor: "green",
+    title: "Product Development ",
+    description:
+      "We provide modern UI/UX Product Design and full-service software development",
+  },
+  {
+    lineColor: "purple",
+    title: "Venture Lab ",
+    description:
+      "R&D Arm dedicated to the development of innovative new digital technology ventures",
+  },
+]
 export const userData = [
   // James Oriyan Profile
   {

@@ -1,9 +1,12 @@
-import { useContext } from "react";
+import { useContext, FC } from "react";
 import { ProfileContext } from "../../../../../context/profileContext";
-import { Education } from "../../../../../interface";
+import { Education, AboutProps } from "../../../../../interface";
 import "../../../../../style/components/Education.css";
+interface IEducationCard {
+  aboutData: AboutProps
+}
 
-const EducationCard = () => {
+const EducationCard: FC<IEducationCard> = ({ aboutData }) => {
   const { userProfile } = useContext(ProfileContext);
   const { education } = userProfile?.about;
 
@@ -24,44 +27,34 @@ const EducationCard = () => {
   }
   return (
     <div className="education_list">
-      {education.map(
-        (
-          {
-            name,
-            startDate,
-            endDate,
-            lineColor,
-            image,
-            major,
-            program,
-          }: Education,
-          index: number
-        ) => (
-          <div className="education_card_container" key={index}>
-            <div className={`education_color_line color-${lineColor}`} />
+      {aboutData.education.map((item: any) => {
+        return (
+          <div className="education_card_container">
+            <div className={`education_color_line color-${education.map((item: { lineColor: any; }) => item.lineColor)}`} />
             <div className="education_info">
               <div className="education_details_container">
                 <div className="education_details">
-                  <h6>{name}</h6>
-                  <p>{`${startDate}-${endDate}`}</p>
+                  <h6>{item?.schoolName}</h6>
+                  <p>{`${item.startYear}-${"not provided"}`}</p>
                 </div>
-                {image ? (
-                  <img src={image?.url || name} alt={image?.altText || name} />
+                {education ? (
+                  <img src={education.map((item: { image: { url: any; }; }) => item.image.url) || item.schoolName} alt={"image" || item.schoolName} />
                 ) : (
-                  <div className={`image-replacer color-${lineColor}`}>
-                    <p>{processWords(name)}</p>
+                  <div className={`image-replacer color-${education.map((item: { lineColor: any; }) => item.lineColor)}`}>
+                    <p>{processWords(item.schoolName)}</p>
                   </div>
                 )}
               </div>
 
               <div className="education_info_text">
-                <h6>{major}</h6>
-                <p>{program}</p>
+                <h6>{item?.academicFocus}</h6>
+                <p>{item?.degreeType}</p>
               </div>
             </div>
-          </div>
-        )
-      )}
+          </div>)
+
+      })
+      }
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { FC, useContext } from "react";
 import { BlueDotIcon } from "../../../../../assets/icons";
 import {
   AccoladesCalender,
@@ -6,27 +6,33 @@ import {
 } from "../../../../../assets/icons/index";
 import { ProfileContext } from "../../../../../context/profileContext";
 import "../../../../../style/components/accolades.css";
+import { AboutProps } from "../../../../../interface";
+import moment from "moment"
 
-const AccoladesItem = () => {
+interface IAccoladesItem {
+  aboutData: AboutProps
+}
+
+const AccoladesItem: FC<IAccoladesItem> = ({ aboutData }) => {
   const { userProfile } = useContext(ProfileContext);
   const { accolades } = userProfile?.about;
   return (
     <div className="accolades_list">
-      {accolades.map(({ jobTitle, startDate, endDate }: any, index: number) => (
+      {aboutData?.accolades?.map(({ fromWho, startDate, endDate, title }: any, index: number) => (
         <div className="accolades-card">
           <BlueDotIcon />
           <div className="accolades-card-detail">
             <div className="accolade-description">
               <p>
-                {jobTitle?.position} at{" "}
-                <span className="companyname">{jobTitle?.companyName}</span>
+                {title} at{" "}
+                <span className="companyname">{fromWho}</span>
               </p>
               <div className="date">
                 <AccoladesCalender
                   color={"var(--icon-back)"}
                   white={"#868FA0"}
                 />
-                <p>{`${startDate} - ${endDate ?? "Present"}`}</p>
+                <p>{`${moment(startDate).format('MMMM YYYY')} - ${moment(endDate).format('MMMM YYYY') ?? "Present"}`}</p>
               </div>
             </div>
             <div>

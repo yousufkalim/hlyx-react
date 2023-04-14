@@ -1,8 +1,10 @@
 import { IonButton, IonCard, IonLabel } from "@ionic/react";
-import { useContext } from "react";
+import axios from "axios";
+import { useState, useContext, useEffect } from "react";
 import { ProfileContext } from "../../../context/profileContext";
 import "../../../style/components/portfolio.css";
 import UserDetailCard from "../UserDetailCard/UserDetailCard";
+import { PortfolioProps } from "../../../interface/index"
 
 export const CopyIcon = () => (
   <svg
@@ -49,6 +51,23 @@ export const ArrowIcon = () => (
 
 const Portfolio = () => {
   const { userProfile } = useContext(ProfileContext);
+  const [portfolio, setPortfolio] = useState<PortfolioProps[]>([])
+
+
+  useEffect(() => {
+    const token = localStorage.getItem("token")
+    const cardId = localStorage.getItem("cardId")
+    axios.get(`https://dev.api.hlyx.me/api/v1/card/find/portfolio-page/${cardId}`, {
+      headers: {
+        Authorization: token
+      }
+    }).then((res) => {
+      setPortfolio(res.data.card.portfolio)
+      console.log("resofportfolio", res.data.card.portfolio)
+    }).catch((err) => {
+      console.log(err)
+    })
+  }, [])
   return (
     <>
       <UserDetailCard />
@@ -61,7 +80,7 @@ const Portfolio = () => {
           </IonButton>
         </div>
 
-        {userProfile?.portfolioTitle && (
+        {portfolio && (
           <div style={{ display: "flex", gap: 11 }}>
             <div style={{ width: 4, backgroundColor: "#236BFE", height: 42 }} />
             <p
@@ -74,16 +93,16 @@ const Portfolio = () => {
                 maxWidth: 188,
               }}
             >
-              {userProfile?.portfolioTitle}
+              {portfolio.map((item) => item.title)}
             </p>
           </div>
         )}
 
-        {userProfile?.portfolio && (
+        {portfolio && (
           <div className="container">
-            {userProfile?.portfolio?.map((src: any, index: number) => (
-              <div className="box" key={index}>
-                <img src={src} alt="portfolio" />
+            {portfolio?.map((item: PortfolioProps) => (
+              <div className="box">
+                <img src={item.image} alt="portfolio" />
               </div>
             ))}
           </div>

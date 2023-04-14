@@ -1,4 +1,5 @@
-import React, { useContext } from "react";
+import moment from "moment";
+import React, { FC, useContext } from "react";
 import { AccoladesCalender, Checkbox } from "../../../../../../assets/icons";
 import {
   LinksIcon,
@@ -6,7 +7,7 @@ import {
   ShareIcon,
 } from "../../../../../../assets/icons/AboutTabsIcons";
 import { ProfileContext } from "../../../../../../context/profileContext";
-import { ActiveAchievedType } from "../../../../../../interface";
+import { ActiveAchievedType, AboutProps } from "../../../../../../interface";
 import "../../../../../../style/components/achievedTab.css";
 import ProgressBar from "../../../../../ProgressBar";
 
@@ -52,21 +53,33 @@ const AchievedCard = ({
     </div>
   );
 };
-
-const AchievedTab = () => {
+interface IAchievedTab {
+  aboutData: AboutProps
+}
+const AchievedTab: FC<IAchievedTab> = ({ aboutData }) => {
   const { userProfile } = useContext(ProfileContext);
   const { achieved } = userProfile?.about?.businessGoal ?? [];
-
+  const handleDateForemst = (startDate: string, endDate: string) => {
+    const start = moment(startDate);
+    const end = moment(endDate);
+    const duration = moment.duration(end.diff(start));
+    const months = duration.months();
+    const days = duration.days();
+    return `${months} months, ${days} days`
+  }
   return (
     <div className="achievetab">
-      {achieved.map(
-        ({ title, description, timeStamp, progress }: any, index: number) => (
-          <AchievedCard
+      {aboutData.businessGoals.map(
+        ({ title, description, startDate, percentComplete, endDate, status }: any, index: number) => (
+          status === "Achieved" &&
+          < AchievedCard
             key={index}
             title={title}
             description={description}
-            timeStamp={timeStamp}
-            progress={progress}
+            timeStamp={startDate && endDate ?
+              handleDateForemst(startDate, endDate) : "no date"
+            }
+            progress={percentComplete}
           />
         )
       )}
