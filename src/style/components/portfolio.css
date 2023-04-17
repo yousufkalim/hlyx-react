@@ -2,10 +2,9 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 20.45rem;
+  height: max-content;
   justify-content: flex-start;
   overflow-x: scroll;
-  gap: 7px;
   background-color: var(--bg-color);
 }
 
@@ -13,23 +12,40 @@
   background-color: #f10000;
   border-radius: 6px;
 }
-
-.box {
-  height: 10rem;
-  border-radius: 11px;
+.eye_icon{
+  position: absolute;
+  left: 15px;
+  top: 15px;
 }
+.image_desc{
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.83) 5.16%, rgba(0, 0, 0, 0.58) 33.97%, rgba(0, 0, 0, 0) 68.28%);
+}
+.inner_desc{
+  font-family: 'Poppins';
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.image_details{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+width: 70%;
 
+color: #DFE3EA;
+}
 .box img {
   width: 100%;
   max-width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
-  border-radius: 11px;
   max-width: 10rem;
 }
 
-.box:nth-child(10n + 1) {
+/* .box:nth-child(10n + 1) {
   height: 10rem;
 }
 
@@ -61,4 +77,4 @@
 
 .box:nth-child(10n + 8) {
   height: 100%;
-}
+} */

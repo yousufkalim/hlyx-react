@@ -35,8 +35,8 @@ const ProfileCard = ({
         Authorization: token
       }
     }).then((res) => {
-      setUser(res?.data?.user)
       localStorage.setItem('cardId', res?.data?.user?.cards[0]?.cardId ? res?.data?.user?.cards[0]?.cardId : "")
+      setUser(res?.data?.user)
     }).catch((err) => {
       console.log(err)
     })
@@ -99,7 +99,7 @@ const ProfileCard = ({
           ) : (
             <div className="company-logo-section">
               <img
-                src={contactData.companyIcon}
+                src={contactData?.companyIcon}
                 alt="company logo"
                 className="company-logo"
               />

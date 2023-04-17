@@ -67,6 +67,32 @@ export const featuredServices=[
       "R&D Arm dedicated to the development of innovative new digital technology ventures",
   },
 ]
+export const educationProps=[
+  {
+    lineColor: "yellow",
+    name: "San Jose State",
+    startDate: "2005",
+    endDate: "2008",
+    image: {
+      url: SanJose,
+      altText: "San Jose State",
+    },
+    major: "Studied Business Finance",
+    program: "Business Administration",
+  },
+  {
+    lineColor: "red",
+    name: "De Anza College",
+    startDate: "2001",
+    endDate: "2005",
+    image: {
+      url: DeAnzaCollege,
+      altText: "De Anza College",
+    },
+    major: "Studied CIS & Bus. Management",
+    program: "Associate Arts",
+  },
+]
 export const userData = [
   // James Oriyan Profile
   {

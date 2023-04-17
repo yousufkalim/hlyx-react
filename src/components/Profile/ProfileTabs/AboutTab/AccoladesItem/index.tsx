@@ -32,7 +32,7 @@ const AccoladesItem: FC<IAccoladesItem> = ({ aboutData }) => {
                   color={"var(--icon-back)"}
                   white={"#868FA0"}
                 />
-                <p>{`${moment(startDate).format('MMMM YYYY')} - ${moment(endDate).format('MMMM YYYY') ?? "Present"}`}</p>
+                <p>{`${moment(startDate).format('MMMM YYYY')} - ${endDate ? moment(endDate).format('MMMM YYYY') : "Present"}`}</p>
               </div>
             </div>
             <div>

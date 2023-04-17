@@ -1,10 +1,12 @@
 import { IonButton, IonCard, IonLabel } from "@ionic/react";
 import axios from "axios";
-import { useState, useContext, useEffect } from "react";
+import { useState, useContext, useEffect, MouseEventHandler } from "react";
 import { ProfileContext } from "../../../context/profileContext";
 import "../../../style/components/portfolio.css";
 import UserDetailCard from "../UserDetailCard/UserDetailCard";
 import { PortfolioProps } from "../../../interface/index"
+import hidden from "../../../assets/icons/Hide.svg"
+import show from "../../../assets/icons/Show.svg"
 
 export const CopyIcon = () => (
   <svg
@@ -52,6 +54,7 @@ export const ArrowIcon = () => (
 const Portfolio = () => {
   const { userProfile } = useContext(ProfileContext);
   const [portfolio, setPortfolio] = useState<PortfolioProps[]>([])
+  const [hide, setHide] = useState(false)
 
 
   useEffect(() => {
@@ -68,69 +71,73 @@ const Portfolio = () => {
       console.log(err)
     })
   }, [])
+  const [firstPhoto, ...rest] = portfolio.map((item) => item.image)
+  const [selectedPhoto, setSelectedPhoto] = useState("")
+
   return (
     <>
-      <UserDetailCard />
-      <IonCard className="service-card-container border_none">
-        <div className="service-card-title">
-          <IonLabel className="card-heading-lg">Portfolio</IonLabel>
-
-          <IonButton fill="outline" shape="round" className="view-all-button">
-            View All
-          </IonButton>
-        </div>
-
-        {portfolio && (
-          <div style={{ display: "flex", gap: 11 }}>
-            <div style={{ width: 4, backgroundColor: "#236BFE", height: 42 }} />
-            <p
-              style={{
-                fontSize: 15,
-                lineHeight: "20px",
-                letterSpacing: "0.04em",
-                fontWeight: 600,
-                color: "#9899A0",
-                maxWidth: 188,
-              }}
-            >
-              {portfolio.map((item) => item.title)}
-            </p>
+      {portfolio && (
+        <div className="container">
+          <div style={{ position: "relative" }}>
+            <img src={hide ? show : hidden} alt="" className="eye_icon" onClick={() => setHide(!hide)} />
+            <img style={{ height: "430px", width: "100%" }} src={selectedPhoto || firstPhoto} alt="" />
+            {!hide &&
+              <div className="image_desc">
+                {portfolio.map((item) =>
+                  <div className="inner_desc">
+                    <p
+                      style={{
+                        fontSize: "24px",
+                        letterSpacing: "0.04em",
+                        fontWeight: 600,
+                        color: "#FFFFFF",
+                        maxWidth: 188,
+                        whiteSpace: "pre"
+                      }}
+                    >
+                      {selectedPhoto ? selectedPhoto === item.image &&
+                        item.title : firstPhoto === item.image && item.title}
+                    </p>
+                    <p className="image_details">{selectedPhoto ? selectedPhoto === item.image && item.details : firstPhoto === item.image && item.details}</p>
+                  </div>
+                )}
+              </div>
+            }
           </div>
-        )}
-
-        {portfolio && (
-          <div className="container">
-            {portfolio?.map((item: PortfolioProps) => (
+          <div style={{ display: "flex", gap: "4px", flexWrap: "wrap" }}>
+            {portfolio.map((item) => (
               <div className="box">
-                <img src={item.image} alt="portfolio" />
+                <img src={item.image} alt="portfolio" onClick={() => setSelectedPhoto(item.image)} />
               </div>
             ))}
           </div>
-        )}
 
-        {userProfile?.mslLink && (
+        </div>
+      )}
+
+      {userProfile?.mslLink && (
+        <div
+          style={{
+            display: "flex",
+            gap: 17,
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <div
             style={{
               display: "flex",
-              gap: 17,
-              justifyContent: "center",
+              gap: 6,
               alignItems: "center",
             }}
           >
-            <div
-              style={{
-                display: "flex",
-                gap: 6,
-                alignItems: "center",
-              }}
-            >
-              <CopyIcon />
-              <p style={{ color: "#9899A0" }}>View My MLS Listings</p>
-            </div>
-            <ArrowIcon />
+            <CopyIcon />
+            <p style={{ color: "#9899A0" }}>View My MLS Listings</p>
           </div>
-        )}
-      </IonCard>
+          <ArrowIcon />
+        </div>
+      )}
+      {/* </IonCard> */}
     </>
   );
 };
