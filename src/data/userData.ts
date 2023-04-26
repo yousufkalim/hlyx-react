@@ -47,7 +47,52 @@ import RBC from "../assets/RBC.png";
 import DNA from "../assets/DNA.png";
 import Cellanatomic from "../assets/Cellanatomic.png";
 import Ddiscussion from "../assets/Ddiscussion.png";
-
+export const featuredServices=[
+  {
+    lineColor: "yellow",
+    title: "Market Research & BI ",
+    description:
+      "We help startup founders and SMB’s with quality market research into any vertical",
+  },
+  {
+    lineColor: "green",
+    title: "Product Development ",
+    description:
+      "We provide modern UI/UX Product Design and full-service software development",
+  },
+  {
+    lineColor: "purple",
+    title: "Venture Lab ",
+    description:
+      "R&D Arm dedicated to the development of innovative new digital technology ventures",
+  },
+]
+export const educationProps=[
+  {
+    lineColor: "yellow",
+    name: "San Jose State",
+    startDate: "2005",
+    endDate: "2008",
+    image: {
+      url: SanJose,
+      altText: "San Jose State",
+    },
+    major: "Studied Business Finance",
+    program: "Business Administration",
+  },
+  {
+    lineColor: "red",
+    name: "De Anza College",
+    startDate: "2001",
+    endDate: "2005",
+    image: {
+      url: DeAnzaCollege,
+      altText: "De Anza College",
+    },
+    major: "Studied CIS & Bus. Management",
+    program: "Associate Arts",
+  },
+]
 export const userData = [
   // James Oriyan Profile
   {

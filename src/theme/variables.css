@@ -1,6 +1,7 @@
 /* Ionic Variables and Theming. For more info, please see:
 http://ionicframework.com/docs/theming/ */
 
+@media (prefers-color-scheme: light) {
 /** Ionic CSS Variables **/
 :root {
   --about-card-text: #787878;
@@ -96,8 +97,7 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 }
-
-@media (prefers-color-scheme: dark) {
+}
   /*
    * Dark Colors
    * -------------------------------------------
@@ -279,4 +279,3 @@ http://ionicframework.com/docs/theming/ */
 
     --ion-card-background: #1e1e1e;
   }
-}

@@ -1,18 +1,26 @@
 import { IonLabel, IonSegment, IonSegmentButton } from "@ionic/react";
-import { useState } from "react";
+import { FC, useState } from "react";
 import { TabsProps } from "../../../../../interface";
 import "../../../../../style/components/toggleButton.css";
 import AchievedTab from "./tabs/AchievedTab";
 import ActiveTab from "./tabs/ActiveTab";
 import AssistTab from "./tabs/AssistTab";
+import { AboutProps } from "../../../../../interface";
 
-export const BusinessGoalsTabs = ["Active", "Achieved", "Assist"];
 
-export const BusinessGoalsContent = [
-  <ActiveTab />,
-  <AchievedTab />,
-  <AssistTab />,
-];
+
+interface IBusinessGoals {
+  aboutData: AboutProps
+}
+
+
+export const BusinessGoalsTabs = ["Active", "Achieved"];
+
+// export const BusinessGoalsContent = [
+//   <ActiveTab  />,
+//   <AchievedTab aboutData={aboutData} />,
+//   <AssistTab aboutData={aboutData} />,
+// ];
 
 export const ToggleButton = ({
   tabList,
@@ -41,7 +49,7 @@ export const ToggleButton = ({
   );
 };
 
-const BusinessGoals = () => {
+const BusinessGoals: FC<IBusinessGoals> = ({ aboutData }) => {
   const [activeTab, setActiveTab] = useState("0");
 
   return (
@@ -51,7 +59,16 @@ const BusinessGoals = () => {
         activeTab={activeTab}
         setActiveTab={setActiveTab}
       />
-      {BusinessGoalsContent[+activeTab]}
+      {/* {BusinessGoalsContent[+activeTab]}
+       */}
+
+      {activeTab === '0' ?
+        <ActiveTab aboutData={aboutData} />
+        :
+        activeTab === '1' &&
+        <AchievedTab aboutData={aboutData} />
+
+      }
     </>
   );
 };

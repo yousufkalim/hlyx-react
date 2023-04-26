@@ -1,15 +1,20 @@
-import React, { useContext } from "react";
+import React, { FC, useContext } from "react";
 import { BlueDotIcon } from "../../../../../assets/icons";
 import { ProfileContext } from "../../../../../context/profileContext";
 import "../../../../../style/components/achievement.css";
 import ReadMoreText from "../../../../ReadMoreText";
+import { AboutProps } from "../../../../../interface";
 
-const Achievements = () => {
+interface IAchievements {
+  aboutData: AboutProps
+}
+
+const Achievements: FC<IAchievements> = ({ aboutData }) => {
   const { userProfile } = useContext(ProfileContext);
   const { achievement } = userProfile?.about;
   return (
     <>
-      {achievement?.map(
+      {aboutData.achievements?.map(
         (
           { description, descriptiontitle, title, detail }: any,
           index: number

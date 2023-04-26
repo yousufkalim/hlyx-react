@@ -1,12 +1,14 @@
 import { IonButton, IonCard, IonLabel } from "@ionic/react";
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { RightArrowIcon } from "../assets/icons/ServiceTabIcons";
 import { ServicesIcons } from "../constants";
 import { ProfileContext } from "../context/profileContext";
-import { ImageType, ServiceCardProps } from "../interface";
+import { ImageType, ServiceCardProps, ServiceProps } from "../interface";
 import FeaturedServices from "./FeaturedServices";
 import UserDetailCard from "./Profile/UserDetailCard/UserDetailCard";
 import "./ServicesTab.css";
+import axios from "axios";
+import { featuredServices, userData } from "../data/userData";
 
 export const ServiceCard = ({
   title,
@@ -62,6 +64,22 @@ const MainServiceCard = ({
 const ServicesTab = () => {
   const { userProfile } = useContext(ProfileContext);
   const { service } = userProfile;
+  const [servicesData, setServicesData] = useState<ServiceProps[]>([])
+
+  useEffect(() => {
+    const token = localStorage.getItem("token")
+    const cardId = localStorage.getItem("cardId")
+    axios.get(`https://dev.api.hlyx.me/api/v1/card/find/services-page/${cardId}`, {
+      headers: {
+        Authorization: token
+      }
+    }).then((res) => {
+      setServicesData(res.data.card.services)
+      console.log("resofservices", res.data.card.services)
+    }).catch((err) => {
+      console.log(err)
+    })
+  }, [])
   return (
     <>
       <UserDetailCard />
@@ -70,18 +88,19 @@ const ServicesTab = () => {
         button="View All"
         className="border_none"
       >
-        {service?.featuredServices && (
+        {servicesData && (
           <>
             <h6 className="feature-services-title">Featured Services</h6>
             <div className="featured-services-cards">
-              {service?.featuredServices?.map(
-                ({ title, description, lineColor }: any, index: number) => (
-                  <FeaturedServices
-                    lineColor={lineColor}
-                    title={title}
-                    description={description}
-                  />
-                )
+              {servicesData?.map((item, index) => (
+                item.type === "featured" &&
+                <FeaturedServices
+                  //@t
+                  lineColor={featuredServices[index % (featuredServices.length)]?.lineColor}
+                  title={item.title}
+                  description={item.details}
+                />
+              )
               )}
             </div>
           </>
@@ -104,14 +123,14 @@ const ServicesTab = () => {
             </p>
           </div>
         )}
-        {service?.mainServices && (
+        {servicesData && (
           <div>
             <h6 className="feature-services-title">Main Services</h6>
             <div className="cards-list">
-              {service?.mainServices?.map(
-                ({ title, type, image }: any, index: number) => (
-                  <MainServiceCard title={title} icon={type} image={image} />
-                )
+              {servicesData.map((item) => (
+                item.type === "main" &&
+                < MainServiceCard title={item.title} icon={item.type} />
+              )
               )}
             </div>
           </div>

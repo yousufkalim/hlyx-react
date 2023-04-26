@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useState, useContext, useEffect, useMemo } from "react";
 import { IonButton, IonCard, IonContent } from "@ionic/react";
 import { ProfileCardProps } from "../../interface";
 import { BagIcon, LocationIcon, SwipeBar } from "../../assets/icons";
 import "../../style/components/profileCard.css";
+import { ProfileContext } from "../../context/profileContext";
+import axios from "axios";
 
 const ProfileCard = ({
   backgroundImage,
@@ -15,9 +17,49 @@ const ProfileCard = ({
   link,
   blend,
 }: ProfileCardProps) => {
+  const { userProfile } = useContext(ProfileContext);
+
+
+  useEffect(() => {
+    console.log("userProfile11", userProfile)
+
+  }, [userProfile])
+
+  const [user, setUser] = useState<any>(null);
+  const [contactData, setContactData] = useState<any>()
+
+  useEffect(() => {
+    const token = localStorage.getItem("token")
+    axios.get('https://dev.api.hlyx.me/api/v1//user/find/me', {
+      headers: {
+        Authorization: token
+      }
+    }).then((res) => {
+      localStorage.setItem('cardId', res?.data?.user?.cards[0]?.cardId ? res?.data?.user?.cards[0]?.cardId : "")
+      setUser(res?.data?.user)
+    }).catch((err) => {
+      console.log(err)
+    })
+
+    const cardId = localStorage.getItem("cardId")
+    axios.get(`https://dev.api.hlyx.me/api/v1/card/find/contact-page/${cardId}`, {
+      headers: {
+        Authorization: token
+      }
+    }).then((res) => {
+      console.log("resofCard", res.data.card)
+      setContactData(res.data.card)
+    }).catch((err) => {
+      console.log(err)
+    })
+  }, [])
+
+
+
   const [btn, setbtn] = useState(true);
-  console.log(blend);
+  console.log("user", user);
   return (
+    user &&
     <IonContent class="overflow-hidden" fullscreen>
       <img
         style={{
@@ -29,14 +71,14 @@ const ProfileCard = ({
           objectFit: "cover",
           background: "#000",
         }}
-        src={backgroundImage}
+        src={user?.profileAvatar}
         alt="user profile"
       />
 
       <section className={blend ?? `linear-bg`}></section>
 
       <article className="cardContainer">
-        <section
+        {user && <section
           className="logoName"
           style={{
             display: "flex",
@@ -57,30 +99,30 @@ const ProfileCard = ({
           ) : (
             <div className="company-logo-section">
               <img
-                src={companyLogo}
+                src={contactData?.companyIcon}
                 alt="company logo"
                 className="company-logo"
               />
             </div>
           )}
 
-          <h1>{name}</h1>
+          <h1>{user?.firstName + " " + user?.lastName}</h1>
           <section className="detail-container">
             <section className="detail">
               <BagIcon />
               <p className="position-text">
-                {position} at{" "}
+                {user?.profTitle} at{" "}
                 <span style={{ fontWeight: "bold", color: "white" }}>
-                  {companyName}
+                  {user?.company}
                 </span>
               </p>
             </section>
             <section className="detail">
               <LocationIcon />
-              <p className="location-text">{location}</p>
+              <p className="location-text">{user?.city + ", " + user?.state}</p>
             </section>
           </section>
-        </section>
+        </section>}
       </article>
       <section className="link-Button-section">
         <button

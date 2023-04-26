@@ -1,5 +1,6 @@
 import { IonAccordionGroup, IonCard, IonLabel } from "@ionic/react";
-import { useContext } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import {
   CalendarIcon,
   CallIcon,
@@ -10,13 +11,14 @@ import {
   WorldIcon,
 } from "../assets/icons";
 import { SocialMediaIcons } from "../constants/index";
-import { ProfileContext } from "../context/profileContext";
+// import { ProfileContext } from "../context/profileContext";
 import { ContactCardProps } from "../interface";
 import "../style/components/ContactTab.css";
 import LinkCard from "./LinkCard";
 import HeroSession from "./MediaCard/heroSession";
 
 const ContactCard = ({ title, children, ...rest }: ContactCardProps) => {
+
   const { className } = rest;
   return (
     <IonCard className={`card-container ${className}`}>
@@ -27,15 +29,33 @@ const ContactCard = ({ title, children, ...rest }: ContactCardProps) => {
 };
 
 const ContactTab = () => {
-  const { userProfile } = useContext(ProfileContext);
-  const { contact } = userProfile;
+  // const { userProfile } = useContext(ProfileContext);
+
+  const [contactData, setContactData] = useState<any>()
+
+  useEffect(() => {
+    const token = localStorage.getItem("token")
+    const cardId = localStorage.getItem("cardId")
+    axios.get(`https://dev.api.hlyx.me/api/v1/card/find/contact-page/${cardId}`, {
+      headers: {
+        Authorization: token
+      }
+    }).then((res) => {
+      console.log("resofCard", res.data.card)
+      setContactData(res.data.card)
+    }).catch((err) => {
+      console.log(err)
+    })
+  }, [])
+
+  // const { contact } = userProfile;
   return (
     <>
       <HeroSession />
-      {contact?.email && (
+      {contactData?.emails && (
         <ContactCard title="Email">
           <a
-            href={`mailto:${contact.email}`}
+            href={`mailto:${contactData.emails[0].email}`}
             target={"_blank"}
             rel="noreferrer"
             className="anchor-clear"
@@ -46,7 +66,7 @@ const ContactTab = () => {
                   color={"var(--icon-back)"}
                   white={"var(--text-color)"}
                 />
-                <IonLabel className="icon_text">{contact?.email}</IonLabel>
+                <IonLabel className="icon_text">{contactData?.emails[0].email}</IonLabel>
               </div>
               <ChevronIcon />
             </div>
@@ -54,10 +74,10 @@ const ContactTab = () => {
         </ContactCard>
       )}
 
-      {contact?.phone && (
+      {contactData?.phones && (
         <ContactCard title="Phone">
           <IonAccordionGroup expand="compact" className="phone-card-container">
-            <a href={`tel:${contact?.phone?.number}`} className="anchor-clear">
+            <a href={`tel:${contactData.phones[0].phone}`} className="anchor-clear">
               <div className="flex align-center justify-contain mb-11">
                 <div className="flex align-center">
                   <MobileIcon
@@ -65,36 +85,37 @@ const ContactTab = () => {
                     white={"var(--text-color)"}
                   />
                   <IonLabel className="icon_text">
-                    {contact?.phone?.number}
+                    {contactData.phones[0].phone}
                   </IonLabel>
                 </div>
 
                 <ChevronIcon />
               </div>
             </a>
-            {contact?.phone?.faxNumber.map((number: any, index: number) => (
-              <a href={`tel:${number}`} className="anchor-clear">
-                <div
-                  className="flex align-center justify-contain mx-19 mb-11"
-                  key={index}
-                >
-                  <div className="flex align-center ">
-                    <CallIcon
-                      color={"var(--icon-back)"}
-                      white={"var(--text-color)"}
-                    />
-                    <IonLabel className="icon_text">{number}</IonLabel>
+            {contactData.phones.slice(1, contactData.phones.length).map((item: any) => {
+              return (
+                <a href={`tel:${item.phone}`} className="anchor-clear">
+                  <div
+                    className="flex align-center justify-contain mx-19 mb-11"
+                  >
+                    <div className="flex align-center ">
+                      <CallIcon
+                        color={"var(--icon-back)"}
+                        white={"var(--text-color)"}
+                      />
+                      <IonLabel className="icon_text">{item.phone}</IonLabel>
+                    </div>
+                    <ChevronIcon />
                   </div>
-                  <ChevronIcon />
-                </div>
-              </a>
-            ))}
+                </a>
+              )
+            })}
           </IonAccordionGroup>
         </ContactCard>
       )}
-      {contact?.calendar && (
+      {contactData?.calendar && (
         <a
-          href={`https://calendly.com/${contact?.calender}`}
+          href={`https://calendly.com/${contactData?.calender}`}
           className="anchor-clear"
           target={"_blank"}
           rel="noreferrer"
@@ -106,7 +127,7 @@ const ContactTab = () => {
                   color={"var(--icon-back)"}
                   white={"var(--text-color)"}
                 />
-                <IonLabel className="icon_text">{contact?.calendar}</IonLabel>
+                <IonLabel className="icon_text">{contactData?.calendar}</IonLabel>
               </div>
               <ChevronIcon />
             </div>
@@ -114,12 +135,12 @@ const ContactTab = () => {
         </a>
       )}
 
-      {contact?.website && (
+      {contactData?.websites && (
         <a
           className="anchor-clear"
           target={"_blank"}
           rel="noreferrer"
-          href={`https://${contact?.website}`}
+          href={`https://${contactData?.websites[0].url}`}
         >
           <ContactCard title="Website">
             <div className="flex align-center justify-contain mx-19">
@@ -128,7 +149,7 @@ const ContactTab = () => {
                   color={"var(--icon-back)"}
                   white={"var(--text-color)"}
                 />
-                <IonLabel className="icon_text">{contact.website}</IonLabel>
+                <IonLabel className="icon_text">{contactData.websites[0].url}</IonLabel>
               </div>
 
               <ChevronIcon />
@@ -137,10 +158,10 @@ const ContactTab = () => {
         </a>
       )}
 
-      {contact?.officeAddress && (
+      {contactData?.streetAddress && (
         <ContactCard title="Office">
           <a
-            href={`https://www.google.com/maps/place/${contact?.officeAddress}`}
+            href={`https://www.google.com/maps/place/${contactData?.streetAddress}`}
             className="anchor-clear"
             target={"_blank"}
             rel="noreferrer"
@@ -152,23 +173,22 @@ const ContactTab = () => {
                   white={"var(--text-color)"}
                 />
                 <IonLabel className="icon_text office_icon_text">
-                  {contact?.officeAddress}
+                  {contactData?.streetAddress}
                 </IonLabel>
               </div>
-
               <ChevronIcon />
             </div>
           </a>
         </ContactCard>
       )}
 
-      {contact?.socialMedia && (
+      {contactData?.socialMedias && (
         <ContactCard title="Social Media">
           <div className="Social-icons-list">
-            {contact?.socialMedia?.map(
-              ({ link, label }: any, index: number) => (
+            {contactData?.socialMedias?.map(
+              ({ handle, platform }: any, index: number) => (
                 <a
-                  href={link}
+                  href={handle}
                   className="anchor-clear"
                   target={"_blank"}
                   rel="noreferrer"
@@ -176,8 +196,8 @@ const ContactTab = () => {
                 >
                   <div className="icon-card">
                     <>
-                      {SocialMediaIcons[label]}
-                      <IonLabel className="iconlabel">{label}</IonLabel>
+                      {SocialMediaIcons[platform.toLowerCase()]}
+                      <IonLabel className="iconlabel">{platform}</IonLabel>
                     </>
                   </div>
                 </a>
@@ -186,7 +206,7 @@ const ContactTab = () => {
           </div>
         </ContactCard>
       )}
-      {contact?.blogLink && (
+      {contactData?.additionalLinks && (
         <ContactCard title="Links" className="border_none">
           <div
             style={{
@@ -197,14 +217,14 @@ const ContactTab = () => {
               marginBottom: 10,
             }}
           >
-            {contact?.blogLink?.map(
-              ({ type, link, title, description }: any, index: number) => (
+            {contactData?.additionalLinks?.map(
+              ({ typeContent, url, title, description }: any, index: number) => (
                 <LinkCard
                   key={index}
-                  icon={type}
+                  icon={"GoogleDrive"}
                   title={title}
-                  hyperaddress={link}
-                  description={description}
+                  hyperaddress={url}
+                  description={description ? description : "Description not available"}
                 />
               )
             )}
