@@ -3,6 +3,7 @@ import axios from "axios";
 import { useState, useContext, useEffect, MouseEventHandler } from "react";
 import { ProfileContext } from "../../../context/profileContext";
 import "../../../style/components/portfolio.css";
+
 import UserDetailCard from "../UserDetailCard/UserDetailCard";
 import { PortfolioProps } from "../../../interface/index"
 import hidden from "../../../assets/icons/Hide.svg"
@@ -51,11 +52,11 @@ export const ArrowIcon = () => (
   </svg>
 );
 
-const Portfolio = () => {
+  const Portfolio = () => {
   const { userProfile } = useContext(ProfileContext);
+
   const [portfolio, setPortfolio] = useState<PortfolioProps[]>([])
   const [hide, setHide] = useState(false)
-
 
   useEffect(() => {
     const token = localStorage.getItem("token")
