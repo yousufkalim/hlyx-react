@@ -1,18 +1,18 @@
-import "../../../../style/components/AboutCard/aboutCard.css";
-import { IonButton, IonCard, IonLabel } from "@ionic/react";
-import ReadMoreText from "../../../ReadMoreText";
-import BusinessGoals from "./BusinessGoals";
-import UserDetailCard from "../../UserDetailCard/UserDetailCard";
-import Accolades from "./AccoladesItem";
-import Achievements from "./Achievements/Achievements";
-import EducationCard from "./EducationCard";
-import Icebreakers from "./Icebreakers/Icebreakers";
-import BusinessNeeds from "./BusinessNeeds/BusinessNeeds";
-import { ProfileContext } from "../../../../context/profileContext";
-import { useContext, useEffect, useState } from "react";
-import { AboutTabProps, AboutProps } from "../../../../interface";
-import axios from "axios";
-
+import '../../../../style/components/AboutCard/aboutCard.css';
+import { IonButton, IonCard, IonLabel } from '@ionic/react';
+import ReadMoreText from '../../../ReadMoreText';
+import BusinessGoals from './BusinessGoals';
+import UserDetailCard from '../../UserDetailCard/UserDetailCard';
+import Accolades from './AccoladesItem';
+import Achievements from './Achievements/Achievements';
+import EducationCard from './EducationCard';
+import Icebreakers from './Icebreakers/Icebreakers';
+import BusinessNeeds from './BusinessNeeds/BusinessNeeds';
+import { ProfileContext } from '../../../../context/profileContext';
+import { useContext, useEffect, useState } from 'react';
+import { AboutTabProps, AboutProps } from '../../../../interface';
+import axios from 'axios';
+import { baseUrl } from '../../../../config';
 
 export const AboutCard = ({
   title,
@@ -50,36 +50,38 @@ const AboutTab = () => {
     achievements: [],
     businessGoals: [],
     businessNeeds: [],
-    city: "",
-    company: "",
+    city: '',
+    company: '',
     education: [],
-    fullName: "",
+    fullName: '',
     hobbies: [],
-    industry: "",
+    industry: '',
     interests: [],
-    motto: "",
-    occupation: "",
-    profTitle: "",
+    motto: '',
+    occupation: '',
+    profTitle: '',
     skills: [],
-    state: "",
-    userAvatar: ""
-  })
-
+    state: '',
+    userAvatar: '',
+  });
 
   useEffect(() => {
-    const token = localStorage.getItem("token")
-    const cardId = localStorage.getItem("cardId")
-    axios.get(`https://dev.api.hlyx.me/api/v1/card/find/about-page/${cardId}`, {
-      headers: {
-        Authorization: token
-      }
-    }).then((res) => {
-      console.log("resofabout", res.data.card)
-      setAboutData(res?.data?.card)
-    }).catch((err) => {
-      console.log(err)
-    })
-  }, [])
+    const token = localStorage.getItem('token');
+    const cardId = localStorage.getItem('cardId');
+    axios
+      .get(`${baseUrl}/api/v1/card/find/about-page/${cardId}`, {
+        headers: {
+          Authorization: token,
+        },
+      })
+      .then((res) => {
+        console.log('resofabout', res.data.card);
+        setAboutData(res?.data?.card);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
   return (
     <>
       <UserDetailCard />
@@ -91,29 +93,37 @@ const AboutTab = () => {
       {aboutData?.company && (
         <AboutCard title="Profession" className="profession-about-card">
           <div className="profession-list">
-            <div className="profession-item" >
-              <div className={`profession-line line-${about.profession[0].lineColor}`} />
+            <div className="profession-item">
+              <div
+                className={`profession-line line-${about.profession[0].lineColor}`}
+              />
               <p className="profession-title">company</p>
               <p className="profession-description">{aboutData?.company}</p>
             </div>
           </div>
           <div className="profession-list">
             <div className="profession-item">
-              <div className={`profession-line line-${about.profession[1].lineColor}`} />
+              <div
+                className={`profession-line line-${about.profession[1].lineColor}`}
+              />
               <p className="profession-title">Title / Role</p>
               <p className="profession-description">{aboutData?.profTitle}</p>
             </div>
           </div>
           <div className="profession-list">
-            <div className="profession-item" >
-              <div className={`profession-line line-${about.profession[2].lineColor}`} />
+            <div className="profession-item">
+              <div
+                className={`profession-line line-${about.profession[2].lineColor}`}
+              />
               <p className="profession-title">Occupation / Profession</p>
               <p className="profession-description">{aboutData?.occupation}</p>
             </div>
           </div>
           <div className="profession-list">
-            <div className="profession-item" >
-              <div className={`profession-line line-${about.profession[3].lineColor}`} />
+            <div className="profession-item">
+              <div
+                className={`profession-line line-${about.profession[3].lineColor}`}
+              />
               <p className="profession-title">Industry</p>
               <p className="profession-description">{aboutData?.industry}</p>
             </div>

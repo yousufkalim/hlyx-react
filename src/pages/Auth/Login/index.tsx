@@ -1,10 +1,11 @@
-import { IonButton, IonContent, IonInput, useIonAlert } from "@ionic/react";
-import { useEffect, useState } from "react";
-import Logo from "../../../assets/hlyx_logo.png";
-import { LOGIN_SECRET } from "../../../constants";
-import useAuth from "../../../hooks/useAuth";
-import "../../../style/page/auth/login.css";
-import axios from "axios";
+import { IonButton, IonContent, IonInput, useIonAlert } from '@ionic/react';
+import { useEffect, useState } from 'react';
+import Logo from '../../../assets/hlyx_logo.png';
+import { LOGIN_SECRET } from '../../../constants';
+import useAuth from '../../../hooks/useAuth';
+import '../../../style/page/auth/login.css';
+import axios from 'axios';
+import { baseUrl } from '../../../config';
 
 export const EyeCloseIcon = () => (
   <svg
@@ -58,20 +59,13 @@ export const EyeIcon = () => (
  */
 
 const Login = (): JSX.Element => {
-
- 
-
-
-  const {setToken }= useAuth();
-  const [password, setPassword] = useState("");
+  const { setToken } = useAuth();
+  const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
-  const [error, setError] = useState("");
+  const [error, setError] = useState('');
   const [presentAlert] = useIonAlert();
 
-  
-  useEffect(()=>{
-   
-  },[])
+  useEffect(() => {}, []);
   return (
     <IonContent class="overflow-hidden login_container">
       <section>
@@ -80,32 +74,35 @@ const Login = (): JSX.Element => {
           onSubmit={(event) => {
             event?.preventDefault();
             if (LOGIN_SECRET === password) {
-              axios.post('https://dev.api.hlyx.me/api/v1/auth/login',{
-                email: "adeelbaig828@gmail.com",
-                password: "A2345678"
-              }).then((res)=>{
-                console.log(res)
-                const userToken = res?.data?.token;
-                if(userToken) {
-                  setToken(userToken)
-                  window.localStorage?.setItem("token", userToken);
-                }
-              }).catch((err)=>{
-                console.log(err)
-              })
+              axios
+                .post(`${baseUrl}/api/v1/auth/login`, {
+                  email: 'adeelbaig828@gmail.com',
+                  password: 'A2345678',
+                })
+                .then((res) => {
+                  console.log(res);
+                  const userToken = res?.data?.token;
+                  if (userToken) {
+                    setToken(userToken);
+                    window.localStorage?.setItem('token', userToken);
+                  }
+                })
+                .catch((err) => {
+                  console.log(err);
+                });
             } else {
-              setError("Invalid Password");
+              setError('Invalid Password');
               presentAlert({
-                message: "Invalid Password",
-                header: "Oops!",
+                message: 'Invalid Password',
+                header: 'Oops!',
                 buttons: [
                   {
-                    text: "Cancel",
-                    role: "cancel",
+                    text: 'Cancel',
+                    role: 'cancel',
                   },
                   {
-                    text: "OK",
-                    role: "confirm",
+                    text: 'OK',
+                    role: 'confirm',
                   },
                 ],
               });
@@ -116,23 +113,23 @@ const Login = (): JSX.Element => {
             {error && <p className="error_text">{error}</p>}
             <div className="input_container">
               <IonInput
-                className={`password_input ${error && "password_input_error"}`}
-                type={showPassword ? "text" : "password"}
+                className={`password_input ${error && 'password_input_error'}`}
+                type={showPassword ? 'text' : 'password'}
                 placeholder="Password"
                 value={password}
                 onIonInput={(event: Event) => {
-                  setError("");
+                  setError('');
                   const value = (event.target as HTMLIonInputElement)
                     .value as string;
                   const regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{7,}$/;
                   if (!regex.test(value)) {
-                    setError("Please enter an 8 digit alphanumeric password");
+                    setError('Please enter an 8 digit alphanumeric password');
                   }
                   setPassword(value);
                 }}
               ></IonInput>
               <IonButton
-                className={`eye_icon ${error && "eye_icon_error"}`}
+                className={`eye_icon ${error && 'eye_icon_error'}`}
                 onClick={() => setShowPassword(!showPassword)}
               >
                 {showPassword ? <EyeIcon /> : <EyeCloseIcon />}

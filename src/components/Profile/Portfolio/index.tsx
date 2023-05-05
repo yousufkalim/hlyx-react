@@ -1,13 +1,14 @@
-import { IonButton, IonCard, IonLabel } from "@ionic/react";
-import axios from "axios";
-import { useState, useContext, useEffect, MouseEventHandler } from "react";
-import { ProfileContext } from "../../../context/profileContext";
-import "../../../style/components/portfolio.css";
+import { IonButton, IonCard, IonLabel } from '@ionic/react';
+import axios from 'axios';
+import { useState, useContext, useEffect, MouseEventHandler } from 'react';
+import { ProfileContext } from '../../../context/profileContext';
+import '../../../style/components/portfolio.css';
 
-import UserDetailCard from "../UserDetailCard/UserDetailCard";
-import { PortfolioProps } from "../../../interface/index"
-import hidden from "../../../assets/icons/Hide.svg"
-import show from "../../../assets/icons/Show.svg"
+import UserDetailCard from '../UserDetailCard/UserDetailCard';
+import { PortfolioProps } from '../../../interface/index';
+import hidden from '../../../assets/icons/Hide.svg';
+import show from '../../../assets/icons/Show.svg';
+import { baseUrl } from '../../../config';
 
 export const CopyIcon = () => (
   <svg
@@ -52,88 +53,108 @@ export const ArrowIcon = () => (
   </svg>
 );
 
-  const Portfolio = () => {
+const Portfolio = () => {
   const { userProfile } = useContext(ProfileContext);
 
-  const [portfolio, setPortfolio] = useState<PortfolioProps[]>([])
-  const [hide, setHide] = useState(false)
+  const [portfolio, setPortfolio] = useState<PortfolioProps[]>([]);
+  const [hide, setHide] = useState(false);
 
   useEffect(() => {
-    const token = localStorage.getItem("token")
-    const cardId = localStorage.getItem("cardId")
-    axios.get(`https://dev.api.hlyx.me/api/v1/card/find/portfolio-page/${cardId}`, {
-      headers: {
-        Authorization: token
-      }
-    }).then((res) => {
-      setPortfolio(res.data.card.portfolio)
-      console.log("resofportfolio", res.data.card.portfolio)
-    }).catch((err) => {
-      console.log(err)
-    })
-  }, [])
-  const [firstPhoto, ...rest] = portfolio.map((item) => item.image)
-  const [selectedPhoto, setSelectedPhoto] = useState("")
+    const token = localStorage.getItem('token');
+    const cardId = localStorage.getItem('cardId');
+    axios
+      .get(`${baseUrl}/api/v1/card/find/portfolio-page/${cardId}`, {
+        headers: {
+          Authorization: token,
+        },
+      })
+      .then((res) => {
+        setPortfolio(res.data.card.portfolio);
+        console.log('resofportfolio', res.data.card.portfolio);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+  const [firstPhoto, ...rest] = portfolio.map((item) => item.image);
+  const [selectedPhoto, setSelectedPhoto] = useState('');
 
   return (
     <>
       {portfolio && (
         <div className="container">
-          <div style={{ position: "relative" }}>
-            <img src={hide ? show : hidden} alt="" className="eye_icon" onClick={() => setHide(!hide)} />
-            <img style={{ height: "430px", width: "100%" }} src={selectedPhoto || firstPhoto} alt="" />
-            {!hide &&
+          <div style={{ position: 'relative' }}>
+            <img
+              src={hide ? show : hidden}
+              alt=""
+              className="eye_icon"
+              onClick={() => setHide(!hide)}
+            />
+            <img
+              style={{ height: '430px', width: '100%' }}
+              src={selectedPhoto || firstPhoto}
+              alt=""
+            />
+            {!hide && (
               <div className="image_desc">
-                {portfolio.map((item) =>
+                {portfolio.map((item) => (
                   <div className="inner_desc">
                     <p
                       style={{
-                        fontSize: "24px",
-                        letterSpacing: "0.04em",
+                        fontSize: '24px',
+                        letterSpacing: '0.04em',
                         fontWeight: 600,
-                        color: "#FFFFFF",
+                        color: '#FFFFFF',
                         maxWidth: 188,
-                        whiteSpace: "pre"
+                        whiteSpace: 'pre',
                       }}
                     >
-                      {selectedPhoto ? selectedPhoto === item.image &&
-                        item.title : firstPhoto === item.image && item.title}
+                      {selectedPhoto
+                        ? selectedPhoto === item.image && item.title
+                        : firstPhoto === item.image && item.title}
                     </p>
-                    <p className="image_details">{selectedPhoto ? selectedPhoto === item.image && item.details : firstPhoto === item.image && item.details}</p>
+                    <p className="image_details">
+                      {selectedPhoto
+                        ? selectedPhoto === item.image && item.details
+                        : firstPhoto === item.image && item.details}
+                    </p>
                   </div>
-                )}
+                ))}
               </div>
-            }
+            )}
           </div>
-          <div style={{ display: "flex", gap: "4px", flexWrap: "wrap" }}>
+          <div style={{ display: 'flex', gap: '4px', flexWrap: 'wrap' }}>
             {portfolio.map((item) => (
               <div className="box">
-                <img src={item.image} alt="portfolio" onClick={() => setSelectedPhoto(item.image)} />
+                <img
+                  src={item.image}
+                  alt="portfolio"
+                  onClick={() => setSelectedPhoto(item.image)}
+                />
               </div>
             ))}
           </div>
-
         </div>
       )}
 
       {userProfile?.mslLink && (
         <div
           style={{
-            display: "flex",
+            display: 'flex',
             gap: 17,
-            justifyContent: "center",
-            alignItems: "center",
+            justifyContent: 'center',
+            alignItems: 'center',
           }}
         >
           <div
             style={{
-              display: "flex",
+              display: 'flex',
               gap: 6,
-              alignItems: "center",
+              alignItems: 'center',
             }}
           >
             <CopyIcon />
-            <p style={{ color: "#9899A0" }}>View My MLS Listings</p>
+            <p style={{ color: '#9899A0' }}>View My MLS Listings</p>
           </div>
           <ArrowIcon />
         </div>
