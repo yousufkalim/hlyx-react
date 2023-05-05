@@ -336,14 +336,14 @@ export const SocialData = [
 ];
 
 export const SocialMediaIcons: any = {
-  linkedin: <LinkedinIcon color={"var(--social-back)"} />,
-  youtube: <YoutubeIcon color={"var(--social-back)"} />,
-  slack: <SlackIcon color={"var(--social-back)"} />,
+  LinkedIn: <LinkedinIcon color={"var(--social-back)"} />,
+  YouTube: <YoutubeIcon color={"var(--social-back)"} />,
+  Slack: <SlackIcon color={"var(--social-back)"} />,
   Reddit: <ShipFaceIcon color={"var(--social-back)"} />,
 
   Discord: <MaskIcon color={"var(--social-back)"} />,
 
-  twitter: <Twitter color={"var(--social-back)"} />,
+  Twitter: <Twitter color={"var(--social-back)"} />,
 
   Facebook: <Facebook color={"var(--social-back)"} />,
 
@@ -353,7 +353,7 @@ export const SocialMediaIcons: any = {
 
   Instagram: <InstagramIcon color={"var(--social-back)"} />,
 
-  medium: <MediumSocialIcon color={"var(--social-back)"} />,
+  Medium: <MediumSocialIcon color={"var(--social-back)"} />,
 };
 
 export const ServicesIcons: any = {
@@ -378,4 +378,4 @@ export const BlogLinkIcons: any = {
   SoundCloud: <SoundCloudIcon color={"var(--social-back)"} />,
 };
 
-export const LOGIN_SECRET = "hlyx2358";
+export const LOGIN_SECRET = "HlyX5882";
